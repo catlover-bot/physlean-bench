@@ -1,7 +1,13 @@
-# Python
+# OS / editor noise
+.DS_Store
+
+# Secrets (local only)
+.env
+.env.local
+
+# Python cache / tooling artifacts
 __pycache__/
 *.py[cod]
-*.so
 .pytest_cache/
 .mypy_cache/
 .coverage
@@ -12,25 +18,17 @@ htmlcov/
 .venv311/
 venv/
 
-# Local config and secrets
-.env
-.env.local
-
-# Build artifacts
-dist/
+# Packaging artifacts
 build/
+dist/
 *.egg-info/
 
-# Research outputs
-data/
-outputs/
-logs/
-reports/generated/
-
-# Lean / lake build artifacts (if generated in-place)
-.lean/
+# Lean / Lake local build artifacts
 .lake/
+.lean/
 lake-packages/
 
-# OS
-.DS_Store
+# Local runtime artifacts (reproducible outputs)
+data/source/
+outputs/
+logs/
