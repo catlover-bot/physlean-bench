@@ -1,0 +1,34 @@
+{
+  "benchmark_name": "physlean_completion_v0_mock",
+  "task_family": "theorem_completion",
+  "generated_at_utc": "2026-04-20T13:18:07.945227+00:00",
+  "source_repo": {
+    "name": "HEPLean/PhysLean",
+    "url": "https://github.com/HEPLean/PhysLean",
+    "commit": "0000000000000000000000000000000000000000",
+    "clone_path": "data/source/PhysLean",
+    "tracing_tool": "leandojo-v2",
+    "tracing_tool_version": "placeholder",
+    "lean_toolchain": "leanprover/lean4:placeholder",
+    "build_command": [
+      "lake",
+      "build"
+    ],
+    "generation_timestamp_utc": "2026-04-20T13:18:07.944097+00:00"
+  },
+  "tracing_tool": "leandojo-v2",
+  "tracing_tool_version": "placeholder",
+  "lean_toolchain": "leanprover/lean4:placeholder",
+  "generation_config": {
+    "split_strategy": "namespace",
+    "filter_policy": {
+      "exclude_without_proof": true,
+      "exclude_sorry": true,
+      "exclude_auto_generated": true
+    }
+  },
+  "artifact_hashes": {
+    "/Users/hirotaka-m/physlean-bench/examples/mock_data/completion.synthetic.jsonl": "ad26e99d3e9d3aca4407cec3c46836eb21ffd5d81bde912f2c5992166e43a203"
+  },
+  "benchmark_manifest_hash": "e83e6b6862590d2acdc4b9724d470089cc26f42095b091ae7542262445ef14e6"
+}

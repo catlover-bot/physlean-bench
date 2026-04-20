@@ -1,0 +1,23 @@
+# Source repository configuration for physlib extraction.
+source_repo:
+  name: "leanprover-community/physlib"
+  url: "https://github.com/leanprover-community/physlib.git"
+  commit: ""  # TODO: fill with pinned commit hash
+  clone_dir: "data/source/physlib"
+  include_submodules: false
+
+lean:
+  lake_cache_get_cmd: ["lake", "exe", "cache", "get"]
+  lake_build_cmd: ["lake", "build", "PhysLean"]
+  toolchain_file: "lean-toolchain"
+  tracing_backend: "leandojo_v2"
+  build_deps_for_trace: false
+  trace_min_free_disk_gb: 80.0
+
+scope:
+  # First phase focuses on Physlib/PhysLean. Keep QuantumInfo extensibility for later.
+  include_paths:
+    - "PhysLean/"
+    - "Physlib/"
+  exclude_paths:
+    - "QuantumInfo/"

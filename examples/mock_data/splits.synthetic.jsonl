@@ -1,0 +1,2 @@
+{"example_id":"mock.maxwell.1","split":"train","strategy":"namespace","group_key":"PhysLean.Mock","random_seed":1337,"notes":null}
+{"example_id":"mock.quantum.1","split":"test","strategy":"namespace","group_key":"PhysLean.Mock.Quantum","random_seed":1337,"notes":null}

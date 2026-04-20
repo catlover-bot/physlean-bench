@@ -1,0 +1,17 @@
+split:
+  strategy: "namespace"  # one of: random, file, namespace, novel_local_premise
+  profile: "release_candidate"  # one of: small, dev, release_candidate
+  seed: 1337
+  train_fraction: 0.8
+  valid_fraction: 0.1
+  test_fraction: 0.1
+
+  # Optional controls used by non-random split strategies.
+  namespace_depth: 2
+  min_group_size: 1
+
+novel_local_premise:
+  enabled: false
+  # When enabled, the test split prefers examples whose local premises
+  # (physlib-defined) are not observed in train.
+  require_strict_novelty: false

@@ -1,0 +1,1 @@
+{"example_id":"retrieval::mock.maxwell.1","theorem_id":"mock.maxwell.1","query":"theorem mock_maxwell : True := by trivial","candidate_premises":["True.intro","PhysLean.Mock.helper"],"relevant_premises":["True.intro"],"theorem_metadata":{"namespace":"PhysLean.Mock"}}

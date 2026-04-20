@@ -1,0 +1,48 @@
+release:
+  name: "physlean_rc_v0"
+  release_root: "outputs/releases"
+  benchmark_name: "physlean_completion_release_candidate"
+
+source:
+  url: "https://github.com/leanprover-community/physlib.git"
+  commit: ""  # REQUIRED: pin exact commit
+  repo_dir: "data/source/physlib"
+
+trace:
+  backend: "leandojo_v2"
+  include_prefixes: ["PhysLean/", "Physlib/"]
+  exclude_prefixes: ["QuantumInfo/"]
+  min_free_disk_gb: 80.0
+  min_records: 100
+  tracing_tool_version: "auto"
+
+inventory:
+  traced_only: true
+  filtering:
+    exclude_without_proof: true
+    exclude_without_statement: true
+    exclude_sorry: true
+    exclude_auto_generated: true
+    exclude_internal_names: true
+    exclude_non_theorem_like: true
+    exclude_duplicate_statements: true
+    exclude_likely_trivial: false
+    exclude_very_short_proofs: false
+
+completion:
+  max_examples: 2000
+  seed: 1337
+  traced_only: true
+
+splits:
+  strategy: "novel_local_premise"
+  profile: "release_candidate"
+  seed: 1337
+  train_fraction: 0.8
+  valid_fraction: 0.1
+  test_fraction: 0.1
+  namespace_depth: 3
+
+audit:
+  sample_size: 100
+  suspicious_only: false

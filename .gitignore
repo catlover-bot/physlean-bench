@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+.venv311/
+venv/
+
+# Local config and secrets
+.env
+.env.local
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Research outputs
+data/
+outputs/
+logs/
+reports/generated/
+
+# Lean / lake build artifacts (if generated in-place)
+.lean/
+.lake/
+lake-packages/
+
+# OS
+.DS_Store
