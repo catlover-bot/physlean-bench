@@ -1,0 +1,16 @@
+module_prefix	count
+Physlib.Relativity	1194
+Physlib.QFT	1180
+Physlib.Particles	768
+Physlib.SpaceAndTime	620
+Physlib.Mathematics	583
+Physlib.Electromagnetism	321
+Physlib.QuantumMechanics	310
+Physlib.StringTheory	180
+Physlib.StatisticalMechanics	129
+Physlib.ClassicalMechanics	128
+Physlib.Units	122
+Physlib.Thermodynamics	34
+Physlib.CondensedMatter	13
+Physlib.Cosmology	12
+Physlib.ClassicalFieldTheory	7

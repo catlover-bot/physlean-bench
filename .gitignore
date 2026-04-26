@@ -32,3 +32,31 @@ lake-packages/
 data/source/
 outputs/
 logs/
+
+# local environments
+.venv/
+.venv-dsp/
+__pycache__/
+*.pyc
+
+# Slurm / local logs
+slurm-*.out
+*.out
+*.err
+physlean_logs/
+trace_rc*.out
+cpu_local_*.out
+
+# Large temporary artifacts
+tmp/
+cache/
+ray_tmp*/
+physlean_trace_rc*/
+physlean_cache*/
+physlean_eval_work/
+*.olean
+.lake/
+
+# Hugging Face / model cache
+hf_cache/
+hub/

@@ -1,0 +1,162 @@
+{
+  "total_records": 5601,
+  "usable_records_basic_filter": 5593,
+  "duplicate_theorem_ids": 0,
+  "empty_statement": 0,
+  "empty_proof": 0,
+  "declaration_kind": {
+    "lemma": 5530,
+    "commandtheorem": 71
+  },
+  "proof_extraction_method": {
+    "source_span": 812,
+    "lean_dojo_tactic_proof": 4789
+  },
+  "has_sorry": {
+    "false": 5593,
+    "true": 8
+  },
+  "has_admit": {
+    "false": 5601
+  },
+  "is_auto_generated": {
+    "false": 5601
+  },
+  "filter_excluded_reason": {
+    "None": 5601
+  },
+  "proof_text_length": {
+    "mean": 309.46402428137833,
+    "median": 126,
+    "max": 7087
+  },
+  "statement_length": {
+    "mean": 163.4838421710409,
+    "median": 141,
+    "max": 959
+  },
+  "top_modules_level1": [
+    [
+      "Relativity",
+      1194
+    ],
+    [
+      "QFT",
+      1180
+    ],
+    [
+      "Particles",
+      768
+    ],
+    [
+      "SpaceAndTime",
+      620
+    ],
+    [
+      "Mathematics",
+      583
+    ],
+    [
+      "Electromagnetism",
+      321
+    ],
+    [
+      "QuantumMechanics",
+      310
+    ],
+    [
+      "StringTheory",
+      180
+    ],
+    [
+      "StatisticalMechanics",
+      129
+    ],
+    [
+      "ClassicalMechanics",
+      128
+    ],
+    [
+      "Units",
+      122
+    ],
+    [
+      "Thermodynamics",
+      34
+    ],
+    [
+      "CondensedMatter",
+      13
+    ],
+    [
+      "Cosmology",
+      12
+    ],
+    [
+      "ClassicalFieldTheory",
+      7
+    ]
+  ],
+  "top_modules_level2": [
+    [
+      "Physlib.Relativity",
+      1194
+    ],
+    [
+      "Physlib.QFT",
+      1180
+    ],
+    [
+      "Physlib.Particles",
+      768
+    ],
+    [
+      "Physlib.SpaceAndTime",
+      620
+    ],
+    [
+      "Physlib.Mathematics",
+      583
+    ],
+    [
+      "Physlib.Electromagnetism",
+      321
+    ],
+    [
+      "Physlib.QuantumMechanics",
+      310
+    ],
+    [
+      "Physlib.StringTheory",
+      180
+    ],
+    [
+      "Physlib.StatisticalMechanics",
+      129
+    ],
+    [
+      "Physlib.ClassicalMechanics",
+      128
+    ],
+    [
+      "Physlib.Units",
+      122
+    ],
+    [
+      "Physlib.Thermodynamics",
+      34
+    ],
+    [
+      "Physlib.CondensedMatter",
+      13
+    ],
+    [
+      "Physlib.Cosmology",
+      12
+    ],
+    [
+      "Physlib.ClassicalFieldTheory",
+      7
+    ]
+  ]
+}
