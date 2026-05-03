@@ -1,0 +1,82 @@
+{
+  "source": "/project/nlp-work11/hirotaka-m/physlean_trace_rc13_week_8cpu",
+  "n_total": 5593,
+  "n_cross_domain": 1667,
+  "cross_domain_ratio": 0.2980511353477561,
+  "by_split": {
+    "train": {
+      "n": 4337,
+      "cross_domain": 1310,
+      "ratio": 0.30205210975328567
+    },
+    "valid": {
+      "n": 576,
+      "cross_domain": 182,
+      "ratio": 0.3159722222222222
+    },
+    "test": {
+      "n": 680,
+      "cross_domain": 175,
+      "ratio": 0.25735294117647056
+    }
+  },
+  "domain_counts_all": {
+    "StatisticalMechanics": 129,
+    "Relativity": 1194,
+    "QFT": 1178,
+    "Units": 122,
+    "QuantumMechanics": 305,
+    "ClassicalMechanics": 127,
+    "Mathematics": 583,
+    "StringTheory": 180,
+    "SpaceAndTime": 620,
+    "Particles": 768,
+    "Thermodynamics": 34,
+    "Cosmology": 12,
+    "Electromagnetism": 321,
+    "CondensedMatter": 13,
+    "ClassicalFieldTheory": 7
+  },
+  "domain_counts_cross": {
+    "QFT": 250,
+    "Units": 5,
+    "Relativity": 593,
+    "Mathematics": 46,
+    "SpaceAndTime": 87,
+    "QuantumMechanics": 125,
+    "ClassicalMechanics": 40,
+    "StatisticalMechanics": 99,
+    "Particles": 179,
+    "Electromagnetism": 229,
+    "ClassicalFieldTheory": 1,
+    "Thermodynamics": 13
+  },
+  "domain_pair_counts_cross": {
+    "Mathematics+Relativity": 458,
+    "Particles+QFT": 250,
+    "Particles+StringTheory": 172,
+    "QuantumMechanics+SpaceAndTime": 161,
+    "StatisticalMechanics+Thermodynamics": 99,
+    "Particles+Relativity": 93,
+    "Electromagnetism+Relativity": 72,
+    "Electromagnetism+SpaceAndTime": 67,
+    "Mathematics+SpaceAndTime": 43,
+    "ClassicalMechanics+SpaceAndTime": 40,
+    "Electromagnetism+Relativity+SpaceAndTime": 35,
+    "Mathematics+Particles+Relativity": 34,
+    "Relativity+SpaceAndTime": 34,
+    "Electromagnetism+Mathematics+Relativity": 24,
+    "Thermodynamics+Units": 18,
+    "Mathematics+QuantumMechanics": 14,
+    "Electromagnetism+Particles+Relativity+SpaceAndTime": 12,
+    "Electromagnetism+Mathematics": 8,
+    "Particles+SpaceAndTime": 7,
+    "Mathematics+Relativity+SpaceAndTime": 6,
+    "QuantumMechanics+Relativity+SpaceAndTime": 6,
+    "Electromagnetism+Particles+SpaceAndTime": 6,
+    "Electromagnetism+Particles": 4,
+    "Mathematics+QuantumMechanics+SpaceAndTime": 2,
+    "Electromagnetism+QuantumMechanics+Relativity+SpaceAndTime": 1,
+    "ClassicalFieldTheory+SpaceAndTime": 1
+  }
+}

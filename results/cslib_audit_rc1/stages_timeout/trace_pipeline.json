@@ -1,0 +1,8 @@
+{
+  "stage": "trace_pipeline",
+  "status": "started",
+  "timestamp_utc": "2026-04-29T20:35:22.821817+00:00",
+  "payload": {
+    "backend": "leandojo_v2"
+  }
+}

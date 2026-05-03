@@ -1,0 +1,105 @@
+{
+  "repo_dir": "/home/is/hirotaka-m/workspace/cslib",
+  "output_dir": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_rc1",
+  "backend": "leandojo_v2",
+  "min_free_disk_gb": 20.0,
+  "generated_at_utc": "2026-04-29T20:35:22.844803+00:00",
+  "can_proceed": true,
+  "checks": [
+    {
+      "name": "repo_exists",
+      "ok": true,
+      "severity": "error",
+      "message": "Repository directory exists.",
+      "details": {
+        "repo_dir": "/home/is/hirotaka-m/workspace/cslib"
+      }
+    },
+    {
+      "name": "repo_is_git",
+      "ok": true,
+      "severity": "error",
+      "message": "Repository is a git checkout.",
+      "details": {
+        "repo_dir": "/home/is/hirotaka-m/workspace/cslib"
+      }
+    },
+    {
+      "name": "python_version",
+      "ok": true,
+      "severity": "error",
+      "message": "Python version is 3.12.9.",
+      "details": {
+        "required": ">=3.10",
+        "actual": "3.12.9"
+      }
+    },
+    {
+      "name": "executable_git",
+      "ok": true,
+      "severity": "error",
+      "message": "`git` executable found.",
+      "details": {
+        "path": "/usr/bin/git"
+      }
+    },
+    {
+      "name": "executable_lake",
+      "ok": true,
+      "severity": "error",
+      "message": "Resolved `lake` executable.",
+      "details": {
+        "path": "/home/is/hirotaka-m/.elan/bin/lake"
+      }
+    },
+    {
+      "name": "executable_lean",
+      "ok": true,
+      "severity": "warning",
+      "message": "Resolved sibling `lean` executable from lake.",
+      "details": {
+        "path": "/home/is/hirotaka-m/.elan/bin/lean"
+      }
+    },
+    {
+      "name": "lean_toolchain_file",
+      "ok": true,
+      "severity": "warning",
+      "message": "lean-toolchain file found.",
+      "details": {
+        "path": "/home/is/hirotaka-m/workspace/cslib/lean-toolchain"
+      }
+    },
+    {
+      "name": "python_package_lean_dojo",
+      "ok": true,
+      "severity": "error",
+      "message": "Python package `lean_dojo` is installed.",
+      "details": {
+        "package": "lean_dojo"
+      }
+    },
+    {
+      "name": "free_disk_space",
+      "ok": true,
+      "severity": "error",
+      "message": "Sufficient free disk space detected (2298.78 GiB).",
+      "details": {
+        "free_bytes": 2468293378048,
+        "free_gb": 2298.777,
+        "required_gb": 20.0,
+        "output_dir": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_rc1"
+      }
+    },
+    {
+      "name": "output_dir_writable",
+      "ok": true,
+      "severity": "error",
+      "message": "Output directory is writable.",
+      "details": {
+        "output_dir": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_rc1",
+        "error": ""
+      }
+    }
+  ]
+}
