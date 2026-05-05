@@ -1,0 +1,2029 @@
+{
+  "total_parts": 52,
+  "successful_parts": 44,
+  "total_theorem_records": 1310,
+  "parts": [
+    {
+      "name": "cslib_automata_rc2",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_automata_rc2",
+      "has_traced_theorems": true,
+      "theorem_count": 58,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 58
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_automata_rc2/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 58,
+            "duration_seconds": 2634.1808748468757
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 58
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 58
+          }
+        }
+      }
+    },
+    {
+      "name": "algorithms_lean",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/algorithms_lean",
+      "has_traced_theorems": true,
+      "theorem_count": 31,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 31
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/algorithms_lean/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 31,
+            "duration_seconds": 2531.253659187001
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 31
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 31
+          }
+        }
+      }
+    },
+    {
+      "name": "computability_languages",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages",
+      "has_traced_theorems": false,
+      "theorem_count": 0,
+      "stages": {
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        },
+        "trace_pipeline": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        }
+      }
+    },
+    {
+      "name": "computability_languages_congruences",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_congruences",
+      "has_traced_theorems": true,
+      "theorem_count": 7,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 7
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_congruences/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 7,
+            "duration_seconds": 2436.6320834839717
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 7
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 7
+          }
+        }
+      }
+    },
+    {
+      "name": "computability_languages_exampleeventuallyzero",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_exampleeventuallyzero",
+      "has_traced_theorems": true,
+      "theorem_count": 6,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 6
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_exampleeventuallyzero/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 6,
+            "duration_seconds": 2405.282020177925
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 6
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 6
+          }
+        }
+      }
+    },
+    {
+      "name": "computability_languages_language",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_language",
+      "has_traced_theorems": true,
+      "theorem_count": 10,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 10
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_language/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 10,
+            "duration_seconds": 2388.6130969709484
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 10
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 10
+          }
+        }
+      }
+    },
+    {
+      "name": "computability_languages_omegalanguage",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_omegalanguage",
+      "has_traced_theorems": true,
+      "theorem_count": 62,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 62
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_omegalanguage/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 62,
+            "duration_seconds": 2044.7973664840683
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 62
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 62
+          }
+        }
+      }
+    },
+    {
+      "name": "computability_languages_omegaregularlanguage",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_omegaregularlanguage",
+      "has_traced_theorems": true,
+      "theorem_count": 17,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 17
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_omegaregularlanguage/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 17,
+            "duration_seconds": 2168.3783083194867
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 17
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 17
+          }
+        }
+      }
+    },
+    {
+      "name": "computability_languages_regularlanguage",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_regularlanguage",
+      "has_traced_theorems": true,
+      "theorem_count": 13,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 13
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_languages_regularlanguage/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 13,
+            "duration_seconds": 2152.593624549918
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 13
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "computability_machines_singletapeturing_basic",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_machines_singletapeturing_basic",
+      "has_traced_theorems": true,
+      "theorem_count": 9,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 9
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_machines_singletapeturing_basic/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 9,
+            "duration_seconds": 2009.844117728062
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 9
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 9
+          }
+        }
+      }
+    },
+    {
+      "name": "computability_urm",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_urm",
+      "has_traced_theorems": true,
+      "theorem_count": 56,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 56
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/computability_urm/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 56,
+            "duration_seconds": 2802.615545381792
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 56
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 56
+          }
+        }
+      }
+    },
+    {
+      "name": "crypto_protocols",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/crypto_protocols",
+      "has_traced_theorems": true,
+      "theorem_count": 18,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 18
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/crypto_protocols/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 18,
+            "duration_seconds": 65.96123537328094
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 18
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 18
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_combinatorics_infinitegraphramsey",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_combinatorics_infinitegraphramsey",
+      "has_traced_theorems": true,
+      "theorem_count": 5,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 5
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_combinatorics_infinitegraphramsey/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 5,
+            "duration_seconds": 1991.7932047899812
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 5
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 5
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_control_monad_free",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_control_monad_free",
+      "has_traced_theorems": true,
+      "theorem_count": 23,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 23
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_control_monad_free/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 23,
+            "duration_seconds": 2063.748706976068
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 23
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 23
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_control_monad_free_effects",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_control_monad_free_effects",
+      "has_traced_theorems": true,
+      "theorem_count": 36,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 36
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_control_monad_free_effects/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 36,
+            "duration_seconds": 2077.518283081008
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 36
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 36
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_control_monad_free_fold",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_control_monad_free_fold",
+      "has_traced_theorems": true,
+      "theorem_count": 3,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 3
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_control_monad_free_fold/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 3,
+            "duration_seconds": 2043.8344537069788
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 3
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 3
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_data",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data",
+      "has_traced_theorems": false,
+      "theorem_count": 0,
+      "stages": {
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        },
+        "trace_pipeline": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_data_bitape",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_bitape",
+      "has_traced_theorems": true,
+      "theorem_count": 6,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 6
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_bitape/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 6,
+            "duration_seconds": 2183.5228333949344
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 6
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 6
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_data_finfun",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_finfun",
+      "has_traced_theorems": true,
+      "theorem_count": 22,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 22
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_finfun/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 22,
+            "duration_seconds": 2117.785564673017
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 22
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 22
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_data_hasfresh",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_hasfresh",
+      "has_traced_theorems": true,
+      "theorem_count": 1,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 1
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_hasfresh/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 1,
+            "duration_seconds": 2063.4158469400136
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 1
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_data_nat",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_nat",
+      "has_traced_theorems": true,
+      "theorem_count": 20,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 20
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_nat/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 20,
+            "duration_seconds": 2022.2825600879733
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 20
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 20
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_data_omegasequence",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_omegasequence",
+      "has_traced_theorems": true,
+      "theorem_count": 137,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 137
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_omegasequence/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 137,
+            "duration_seconds": 2127.2392988139763
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 137
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 137
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_data_relatesinsteps",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_relatesinsteps",
+      "has_traced_theorems": true,
+      "theorem_count": 23,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 23
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_relatesinsteps/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 23,
+            "duration_seconds": 2200.465637488989
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 23
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 23
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_data_relation",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_relation",
+      "has_traced_theorems": true,
+      "theorem_count": 52,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 52
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_relation/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 52,
+            "duration_seconds": 2121.9636564190732
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 52
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 52
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_data_set",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_set",
+      "has_traced_theorems": true,
+      "theorem_count": 2,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 2
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_set/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 2,
+            "duration_seconds": 2039.9651369900675
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 2
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 2
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_data_stacktape",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_stacktape",
+      "has_traced_theorems": true,
+      "theorem_count": 14,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 14
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_stacktape/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 14,
+            "duration_seconds": 2419.459417585982
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 14
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 14
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_logic",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_logic",
+      "has_traced_theorems": false,
+      "theorem_count": 0,
+      "stages": {
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_logic/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "failed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "error": "The current node timed out during startup. This could happen because some of the raylet failed to startup or the GCS has become overloaded."
+          }
+        },
+        "trace_pipeline": {
+          "status": "failed",
+          "payload": {
+            "reason": "trace_backend_failed"
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_logic_inferencesystem",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_logic_inferencesystem",
+      "has_traced_theorems": true,
+      "theorem_count": 1,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 1
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_logic_inferencesystem/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 1,
+            "duration_seconds": 2407.3552240169374
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 1
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_semantics",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_semantics",
+      "has_traced_theorems": true,
+      "theorem_count": 108,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 108
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_semantics/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 108,
+            "duration_seconds": 1756.7294783834368
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 108
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 108
+          }
+        }
+      }
+    },
+    {
+      "name": "foundations_syntax",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_syntax",
+      "has_traced_theorems": true,
+      "theorem_count": 0,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 0
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_syntax/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 0,
+            "duration_seconds": 3321.6316995937377
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 0
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_ccs",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_ccs",
+      "has_traced_theorems": true,
+      "theorem_count": 19,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 19
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_ccs/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 19,
+            "duration_seconds": 1588.23383939825
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 19
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 19
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_combinatorylogic",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic",
+      "has_traced_theorems": false,
+      "theorem_count": 0,
+      "stages": {
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        },
+        "trace_pipeline": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_combinatorylogic_basic",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_basic",
+      "has_traced_theorems": true,
+      "theorem_count": 30,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 30
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_basic/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 30,
+            "duration_seconds": 2300.4499923093244
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 30
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 30
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_combinatorylogic_confluence",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_confluence",
+      "has_traced_theorems": true,
+      "theorem_count": 13,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 13
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_confluence/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 13,
+            "duration_seconds": 2125.879218499991
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 13
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_combinatorylogic_defs",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_defs",
+      "has_traced_theorems": true,
+      "theorem_count": 11,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 11
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_defs/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 11,
+            "duration_seconds": 2160.9662445489084
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 11
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_combinatorylogic_evaluation",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_evaluation",
+      "has_traced_theorems": true,
+      "theorem_count": 20,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 20
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_evaluation/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 20,
+            "duration_seconds": 2104.8537800359773
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 20
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 20
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_combinatorylogic_list",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_list",
+      "has_traced_theorems": true,
+      "theorem_count": 23,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 23
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_list/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 23,
+            "duration_seconds": 69.41554331290536
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 23
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 23
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_combinatorylogic_recursion",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_recursion",
+      "has_traced_theorems": true,
+      "theorem_count": 45,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 45
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_combinatorylogic_recursion/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 45,
+            "duration_seconds": 2164.4181748069823
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 45
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 45
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_lambdacalculus",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus",
+      "has_traced_theorems": false,
+      "theorem_count": 0,
+      "stages": {
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        },
+        "trace_pipeline": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_lambdacalculus_locallynameless_context",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus_locallynameless_context",
+      "has_traced_theorems": true,
+      "theorem_count": 3,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 3
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus_locallynameless_context/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 3,
+            "duration_seconds": 1664.2333772289567
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 3
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 3
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_lambdacalculus_locallynameless_fsub",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus_locallynameless_fsub",
+      "has_traced_theorems": true,
+      "theorem_count": 91,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 91
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus_locallynameless_fsub/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 91,
+            "duration_seconds": 2123.845497771981
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 91
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 91
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_lambdacalculus_locallynameless_stlc",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus_locallynameless_stlc",
+      "has_traced_theorems": true,
+      "theorem_count": 16,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 16
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus_locallynameless_stlc/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 16,
+            "duration_seconds": 1541.8218541690148
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 16
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 16
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_lambdacalculus_locallynameless_untyped",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus_locallynameless_untyped",
+      "has_traced_theorems": true,
+      "theorem_count": 121,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 121
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus_locallynameless_untyped/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 121,
+            "duration_seconds": 2655.914019281976
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 121
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 121
+          }
+        }
+      }
+    },
+    {
+      "name": "languages_lambdacalculus_named",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus_named",
+      "has_traced_theorems": true,
+      "theorem_count": 2,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 2
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/languages_lambdacalculus_named/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 2,
+            "duration_seconds": 2523.9761881149607
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 2
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 2
+          }
+        }
+      }
+    },
+    {
+      "name": "logics_hml",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_hml",
+      "has_traced_theorems": false,
+      "theorem_count": 0,
+      "stages": {
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_hml/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "failed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "error": "The current node timed out during startup. This could happen because some of the raylet failed to startup or the GCS has become overloaded."
+          }
+        },
+        "trace_pipeline": {
+          "status": "failed",
+          "payload": {
+            "reason": "trace_backend_failed"
+          }
+        }
+      }
+    },
+    {
+      "name": "logics_hml_basic",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_hml_basic",
+      "has_traced_theorems": true,
+      "theorem_count": 15,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 15
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_hml_basic/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 15,
+            "duration_seconds": 2169.368281298899
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 15
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 15
+          }
+        }
+      }
+    },
+    {
+      "name": "logics_hml_logicalequivalence",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_hml_logicalequivalence",
+      "has_traced_theorems": true,
+      "theorem_count": 2,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 2
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_hml_logicalequivalence/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 2,
+            "duration_seconds": 2172.0607118230546
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 2
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 2
+          }
+        }
+      }
+    },
+    {
+      "name": "logics_linearlogic",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_linearlogic",
+      "has_traced_theorems": false,
+      "theorem_count": 0,
+      "stages": {
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_linearlogic/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        },
+        "trace_pipeline": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        }
+      }
+    },
+    {
+      "name": "logics_linearlogic_cll",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_linearlogic_cll",
+      "has_traced_theorems": true,
+      "theorem_count": 136,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 136
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_linearlogic_cll/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 136,
+            "duration_seconds": 2410.879573885002
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 136
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 136
+          }
+        }
+      }
+    },
+    {
+      "name": "logics_propositional",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_propositional",
+      "has_traced_theorems": false,
+      "theorem_count": 0,
+      "stages": {
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_propositional/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        },
+        "trace_pipeline": {
+          "status": "started",
+          "payload": {
+            "backend": "leandojo_v2"
+          }
+        }
+      }
+    },
+    {
+      "name": "logics_propositional_defs",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_propositional_defs",
+      "has_traced_theorems": true,
+      "theorem_count": 4,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 4
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_propositional_defs/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 4,
+            "duration_seconds": 2432.4448306170525
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 4
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 4
+          }
+        }
+      }
+    },
+    {
+      "name": "logics_propositional_naturaldeduction",
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_propositional_naturaldeduction",
+      "has_traced_theorems": true,
+      "theorem_count": 19,
+      "stages": {
+        "extract_traced_theorems": {
+          "status": "completed",
+          "payload": {
+            "count": 19
+          }
+        },
+        "preflight": {
+          "status": "completed",
+          "payload": {
+            "can_proceed": true,
+            "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_propositional_naturaldeduction/trace_preflight.json"
+          }
+        },
+        "trace_backend": {
+          "status": "completed",
+          "payload": {
+            "backend": "leandojo_v2",
+            "count": 19,
+            "duration_seconds": 2263.9993810000597
+          }
+        },
+        "trace_pipeline": {
+          "status": "completed",
+          "payload": {
+            "theorem_count": 19
+          }
+        },
+        "write_outputs": {
+          "status": "completed",
+          "payload": {
+            "count": 19
+          }
+        }
+      }
+    }
+  ]
+}

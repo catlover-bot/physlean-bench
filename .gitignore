@@ -60,3 +60,20 @@ physlean_eval_work/
 # Hugging Face / model cache
 hf_cache/
 hub/
+
+# Large / temporary benchmark execution outputs
+outputs/
+runs/
+tmp/
+cache/
+ray_tmp*/
+*.out
+*.err
+slurm-*.out
+
+# Python / Lean build caches
+__pycache__/
+*.pyc
+.venv*/
+.lake/
+lake-packages/

@@ -1,0 +1,27 @@
+{
+  "repo_dir": "/project/nlp-work11/hirotaka-m/physlean_repos/physlib",
+  "source_url": "https://github.com/leanprover-community/physlib.git",
+  "source_commit": "4ef4cb5e1af18faf59ca3437d50d260d05e9b85d",
+  "expected_source_commit": null,
+  "lean_toolchain": "leanprover/lean4:v4.29.1",
+  "trace_backend": "leandojo_v2",
+  "tracing_tool": "leandojo-v2",
+  "tracing_tool_version": "4.20.0",
+  "build_deps": false,
+  "include_prefixes": [
+    "PhysLean/",
+    "Physlib/"
+  ],
+  "exclude_prefixes": [
+    "QuantumInfo/"
+  ],
+  "cache_dir": "/project/nlp-work11/hirotaka-m/physlean_cache_rc13",
+  "tmp_dir": "/project/nlp-work11/hirotaka-m/physlean_trace_rc13_week_8cpu/tmp",
+  "traced_repo_root": "/project/nlp-work11/hirotaka-m/physlean_cache_rc13/gitpython-physlib-4ef4cb5e1af18faf59ca3437d50d260d05e9b85d/physlib",
+  "lake_binary": "/home/is/hirotaka-m/.elan/bin/lake",
+  "traced_jsonl_path": "/project/nlp-work11/hirotaka-m/physlean_trace_rc13_week_8cpu/traced_theorems.jsonl",
+  "theorem_count": 5601,
+  "trace_duration_seconds": 10344.714723990299,
+  "generated_at_utc": "2026-04-24T17:54:56.727333+00:00",
+  "preflight_json_path": "/project/nlp-work11/hirotaka-m/physlean_trace_rc13_week_8cpu/trace_preflight.json"
+}
