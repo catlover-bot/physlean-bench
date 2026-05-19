@@ -1,0 +1,48 @@
+{
+  "statement_only": {
+    "n": 50,
+    "passed": 3,
+    "timeout": 0,
+    "pass_at_1": 0.06,
+    "error_types": {
+      "other": 10,
+      "tactic_failed": 11,
+      "unsolved_goals": 7,
+      "unknown_identifier": 16,
+      "passed": 3,
+      "syntax_or_parser": 3
+    },
+    "passed_theorems": [
+      "WickContraction.congrLift_injective",
+      "Space.inner_self_cross",
+      "TensorSpecies.Tensor.Pure.evalPCoeff_update_succAbove"
+    ]
+  },
+  "local_context_80": {
+    "n": 50,
+    "passed": 0,
+    "timeout": 0,
+    "pass_at_1": 0.0,
+    "error_types": {
+      "syntax_or_parser": 21,
+      "unknown_identifier": 26,
+      "unsolved_goals": 2,
+      "tactic_failed": 1
+    },
+    "passed_theorems": []
+  },
+  "oracle_premises": {
+    "n": 50,
+    "passed": 0,
+    "timeout": 0,
+    "pass_at_1": 0.0,
+    "error_types": {
+      "unsolved_goals": 23,
+      "unknown_identifier": 14,
+      "tactic_failed": 5,
+      "other": 5,
+      "syntax_or_parser": 3
+    },
+    "passed_theorems": []
+  }
+}

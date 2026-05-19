@@ -1,0 +1,32 @@
+{
+  "benchmark": "cross_domain_cslib_v0",
+  "split": "test.cross_domain_pilot_100",
+  "model": "deepseek-ai/DeepSeek-Prover-V2-7B",
+  "prompt": "cross-domain statement-only",
+  "normalization": "byte-level normalized",
+  "n": 100,
+  "passed": 10,
+  "failed": 90,
+  "pass_at_1": 0.1,
+  "timeouts": 0,
+  "passed_theorems": [
+    "Cslib.ωSequence.flatten_def",
+    "Cslib.ωSequence.drop_const",
+    "Cslib.ωSequence.drop_tail'",
+    "Cslib.ωSequence.get_succ_iterate",
+    "Cslib.ωSequence.head_map",
+    "Cslib.ωSequence.head_zip",
+    "Cslib.ωSequence.map_id",
+    "Cslib.ωSequence.tail_const",
+    "Cslib.ωSequence.tail_eq_drop",
+    "Cslib.ωSequence.cons_injective_left"
+  ],
+  "by_cross_domain_type": {
+    "UNKNOWN": {
+      "n": 100,
+      "passed": 10,
+      "pass_rate": 0.1
+    }
+  },
+  "domain_counts_in_pilot": {}
+}

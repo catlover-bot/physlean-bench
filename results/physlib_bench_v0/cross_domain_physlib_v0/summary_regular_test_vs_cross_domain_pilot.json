@@ -1,0 +1,15 @@
+{
+  "regular_test_statement_only": {
+    "n": 680,
+    "passed": 81,
+    "pass_at_1": 0.11911764705882352,
+    "timeout": 0
+  },
+  "cross_domain_physlib_v0_statement_only": {
+    "n": 100,
+    "passed": 2,
+    "pass_at_1": 0.02,
+    "timeout": 0
+  },
+  "interpretation": "The Physlib-internal cross-domain pilot is substantially harder than the regular held-out test split under the same DeepSeek-Prover-V2-7B statement-only setting."
+}

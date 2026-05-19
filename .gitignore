@@ -77,3 +77,29 @@ __pycache__/
 .venv*/
 .lake/
 lake-packages/
+
+# Large/generated local work dirs
+.venv/
+.venv-dsp/
+__pycache__/
+*.pyc
+
+# Cluster / trace / eval scratch
+physlean_logs/
+cslib_eval_work/
+physlean_eval_work/
+cslib_cache*/
+scilean_cache*/
+ray_tmp*/
+tmp/
+
+# Do not commit external repos or datasets
+chem_candidates/
+ARKitScenes/
+hf_cache/
+pip_cache/
+
+# Slurm logs
+*.out
+*.err
+slurm-*.out

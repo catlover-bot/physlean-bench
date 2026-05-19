@@ -1,0 +1,46 @@
+{
+  "source": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0",
+  "n_total": 415,
+  "n_cross_domain": 172,
+  "cross_domain_ratio": 0.41445783132530123,
+  "by_split": {
+    "test": {
+      "n": 415,
+      "cross_domain": 172,
+      "ratio": 0.41445783132530123
+    }
+  },
+  "domain_counts_all": {
+    "Automata": 7,
+    "FormalLanguage": 62,
+    "Computability": 19,
+    "DataStructure": 124,
+    "Semantics": 3,
+    "CombinatoryLogic": 23,
+    "LambdaCalculus": 70,
+    "LinearLogic": 107
+  },
+  "domain_counts_cross": {
+    "Automata": 5,
+    "FormalLanguage": 25,
+    "DataStructure": 124,
+    "Semantics": 2,
+    "CombinatoryLogic": 9,
+    "LambdaCalculus": 3,
+    "LinearLogic": 4
+  },
+  "domain_pair_counts_cross": {
+    "DataStructure+OmegaSequence": 114,
+    "FormalLanguage+OmegaSequence": 24,
+    "DataStructure+FormalLanguage+OmegaSequence": 9,
+    "CombinatoryLogic+OmegaSequence": 8,
+    "Automata+OmegaSequence": 4,
+    "LinearLogic+OmegaSequence": 4,
+    "LambdaCalculus+OmegaSequence": 3,
+    "Automata+Semantics": 2,
+    "Automata+FormalLanguage+OmegaSequence": 1,
+    "Computability+FormalLanguage+OmegaSequence": 1,
+    "DataStructure+LinearLogic+OmegaSequence": 1,
+    "CombinatoryLogic+LinearLogic": 1
+  }
+}

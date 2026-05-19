@@ -1,0 +1,124 @@
+{
+  "setting": "cross_domain_physlib_v0_statement_only",
+  "model": "deepseek-ai/DeepSeek-Prover-V2-7B",
+  "n": 100,
+  "passed": 2,
+  "timeout": 0,
+  "pass_at_1": 0.02,
+  "error_types": {
+    "other": 16,
+    "unknown_identifier": 22,
+    "unsolved_goals": 22,
+    "tactic_failed": 30,
+    "syntax_or_parser": 8,
+    "passed": 2
+  },
+  "passed_theorems": [
+    "TensorSpecies.Tensor.Pure.dropPair_comm",
+    "PureU1.constAbs_sort"
+  ],
+  "by_cross_domain_type": {
+    "Mathematics+Relativity": {
+      "n": 38,
+      "passed": 1,
+      "pass_at_1": 0.02631578947368421
+    },
+    "Particles+QFT": {
+      "n": 26,
+      "passed": 1,
+      "pass_at_1": 0.038461538461538464
+    },
+    "Particles+Relativity": {
+      "n": 9,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Particles+SpaceAndTime": {
+      "n": 6,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Electromagnetism+Relativity+SpaceAndTime": {
+      "n": 4,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Mathematics+QuantumMechanics": {
+      "n": 4,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "QuantumMechanics+SpaceAndTime": {
+      "n": 4,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Electromagnetism+SpaceAndTime": {
+      "n": 3,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Electromagnetism+Relativity": {
+      "n": 2,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Thermodynamics+Units": {
+      "n": 2,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Mathematics+QuantumMechanics+SpaceAndTime": {
+      "n": 1,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Mathematics+SpaceAndTime": {
+      "n": 1,
+      "passed": 0,
+      "pass_at_1": 0.0
+    }
+  },
+  "by_primary_domain": {
+    "Relativity": {
+      "n": 47,
+      "passed": 1,
+      "pass_at_1": 0.02127659574468085
+    },
+    "QFT": {
+      "n": 26,
+      "passed": 1,
+      "pass_at_1": 0.038461538461538464
+    },
+    "Electromagnetism": {
+      "n": 9,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "QuantumMechanics": {
+      "n": 8,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Particles": {
+      "n": 6,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Units": {
+      "n": 2,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "Mathematics": {
+      "n": 1,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "SpaceAndTime": {
+      "n": 1,
+      "passed": 0,
+      "pass_at_1": 0.0
+    }
+  }
+}
