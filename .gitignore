@@ -103,3 +103,4 @@ pip_cache/
 *.out
 *.err
 slurm-*.out
+.env.llm

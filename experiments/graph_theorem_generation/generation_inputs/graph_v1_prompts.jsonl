@@ -1,0 +1,10 @@
+{"id":"graph_gen_v1_001","prompt":"Generate one Lean theorem candidate about K_n as SimpleGraph.completeGraph (Fin n), using degree or connectivity. Return only Lean code inside namespace GraphGeneratedLLM."}
+{"id":"graph_gen_v1_002","prompt":"Generate one Lean theorem candidate combining SimpleGraph.completeGraph_eq_top and SimpleGraph.complete_graph_degree. Return only Lean code inside namespace GraphGeneratedLLM."}
+{"id":"graph_gen_v1_003","prompt":"Generate one Lean theorem candidate about top graph ⊤ : SimpleGraph (Fin n), using degree. Return only Lean code inside namespace GraphGeneratedLLM."}
+{"id":"graph_gen_v1_004","prompt":"Generate one Lean theorem candidate about K_(n+1) being connected. Return only Lean code inside namespace GraphGeneratedLLM."}
+{"id":"graph_gen_v1_005","prompt":"Generate one Lean theorem candidate combining pathGraph_connected and pathGraph_le_cycleGraph. Return only Lean code inside namespace GraphGeneratedLLM."}
+{"id":"graph_gen_v1_006","prompt":"Generate one Lean theorem candidate combining cycleGraph_connected and cycleGraph_degree_three_le. Return only Lean code inside namespace GraphGeneratedLLM."}
+{"id":"graph_gen_v1_007","prompt":"Generate one Lean theorem candidate using SimpleGraph.sum_degrees_eq_twice_card_edges for completeGraph (Fin n). Return only Lean code inside namespace GraphGeneratedLLM."}
+{"id":"graph_gen_v1_008","prompt":"Generate one Lean theorem candidate using SimpleGraph.even_card_odd_degree_vertices for completeGraph (Fin n). Return only Lean code inside namespace GraphGeneratedLLM."}
+{"id":"graph_gen_v1_009","prompt":"Generate one Lean theorem candidate relating pathGraph 2 and completeGraph (Fin 2). Return only Lean code inside namespace GraphGeneratedLLM."}
+{"id":"graph_gen_v1_010","prompt":"Generate one nontrivial composed Lean theorem candidate about complete graphs, path graphs, or cycle graphs, using at least two existing SimpleGraph lemmas. Return only Lean code inside namespace GraphGeneratedLLM."}

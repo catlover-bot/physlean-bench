@@ -1,0 +1,10 @@
+{"id": "graph_v0_001", "name": "K_eq_completeGraph", "status": "verified", "source": "experiments/graph_theorem_generation/graph_new_theorem_candidates_v0.lean"}
+{"id": "graph_v0_002", "name": "K_eq_top", "status": "verified", "source": "experiments/graph_theorem_generation/graph_new_theorem_candidates_v0.lean"}
+{"id": "graph_v0_003", "name": "K_degree", "status": "verified", "source": "experiments/graph_theorem_generation/graph_new_theorem_candidates_v0.lean"}
+{"id": "graph_v0_004", "name": "top_degree_fin", "status": "verified", "source": "experiments/graph_theorem_generation/graph_new_theorem_candidates_v0.lean"}
+{"id": "graph_v0_005", "name": "K_connected_succ", "status": "verified", "source": "experiments/graph_theorem_generation/graph_new_theorem_candidates_v0.lean"}
+{"id": "graph_v0_006", "name": "top_connected_fin_succ", "status": "verified", "source": "experiments/graph_theorem_generation/graph_new_theorem_candidates_v0.lean"}
+{"id": "graph_v0_007", "name": "path_connected_succ", "status": "verified", "source": "experiments/graph_theorem_generation/graph_new_theorem_candidates_v0.lean"}
+{"id": "graph_v0_008", "name": "cycle_connected_succ", "status": "verified", "source": "experiments/graph_theorem_generation/graph_new_theorem_candidates_v0.lean"}
+{"id": "graph_v0_009", "name": "cycle_degree_two", "status": "verified", "source": "experiments/graph_theorem_generation/graph_new_theorem_candidates_v0.lean"}
+{"id": "graph_v0_010", "name": "path_le_cycle", "status": "verified", "source": "experiments/graph_theorem_generation/graph_new_theorem_candidates_v0.lean"}
