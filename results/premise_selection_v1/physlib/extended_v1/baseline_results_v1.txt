@@ -1,0 +1,20 @@
+Physlib Premise Selection v1 — Test Baselines
+========================================================================
+
+targets=308 gold_labels=726
+
+baseline                      MRR      R@1      R@5     R@10     R@20     R@50
+-------------------------------------------------------------------------------
+random                     0.0789   0.0083   0.0455   0.0923   0.1488   0.2672
+name_jaccard               0.4813   0.1391   0.3609   0.4477   0.5510   0.6791
+bm25                       0.5562   0.1708   0.4063   0.5110   0.6019   0.7493
+import_graph               0.4612   0.1419   0.3264   0.4091   0.5096   0.6556
+bm25_graph_hybrid          0.5482   0.1639   0.4270   0.5234   0.6102   0.7562
+
+Local/imported Recall@20
+------------------------------------------------------------------------
+random                   local=0.2273 imported=0.1039
+name_jaccard             local=0.9280 imported=0.3355
+bm25                     local=0.9394 imported=0.4091
+import_graph             local=1.0000 imported=0.2294
+bm25_graph_hybrid        local=0.9697 imported=0.4048

@@ -1,0 +1,268 @@
+{
+  "physlib_v3_0020_0059_original": {
+    "path": "/project/nlp-work11/hirotaka-m/theorem_generation/nonlocal_batch_v3/openai_physlib_nonlocal_lean_check_0020_0059.jsonl",
+    "status": {
+      "timeout": 1,
+      "fail": 39
+    },
+    "error_categories": {
+      "timeout": 1,
+      "unknown_identifier": 32,
+      "unexpected_token": 31,
+      "unsolved_goals": 15,
+      "other": 4,
+      "type_mismatch": 3,
+      "failed_synth": 1
+    },
+    "samples": {
+      "timeout": [
+        "physlib_nonlocal_v3_0020"
+      ],
+      "unknown_identifier": [
+        "physlib_nonlocal_v3_0021",
+        "physlib_nonlocal_v3_0022",
+        "physlib_nonlocal_v3_0023",
+        "physlib_nonlocal_v3_0024",
+        "physlib_nonlocal_v3_0025"
+      ],
+      "unexpected_token": [
+        "physlib_nonlocal_v3_0021",
+        "physlib_nonlocal_v3_0023",
+        "physlib_nonlocal_v3_0024",
+        "physlib_nonlocal_v3_0025",
+        "physlib_nonlocal_v3_0029"
+      ],
+      "unsolved_goals": [
+        "physlib_nonlocal_v3_0022",
+        "physlib_nonlocal_v3_0023",
+        "physlib_nonlocal_v3_0038",
+        "physlib_nonlocal_v3_0039",
+        "physlib_nonlocal_v3_0045"
+      ],
+      "other": [
+        "physlib_nonlocal_v3_0026",
+        "physlib_nonlocal_v3_0030",
+        "physlib_nonlocal_v3_0043",
+        "physlib_nonlocal_v3_0044"
+      ],
+      "type_mismatch": [
+        "physlib_nonlocal_v3_0031",
+        "physlib_nonlocal_v3_0033",
+        "physlib_nonlocal_v3_0050"
+      ],
+      "failed_synth": [
+        "physlib_nonlocal_v3_0051"
+      ]
+    }
+  },
+  "physlib_v3_0020_0059_repaired": {
+    "path": "/project/nlp-work11/hirotaka-m/theorem_generation/nonlocal_batch_v3/openai_physlib_nonlocal_repaired_lean_check_0020_0059.jsonl",
+    "status": {
+      "fail": 37,
+      "pass": 2
+    },
+    "error_categories": {
+      "unknown_identifier": 16,
+      "already_declared": 15,
+      "unsolved_goals": 2,
+      "type_mismatch": 3,
+      "unexpected_token": 8,
+      "other": 2,
+      "timeout": 1
+    },
+    "samples": {
+      "unknown_identifier": [
+        "physlib_nonlocal_v3_0021",
+        "physlib_nonlocal_v3_0025",
+        "physlib_nonlocal_v3_0030",
+        "physlib_nonlocal_v3_0031",
+        "physlib_nonlocal_v3_0032"
+      ],
+      "already_declared": [
+        "physlib_nonlocal_v3_0023",
+        "physlib_nonlocal_v3_0024",
+        "physlib_nonlocal_v3_0026",
+        "physlib_nonlocal_v3_0027",
+        "physlib_nonlocal_v3_0029"
+      ],
+      "unsolved_goals": [
+        "physlib_nonlocal_v3_0025",
+        "physlib_nonlocal_v3_0038"
+      ],
+      "type_mismatch": [
+        "physlib_nonlocal_v3_0028",
+        "physlib_nonlocal_v3_0035",
+        "physlib_nonlocal_v3_0040"
+      ],
+      "unexpected_token": [
+        "physlib_nonlocal_v3_0028",
+        "physlib_nonlocal_v3_0032",
+        "physlib_nonlocal_v3_0035",
+        "physlib_nonlocal_v3_0037",
+        "physlib_nonlocal_v3_0038"
+      ],
+      "other": [
+        "physlib_nonlocal_v3_0043",
+        "physlib_nonlocal_v3_0044"
+      ],
+      "timeout": [
+        "physlib_nonlocal_v3_0051"
+      ]
+    }
+  },
+  "cslib_first20_original": {
+    "path": "/project/nlp-work11/hirotaka-m/theorem_generation/cslib_nonlocal_batch_v0/openai_cslib_nonlocal_lean_check_first20.jsonl",
+    "status": {
+      "timeout": 1,
+      "fail": 19
+    },
+    "error_categories": {
+      "timeout": 1,
+      "unknown_identifier": 12,
+      "unexpected_token": 13,
+      "invalid_field": 2,
+      "type_mismatch": 3,
+      "failed_synth": 4,
+      "unsolved_goals": 2,
+      "other": 1
+    },
+    "samples": {
+      "timeout": [
+        "cslib_nonlocal_v0_0000"
+      ],
+      "unknown_identifier": [
+        "cslib_nonlocal_v0_0001",
+        "cslib_nonlocal_v0_0002",
+        "cslib_nonlocal_v0_0003",
+        "cslib_nonlocal_v0_0004",
+        "cslib_nonlocal_v0_0005"
+      ],
+      "unexpected_token": [
+        "cslib_nonlocal_v0_0001",
+        "cslib_nonlocal_v0_0002",
+        "cslib_nonlocal_v0_0004",
+        "cslib_nonlocal_v0_0005",
+        "cslib_nonlocal_v0_0006"
+      ],
+      "invalid_field": [
+        "cslib_nonlocal_v0_0001",
+        "cslib_nonlocal_v0_0019"
+      ],
+      "type_mismatch": [
+        "cslib_nonlocal_v0_0002",
+        "cslib_nonlocal_v0_0005",
+        "cslib_nonlocal_v0_0014"
+      ],
+      "failed_synth": [
+        "cslib_nonlocal_v0_0003",
+        "cslib_nonlocal_v0_0007",
+        "cslib_nonlocal_v0_0008",
+        "cslib_nonlocal_v0_0014"
+      ],
+      "unsolved_goals": [
+        "cslib_nonlocal_v0_0008",
+        "cslib_nonlocal_v0_0019"
+      ],
+      "other": [
+        "cslib_nonlocal_v0_0012"
+      ]
+    }
+  },
+  "cslib_first20_repaired_v1": {
+    "path": "/project/nlp-work11/hirotaka-m/theorem_generation/cslib_nonlocal_batch_v0/openai_cslib_nonlocal_repaired_lean_check_first20.jsonl",
+    "status": {
+      "fail": 18,
+      "pass": 2
+    },
+    "error_categories": {
+      "unknown_identifier": 8,
+      "unexpected_token": 7,
+      "type_mismatch": 1,
+      "failed_synth": 2,
+      "other": 3
+    },
+    "samples": {
+      "unknown_identifier": [
+        "cslib_nonlocal_v0_0000",
+        "cslib_nonlocal_v0_0001",
+        "cslib_nonlocal_v0_0002",
+        "cslib_nonlocal_v0_0003",
+        "cslib_nonlocal_v0_0010"
+      ],
+      "unexpected_token": [
+        "cslib_nonlocal_v0_0004",
+        "cslib_nonlocal_v0_0005",
+        "cslib_nonlocal_v0_0010",
+        "cslib_nonlocal_v0_0011",
+        "cslib_nonlocal_v0_0012"
+      ],
+      "type_mismatch": [
+        "cslib_nonlocal_v0_0005"
+      ],
+      "failed_synth": [
+        "cslib_nonlocal_v0_0007",
+        "cslib_nonlocal_v0_0008"
+      ],
+      "other": [
+        "cslib_nonlocal_v0_0009",
+        "cslib_nonlocal_v0_0014",
+        "cslib_nonlocal_v0_0016"
+      ]
+    }
+  },
+  "cslib_first20_repaired_v2": {
+    "path": "/project/nlp-work11/hirotaka-m/theorem_generation/cslib_nonlocal_batch_v0/openai_cslib_nonlocal_repaired_lean_check_first20_v2_no_direct_target.jsonl",
+    "status": {
+      "fail": 19,
+      "pass": 1
+    },
+    "error_categories": {
+      "unknown_identifier": 10,
+      "failed_synth": 6,
+      "unexpected_token": 11,
+      "invalid_field": 2,
+      "unsolved_goals": 3,
+      "type_mismatch": 2,
+      "other": 1
+    },
+    "samples": {
+      "unknown_identifier": [
+        "cslib_nonlocal_v0_0000",
+        "cslib_nonlocal_v0_0002",
+        "cslib_nonlocal_v0_0003",
+        "cslib_nonlocal_v0_0005",
+        "cslib_nonlocal_v0_0006"
+      ],
+      "failed_synth": [
+        "cslib_nonlocal_v0_0001",
+        "cslib_nonlocal_v0_0002",
+        "cslib_nonlocal_v0_0003",
+        "cslib_nonlocal_v0_0007",
+        "cslib_nonlocal_v0_0008"
+      ],
+      "unexpected_token": [
+        "cslib_nonlocal_v0_0002",
+        "cslib_nonlocal_v0_0003",
+        "cslib_nonlocal_v0_0004",
+        "cslib_nonlocal_v0_0005",
+        "cslib_nonlocal_v0_0010"
+      ],
+      "invalid_field": [
+        "cslib_nonlocal_v0_0005",
+        "cslib_nonlocal_v0_0019"
+      ],
+      "unsolved_goals": [
+        "cslib_nonlocal_v0_0006",
+        "cslib_nonlocal_v0_0013",
+        "cslib_nonlocal_v0_0019"
+      ],
+      "type_mismatch": [
+        "cslib_nonlocal_v0_0010",
+        "cslib_nonlocal_v0_0014"
+      ],
+      "other": [
+        "cslib_nonlocal_v0_0012"
+      ]
+    }
+  }
+}

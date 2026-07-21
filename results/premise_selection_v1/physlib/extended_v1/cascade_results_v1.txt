@@ -1,0 +1,17 @@
+BM25-prefix protected dependency-transfer cascade
+==================================================================================
+
+Validation BM25
+MRR=0.5351 R@20=0.6044 imported@20=0.4281
+
+Balanced configuration selected on validation
+----------------------------------------------------------------------------------
+transfer_weight=0.4 protected_prefix=10
+validation: MRR=0.5364 R@20=0.6407 imported@20=0.4799
+test:       MRR=0.5564 R@5=0.4077 R@10=0.5110 R@20=0.6377 R@50=0.7782 local@20=0.9129 imported@20=0.4805
+
+Recall-oriented configuration selected on validation
+----------------------------------------------------------------------------------
+transfer_weight=0.4 protected_prefix=10
+validation: MRR=0.5364 R@20=0.6407 imported@20=0.4799
+test:       MRR=0.5564 R@5=0.4077 R@10=0.5110 R@20=0.6377 R@50=0.7782 local@20=0.9129 imported@20=0.4805

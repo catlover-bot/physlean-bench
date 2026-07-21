@@ -1,0 +1,123 @@
+{
+  "input_edges": 6336,
+  "strict_candidates": 2360,
+  "selected": 50,
+  "unique_sources": 50,
+  "unique_targets": 50,
+  "unique_source_files": 30,
+  "unique_target_files": 30,
+  "area_pair_counts": {
+    "urm|urm": 7,
+    "ccs|ccs": 3,
+    "omega_sequence|omega_sequence": 6,
+    "hml|hml": 4,
+    "relation_steps|relation_steps": 7,
+    "automata|automata": 10,
+    "lts|lts": 7,
+    "other|other": 3,
+    "flts|flts": 3
+  },
+  "motif_counts": {
+    "halt_bound_computation": 6,
+    "lts_transition_api": 23,
+    "order_relation_law": 27,
+    "relation_equiv": 17,
+    "simulation_bisimulation": 21,
+    "trace_composition": 9,
+    "urm_computability": 7,
+    "acceptance_language_bridge": 19,
+    "automata_language": 19,
+    "ccs_hml_semantics": 10,
+    "reachability_steps": 9
+  },
+  "top_files": [
+    [
+      "Cslib/Foundations/Data/RelatesInSteps.lean",
+      8
+    ],
+    [
+      "Cslib/Logics/HML/Basic.lean",
+      6
+    ],
+    [
+      "Cslib/Foundations/Data/OmegaSequence/Flatten.lean",
+      6
+    ],
+    [
+      "Cslib/Foundations/Data/Relation.lean",
+      6
+    ],
+    [
+      "Cslib/Languages/CCS/BehaviouralTheory.lean",
+      4
+    ],
+    [
+      "Cslib/Computability/URM/StraightLine.lean",
+      4
+    ],
+    [
+      "Cslib/Computability/URM/StandardForm.lean",
+      4
+    ],
+    [
+      "Cslib/Foundations/Data/OmegaSequence/Init.lean",
+      4
+    ],
+    [
+      "Cslib/Foundations/Semantics/LTS/Total.lean",
+      4
+    ],
+    [
+      "Cslib/Foundations/Data/Nat/Segment.lean",
+      4
+    ],
+    [
+      "Cslib/Computability/Automata/NA/Hist.lean",
+      4
+    ],
+    [
+      "Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean",
+      4
+    ],
+    [
+      "Cslib/Computability/Automata/NA/BuchiInter.lean",
+      4
+    ],
+    [
+      "Cslib/Foundations/Semantics/LTS/HasTau.lean",
+      4
+    ],
+    [
+      "Cslib/Computability/URM/Basic.lean",
+      3
+    ],
+    [
+      "Cslib/Computability/URM/Execution.lean",
+      3
+    ],
+    [
+      "Cslib/Foundations/Data/OmegaSequence/InfOcc.lean",
+      2
+    ],
+    [
+      "Cslib/Computability/Automata/NA/BuchiEquiv.lean",
+      2
+    ],
+    [
+      "Cslib/Computability/Automata/NA/Sum.lean",
+      2
+    ],
+    [
+      "Cslib/Foundations/Semantics/LTS/Basic.lean",
+      2
+    ]
+  ],
+  "score_range": [
+    6.413333,
+    24.38
+  ],
+  "mmr_score_range": [
+    -19.16,
+    34.934286
+  ]
+}

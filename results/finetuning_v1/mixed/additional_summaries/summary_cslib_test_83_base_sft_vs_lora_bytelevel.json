@@ -1,0 +1,42 @@
+{
+  "benchmark": "cslib_test_83",
+  "comparison": "base_sft_prompt_bytelevel_vs_mixed_lora_bytelevel",
+  "n": 83,
+  "base_passed": 4,
+  "base_pass_at_1": 0.04819277108433735,
+  "lora_passed": 7,
+  "lora_pass_at_1": 0.08433734939759036,
+  "delta_passed": 3,
+  "delta_pass_at_1": 0.03614457831325301,
+  "base_passed_theorems": [
+    "Cslib.Logic.CLL.PhaseSpace.mem_top",
+    "Cslib.URM.Regs.State.isHalted_iff",
+    "Cslib.URM.Regs.write_read_self",
+    "Cslib.ωSequence.drop_zero"
+  ],
+  "lora_passed_theorems": [
+    "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.subst_tm_def",
+    "Cslib.SKI.List.toChurch_nil",
+    "Cslib.ωSequence.drop_succ",
+    "Cslib.ωSequence.drop_zero",
+    "Cslib.ωSequence.head_zip",
+    "Cslib.ωSequence.tail_cons",
+    "Cslib.ωSequence.tail_const"
+  ],
+  "lora_only": [
+    "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.subst_tm_def",
+    "Cslib.SKI.List.toChurch_nil",
+    "Cslib.ωSequence.drop_succ",
+    "Cslib.ωSequence.head_zip",
+    "Cslib.ωSequence.tail_cons",
+    "Cslib.ωSequence.tail_const"
+  ],
+  "base_only": [
+    "Cslib.Logic.CLL.PhaseSpace.mem_top",
+    "Cslib.URM.Regs.State.isHalted_iff",
+    "Cslib.URM.Regs.write_read_self"
+  ],
+  "both_pass": [
+    "Cslib.ωSequence.drop_zero"
+  ]
+}

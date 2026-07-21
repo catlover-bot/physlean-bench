@@ -1,0 +1,22 @@
+Adaptive import-aware premise ranking v1
+==============================================================================================
+
+Validation BM25
+MRR=0.5351 R@20=0.6044 local@20=0.9423 imported@20=0.4281
+
+Selected adaptive configuration
+----------------------------------------------------------------------------------------------
+threshold=0.487754 protected_prefix=5 imported_quota=4 transfer_weight=0.5
+validation activated=271/339 (0.7994)
+validation: MRR=0.5369 R@20=0.6418 R@50=0.7473 local@20=0.9423 imported@20=0.4849
+
+Test comparison
+----------------------------------------------------------------------------------------------
+BM25:       MRR=0.5547 R@5=0.4077 R@10=0.5110 R@20=0.6019 R@50=0.7493 local@20=0.9394 imported@20=0.4091
+Fixed:      MRR=0.5564 R@5=0.4077 R@10=0.5358 R@20=0.6350 R@50=0.7741 local@20=0.9318 imported@20=0.4654
+Adaptive:   MRR=0.5553 R@5=0.4077 R@10=0.5262 R@20=0.6212 R@50=0.7713 local@20=0.9318 imported@20=0.4437
+Adaptive activated=235/308 (0.7630)
+
+Per-target Recall@20: Adaptive vs BM25
+----------------------------------------------------------------------------------------------
+wins=20 ties=283 losses=5

@@ -1,0 +1,24 @@
+{
+  "benchmark": "cslib_test_83",
+  "prompt": "same SFT prompt",
+  "base_model": "deepseek-ai/DeepSeek-Prover-V2-7B",
+  "lora_adapter": "mixed_lora_full_v0",
+  "n": 83,
+  "base_passed": 0,
+  "base_pass_at_1": 0.0,
+  "lora_passed": 7,
+  "lora_pass_at_1": 0.08433734939759036,
+  "delta_passed": 7,
+  "delta_pass_at_1": 0.08433734939759036,
+  "lora_only": [
+    "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.subst_tm_def",
+    "Cslib.SKI.List.toChurch_nil",
+    "Cslib.ωSequence.drop_succ",
+    "Cslib.ωSequence.drop_zero",
+    "Cslib.ωSequence.head_zip",
+    "Cslib.ωSequence.tail_cons",
+    "Cslib.ωSequence.tail_const"
+  ],
+  "base_only": [],
+  "both_pass": []
+}

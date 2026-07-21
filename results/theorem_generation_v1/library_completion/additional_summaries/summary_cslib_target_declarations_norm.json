@@ -1,0 +1,25 @@
+{
+  "input": "cslib_target_declarations_raw.jsonl",
+  "output": "cslib_target_declarations_norm.jsonl",
+  "declarations": 758,
+  "kind_counts": {
+    "structure": 21,
+    "inductive": 15,
+    "theorem": 456,
+    "def": 155,
+    "class": 9,
+    "lemma": 73,
+    "abbrev": 29
+  },
+  "family_counts": {
+    "relation_equiv": 281,
+    "transition_lts": 340,
+    "reachability_steps": 45,
+    "automata_language": 284,
+    "ccs_process": 43,
+    "urm_computability": 91,
+    "other": 58,
+    "modal_logic_hml": 32
+  },
+  "duplicate_name_count": 2
+}

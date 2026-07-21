@@ -1,0 +1,47 @@
+[
+  {
+    "batch": "physlib_v3_0020_0059_original",
+    "path": "/project/nlp-work11/hirotaka-m/theorem_generation/nonlocal_batch_v3/openai_physlib_nonlocal_lean_check_0020_0059.jsonl",
+    "pass": 0,
+    "fail": 39,
+    "timeout": 1,
+    "adoptable": 0,
+    "note": "original generation; no pass"
+  },
+  {
+    "batch": "physlib_v3_0020_0059_repaired",
+    "path": "/project/nlp-work11/hirotaka-m/theorem_generation/nonlocal_batch_v3/openai_physlib_nonlocal_repaired_lean_check_0020_0059.jsonl",
+    "pass": 2,
+    "fail": 37,
+    "timeout": 0,
+    "adoptable": 0,
+    "note": "2 pass but both name-collision/restatement; adoptable 0"
+  },
+  {
+    "batch": "cslib_first20_original",
+    "path": "/project/nlp-work11/hirotaka-m/theorem_generation/cslib_nonlocal_batch_v0/openai_cslib_nonlocal_lean_check_first20.jsonl",
+    "pass": 0,
+    "fail": 19,
+    "timeout": 1,
+    "adoptable": 0,
+    "note": "original generation; no pass"
+  },
+  {
+    "batch": "cslib_first20_repaired_v1",
+    "path": "/project/nlp-work11/hirotaka-m/theorem_generation/cslib_nonlocal_batch_v0/openai_cslib_nonlocal_repaired_lean_check_first20.jsonl",
+    "pass": 2,
+    "fail": 18,
+    "timeout": 0,
+    "adoptable": 0,
+    "note": "2 pass but both direct restatements; adoptable 0"
+  },
+  {
+    "batch": "cslib_first20_repaired_v2_no_direct_target",
+    "path": "/project/nlp-work11/hirotaka-m/theorem_generation/cslib_nonlocal_batch_v0/openai_cslib_nonlocal_repaired_lean_check_first20_v2_no_direct_target.jsonl",
+    "pass": 1,
+    "fail": 19,
+    "timeout": 0,
+    "adoptable": 0,
+    "note": "1 pass but still directly uses target theorem; adoptable 0"
+  }
+]

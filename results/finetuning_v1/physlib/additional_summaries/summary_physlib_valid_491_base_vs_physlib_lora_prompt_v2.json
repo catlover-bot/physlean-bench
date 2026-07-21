@@ -1,0 +1,17 @@
+{
+  "benchmark": "physlib_valid_491",
+  "prompt_version": "prompt_v2_lean_strategy",
+  "base_model": "deepseek-ai/DeepSeek-Prover-V2-7B",
+  "fine_tuned_model": "physlib_lora_full_v0",
+  "train_data": "physlib_train.sft.jsonl",
+  "n": 491,
+  "base_passed": 0,
+  "base_pass_at_1": 0.0,
+  "fine_tuned_passed": 0,
+  "fine_tuned_pass_at_1": 0.0,
+  "delta_passed": 0,
+  "delta_pass_at_1": 0.0,
+  "base_only": [],
+  "fine_tuned_only": [],
+  "both_pass": []
+}

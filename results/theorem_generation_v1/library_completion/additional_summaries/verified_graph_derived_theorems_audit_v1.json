@@ -1,0 +1,40 @@
+{
+  "source_file": "verified_graph_derived_theorems_v1.jsonl",
+  "total": 11,
+  "by_library": {
+    "CSLib": 7,
+    "Physlib": 4
+  },
+  "by_area": {
+    "lts": 4,
+    "space_distribution": 4,
+    "flts": 2,
+    "automata_hist": 1
+  },
+  "by_graph_rule": {
+    "LTS_TRACE_COMPOSITION_API": 2,
+    "CROSS_LIBRARY_BOUNDED_MONO_PATTERN_TRANSFER": 1,
+    "CROSS_LIBRARY_BOUNDED_CONSTRUCTION_PATTERN_TRANSFER": 1,
+    "CROSS_LIBRARY_BOUNDED_COMPOSITION_PATTERN_TRANSFER": 2,
+    "LOCAL_API_COMPOSITION": 2,
+    "FLTS_LTS_TRANSFER_API": 1,
+    "FLTS_TRACE_COMPOSITION_API": 1,
+    "AUTOMATA_HISTORY_PROJECTION_LIFTING_BRIDGE": 1
+  },
+  "by_job_id": {
+    "501898": 1,
+    "501902": 1,
+    "501908": 1,
+    "501928": 1,
+    "501931": 2,
+    "504413": 2,
+    "504419": 2,
+    "504420": 1
+  },
+  "duplicate_ids": [],
+  "missing_fields": {},
+  "invalid_rows": [],
+  "all_verified": true,
+  "all_unique": true,
+  "schema_complete": true
+}
