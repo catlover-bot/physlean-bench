@@ -1,0 +1,60 @@
+{
+  "benchmark_name": "Physlib Premise Selection v1",
+  "source_commit": "4ef4cb5e1af18faf59ca3437d50d260d05e9b85d",
+  "candidate_definition": {
+    "same_file": "eligible theorem/lemma declarations before the target",
+    "imported_modules": "eligible theorem/lemma declarations in transitive Physlib imports",
+    "target_excluded": true
+  },
+  "gold_definition": "used_premises intersect eligible Physlib theorem/lemma declarations",
+  "split_definition": {
+    "unit": "module_path",
+    "module_disjoint": true,
+    "target_ratio": "approximately 80/10/10"
+  },
+  "catalog_size": 5593,
+  "all_target_count": 5593,
+  "positive_target_count": 3175,
+  "zero_gold_target_count": 2418,
+  "total_gold_labels": 7305,
+  "gold_coverage": 1.0,
+  "split_counts_all": {
+    "test": 559,
+    "train": 4475,
+    "validation": 559
+  },
+  "split_counts_positive": {
+    "test": 308,
+    "train": 2528,
+    "validation": 339
+  },
+  "split_gold_counts": {
+    "test": 726,
+    "train": 5669,
+    "validation": 910
+  },
+  "module_counts_by_split": {
+    "test": 77,
+    "train": 207,
+    "validation": 76
+  },
+  "gold_location_counts": {
+    "imported_module": 3550,
+    "same_file_earlier": 3755
+  },
+  "candidate_count_statistics": {
+    "min": 0,
+    "median": 186,
+    "mean": 506.60289647774005,
+    "p90": 1213,
+    "p95": 1428,
+    "max": 1839
+  },
+  "gold_count_statistics_positive_targets": {
+    "min": 1,
+    "median": 2,
+    "mean": 2.3007874015748033,
+    "p90": 5,
+    "max": 20
+  }
+}

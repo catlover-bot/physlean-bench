@@ -1,0 +1,319 @@
+sg_000000 def SimpleGraph.IsAcyclic  [Walk]
+  Acyclic.lean:55
+  def IsAcyclic : Prop := ∀ ⦃v : V⦄ (c : G.Walk v v), ¬c.IsCycle
+
+sg_000001 structure SimpleGraph.IsTree  [Connected]
+  Acyclic.lean:59
+  structure IsTree : Prop extends
+
+sg_000002 lemma SimpleGraph.isAcyclic_bot  [SimpleGraph]
+  Acyclic.lean:69
+  @[simp] lemma isAcyclic_bot : IsAcyclic (⊥ : SimpleGraph V) := fun _a _w hw ↦ hw.ne_bot rfl
+
+sg_000003 lemma SimpleGraph.IsAcyclic.comap  [map]
+  Acyclic.lean:72
+  lemma IsAcyclic.comap (f : G →g G') (hinj : Function.Injective f) (h : G'.IsAcyclic) :
+
+sg_000004 lemma SimpleGraph.IsAcyclic.embedding  [map]
+  Acyclic.lean:76
+  lemma IsAcyclic.embedding (f : G ↪g G') (h : G'.IsAcyclic) : G.IsAcyclic :=
+
+sg_000005 lemma SimpleGraph.Iso.isAcyclic_iff  []
+  Acyclic.lean:80
+  lemma Iso.isAcyclic_iff (f : G ≃g G') : G.IsAcyclic ↔ G'.IsAcyclic :=
+
+sg_000006 lemma SimpleGraph.Iso.isTree_iff  []
+  Acyclic.lean:84
+  lemma Iso.isTree_iff (f : G ≃g G') : G.IsTree ↔ G'.IsTree :=
+
+sg_000007 lemma SimpleGraph.IsAcyclic.of_map  [SimpleGraph,map]
+  Acyclic.lean:88
+  lemma IsAcyclic.of_map (f : V ↪ V') (h : G.map f |>.IsAcyclic) : G.IsAcyclic :=
+
+sg_000008 lemma SimpleGraph.IsAcyclic.of_comap  [SimpleGraph,map]
+  Acyclic.lean:91
+  lemma IsAcyclic.of_comap (f : V' ↪ V) (h : G.IsAcyclic) : G.comap f |>.IsAcyclic :=
+
+sg_000009 lemma SimpleGraph.IsAcyclic.induce  [map]
+  Acyclic.lean:95
+  lemma IsAcyclic.induce (h : G.IsAcyclic) (s : Set V) : G.induce s |>.IsAcyclic :=
+
+sg_000010 lemma SimpleGraph.IsAcyclic.subgraph  [Subgraph,map]
+  Acyclic.lean:99
+  lemma IsAcyclic.subgraph (h : G.IsAcyclic) (H : G.Subgraph) : H.coe.IsAcyclic :=
+
+sg_000011 lemma SimpleGraph.IsAcyclic.anti  [SimpleGraph,edgeSet,Walk,map]
+  Acyclic.lean:103
+  lemma IsAcyclic.anti {G' : SimpleGraph V} (hsub : G ≤ G') (h : G'.IsAcyclic) : G.IsAcyclic :=
+
+sg_000012 lemma SimpleGraph.isAcyclic_sSup_of_isAcyclic_directedOn  [SimpleGraph]
+  Acyclic.lean:118
+  lemma isAcyclic_sSup_of_isAcyclic_directedOn (Hs : Set <| SimpleGraph V)
+
+sg_000013 theorem SimpleGraph.exists_maximal_isAcyclic_of_le_isAcyclic  [SimpleGraph]
+  Acyclic.lean:127
+  theorem exists_maximal_isAcyclic_of_le_isAcyclic
+
+sg_000014 lemma SimpleGraph.IsAcyclic.isTree_connectedComponent  [SimpleGraph,Connected]
+  Acyclic.lean:136
+  lemma IsAcyclic.isTree_connectedComponent (h : G.IsAcyclic) (c : G.ConnectedComponent) :
+
+sg_000015 theorem SimpleGraph.IsAcyclic.of_card_le_two  []
+  Acyclic.lean:141
+  theorem IsAcyclic.of_card_le_two (h : ENat.card V ≤ 2) : G.IsAcyclic := by
+
+sg_000016 lemma SimpleGraph.IsAcyclic.of_subsingleton  [SimpleGraph]
+  Acyclic.lean:148
+  lemma IsAcyclic.of_subsingleton [Subsingleton V] {G : SimpleGraph V} : G.IsAcyclic :=
+
+sg_000017 lemma SimpleGraph.Subgraph.isAcyclic_coe_bot  [SimpleGraph,Subgraph]
+  Acyclic.lean:151
+  lemma Subgraph.isAcyclic_coe_bot (G : SimpleGraph V) : (⊥ : G.Subgraph).coe.IsAcyclic :=
+
+sg_000018 lemma SimpleGraph.IsTree.of_subsingleton  [SimpleGraph]
+  Acyclic.lean:154
+  lemma IsTree.of_subsingleton [Nonempty V] [Subsingleton V] {G : SimpleGraph V} : G.IsTree :=
+
+sg_000019 theorem SimpleGraph.IsTree.coe_singletonSubgraph  [SimpleGraph,Subgraph]
+  Acyclic.lean:157
+  theorem IsTree.coe_singletonSubgraph (G : SimpleGraph V) (v : V) :
+
+sg_000020 theorem SimpleGraph.IsTree.coe_subgraphOfAdj  [Adj,Subgraph]
+  Acyclic.lean:161
+  theorem IsTree.coe_subgraphOfAdj {u v : V} (h : G.Adj u v) : G.subgraphOfAdj h |>.coe.IsTree := by
+
+sg_000021 theorem SimpleGraph.isAcyclic_iff_forall_adj_isBridge  [Adj]
+  Acyclic.lean:167
+  theorem isAcyclic_iff_forall_adj_isBridge :
+
+sg_000022 theorem SimpleGraph.isAcyclic_iff_forall_edge_isBridge  [edgeSet]
+  Acyclic.lean:181
+  theorem isAcyclic_iff_forall_edge_isBridge :
+
+sg_000023 theorem SimpleGraph.IsAcyclic.path_unique  [SimpleGraph,Path]
+  Acyclic.lean:185
+  theorem IsAcyclic.path_unique {G : SimpleGraph V} (h : G.IsAcyclic) {v w : V} (p q : G.Path v w) :
+
+sg_000024 theorem SimpleGraph.isAcyclic_of_path_unique  [Walk,Path,support]
+  Acyclic.lean:214
+  theorem isAcyclic_of_path_unique (h : ∀ (v w : V) (p q : G.Path v w), p = q) : G.IsAcyclic := by
+
+sg_000025 theorem SimpleGraph.isAcyclic_iff_path_unique  [Path]
+  Acyclic.lean:225
+  theorem isAcyclic_iff_path_unique : G.IsAcyclic ↔ ∀ ⦃v w : V⦄ (p q : G.Path v w), p = q :=
+
+sg_000026 lemma SimpleGraph.IsAcyclic.mem_support_of_ne_mem_support_of_adj_of_isPath  [Adj,Walk,Path,IsPath,support]
+  Acyclic.lean:228
+  lemma IsAcyclic.mem_support_of_ne_mem_support_of_adj_of_isPath (hG : G.IsAcyclic) {u v w : V}
+
+sg_000027 lemma SimpleGraph.IsAcyclic.ne_mem_support_of_support_of_adj_of_isPath  [Adj,Walk,Path,IsPath,support]
+  Acyclic.lean:234
+  lemma IsAcyclic.ne_mem_support_of_support_of_adj_of_isPath (hG : G.IsAcyclic) {u v w : V}
+
+sg_000028 lemma SimpleGraph.IsAcyclic.path_concat  [Adj,Walk,Path,IsPath,support]
+  Acyclic.lean:242
+  lemma IsAcyclic.path_concat (hG : G.IsAcyclic) {u v w : V} {p : G.Walk u v} {q : G.Walk u w}
+
+sg_000029 theorem SimpleGraph.isTree_iff_existsUnique_path  [Walk,Path,IsPath]
+  Acyclic.lean:248
+  theorem isTree_iff_existsUnique_path :
+
+sg_000030 lemma SimpleGraph.IsTree.existsUnique_path  [Walk,Path,IsPath]
+  Acyclic.lean:270
+  lemma IsTree.existsUnique_path (hG : G.IsTree) : ∀ v w, ∃! p : G.Walk v w, p.IsPath :=
+
+sg_000031 theorem SimpleGraph.IsAcyclic.isPath_iff_isChain  [Walk,Path,IsPath]
+  Acyclic.lean:273
+  theorem IsAcyclic.isPath_iff_isChain (hG : G.IsAcyclic) {v w : V} (p : G.Walk v w) :
+
+sg_000032 theorem SimpleGraph.IsAcyclic.isPath_iff_isTrail  [Walk,Path,IsPath]
+  Acyclic.lean:298
+  theorem IsAcyclic.isPath_iff_isTrail (hG : G.IsAcyclic) {v w : V} (p : G.Walk v w) :
+
+sg_000033 lemma SimpleGraph.IsTree.card_edgeFinset  [edgeSet,Fintype]
+  Acyclic.lean:302
+  lemma IsTree.card_edgeFinset [Fintype V] [Fintype G.edgeSet] (hG : G.IsTree) :
+
+sg_000034 lemma SimpleGraph.isTree_of_minimal_connected  [edgeSet,Connected]
+  Acyclic.lean:353
+  lemma isTree_of_minimal_connected (h : Minimal Connected G) : IsTree G := by
+
+sg_000035 lemma SimpleGraph.isTree_iff_minimal_connected  [Path,Connected]
+  Acyclic.lean:360
+  lemma isTree_iff_minimal_connected : IsTree G ↔ Minimal Connected G := by
+
+sg_000036 theorem SimpleGraph.IsAcyclic.isAcyclic_sup_fromEdgeSet_of_not_reachable  [Reachable]
+  Acyclic.lean:369
+  theorem IsAcyclic.isAcyclic_sup_fromEdgeSet_of_not_reachable {u v : V} (hnreach : ¬G.Reachable u v)
+
+sg_000037 theorem SimpleGraph.isAcyclic_add_edge_iff_of_not_reachable  [Reachable]
+  Acyclic.lean:374
+  theorem isAcyclic_add_edge_iff_of_not_reachable (x y : V) (hxy : ¬ G.Reachable x y) :
+
+sg_000038 theorem SimpleGraph.isAcyclic_sup_fromEdgeSet_iff  [Adj,Reachable]
+  Acyclic.lean:380
+  theorem isAcyclic_sup_fromEdgeSet_iff {u v : V} :
+
+sg_000039 lemma SimpleGraph.reachable_eq_of_maximal_isAcyclic  [SimpleGraph,Reachable]
+  Acyclic.lean:397
+  lemma reachable_eq_of_maximal_isAcyclic (F : SimpleGraph V)
+
+sg_000040 theorem SimpleGraph.maximal_isAcyclic_iff_reachable_eq  [SimpleGraph,Reachable]
+  Acyclic.lean:413
+  theorem maximal_isAcyclic_iff_reachable_eq {F : SimpleGraph V} (hle : F ≤ G) (hF : F.IsAcyclic) :
+
+sg_000041 theorem SimpleGraph.Connected.maximal_le_isAcyclic_iff_isTree  [SimpleGraph,Connected]
+  Acyclic.lean:428
+  theorem Connected.maximal_le_isAcyclic_iff_isTree {T : SimpleGraph V} (hG : G.Connected)
+
+sg_000042 theorem SimpleGraph.maximal_isAcyclic_iff_isTree  [SimpleGraph]
+  Acyclic.lean:438
+  theorem maximal_isAcyclic_iff_isTree [Nonempty V] {T : SimpleGraph V} :
+
+sg_000043 theorem SimpleGraph.isTree_iff_maximal_isAcyclic  []
+  Acyclic.lean:444
+  theorem isTree_iff_maximal_isAcyclic : G.IsTree ↔ Nonempty V ∧ Maximal IsAcyclic G := by
+
+sg_000044 theorem SimpleGraph.exists_isAcyclic_reachable_eq_le_of_le_of_isAcyclic  [SimpleGraph,Reachable]
+  Acyclic.lean:450
+  theorem exists_isAcyclic_reachable_eq_le_of_le_of_isAcyclic {H : SimpleGraph V} (hH_le : H ≤ G)
+
+sg_000045 theorem SimpleGraph.exists_isAcyclic_reachable_eq_le  [Reachable]
+  Acyclic.lean:457
+  theorem exists_isAcyclic_reachable_eq_le :
+
+sg_000046 lemma SimpleGraph.Connected.exists_isTree_le_of_le_of_isAcyclic  [SimpleGraph,Connected]
+  Acyclic.lean:463
+  lemma Connected.exists_isTree_le_of_le_of_isAcyclic {H : SimpleGraph V} (h : G.Connected)
+
+sg_000047 lemma SimpleGraph.Connected.exists_isTree_le  [Connected]
+  Acyclic.lean:470
+  lemma Connected.exists_isTree_le (h : G.Connected) : ∃ T ≤ G, IsTree T := by
+
+sg_000048 lemma SimpleGraph.Connected.card_vert_le_card_edgeSet_add_one  [edgeSet,Connected]
+  Acyclic.lean:475
+  lemma Connected.card_vert_le_card_edgeSet_add_one (h : G.Connected) :
+
+sg_000049 lemma SimpleGraph.isTree_iff_connected_and_card  [edgeSet,Connected,Finite]
+  Acyclic.lean:486
+  lemma isTree_iff_connected_and_card [Finite V] :
+
+sg_000050 lemma SimpleGraph.IsTree.minDegree_eq_one_of_nontrivial  [Adj,Fintype]
+  Acyclic.lean:500
+  lemma IsTree.minDegree_eq_one_of_nontrivial (h : G.IsTree) [Fintype V] [Nontrivial V]
+
+sg_000051 lemma SimpleGraph.IsTree.exists_vert_degree_one_of_nontrivial  [Adj,degree,Fintype]
+  Acyclic.lean:514
+  lemma IsTree.exists_vert_degree_one_of_nontrivial [Fintype V] [Nontrivial V] [DecidableRel G.Adj]
+
+sg_000052 lemma SimpleGraph.Connected.induce_compl_singleton_of_degree_eq_one  [Connected,degree,compl,Fintype]
+  Acyclic.lean:522
+  lemma Connected.induce_compl_singleton_of_degree_eq_one (hconn : G.Connected) {v : V}
+
+sg_000053 lemma SimpleGraph.Connected.exists_connected_induce_compl_singleton_of_finite_nontrivial  [Connected,compl,Finite]
+  Acyclic.lean:553
+  lemma Connected.exists_connected_induce_compl_singleton_of_finite_nontrivial
+
+sg_000054 lemma SimpleGraph.Connected.exists_preconnected_induce_compl_singleton_of_finite  [Connected,compl,Finite]
+  Acyclic.lean:563
+  lemma Connected.exists_preconnected_induce_compl_singleton_of_finite [Finite V]
+
+sg_000055 lemma SimpleGraph.IsAcyclic.dist_ne_of_adj  [Adj,Reachable]
+  Acyclic.lean:569
+  lemma IsAcyclic.dist_ne_of_adj (hG : G.IsAcyclic) {u v w : V} (hadj : G.Adj v w)
+
+sg_000056 lemma SimpleGraph.IsTree.dist_ne_of_adj  [Adj]
+  Acyclic.lean:582
+  lemma IsTree.dist_ne_of_adj (hG : G.IsTree) (u : V) {v w : V} (hadj : G.Adj v w) :
+
+sg_000057 lemma SimpleGraph.IsAcyclic.dist_eq_dist_add_one_of_adj_of_reachable  [Adj,Reachable]
+  Acyclic.lean:586
+  lemma IsAcyclic.dist_eq_dist_add_one_of_adj_of_reachable
+
+sg_000058 lemma SimpleGraph.IsTree.dist_eq_dist_add_one_of_adj  [Adj]
+  Acyclic.lean:591
+  lemma IsTree.dist_eq_dist_add_one_of_adj (hG : G.IsTree) (u : V) {v w : V} (hadj : G.Adj v w) :
+
+sg_000059 lemma SimpleGraph.IsTree.isBipartite  [Connected]
+  Acyclic.lean:604
+  lemma IsTree.isBipartite (hG : G.IsTree) : G.IsBipartite :=
+
+sg_000060 lemma SimpleGraph.IsAcyclic.isBipartite  []
+  Acyclic.lean:623
+  lemma IsAcyclic.isBipartite (hG : G.IsAcyclic) : G.IsBipartite :=
+
+sg_000061 lemma SimpleGraph.IsAcyclic.colorable_two  []
+  Acyclic.lean:627
+  lemma IsAcyclic.colorable_two (hG : G.IsAcyclic) : G.Colorable 2 :=
+
+sg_000062 lemma SimpleGraph.IsTree.colorable_two  []
+  Acyclic.lean:631
+  lemma IsTree.colorable_two (hG : G.IsTree) : G.Colorable 2 :=
+
+sg_000063 lemma SimpleGraph.IsAcyclic.chromaticNumber_le_two  []
+  Acyclic.lean:635
+  lemma IsAcyclic.chromaticNumber_le_two (hG : G.IsAcyclic) : G.chromaticNumber ≤ 2 :=
+
+sg_000064 lemma SimpleGraph.IsTree.chromaticNumber_le_two  []
+  Acyclic.lean:639
+  lemma IsTree.chromaticNumber_le_two (hG : G.IsTree) : G.chromaticNumber ≤ 2 :=
+
+sg_000065 lemma SimpleGraph.exists_isCycle_of_two_le_isEdgeReachable  [Walk,Reachable]
+  Acyclic.lean:642
+  lemma exists_isCycle_of_two_le_isEdgeReachable {u v : V} (huv : u ≠ v) {n : ℕ} (hn : 2 ≤ n)
+
+sg_000066 lemma SimpleGraph.isAcyclic_iff_pairwise_not_isEdgeReachable_two  [Reachable]
+  Acyclic.lean:650
+  lemma isAcyclic_iff_pairwise_not_isEdgeReachable_two :
+
+sg_000067 structure Matrix.IsAdjMatrix  [Adj]
+  AdjMatrix.lean:58
+  structure IsAdjMatrix [Zero α] [One α] (A : Matrix V V α) : Prop where
+
+sg_000068 theorem Matrix.IsAdjMatrix.zero  [Adj]
+  AdjMatrix.lean:67
+  @[simp] protected theorem zero [Zero α] [One α] : (0 : Matrix V V α).IsAdjMatrix where
+
+sg_000069 theorem Matrix.IsAdjMatrix.apply_diag_ne  [Adj]
+  AdjMatrix.lean:70
+  theorem apply_diag_ne [MulZeroOneClass α] [Nontrivial α] (h : IsAdjMatrix A) (i : V) :
+
+sg_000070 theorem Matrix.IsAdjMatrix.apply_ne_one_iff  [Adj]
+  AdjMatrix.lean:74
+  theorem apply_ne_one_iff [MulZeroOneClass α] [Nontrivial α] (h : IsAdjMatrix A) (i j : V) :
+
+sg_000071 theorem Matrix.IsAdjMatrix.apply_ne_zero_iff  [Adj]
+  AdjMatrix.lean:78
+  theorem apply_ne_zero_iff [MulZeroOneClass α] [Nontrivial α] (h : IsAdjMatrix A) (i j : V) :
+
+sg_000072 def Matrix.IsAdjMatrix.toGraph  [SimpleGraph,Adj]
+  AdjMatrix.lean:84
+  def toGraph [MulZeroOneClass α] [Nontrivial α] (h : IsAdjMatrix A) : SimpleGraph V where
+
+sg_000073 theorem Matrix.IsAdjMatrix.hadamard_self  [Adj]
+  AdjMatrix.lean:94
+  @[simp] theorem hadamard_self [MulZeroOneClass α] {A : Matrix V V α} (hA : A.IsAdjMatrix) :
+
+sg_000074 theorem Matrix.isAdjMatrix_iff_hadamard  [Adj,DecidableEq]
+  AdjMatrix.lean:99
+  theorem isAdjMatrix_iff_hadamard [DecidableEq V] [MonoidWithZero α]
+
+sg_000075 def Matrix.compl  [compl,DecidableEq]
+  AdjMatrix.lean:108
+  def compl [Zero α] [One α] [DecidableEq α] [DecidableEq V] (A : Matrix V V α) : Matrix V V α :=
+
+sg_000076 theorem Matrix.compl_apply_diag  [compl]
+  AdjMatrix.lean:116
+  theorem compl_apply_diag [Zero α] [One α] (i : V) : A.compl i i = 0 := by simp [compl]
+
+sg_000077 theorem Matrix.compl_apply  [compl]
+  AdjMatrix.lean:119
+  theorem compl_apply [Zero α] [One α] (i j : V) : A.compl i j = 0 ∨ A.compl i j = 1 := by
+
+sg_000078 theorem Matrix.isSymm_compl  [compl]
+  AdjMatrix.lean:123
+  theorem isSymm_compl [Zero α] [One α] (h : A.IsSymm) : A.compl.IsSymm := by
+
+sg_000079 theorem Matrix.isAdjMatrix_compl  [Adj,compl]
+  AdjMatrix.lean:128
+  theorem isAdjMatrix_compl [Zero α] [One α] (h : A.IsSymm) : IsAdjMatrix A.compl :=

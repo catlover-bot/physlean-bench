@@ -1,0 +1,43 @@
+Cross-library premise-selection evaluation v1
+================================================================================================================
+
+Dataset scale
+----------------------------------------------------------------------------------------------------------------
+Library      Catalog  Positive    Test  Test gold   Candidate median  Candidate max
+Physlib         5593      3175     308        726              186.0           1839
+CSLib           1428       571      56        152               64.0            372
+
+Official validation-selected test results
+----------------------------------------------------------------------------------------------------------------
+Library / Method                          MRR     R@10     R@20     R@50   local@20  import@20  import@50
+Physlib / BM25                         0.5547   0.5110   0.6019   0.7493     0.9394     0.4091     0.6277
+Physlib / Balanced quota               0.5564   0.5358   0.6350   0.7741     0.9318     0.4654     0.6710
+Physlib / Recall quota                 0.5567   0.5110   0.6515   0.7727     0.9242     0.4957     0.6688
+CSLib / BM25                           0.4825   0.4276   0.5855   0.7368     0.9556     0.4299     0.6262
+CSLib / Import quota                   0.4786   0.3618   0.5855   0.7632     0.9556     0.4299     0.6636
+
+Official deltas against BM25
+----------------------------------------------------------------------------------------------------------------
+Physlib balanced             ΔMRR=+0.0017 ΔR@10=+0.0248 ΔR@20=+0.0331 ΔR@50=+0.0248 Δimport@20=+0.0563 Δimport@50=+0.0433
+Physlib recall-oriented      ΔMRR=+0.0020 ΔR@10=+0.0000 ΔR@20=+0.0496 ΔR@50=+0.0234 Δimport@20=+0.0866 Δimport@50=+0.0411
+CSLib quota                  ΔMRR=-0.0039 ΔR@10=-0.0658 ΔR@20=+0.0000 ΔR@50=+0.0263 Δimport@20=+0.0000 Δimport@50=+0.0374
+
+CSLib paired-bootstrap evidence
+----------------------------------------------------------------------------------------------------------------
+MRR                    delta=-0.0039 CI95=[-0.0109, +0.0035] P(delta>0)=0.1409
+micro_recall@10        delta=-0.0658 CI95=[-0.1241, -0.0146] P(delta>0)=0.0038
+micro_recall@20        delta=+0.0000 CI95=[-0.0538, +0.0435] P(delta>0)=0.4391
+micro_recall@50        delta=+0.0263 CI95=[+0.0064, +0.0504] P(delta>0)=0.9835
+imported_recall@20     delta=+0.0000 CI95=[-0.0805, +0.0619] P(delta>0)=0.4391
+imported_recall@50     delta=+0.0374 CI95=[+0.0088, +0.0750] P(delta>0)=0.9835
+
+Interpretation
+----------------------------------------------------------------------------------------------------------------
+1. The raw structural graph feature alone does not outperform BM25 in either library.
+2. Physlib shows a robust Top-20 gain from the import-aware dual-channel ranking.
+3. CSLib does not reproduce the Top-20 gain, but does show statistically supported Top-50 and imported-Top-50 gains.
+4. CSLib Top-10 recall decreases, showing that dependency transfer can improve broad coverage while disturbing early precision.
+5. The cross-library evidence supports a conditional rather than universal claim: dependency transfer is useful, but its optimal reranking depth and strength depend on library structure.
+6. Structure-aware Safe v2 is post-hoc exploratory analysis and must not be reported as an untouched-test result.
+
+Important: Recall@K measures gold-premise retrieval, not end-to-end Lean proof success.

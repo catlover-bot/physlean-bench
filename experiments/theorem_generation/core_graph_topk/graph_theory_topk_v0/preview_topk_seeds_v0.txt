@@ -1,0 +1,799 @@
+SEED 001 score=21.513 mmr=29.713 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality,map_transport
+  SRC SimpleGraph.Walk.adj_toSubgraph_mapLe
+      family=adjacency,map,subgraph,walk file=Connectivity/Subgraph.lean
+      lemma adj_toSubgraph_mapLe {G' : SimpleGraph V} {w x : V} {p : G.Walk u v} (h : G ≤ G') :
+  TGT IsCycles.reachable_sdiff_toSubgraph_spanningCoe
+      family=connectivity,finite_card,path,subgraph,walk file=Matching.lean
+      lemma IsCycles.reachable_sdiff_toSubgraph_spanningCoe [Finite V] {v w : V} (hcyc : G.IsCycles)
+
+SEED 002 score=19.878 mmr=25.478 motifs=same_family,subgraph_monotonicity,complement_duality,walk_path_connectivity,finite_cardinality
+  SRC IsCycles.exists_cycle_toSubgraph_verts_eq_connectedComponentSupp
+      family=connectivity,finite_card,subgraph,walk file=Matching.lean
+      lemma IsCycles.exists_cycle_toSubgraph_verts_eq_connectedComponentSupp [Finite V]
+  TGT SimpleGraph.Connected.induce_compl_singleton_of_degree_eq_one
+      family=complement,connectivity,degree_neighbor,finite_card file=Acyclic.lean
+      lemma Connected.induce_compl_singleton_of_degree_eq_one (hconn : G.Connected) {v : V}
+
+SEED 003 score=21.160 mmr=23.060 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Subgraph.map_iso_top
+      family=edgeSet,map,subgraph file=Subgraph.lean
+      @[simp] lemma map_iso_top {H : SimpleGraph W} (e : G ≃g H) : Subgraph.map e.toHom ⊤ = ⊤ := by
+  TGT SimpleGraph.Walk.adj_toSubgraph_mapLe
+      family=adjacency,map,subgraph,walk file=Connectivity/Subgraph.lean
+      lemma adj_toSubgraph_mapLe {G' : SimpleGraph V} {w x : V} {p : G.Walk u v} (h : G ≤ G') :
+
+SEED 004 score=17.875 mmr=21.075 motifs=adj_edgeSet_bridge,subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC edgeSet_singletonSubgraph
+      family=edgeSet,subgraph file=Subgraph.lean
+      theorem edgeSet_singletonSubgraph (v : V) : (G.singletonSubgraph v).edgeSet = ∅ :=
+  TGT card_edgeFinset_induce_compl_singleton
+      family=adjacency,complement,finite_card file=DeleteEdges.lean
+      theorem card_edgeFinset_induce_compl_singleton (G : SimpleGraph V) [DecidableRel G.Adj] (x : V) :
+
+SEED 005 score=18.031 mmr=18.231 motifs=adj_edgeSet_bridge,subgraph_monotonicity,walk_path_connectivity,finite_cardinality
+  SRC SimpleGraph.ConnectedComponent.adj_spanningCoe_toSimpleGraph
+      family=adjacency,connectivity,subgraph file=Connectivity/Connected.lean
+      lemma adj_spanningCoe_toSimpleGraph {v w : V} (C : G.ConnectedComponent) :
+  TGT SimpleGraph.Walk.exists_isPath_forall_isPath_length_le_length
+      family=edgeSet,finite_card,path,walk file=Paths.lean
+      lemma exists_isPath_forall_isPath_length_le_length (G : SimpleGraph V) [N : Nonempty V]
+
+SEED 006 score=18.937 mmr=16.037 motifs=adj_edgeSet_bridge,subgraph_lift_target,complement_duality,finite_cardinality,map_transport
+  SRC card_edgeFinset_induce_compl_singleton
+      family=adjacency,complement,finite_card file=DeleteEdges.lean
+      theorem card_edgeFinset_induce_compl_singleton (G : SimpleGraph V) [DecidableRel G.Adj] (x : V) :
+  TGT SimpleGraph.Subgraph.map_iso_top
+      family=edgeSet,map,subgraph file=Subgraph.lean
+      @[simp] lemma map_iso_top {H : SimpleGraph W} (e : G ≃g H) : Subgraph.map e.toHom ⊤ = ⊤ := by
+
+SEED 007 score=23.643 mmr=14.043 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.degree_pos_iff_exists_adj
+      family=adjacency,degree_neighbor,finite_card,subgraph file=Subgraph.lean
+      theorem degree_pos_iff_exists_adj {G' : Subgraph G} {v : V} [Fintype (G'.neighborSet v)] :
+  TGT SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      family=adjacency,degree_neighbor,finite_card,subgraph file=Subgraph.lean
+      theorem degree_eq_one_iff_existsUnique_adj {G' : Subgraph G} {v : V} [Fintype (G'.neighborSet v)] :
+
+SEED 008 score=16.035 mmr=13.635 motifs=adj_edgeSet_bridge,complement_duality,walk_path_connectivity,map_transport
+  SRC SimpleGraph.ComponentCompl.mem_of_adj
+      family=adjacency,complement,connectivity file=Ends/Defs.lean
+      theorem mem_of_adj : ∀ {C : G.ComponentCompl K} (c d : V), c ∈ C → d ∉ K → G.Adj c d → d ∈ C :=
+  TGT SimpleGraph.IsAcyclic.anti
+      family=edgeSet,map,walk file=Acyclic.lean
+      lemma IsAcyclic.anti {G' : SimpleGraph V} (hsub : G ≤ G') (h : G'.IsAcyclic) : G.IsAcyclic :=
+
+SEED 009 score=16.617 mmr=12.417 motifs=same_family,adj_edgeSet_bridge
+  SRC SimpleGraph.Walk.edgeSet_cons
+      family=adjacency,edgeSet,walk file=Walks/Basic.lean
+      theorem edgeSet_cons {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+  TGT SimpleGraph.edgeSet_concat
+      family=adjacency,edgeSet,walk file=Walks/Operations.lean
+      theorem edgeSet_concat {u v w : V} (p : G.Walk u v) (h : G.Adj v w) :
+
+SEED 010 score=18.507 mmr=10.407 motifs=same_family,finite_cardinality
+  SRC SimpleGraph.Walk.IsEulerian.card_filter_odd_degree
+      family=adjacency,degree_neighbor,finite_card,walk file=Trails.lean
+      theorem IsEulerian.card_filter_odd_degree [Fintype V] [DecidableRel G.Adj] {u v : V}
+  TGT SimpleGraph.Walk.IsEulerian.card_odd_degree
+      family=adjacency,degree_neighbor,finite_card,walk file=Trails.lean
+      theorem IsEulerian.card_odd_degree [Fintype V] [DecidableRel G.Adj] {u v : V} {p : G.Walk u v}
+
+SEED 011 score=19.632 mmr=9.132 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity
+  SRC IsCycles.reachable_sdiff_toSubgraph_spanningCoe
+      family=connectivity,finite_card,path,subgraph,walk file=Matching.lean
+      lemma IsCycles.reachable_sdiff_toSubgraph_spanningCoe [Finite V] {v w : V} (hcyc : G.IsCycles)
+  TGT SimpleGraph.Walk.IsPath.ncard_neighborSet_toSubgraph_internal_eq_two
+      family=finite_card,path,subgraph,walk file=Connectivity/Subgraph.lean
+      lemma ncard_neighborSet_toSubgraph_internal_eq_two {u} {i : ℕ} {p : G.Walk u v} (hp : p.IsPath)
+
+SEED 012 score=14.203 mmr=9.003 motifs=adj_edgeSet_bridge,complement_duality,map_transport
+  SRC edgeFinset_map
+      family=adjacency,map file=Finite.lean
+      theorem edgeFinset_map (f : V ↪ W) (G : SimpleGraph V) [DecidableRel G.Adj] :
+  TGT edgeSet_top
+      family=complement,edgeSet file=Basic.lean
+      theorem edgeSet_top : (⊤ : SimpleGraph V).edgeSet = Sym2.diagSetᶜ :=
+
+SEED 013 score=14.000 mmr=7.600 motifs=same_family
+  SRC SimpleGraph.Walk.concat_isPath_iff
+      family=adjacency,path,walk file=Paths.lean
+      theorem concat_isPath_iff {p : G.Walk u v} (h : G.Adj v w) :
+  TGT SimpleGraph.Walk.IsPath.concat
+      family=adjacency,path,walk file=Paths.lean
+      theorem IsPath.concat {p : G.Walk u v} (hp : p.IsPath) (hw : w ∉ p.support)
+
+SEED 014 score=16.111 mmr=6.711 motifs=same_family,complement_duality
+  SRC SimpleGraph.connected_top_iff
+      family=complement,complete_graph,connectivity file=Connectivity/Connected.lean
+      lemma connected_top_iff : (completeGraph V).Connected ↔ Nonempty V := by simp [connected_iff]
+  TGT SimpleGraph.connected_top
+      family=complement,complete_graph,connectivity file=Connectivity/Connected.lean
+      @[simp] lemma connected_top [Nonempty V] : (completeGraph V).Connected := by rwa [connected_top_iff]
+
+SEED 015 score=15.149 mmr=6.449 motifs=adj_edgeSet_bridge,walk_path_connectivity,finite_cardinality
+  SRC SimpleGraph.mem_ker_toLin'_lapMatrix_of_connectedComponent
+      family=adjacency,connectivity file=LapMatrix.lean
+      lemma mem_ker_toLin'_lapMatrix_of_connectedComponent {G : SimpleGraph V} [DecidableRel G.Adj]
+  TGT SimpleGraph.Walk.exists_isTrail_forall_isTrail_length_le_length
+      family=edgeSet,finite_card,walk file=Paths.lean
+      lemma exists_isTrail_forall_isTrail_length_le_length (G : SimpleGraph V) [N : Nonempty V]
+
+SEED 016 score=13.951 mmr=4.951 motifs=same_family,walk_path_connectivity
+  SRC Connected.exists_path_of_dist
+      family=connectivity,path,walk file=Metric.lean
+      lemma Connected.exists_path_of_dist (hconn : G.Connected) (u v : V) :
+  TGT SimpleGraph.Connected.exists_isPath
+      family=connectivity,path,walk file=Connectivity/Connected.lean
+      theorem Connected.exists_isPath {G : SimpleGraph V} (h : G.Connected) (u v : V) :
+
+SEED 017 score=15.689 mmr=4.089 motifs=same_family,map_transport
+  SRC SimpleGraph.Walk.ofBoxProdLeft_boxProdLeft
+      family=adjacency,map,walk file=Prod.lean
+      theorem ofBoxProdLeft_boxProdLeft [DecidableEq β] [DecidableRel G.Adj] {a₁ a₂ : α} {b : β} :
+  TGT SimpleGraph.Walk.ofBoxProdRight_boxProdRight
+      family=adjacency,map,walk file=Prod.lean
+      theorem ofBoxProdRight_boxProdRight [DecidableEq α] [DecidableRel G.Adj] {a b₁ b₂ : α} :
+
+SEED 018 score=14.072 mmr=3.972 motifs=adj_edgeSet_bridge,finite_cardinality
+  SRC edgeSet_deleteIncidenceSet
+      family=edgeSet file=DeleteEdges.lean
+      theorem edgeSet_deleteIncidenceSet (G : SimpleGraph V) (x : V) :
+  TGT card_edgeFinset_deleteIncidenceSet
+      family=adjacency,degree_neighbor,finite_card file=DeleteEdges.lean
+      theorem card_edgeFinset_deleteIncidenceSet (G : SimpleGraph V) [DecidableRel G.Adj] (x : V) :
+
+SEED 019 score=13.941 mmr=3.141 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC SimpleGraph.Subgraph._root_.SimpleGraph.toSubgraph.isSpanning
+      family=subgraph file=Subgraph.lean
+      theorem _root_.SimpleGraph.toSubgraph.isSpanning (H : SimpleGraph V) (h : H ≤ G) :
+  TGT IsRegularOfDegree.compl
+      family=adjacency,complement,finite_card,regularity file=Finite.lean
+      theorem IsRegularOfDegree.compl [Fintype V] [DecidableEq V] {G : SimpleGraph V} [DecidableRel G.Adj]
+
+SEED 020 score=16.617 mmr=2.417 motifs=same_family,adj_edgeSet_bridge
+  SRC SimpleGraph.edgeSet_concat
+      family=adjacency,edgeSet,walk file=Walks/Operations.lean
+      theorem edgeSet_concat {u v w : V} (p : G.Walk u v) (h : G.Adj v w) :
+  TGT SimpleGraph.Walk.edgeSet_cons
+      family=adjacency,edgeSet,walk file=Walks/Basic.lean
+      theorem edgeSet_cons {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+
+SEED 021 score=14.000 mmr=1.400 motifs=same_family
+  SRC SimpleGraph.Walk.IsPath.concat
+      family=adjacency,path,walk file=Paths.lean
+      theorem IsPath.concat {p : G.Walk u v} (hp : p.IsPath) (hw : w ∉ p.support)
+  TGT SimpleGraph.Walk.concat_isPath_iff
+      family=adjacency,path,walk file=Paths.lean
+      theorem concat_isPath_iff {p : G.Walk u v} (h : G.Adj v w) :
+
+SEED 022 score=13.973 mmr=1.373 motifs=adj_edgeSet_bridge,subgraph_lift_target,walk_path_connectivity
+  SRC SimpleGraph.isBridge_iff
+      family=adjacency,connectivity file=Connectivity/Connected.lean
+      theorem isBridge_iff {u v : V} :
+  TGT SimpleGraph.Walk.toSubgraph_le_iff
+      family=edgeSet,subgraph,walk file=Connectivity/Subgraph.lean
+      theorem toSubgraph_le_iff {w : G.Walk u v} (hnil : ¬w.Nil) {G' : G.Subgraph} :
+
+SEED 023 score=15.546 mmr=0.546 motifs=same_family,complement_duality
+  SRC SimpleGraph.IsCompl.adjMatrix_add_adjMatrix_eq_adjMatrix_completeGraph
+      family=adjacency,complement,complete_graph file=AdjMatrix.lean
+      theorem IsCompl.adjMatrix_add_adjMatrix_eq_adjMatrix_completeGraph [DecidableEq V] [AddZeroClass α]
+  TGT SimpleGraph._root_.Matrix.compl_zero
+      family=adjacency,complement,complete_graph file=AdjMatrix.lean
+      @[simp] theorem _root_.Matrix.compl_zero [Zero α] [One α] [DecidableEq α] [DecidableEq V] :
+
+SEED 024 score=13.256 mmr=-0.744 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC SimpleGraph.IsTree.coe_singletonSubgraph
+      family=subgraph file=Acyclic.lean
+      theorem IsTree.coe_singletonSubgraph (G : SimpleGraph V) (v : V) :
+  TGT SimpleGraph.IsSRGWith.card_commonNeighbors_eq_of_adj_compl
+      family=adjacency,complement,finite_card file=StronglyRegular.lean
+      theorem IsSRGWith.card_commonNeighbors_eq_of_adj_compl (h : G.IsSRGWith n k ℓ μ) {v w : V}
+
+SEED 025 score=13.771 mmr=-1.229 motifs=same_family,subgraph_lift_target
+  SRC SimpleGraph.Walk.IsPath.of_adj
+      family=adjacency,path,walk file=Paths.lean
+      lemma IsPath.of_adj {G : SimpleGraph V} {u v : V} (h : G.Adj u v) : h.toWalk.IsPath := by
+  TGT SimpleGraph.Walk.IsPath.snd_of_toSubgraph_adj
+      family=adjacency,path,subgraph,walk file=Connectivity/Subgraph.lean
+      lemma snd_of_toSubgraph_adj {u v v'} {p : G.Walk u v} (hp : p.IsPath)
+
+SEED 026 score=13.325 mmr=-2.275 motifs=adj_edgeSet_bridge,complement_duality,walk_path_connectivity
+  SRC SimpleGraph.Walk.mem_edgeSet
+      family=edgeSet,walk file=Walks/Basic.lean
+      lemma mem_edgeSet {u v : V} {p : G.Walk u v} {e : Sym2 V} : e ∈ p.edgeSet ↔ e ∈ p.edges := Iff.rfl
+  TGT SimpleGraph.reachable_or_compl_adj
+      family=adjacency,complement,connectivity file=Connectivity/Connected.lean
+      lemma reachable_or_compl_adj (u v : V) : G.Reachable u v ∨ Gᶜ.Adj u v :=
+
+SEED 027 score=15.689 mmr=-2.911 motifs=same_family,map_transport
+  SRC SimpleGraph.Walk.ofBoxProdRight_boxProdRight
+      family=adjacency,map,walk file=Prod.lean
+      theorem ofBoxProdRight_boxProdRight [DecidableEq α] [DecidableRel G.Adj] {a b₁ b₂ : α} :
+  TGT SimpleGraph.Walk.ofBoxProdLeft_boxProdLeft
+      family=adjacency,map,walk file=Prod.lean
+      theorem ofBoxProdLeft_boxProdLeft [DecidableEq β] [DecidableRel G.Adj] {a₁ a₂ : α} {b : β} :
+
+SEED 028 score=13.908 mmr=-4.293 motifs=same_family,walk_path_connectivity
+  SRC SimpleGraph.Reachable.exists_isPath
+      family=connectivity,path,walk file=Connectivity/Connected.lean
+      theorem Reachable.exists_isPath {u v} (hr : G.Reachable u v) : ∃ p : G.Walk u v, p.IsPath := by
+  TGT Reachable.exists_path_of_dist
+      family=connectivity,path,walk file=Metric.lean
+      lemma Reachable.exists_path_of_dist (hr : G.Reachable u v) :
+
+SEED 029 score=13.887 mmr=-4.413 motifs=adj_edgeSet_bridge,finite_cardinality,map_transport
+  SRC edgeSet_bot
+      family=edgeSet file=Basic.lean
+      theorem edgeSet_bot : (⊥ : SimpleGraph V).edgeSet = ∅ :=
+  TGT card_edgeFinset_map
+      family=adjacency,finite_card,map file=Finite.lean
+      theorem card_edgeFinset_map (f : V ↪ W) (G : SimpleGraph V) [DecidableRel G.Adj] :
+
+SEED 030 score=19.537 mmr=-5.163 motifs=same_family,subgraph_monotonicity,subgraph_lift_target
+  SRC SimpleGraph.Walk.IsPath.ncard_neighborSet_toSubgraph_internal_eq_two
+      family=finite_card,path,subgraph,walk file=Connectivity/Subgraph.lean
+      lemma ncard_neighborSet_toSubgraph_internal_eq_two {u} {i : ℕ} {p : G.Walk u v} (hp : p.IsPath)
+  TGT SimpleGraph.Walk.IsPath.neighborSet_toSubgraph_internal
+      family=path,subgraph,walk file=Connectivity/Subgraph.lean
+      lemma neighborSet_toSubgraph_internal {u} {i : ℕ} {p : G.Walk u v} (hp : p.IsPath)
+
+SEED 031 score=13.159 mmr=-6.441 motifs=same_family
+  SRC SimpleGraph.Walk.IsPath.of_cons
+      family=adjacency,path,walk file=Paths.lean
+      theorem IsPath.of_cons {u v w : V} {h : G.Adj u v} {p : G.Walk v w} :
+  TGT SimpleGraph.Walk.cons_isPath_iff
+      family=adjacency,path,walk file=Paths.lean
+      theorem cons_isPath_iff {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+
+SEED 032 score=13.898 mmr=-7.202 motifs=adj_edgeSet_bridge,walk_path_connectivity,map_transport
+  SRC SimpleGraph.ConnectedComponent.toSimpleGraph_adj
+      family=adjacency,connectivity file=Connectivity/Connected.lean
+      lemma toSimpleGraph_adj {G : SimpleGraph V} (C : G.ConnectedComponent) {u v : V} (hu : u ∈ C)
+  TGT SimpleGraph.IsAcyclic.anti
+      family=edgeSet,map,walk file=Acyclic.lean
+      lemma IsAcyclic.anti {G' : SimpleGraph V} (hsub : G ≤ G') (h : G'.IsAcyclic) : G.IsAcyclic :=
+
+SEED 033 score=14.772 mmr=-7.528 motifs=same_family,finite_cardinality
+  SRC SimpleGraph.IsAcyclic.mem_support_of_ne_mem_support_of_adj_of_isPath
+      family=adjacency,path,walk file=Acyclic.lean
+      lemma IsAcyclic.mem_support_of_ne_mem_support_of_adj_of_isPath (hG : G.IsAcyclic) {u v w : V}
+  TGT IsCycles.snd_of_mem_support_of_isPath_of_adj
+      family=adjacency,finite_card,path,walk file=Matching.lean
+      lemma IsCycles.snd_of_mem_support_of_isPath_of_adj [Finite V] {v w w' : V}
+
+SEED 034 score=14.619 mmr=-8.381 motifs=same_family,complement_duality
+  SRC SimpleGraph.comap_top
+      family=complement,complete_graph,map file=Maps.lean
+      lemma comap_top {f : V → W} (hf : f.Injective) : (completeGraph W).comap f = completeGraph V := by
+  TGT SimpleGraph.induce_top
+      family=complement,complete_graph,map file=Maps.lean
+      @[simp] lemma induce_top (s : Set V) : (completeGraph V).induce s = completeGraph s :=
+
+SEED 035 score=13.493 mmr=-8.907 motifs=adj_edgeSet_bridge,finite_cardinality
+  SRC edgeSet_deleteIncidenceSet
+      family=edgeSet file=DeleteEdges.lean
+      theorem edgeSet_deleteIncidenceSet (G : SimpleGraph V) (x : V) :
+  TGT card_support_deleteIncidenceSet
+      family=adjacency,finite_card file=DeleteEdges.lean
+      theorem card_support_deleteIncidenceSet
+
+SEED 036 score=13.869 mmr=-10.031 motifs=adj_edgeSet_bridge,subgraph_lift_target,map_transport
+  SRC SimpleGraph.top_adj
+      family=adjacency file=Basic.lean
+      theorem top_adj (v w : V) : (⊤ : SimpleGraph V).Adj v w ↔ v ≠ w :=
+  TGT SimpleGraph.Subgraph.map_iso_top
+      family=edgeSet,map,subgraph file=Subgraph.lean
+      @[simp] lemma map_iso_top {H : SimpleGraph W} (e : G ≃g H) : Subgraph.map e.toHom ⊤ = ⊤ := by
+
+SEED 037 score=13.649 mmr=-10.051 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC _root_.SimpleGraph.spanningCoe_induce_top
+      family=subgraph file=Subgraph.lean
+      lemma _root_.SimpleGraph.spanningCoe_induce_top (s : Set V) :
+  TGT SimpleGraph.Connected.induce_compl_singleton_of_degree_eq_one
+      family=complement,connectivity,degree_neighbor,finite_card file=Acyclic.lean
+      lemma Connected.induce_compl_singleton_of_degree_eq_one (hconn : G.Connected) {v : V}
+
+SEED 038 score=14.795 mmr=-10.605 motifs=same_family,walk_path_connectivity
+  SRC Walk.exists_mem_edges_of_not_reachable_deleteEdges
+      family=connectivity,walk file=Connectivity/Connected.lean
+      lemma exists_mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {s : Set (Sym2 V)}
+  TGT Walk.mem_edges_of_not_reachable_deleteEdges
+      family=connectivity,walk file=Connectivity/Connected.lean
+      lemma mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {e : Sym2 V}
+
+SEED 039 score=13.426 mmr=-11.774 motifs=same_family,map_transport
+  SRC SimpleGraph.map_induce
+      family=map,walk file=Walks/Maps.lean
+      @[simp] lemma map_induce {u v : V} :
+  TGT SimpleGraph.map_induce_induceHomOfLE
+      family=map,walk file=Walks/Maps.lean
+      lemma map_induce_induceHomOfLE (hs : s ⊆ s') {u v : V} : ∀ (w : G.Walk u v) (hw),
+
+SEED 040 score=13.218 mmr=-12.582 motifs=adj_edgeSet_bridge,subgraph_lift_target,walk_path_connectivity
+  SRC SimpleGraph.exists_adj_isEdgeReachable_two
+      family=adjacency,connectivity file=Connectivity/EdgeConnectivity.lean
+      lemma exists_adj_isEdgeReachable_two (hne : u ≠ v) (h : G.IsEdgeReachable 2 u v) :
+  TGT SimpleGraph.Walk.edgeSet_toSubgraph
+      family=edgeSet,subgraph,walk file=Connectivity/Subgraph.lean
+      theorem edgeSet_toSubgraph (p : G.Walk u v) : p.toSubgraph.edgeSet = p.edgeSet :=
+
+SEED 041 score=13.190 mmr=-12.610 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC SimpleGraph.Subgraph.isAcyclic_coe_bot
+      family=subgraph file=Acyclic.lean
+      lemma Subgraph.isAcyclic_coe_bot (G : SimpleGraph V) : (⊥ : G.Subgraph).coe.IsAcyclic :=
+  TGT SimpleGraph.IsSRGWith.card_commonNeighbors_eq_of_not_adj_compl
+      family=adjacency,complement,finite_card file=StronglyRegular.lean
+      theorem IsSRGWith.card_commonNeighbors_eq_of_not_adj_compl (h : G.IsSRGWith n k ℓ μ) {v w : V}
+
+SEED 042 score=13.159 mmr=-12.641 motifs=same_family
+  SRC SimpleGraph.Walk.cons_isPath_iff
+      family=adjacency,path,walk file=Paths.lean
+      theorem cons_isPath_iff {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+  TGT SimpleGraph.Walk.IsPath.of_cons
+      family=adjacency,path,walk file=Paths.lean
+      theorem IsPath.of_cons {u v w : V} {h : G.Adj u v} {p : G.Walk v w} :
+
+SEED 043 score=14.185 mmr=-14.415 motifs=same_family,complement_duality
+  SRC isNIndepSet_compl
+      family=adjacency,complement file=Clique.lean
+      @[simp] theorem isNIndepSet_compl : Gᶜ.IsNIndepSet n s ↔ G.IsNClique n s := by
+  TGT isIndepSet_compl
+      family=adjacency,complement file=Clique.lean
+      @[simp] theorem isIndepSet_compl : Gᶜ.IsIndepSet s ↔ G.IsClique s := by
+
+SEED 044 score=13.361 mmr=-15.539 motifs=same_family,subgraph_monotonicity
+  SRC SimpleGraph.ConnectedComponent.coe_toSubgraph
+      family=subgraph file=Connectivity/Subgraph.lean
+      lemma coe_toSubgraph : C.toSubgraph.coe = C.toSimpleGraph :=
+  TGT SimpleGraph.ConnectedComponent.connected_toSubgraph
+      family=connectivity,subgraph file=Connectivity/Subgraph.lean
+      lemma connected_toSubgraph : C.toSubgraph.Connected :=
+
+SEED 045 score=13.288 mmr=-16.112 motifs=adj_edgeSet_bridge,finite_cardinality
+  SRC edgeSet_fromEdgeSet_incidenceSet
+      family=edgeSet file=DeleteEdges.lean
+      lemma edgeSet_fromEdgeSet_incidenceSet (G : SimpleGraph V) (x : V) :
+  TGT card_edgeFinset_deleteIncidenceSet
+      family=adjacency,degree_neighbor,finite_card file=DeleteEdges.lean
+      theorem card_edgeFinset_deleteIncidenceSet (G : SimpleGraph V) [DecidableRel G.Adj] (x : V) :
+
+SEED 046 score=13.296 mmr=-17.104 motifs=adj_edgeSet_bridge,complement_duality,walk_path_connectivity
+  SRC SimpleGraph.isBridge_iff_mem_and_forall_cycle_notMem
+      family=edgeSet,walk file=Connectivity/Connected.lean
+      theorem isBridge_iff_mem_and_forall_cycle_notMem {e : Sym2 V} :
+  TGT SimpleGraph.ComponentCompl.mem_of_adj
+      family=adjacency,complement,connectivity file=Ends/Defs.lean
+      theorem mem_of_adj : ∀ {C : G.ComponentCompl K} (c d : V), c ∈ C → d ∉ K → G.Adj c d → d ∈ C :=
+
+SEED 047 score=16.317 mmr=-17.383 motifs=same_family,finite_cardinality
+  SRC SimpleGraph.card_edgeFinset_replaceVertex_of_not_adj
+      family=adjacency,degree_neighbor,finite_card file=Operations.lean
+      theorem card_edgeFinset_replaceVertex_of_not_adj (hn : ¬G.Adj s t) :
+  TGT SimpleGraph.card_edgeFinset_replaceVertex_of_adj
+      family=adjacency,degree_neighbor,finite_card file=Operations.lean
+      theorem card_edgeFinset_replaceVertex_of_adj (ha : G.Adj s t) :
+
+SEED 048 score=13.426 mmr=-18.774 motifs=same_family,map_transport
+  SRC SimpleGraph.map_induce_induceHomOfLE
+      family=map,walk file=Walks/Maps.lean
+      lemma map_induce_induceHomOfLE (hs : s ⊆ s') {u v : V} : ∀ (w : G.Walk u v) (hw),
+  TGT SimpleGraph.map_induce
+      family=map,walk file=Walks/Maps.lean
+      @[simp] lemma map_induce {u v : V} :
+
+SEED 049 score=13.739 mmr=-19.061 motifs=adj_edgeSet_bridge,subgraph_lift_target,walk_path_connectivity
+  SRC SimpleGraph.ConnectedComponent.mem_supp_of_adj_mem_supp
+      family=adjacency,connectivity file=Connectivity/Connected.lean
+      lemma mem_supp_of_adj_mem_supp {G : SimpleGraph V} (C : G.ConnectedComponent) {u v : V}
+  TGT SimpleGraph.Walk.mem_edges_toSubgraph
+      family=edgeSet,subgraph,walk file=Connectivity/Subgraph.lean
+      theorem mem_edges_toSubgraph (p : G.Walk u v) {e : Sym2 V} :
+
+SEED 050 score=13.085 mmr=-19.415 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC SimpleGraph.IsTree.coe_singletonSubgraph
+      family=subgraph file=Acyclic.lean
+      theorem IsTree.coe_singletonSubgraph (G : SimpleGraph V) (v : V) :
+  TGT complete_graph_degree
+      family=complement,complete_graph,degree_neighbor,finite_card file=Finite.lean
+      theorem complete_graph_degree [DecidableEq V] (v : V) :
+
+SEED 051 score=15.213 mmr=-20.387 motifs=same_family,walk_path_connectivity
+  SRC Reachable.exists_path_of_dist
+      family=connectivity,path,walk file=Metric.lean
+      lemma Reachable.exists_path_of_dist (hr : G.Reachable u v) :
+  TGT Connected.exists_path_of_dist
+      family=connectivity,path,walk file=Metric.lean
+      lemma Connected.exists_path_of_dist (hconn : G.Connected) (u v : V) :
+
+SEED 052 score=13.804 mmr=-21.196 motifs=same_family,complement_duality
+  SRC SimpleGraph.coe_recolorOfEmbedding
+      family=complement,complete_graph file=Coloring.lean
+      @[simp] lemma coe_recolorOfEmbedding (f : α ↪ β) :
+  TGT SimpleGraph.coe_recolorOfEquiv
+      family=complement,complete_graph file=Coloring.lean
+      @[simp] lemma coe_recolorOfEquiv (f : α ≃ β) :
+
+SEED 053 score=18.507 mmr=-22.193 motifs=same_family,finite_cardinality
+  SRC SimpleGraph.Walk.IsEulerian.card_odd_degree
+      family=adjacency,degree_neighbor,finite_card,walk file=Trails.lean
+      theorem IsEulerian.card_odd_degree [Fintype V] [DecidableRel G.Adj] {u v : V} {p : G.Walk u v}
+  TGT SimpleGraph.Walk.IsEulerian.card_filter_odd_degree
+      family=adjacency,degree_neighbor,finite_card,walk file=Trails.lean
+      theorem IsEulerian.card_filter_odd_degree [Fintype V] [DecidableRel G.Adj] {u v : V}
+
+SEED 054 score=13.398 mmr=-22.502 motifs=adj_edgeSet_bridge,subgraph_lift_target,map_transport
+  SRC SimpleGraph.IsBridge.anti_of_mem_edgeSet
+      family=edgeSet file=Connectivity/Connected.lean
+      theorem IsBridge.anti_of_mem_edgeSet {G' : SimpleGraph V} {e : Sym2 V} (hle : G ≤ G')
+  TGT SimpleGraph.Walk.adj_toSubgraph_mapLe
+      family=adjacency,map,subgraph,walk file=Connectivity/Subgraph.lean
+      lemma adj_toSubgraph_mapLe {G' : SimpleGraph V} {w x : V} {p : G.Walk u v} (h : G ≤ G') :
+
+SEED 055 score=13.094 mmr=-23.806 motifs=same_family
+  SRC SimpleGraph.Walk.cons_isCycle_iff
+      family=adjacency,path,walk file=Paths.lean
+      theorem cons_isCycle_iff {u v : V} (p : G.Walk v u) (h : G.Adj u v) :
+  TGT SimpleGraph.Walk.cons_isPath_iff
+      family=adjacency,path,walk file=Paths.lean
+      theorem cons_isPath_iff {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+
+SEED 056 score=13.883 mmr=-23.817 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC copyCount_bot
+      family=subgraph file=Copy.lean
+      @[simp] lemma copyCount_bot (G : SimpleGraph V) : copyCount G (⊥ : SimpleGraph V) = 1 := by
+  TGT IsRegularOfDegree.compl
+      family=adjacency,complement,finite_card,regularity file=Finite.lean
+      theorem IsRegularOfDegree.compl [Fintype V] [DecidableEq V] {G : SimpleGraph V} [DecidableRel G.Adj]
+
+SEED 057 score=13.269 mmr=-24.731 motifs=same_family,subgraph_lift_target
+  SRC SimpleGraph.induce_pair_connected_of_adj
+      family=adjacency,connectivity file=Connectivity/Subgraph.lean
+      lemma induce_pair_connected_of_adj {u v : V} (huv : G.Adj u v) :
+  TGT SimpleGraph.Subgraph.top_induce_pair_connected_of_adj
+      family=adjacency,connectivity,subgraph file=Connectivity/Subgraph.lean
+      lemma top_induce_pair_connected_of_adj {u v : V} (huv : G.Adj u v) :
+
+SEED 058 score=13.731 mmr=-25.869 motifs=adj_edgeSet_bridge,subgraph_lift_target,map_transport
+  SRC SimpleGraph.toTopEdgeLabeling_labelGraph
+      family=adjacency file=EdgeLabeling.lean
+      theorem toTopEdgeLabeling_labelGraph (G : SimpleGraph V) [DecidableRel G.Adj] :
+  TGT SimpleGraph.Subgraph.map_iso_top
+      family=edgeSet,map,subgraph file=Subgraph.lean
+      @[simp] lemma map_iso_top {H : SimpleGraph W} (e : G ≃g H) : Subgraph.map e.toHom ⊤ = ⊤ := by
+
+SEED 059 score=13.535 mmr=-25.965 motifs=complement_duality,walk_path_connectivity,finite_cardinality
+  SRC SimpleGraph.IsAcyclic.path_concat
+      family=adjacency,path,walk file=Acyclic.lean
+      lemma IsAcyclic.path_concat (hG : G.IsAcyclic) {u v w : V} {p : G.Walk u v} {q : G.Walk u w}
+  TGT SimpleGraph.Connected.exists_connected_induce_compl_singleton_of_finite_nontrivial
+      family=complement,connectivity,finite_card file=Acyclic.lean
+      lemma Connected.exists_connected_induce_compl_singleton_of_finite_nontrivial
+
+SEED 060 score=14.031 mmr=-26.769 motifs=same_family,walk_path_connectivity
+  SRC SimpleGraph.reachable_delete_edges_iff_exists_walk
+      family=connectivity,walk file=Connectivity/Connected.lean
+      theorem reachable_delete_edges_iff_exists_walk {v w v' w' : V} :
+  TGT SimpleGraph.adj_and_reachable_delete_edges_iff_exists_cycle
+      family=adjacency,connectivity,walk file=Connectivity/Connected.lean
+      theorem adj_and_reachable_delete_edges_iff_exists_cycle {v w : V} :
+
+SEED 061 score=14.338 mmr=-27.962 motifs=same_family,finite_cardinality
+  SRC SimpleGraph.Reachable.degree_pos_right
+      family=connectivity,degree_neighbor,finite_card file=Connectivity/Connected.lean
+      lemma Reachable.degree_pos_right {G : SimpleGraph V} {u v : V} [Fintype (G.neighborSet v)]
+  TGT SimpleGraph.IsEdgeReachable.le_degree
+      family=connectivity,degree_neighbor,finite_card file=Connectivity/EdgeConnectivity.lean
+      lemma IsEdgeReachable.le_degree [Fintype (G.neighborSet u)] (h : G.IsEdgeReachable k u v)
+
+SEED 062 score=15.546 mmr=-28.854 motifs=same_family,complement_duality
+  SRC SimpleGraph._root_.Matrix.compl_zero
+      family=adjacency,complement,complete_graph file=AdjMatrix.lean
+      @[simp] theorem _root_.Matrix.compl_zero [Zero α] [One α] [DecidableEq α] [DecidableEq V] :
+  TGT SimpleGraph.IsCompl.adjMatrix_add_adjMatrix_eq_adjMatrix_completeGraph
+      family=adjacency,complement,complete_graph file=AdjMatrix.lean
+      theorem IsCompl.adjMatrix_add_adjMatrix_eq_adjMatrix_completeGraph [DecidableEq V] [AddZeroClass α]
+
+SEED 063 score=14.307 mmr=-29.693 motifs=adj_edgeSet_bridge,finite_cardinality,map_transport
+  SRC SimpleGraph.comap_adj
+      family=adjacency,map file=Maps.lean
+      @[simp] lemma comap_adj {G : SimpleGraph W} {f : V → W} :
+  TGT SimpleGraph.Walk.exists_isPath_forall_isPath_length_le_length
+      family=edgeSet,finite_card,path,walk file=Paths.lean
+      lemma exists_isPath_forall_isPath_length_le_length (G : SimpleGraph V) [N : Nonempty V]
+
+SEED 064 score=13.098 mmr=-30.702 motifs=same_family,complement_duality
+  SRC neighborFinset_eq_filter
+      family=adjacency,degree_neighbor file=Finite.lean
+      theorem neighborFinset_eq_filter {v : V} [DecidableRel G.Adj] :
+  TGT neighborFinset_compl
+      family=adjacency,complement,degree_neighbor file=Finite.lean
+      theorem neighborFinset_compl [DecidableEq V] [DecidableRel G.Adj] (v : V) :
+
+SEED 065 score=15.268 mmr=-31.532 motifs=same_family,adj_edgeSet_bridge
+  SRC adj_iff_exists_edge
+      family=adjacency,edgeSet file=Basic.lean
+      theorem adj_iff_exists_edge {v w : V} : G.Adj v w ↔ v ≠ w ∧ ∃ e ∈ G.edgeSet, v ∈ e ∧ w ∈ e := by
+  TGT adj_iff_exists_edge_coe
+      family=adjacency,edgeSet file=Basic.lean
+      theorem adj_iff_exists_edge_coe : G.Adj a b ↔ ∃ e : G.edgeSet, e.val = s(a, b) := by
+
+SEED 066 score=13.990 mmr=-32.110 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC killCopies_bot
+      family=subgraph file=Copy.lean
+      @[simp] lemma killCopies_bot (G : SimpleGraph V) : G.killCopies (⊥ : SimpleGraph W) = G := by
+  TGT card_edgeFinset_induce_compl_singleton
+      family=adjacency,complement,finite_card file=DeleteEdges.lean
+      theorem card_edgeFinset_induce_compl_singleton (G : SimpleGraph V) [DecidableRel G.Adj] (x : V) :
+
+SEED 067 score=14.795 mmr=-33.005 motifs=same_family,walk_path_connectivity
+  SRC Walk.mem_edges_of_not_reachable_deleteEdges
+      family=connectivity,walk file=Connectivity/Connected.lean
+      lemma mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {e : Sym2 V}
+  TGT Walk.exists_mem_edges_of_not_reachable_deleteEdges
+      family=connectivity,walk file=Connectivity/Connected.lean
+      lemma exists_mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {s : Set (Sym2 V)}
+
+SEED 068 score=13.207 mmr=-33.693 motifs=adj_edgeSet_bridge,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.deleteEdges_edgeSet
+      family=edgeSet file=DeleteEdges.lean
+      @[simp] lemma deleteEdges_edgeSet (G G' : SimpleGraph V) : G.deleteEdges G'.edgeSet = G \ G' := by
+  TGT SimpleGraph.adj_iff_of_neighborSet_equiv
+      family=adjacency,finite_card,subgraph file=Subgraph.lean
+      lemma adj_iff_of_neighborSet_equiv {v : V} {H : Subgraph G}
+
+SEED 069 score=13.172 mmr=-34.028 motifs=same_family,map_transport
+  SRC SimpleGraph.Walk.map_id
+      family=map,walk file=Walks/Maps.lean
+      theorem map_id (p : G.Walk u v) : p.map Hom.id = p := by
+  TGT SimpleGraph.Walk.map_append
+      family=map,walk file=Walks/Maps.lean
+      theorem map_append {u v w : V} (p : G.Walk u v) (q : G.Walk v w) :
+
+SEED 070 score=13.605 mmr=-35.195 motifs=same_family
+  SRC SimpleGraph.Walk.cons_isPath_iff
+      family=adjacency,path,walk file=Paths.lean
+      theorem cons_isPath_iff {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+  TGT SimpleGraph.Walk.concat_isPath_iff
+      family=adjacency,path,walk file=Paths.lean
+      theorem concat_isPath_iff {p : G.Walk u v} (h : G.Adj v w) :
+
+SEED 071 score=13.923 mmr=-35.577 motifs=adj_edgeSet_bridge,walk_path_connectivity,finite_cardinality
+  SRC SimpleGraph.isTree_of_minimal_connected
+      family=connectivity,edgeSet file=Acyclic.lean
+      lemma isTree_of_minimal_connected (h : Minimal Connected G) : IsTree G := by
+  TGT SimpleGraph.Walk.IsEulerian.even_degree_iff
+      family=adjacency,degree_neighbor,finite_card,walk file=Trails.lean
+      theorem IsEulerian.even_degree_iff {x u v : V} {p : G.Walk u v} (ht : p.IsEulerian) [Fintype V]
+
+SEED 072 score=14.619 mmr=-36.981 motifs=same_family,complement_duality
+  SRC SimpleGraph.induce_top
+      family=complement,complete_graph,map file=Maps.lean
+      @[simp] lemma induce_top (s : Set V) : (completeGraph V).induce s = completeGraph s :=
+  TGT SimpleGraph.comap_top
+      family=complement,complete_graph,map file=Maps.lean
+      lemma comap_top {f : V → W} (hf : f.Injective) : (completeGraph W).comap f = completeGraph V := by
+
+SEED 073 score=13.568 mmr=-37.432 motifs=walk_path_connectivity,finite_cardinality,map_transport
+  SRC SimpleGraph.connected_boxProd
+      family=connectivity,finite_card file=Prod.lean
+      theorem connected_boxProd : (G □ H).Connected ↔ G.Connected ∧ H.Connected :=
+  TGT SimpleGraph.Walk.ofBoxProdLeft_boxProdLeft
+      family=adjacency,map,walk file=Prod.lean
+      theorem ofBoxProdLeft_boxProdLeft [DecidableEq β] [DecidableRel G.Adj] {a₁ a₂ : α} {b : β} :
+
+SEED 074 score=13.154 mmr=-38.446 motifs=same_family,subgraph_lift_target
+  SRC SimpleGraph.ConnectedComponent.mem_supp_congr_adj
+      family=adjacency,connectivity file=Connectivity/Connected.lean
+      lemma mem_supp_congr_adj {v w : V} (c : G.ConnectedComponent) (hadj : G.Adj v w) :
+  TGT SimpleGraph.ConnectedComponent.mem_coe_supp_of_adj
+      family=adjacency,connectivity,subgraph file=Connectivity/Connected.lean
+      lemma mem_coe_supp_of_adj {v w : V} {H : Subgraph G} {c : ConnectedComponent H.coe}
+
+SEED 075 score=14.905 mmr=-39.095 motifs=adj_edgeSet_bridge,walk_path_connectivity,map_transport
+  SRC SimpleGraph.IsAcyclic.dist_ne_of_adj
+      family=adjacency,connectivity file=Acyclic.lean
+      lemma IsAcyclic.dist_ne_of_adj (hG : G.IsAcyclic) {u v w : V} (hadj : G.Adj v w)
+  TGT SimpleGraph.IsAcyclic.anti
+      family=edgeSet,map,walk file=Acyclic.lean
+      lemma IsAcyclic.anti {G' : SimpleGraph V} (hsub : G ≤ G') (h : G'.IsAcyclic) : G.IsAcyclic :=
+
+SEED 076 score=13.249 mmr=-39.751 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC SimpleGraph.IsClique.of_induce
+      family=subgraph file=Clique.lean
+      theorem IsClique.of_induce {S : Subgraph G} {F : Set α} {A : Set F}
+  TGT SimpleGraph.Connected.induce_compl_singleton_of_degree_eq_one
+      family=complement,connectivity,degree_neighbor,finite_card file=Acyclic.lean
+      lemma Connected.induce_compl_singleton_of_degree_eq_one (hconn : G.Connected) {v : V}
+
+SEED 077 score=16.214 mmr=-40.786 motifs=same_family,adj_edgeSet_bridge
+  SRC SimpleGraph.edgeSet_replaceVertex_of_not_adj
+      family=adjacency,edgeSet file=Operations.lean
+      theorem edgeSet_replaceVertex_of_not_adj (hn : ¬G.Adj s t) : (G.replaceVertex s t).edgeSet =
+  TGT SimpleGraph.edgeSet_replaceVertex_of_adj
+      family=adjacency,edgeSet file=Operations.lean
+      theorem edgeSet_replaceVertex_of_adj (ha : G.Adj s t) : (G.replaceVertex s t).edgeSet =
+
+SEED 078 score=13.205 mmr=-41.695 motifs=adj_edgeSet_bridge,subgraph_lift_target,walk_path_connectivity
+  SRC SimpleGraph.isBridge_iff_adj_and_not_isEdgeConnected_two
+      family=adjacency,connectivity file=Connectivity/EdgeConnectivity.lean
+      lemma isBridge_iff_adj_and_not_isEdgeConnected_two {u v : V} :
+  TGT SimpleGraph.Walk.toSubgraph_le_iff
+      family=edgeSet,subgraph,walk file=Connectivity/Subgraph.lean
+      theorem toSubgraph_le_iff {w : G.Walk u v} (hnil : ¬w.Nil) {G' : G.Subgraph} :
+
+SEED 079 score=13.804 mmr=-41.796 motifs=same_family,complement_duality
+  SRC SimpleGraph.coe_recolorOfEquiv
+      family=complement,complete_graph file=Coloring.lean
+      @[simp] lemma coe_recolorOfEquiv (f : α ≃ β) :
+  TGT SimpleGraph.coe_recolorOfEmbedding
+      family=complement,complete_graph file=Coloring.lean
+      @[simp] lemma coe_recolorOfEmbedding (f : α ↪ β) :
+
+SEED 080 score=13.297 mmr=-42.703 motifs=same_family,map_transport
+  SRC Walk.map_isPath_of_injective
+      family=map,path file=Paths.lean
+      theorem map_isPath_of_injective (hinj : Function.Injective f) (hp : p.IsPath) :
+  TGT Walk.map_isPath_iff_of_injective
+      family=map,path file=Paths.lean
+      theorem map_isPath_iff_of_injective (hinj : Function.Injective f) : (p.map f).IsPath ↔ p.IsPath :=
+
+SEED 081 score=13.046 mmr=-43.054 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC SimpleGraph.tutte
+      family=subgraph file=Tutte.lean
+      theorem tutte : (∃ M : Subgraph G, M.IsPerfectMatching) ↔ ∀ u, ¬ G.IsTutteViolator u := by
+  TGT SimpleGraph.IsSRGWith.card_commonNeighbors_eq_of_not_adj_compl
+      family=adjacency,complement,finite_card file=StronglyRegular.lean
+      theorem IsSRGWith.card_commonNeighbors_eq_of_not_adj_compl (h : G.IsSRGWith n k ℓ μ) {v w : V}
+
+SEED 082 score=13.319 mmr=-44.381 motifs=adj_edgeSet_bridge,subgraph_lift_target,map_transport
+  SRC SimpleGraph.IsClique.of_subsingleton
+      family=adjacency file=Clique.lean
+      theorem IsClique.of_subsingleton {G : SimpleGraph α} (hs : s.Subsingleton) : G.IsClique s :=
+  TGT SimpleGraph.Subgraph.map_iso_top
+      family=edgeSet,map,subgraph file=Subgraph.lean
+      @[simp] lemma map_iso_top {H : SimpleGraph W} (e : G ≃g H) : Subgraph.map e.toHom ⊤ = ⊤ := by
+
+SEED 083 score=16.197 mmr=-45.103 motifs=same_family,finite_cardinality
+  SRC SimpleGraph.IsSRGWith.card_neighborFinset_union_of_not_adj
+      family=adjacency,degree_neighbor,finite_card file=StronglyRegular.lean
+      theorem IsSRGWith.card_neighborFinset_union_of_not_adj {v w : V} (h : G.IsSRGWith n k ℓ μ)
+  TGT SimpleGraph.IsSRGWith.card_neighborFinset_union_of_adj
+      family=adjacency,degree_neighbor,finite_card file=StronglyRegular.lean
+      theorem IsSRGWith.card_neighborFinset_union_of_adj {v w : V} (h : G.IsSRGWith n k ℓ μ)
+
+SEED 084 score=14.482 mmr=-46.117 motifs=same_family,complement_duality
+  SRC Matrix.IsAdjMatrix.compl_inj
+      family=adjacency,complement file=AdjMatrix.lean
+      theorem IsAdjMatrix.compl_inj [Zero α] [One α] {A B : Matrix V V α}
+  TGT Matrix.IsAdjMatrix.compl
+      family=adjacency,complement file=AdjMatrix.lean
+      theorem compl [Zero α] [One α] (h : IsAdjMatrix A) : IsAdjMatrix A.compl :=
+
+SEED 085 score=13.908 mmr=-46.992 motifs=same_family,walk_path_connectivity
+  SRC Reachable.exists_path_of_dist
+      family=connectivity,path,walk file=Metric.lean
+      lemma Reachable.exists_path_of_dist (hr : G.Reachable u v) :
+  TGT SimpleGraph.Reachable.exists_isPath
+      family=connectivity,path,walk file=Connectivity/Connected.lean
+      theorem Reachable.exists_isPath {u v} (hr : G.Reachable u v) : ∃ p : G.Walk u v, p.IsPath := by
+
+SEED 086 score=13.174 mmr=-47.526 motifs=adj_edgeSet_bridge,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.deleteEdges_sdiff_eq_of_le
+      family=edgeSet file=DeleteEdges.lean
+      theorem deleteEdges_sdiff_eq_of_le {H : SimpleGraph V} (h : H ≤ G) :
+  TGT SimpleGraph.degree_pos_iff_exists_adj
+      family=adjacency,degree_neighbor,finite_card,subgraph file=Subgraph.lean
+      theorem degree_pos_iff_exists_adj {G' : Subgraph G} {v : V} [Fintype (G'.neighborSet v)] :
+
+SEED 087 score=13.605 mmr=-48.095 motifs=same_family
+  SRC SimpleGraph.Walk.concat_isPath_iff
+      family=adjacency,path,walk file=Paths.lean
+      theorem concat_isPath_iff {p : G.Walk u v} (h : G.Adj v w) :
+  TGT SimpleGraph.Walk.cons_isPath_iff
+      family=adjacency,path,walk file=Paths.lean
+      theorem cons_isPath_iff {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+
+SEED 088 score=13.172 mmr=-49.028 motifs=same_family,map_transport
+  SRC SimpleGraph.Walk.map_append
+      family=map,walk file=Walks/Maps.lean
+      theorem map_append {u v w : V} (p : G.Walk u v) (q : G.Walk v w) :
+  TGT SimpleGraph.Walk.map_id
+      family=map,walk file=Walks/Maps.lean
+      theorem map_id (p : G.Walk u v) : p.map Hom.id = p := by
+
+SEED 089 score=13.060 mmr=-49.140 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC SimpleGraph.ConnectedComponent.spanningCoe_toSubgraph
+      family=subgraph file=Connectivity/Subgraph.lean
+      lemma spanningCoe_toSubgraph : C.toSubgraph.spanningCoe = C.toSimpleGraph.spanningCoe :=
+  TGT IsRegularOfDegree.compl
+      family=adjacency,complement,finite_card,regularity file=Finite.lean
+      theorem IsRegularOfDegree.compl [Fintype V] [DecidableEq V] {G : SimpleGraph V} [DecidableRel G.Adj]
+
+SEED 090 score=13.316 mmr=-50.584 motifs=adj_edgeSet_bridge,walk_path_connectivity,finite_cardinality
+  SRC Path.cons_isCycle
+      family=adjacency,path,walk file=Paths.lean
+      theorem cons_isCycle {u v : V} (p : G.Path v u) (h : G.Adj u v)
+  TGT SimpleGraph.isTree_iff_connected_and_card
+      family=connectivity,edgeSet,finite_card file=Acyclic.lean
+      lemma isTree_iff_connected_and_card [Finite V] :
+
+SEED 091 score=14.013 mmr=-51.787 motifs=same_family,walk_path_connectivity
+  SRC SimpleGraph.adj_of_mem_walk_support
+      family=adjacency,walk file=Connectivity/Connected.lean
+      lemma adj_of_mem_walk_support {G : SimpleGraph V} {u v : V} (p : G.Walk u v) (hp : ¬p.Nil) {x : V}
+  TGT SimpleGraph.adj_le_reachable
+      family=adjacency,connectivity,walk file=Connectivity/Connected.lean
+      theorem adj_le_reachable (G : SimpleGraph V) : G.Adj ≤ G.Reachable :=
+
+SEED 092 score=13.196 mmr=-52.704 motifs=same_family,map_transport
+  SRC SimpleGraph.Walk.length_boxProd
+      family=adjacency,walk file=Prod.lean
+      lemma length_boxProd {a₁ a₂ : α} {b₁ b₂ : β} [DecidableEq α] [DecidableEq β]
+  TGT SimpleGraph.Walk.ofBoxProdRight_boxProdRight
+      family=adjacency,map,walk file=Prod.lean
+      theorem ofBoxProdRight_boxProdRight [DecidableEq α] [DecidableRel G.Adj] {a b₁ b₂ : α} :
+
+SEED 093 score=13.797 mmr=-53.603 motifs=same_family,adj_edgeSet_bridge
+  SRC SimpleGraph.Walk.isSubwalk_toWalk_iff_mem_edges
+      family=adjacency,walk file=Walks/Subwalks.lean
+      theorem isSubwalk_toWalk_iff_mem_edges {p : G.Walk u v} (h : G.Adj u' v') :
+  TGT SimpleGraph.Walk.adj_of_mem_edges
+      family=adjacency,edgeSet,walk file=Walks/Basic.lean
+      theorem adj_of_mem_edges {u v x y : V} (p : G.Walk u v) (h : s(x, y) ∈ p.edges) : G.Adj x y :=
+
+SEED 094 score=13.233 mmr=-54.467 motifs=adj_edgeSet_bridge,complement_duality,walk_path_connectivity
+  SRC SimpleGraph.edgeSet_reverse
+      family=edgeSet,walk file=Walks/Operations.lean
+      lemma edgeSet_reverse {u v : V} (p : G.Walk u v) : p.reverse.edgeSet = p.edgeSet := by ext; simp
+  TGT SimpleGraph.reachable_or_compl_adj
+      family=adjacency,complement,connectivity file=Connectivity/Connected.lean
+      lemma reachable_or_compl_adj (u v : V) : G.Reachable u v ∨ Gᶜ.Adj u v :=
+
+SEED 095 score=14.338 mmr=-54.762 motifs=same_family,finite_cardinality
+  SRC SimpleGraph.IsEdgeReachable.le_degree
+      family=connectivity,degree_neighbor,finite_card file=Connectivity/EdgeConnectivity.lean
+      lemma IsEdgeReachable.le_degree [Fintype (G.neighborSet u)] (h : G.IsEdgeReachable k u v)
+  TGT SimpleGraph.Reachable.degree_pos_right
+      family=connectivity,degree_neighbor,finite_card file=Connectivity/Connected.lean
+      lemma Reachable.degree_pos_right {G : SimpleGraph V} {u v : V} [Fintype (G.neighborSet v)]
+
+SEED 096 score=13.299 mmr=-56.101 motifs=adj_edgeSet_bridge,subgraph_lift_target,map_transport
+  SRC SimpleGraph.boxProd_adj_right
+      family=adjacency file=Prod.lean
+      theorem boxProd_adj_right {a : α} {b₁ b₂ : β} : (G □ H).Adj (a, b₁) (a, b₂) ↔ H.Adj b₁ b₂ := by
+  TGT SimpleGraph.Subgraph.map_iso_top
+      family=edgeSet,map,subgraph file=Subgraph.lean
+      @[simp] lemma map_iso_top {H : SimpleGraph W} (e : G ≃g H) : Subgraph.map e.toHom ⊤ = ⊤ := by
+
+SEED 097 score=14.272 mmr=-56.128 motifs=subgraph_monotonicity,complement_duality,finite_cardinality
+  SRC _root_.SimpleGraph.induce_eq_coe_induce_top
+      family=subgraph file=Subgraph.lean
+      theorem _root_.SimpleGraph.induce_eq_coe_induce_top (s : Set V) :
+  TGT card_edgeFinset_induce_compl_singleton
+      family=adjacency,complement,finite_card file=DeleteEdges.lean
+      theorem card_edgeFinset_induce_compl_singleton (G : SimpleGraph V) [DecidableRel G.Adj] (x : V) :
+
+SEED 098 score=13.147 mmr=-57.253 motifs=same_family,complement_duality
+  SRC not_cliqueFree_iff
+      family=complement,complete_graph file=Clique.lean
+      theorem not_cliqueFree_iff (n : ℕ) : ¬G.CliqueFree n ↔ Nonempty (completeGraph (Fin n) ↪g G) :=
+  TGT cliqueFree_iff
+      family=complement,complete_graph file=Clique.lean
+      theorem cliqueFree_iff {n : ℕ} : G.CliqueFree n ↔ IsEmpty (completeGraph (Fin n) ↪g G) := by
+
+SEED 099 score=13.083 mmr=-57.817 motifs=adj_edgeSet_bridge,subgraph_lift_target,walk_path_connectivity
+  SRC SimpleGraph.reachable_eq_reflTransGen
+      family=adjacency,connectivity file=Connectivity/Connected.lean
+      theorem reachable_eq_reflTransGen : G.Reachable = Relation.ReflTransGen G.Adj := by
+  TGT SimpleGraph.Walk.edgeSet_toSubgraph
+      family=edgeSet,subgraph,walk file=Connectivity/Subgraph.lean
+      theorem edgeSet_toSubgraph (p : G.Walk u v) : p.toSubgraph.edgeSet = p.edgeSet :=
+
+SEED 100 score=14.648 mmr=-58.252 motifs=same_family,finite_cardinality
+  SRC SimpleGraph.eventually_isContained_of_card_edgeFinset
+      family=adjacency,finite_card file=Extremal/TuranDensity.lean
+      theorem eventually_isContained_of_card_edgeFinset (H : SimpleGraph W) {ε : ℝ} (hε_pos : 0 < ε) :
+  TGT SimpleGraph.isContained_of_card_edgeFinset
+      family=adjacency,finite_card file=Extremal/TuranDensity.lean
+      theorem isContained_of_card_edgeFinset (H : SimpleGraph W) {ε : ℝ} (hε_pos : 0 < ε)

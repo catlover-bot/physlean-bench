@@ -1,0 +1,36 @@
+{
+  "src_root": "/project/nlp-work11/hirotaka-m/physlean_eval_work/physlib_eval_smoke_built/.lake/packages/mathlib/Mathlib/Combinatorics/SimpleGraph",
+  "node_count": 2664,
+  "kind_counts": {
+    "def": 260,
+    "structure": 23,
+    "lemma": 900,
+    "theorem": 1427,
+    "abbrev": 52,
+    "class": 2
+  },
+  "vocab_counts": {
+    "Walk": 598,
+    "Connected": 134,
+    "SimpleGraph": 454,
+    "map": 211,
+    "Subgraph": 292,
+    "edgeSet": 153,
+    "Adj": 559,
+    "Path": 106,
+    "support": 225,
+    "IsPath": 87,
+    "Fintype": 165,
+    "Reachable": 97,
+    "Finite": 55,
+    "degree": 110,
+    "compl": 144,
+    "DecidableEq": 101,
+    "completeGraph": 25,
+    "neighborFinset": 45,
+    "IsRegular": 7,
+    "emptyGraph": 6,
+    "spanningCoe": 36
+  },
+  "files": 69
+}

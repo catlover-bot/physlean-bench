@@ -1,0 +1,246 @@
+CANDIDATE 001 id=simplegraph_graph_candidate_v0_001
+  mode: graph_template_only_no_llm
+  rule: SUBGRAPH_WALK_LOCAL_COMPLETION
+  motif: subgraph walk/path local API completion
+  shape: derive a local lemma about Walk/IsPath facts inside toSubgraph/subgraph constructions
+  imports: Mathlib.Combinatorics.SimpleGraph.Connectivity.Subgraph
+  SRC: SimpleGraph.Walk.IsPath.ncard_neighborSet_toSubgraph_internal_eq_two
+       lemma ncard_neighborSet_toSubgraph_internal_eq_two {u} {i : ℕ} {p : G.Walk u v} (hp : p.IsPath)
+  TGT: SimpleGraph.Walk.IsPath.neighborSet_toSubgraph_internal
+       lemma neighborSet_toSubgraph_internal {u} {i : ℕ} {p : G.Walk u v} (hp : p.IsPath)
+  proof_plan: use the stronger source theorem -> specialize to the target local object -> rewrite neighborSet/support/toSubgraph
+  expected_tactics: have, simpa, rw, exact
+
+CANDIDATE 002 id=simplegraph_graph_candidate_v0_002
+  mode: graph_template_only_no_llm
+  rule: CARDINALITY_TRANSFER
+  motif: finite/cardinality transfer
+  shape: derive a cardinality comparison/equality lemma by composing the two finite graph cardinality facts
+  imports: Mathlib.Combinatorics.SimpleGraph.Trails
+  SRC: SimpleGraph.Walk.IsEulerian.card_filter_odd_degree
+       theorem IsEulerian.card_filter_odd_degree [Fintype V] [DecidableRel G.Adj] {u v : V}
+  TGT: SimpleGraph.Walk.IsEulerian.card_odd_degree
+       theorem IsEulerian.card_odd_degree [Fintype V] [DecidableRel G.Adj] {u v : V} {p : G.Walk u v}
+  proof_plan: instantiate both seed theorems -> rewrite card expression -> finish by omega/nomega/ring_nf/simp if arithmetic is present
+  expected_tactics: rw, simpa, omega, nlinarith
+
+CANDIDATE 003 id=simplegraph_graph_candidate_v0_003
+  mode: graph_template_only_no_llm
+  rule: API_BRIDGE
+  motif: Adj/edgeSet bridge
+  shape: derive a small conversion lemma connecting the source edgeSet/Adj API fact to the target edgeSet/Adj API fact
+  imports: Mathlib.Combinatorics.SimpleGraph.Walks.Basic, Mathlib.Combinatorics.SimpleGraph.Walks.Operations
+  SRC: SimpleGraph.Walk.edgeSet_cons
+       theorem edgeSet_cons {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+  TGT: SimpleGraph.edgeSet_concat
+       theorem edgeSet_concat {u v w : V} (p : G.Walk u v) (h : G.Adj v w) :
+  proof_plan: use source theorem -> rewrite by target theorem -> finish by simp or constructor/ext
+  expected_tactics: rw, simp, simpa, ext
+
+CANDIDATE 004 id=simplegraph_graph_candidate_v0_004
+  mode: graph_template_only_no_llm
+  rule: API_BRIDGE
+  motif: Adj/edgeSet bridge
+  shape: derive a small conversion lemma connecting the source edgeSet/Adj API fact to the target edgeSet/Adj API fact
+  imports: Mathlib.Combinatorics.SimpleGraph.Operations
+  SRC: SimpleGraph.edgeSet_replaceVertex_of_not_adj
+       theorem edgeSet_replaceVertex_of_not_adj (hn : ¬G.Adj s t) : (G.replaceVertex s t).edgeSet =
+  TGT: SimpleGraph.edgeSet_replaceVertex_of_adj
+       theorem edgeSet_replaceVertex_of_adj (ha : G.Adj s t) : (G.replaceVertex s t).edgeSet =
+  proof_plan: use source theorem -> rewrite by target theorem -> finish by simp or constructor/ext
+  expected_tactics: rw, simp, simpa, ext
+
+CANDIDATE 005 id=simplegraph_graph_candidate_v0_005
+  mode: graph_template_only_no_llm
+  rule: CARDINALITY_TRANSFER
+  motif: finite/cardinality transfer
+  shape: derive a cardinality comparison/equality lemma by composing the two finite graph cardinality facts
+  imports: Mathlib.Combinatorics.SimpleGraph.Operations
+  SRC: SimpleGraph.card_edgeFinset_replaceVertex_of_not_adj
+       theorem card_edgeFinset_replaceVertex_of_not_adj (hn : ¬G.Adj s t) :
+  TGT: SimpleGraph.card_edgeFinset_replaceVertex_of_adj
+       theorem card_edgeFinset_replaceVertex_of_adj (ha : G.Adj s t) :
+  proof_plan: instantiate both seed theorems -> rewrite card expression -> finish by omega/nomega/ring_nf/simp if arithmetic is present
+  expected_tactics: rw, simpa, omega, nlinarith
+
+CANDIDATE 006 id=simplegraph_graph_candidate_v0_006
+  mode: graph_template_only_no_llm
+  rule: API_BRIDGE
+  motif: Adj/edgeSet bridge
+  shape: derive a small conversion lemma connecting the source edgeSet/Adj API fact to the target edgeSet/Adj API fact
+  imports: Mathlib.Combinatorics.SimpleGraph.Basic
+  SRC: adj_iff_exists_edge
+       theorem adj_iff_exists_edge {v w : V} : G.Adj v w ↔ v ≠ w ∧ ∃ e ∈ G.edgeSet, v ∈ e ∧ w ∈ e := by
+  TGT: adj_iff_exists_edge_coe
+       theorem adj_iff_exists_edge_coe : G.Adj a b ↔ ∃ e : G.edgeSet, e.val = s(a, b) := by
+  proof_plan: use source theorem -> rewrite by target theorem -> finish by simp or constructor/ext
+  expected_tactics: rw, simp, simpa, ext
+
+CANDIDATE 007 id=simplegraph_graph_candidate_v0_007
+  mode: graph_template_only_no_llm
+  rule: API_BRIDGE
+  motif: Adj/edgeSet bridge
+  shape: derive a small conversion lemma connecting the source edgeSet/Adj API fact to the target edgeSet/Adj API fact
+  imports: Mathlib.Combinatorics.SimpleGraph.Acyclic
+  SRC: SimpleGraph.IsAcyclic.dist_ne_of_adj
+       lemma IsAcyclic.dist_ne_of_adj (hG : G.IsAcyclic) {u v w : V} (hadj : G.Adj v w)
+  TGT: SimpleGraph.IsAcyclic.anti
+       lemma IsAcyclic.anti {G' : SimpleGraph V} (hsub : G ≤ G') (h : G'.IsAcyclic) : G.IsAcyclic :=
+  proof_plan: use source theorem -> rewrite by target theorem -> finish by simp or constructor/ext
+  expected_tactics: rw, simp, simpa, ext
+
+CANDIDATE 008 id=simplegraph_graph_candidate_v0_008
+  mode: graph_template_only_no_llm
+  rule: WALK_PATH_CONNECTIVITY_COMPOSITION
+  motif: walk/path/connectivity composition
+  shape: derive a reusable conversion lemma between reachability, existence of walks, paths, cycles, or connectedness
+  imports: Mathlib.Combinatorics.SimpleGraph.Metric
+  SRC: Reachable.exists_path_of_dist
+       lemma Reachable.exists_path_of_dist (hr : G.Reachable u v) :
+  TGT: Connected.exists_path_of_dist
+       lemma Connected.exists_path_of_dist (hconn : G.Connected) (u v : V) :
+  proof_plan: obtain walk/path witness from source theorem -> feed witness into target theorem or its converse -> finish by exact/simpa
+  expected_tactics: obtain, rcases, exact, simpa
+
+CANDIDATE 009 id=simplegraph_graph_candidate_v0_009
+  mode: graph_template_only_no_llm
+  rule: API_BRIDGE
+  motif: Adj/edgeSet bridge
+  shape: derive a small conversion lemma connecting the source edgeSet/Adj API fact to the target edgeSet/Adj API fact
+  imports: Mathlib.Combinatorics.SimpleGraph.Maps, Mathlib.Combinatorics.SimpleGraph.Paths
+  SRC: SimpleGraph.comap_adj
+       @[simp] lemma comap_adj {G : SimpleGraph W} {f : V → W} :
+  TGT: SimpleGraph.Walk.exists_isPath_forall_isPath_length_le_length
+       lemma exists_isPath_forall_isPath_length_le_length (G : SimpleGraph V) [N : Nonempty V]
+  proof_plan: use source theorem -> rewrite by target theorem -> finish by simp or constructor/ext
+  expected_tactics: rw, simp, simpa, ext
+
+CANDIDATE 010 id=simplegraph_graph_candidate_v0_010
+  mode: graph_template_only_no_llm
+  rule: WALK_PATH_CONNECTIVITY_COMPOSITION
+  motif: walk/path/connectivity composition
+  shape: derive a reusable conversion lemma between reachability, existence of walks, paths, cycles, or connectedness
+  imports: Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected
+  SRC: Walk.exists_mem_edges_of_not_reachable_deleteEdges
+       lemma exists_mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {s : Set (Sym2 V)}
+  TGT: Walk.mem_edges_of_not_reachable_deleteEdges
+       lemma mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {e : Sym2 V}
+  proof_plan: obtain walk/path witness from source theorem -> feed witness into target theorem or its converse -> finish by exact/simpa
+  expected_tactics: obtain, rcases, exact, simpa
+
+CANDIDATE 011 id=simplegraph_graph_candidate_v0_011
+  mode: graph_template_only_no_llm
+  rule: MAP_TRANSPORT
+  motif: map/comap/induce transport
+  shape: derive a transport lemma for walks/adjacency/subgraphs under map, comap, product, or induce maps
+  imports: Mathlib.Combinatorics.SimpleGraph.Prod
+  SRC: SimpleGraph.Walk.ofBoxProdLeft_boxProdLeft
+       theorem ofBoxProdLeft_boxProdLeft [DecidableEq β] [DecidableRel G.Adj] {a₁ a₂ : α} {b : β} :
+  TGT: SimpleGraph.Walk.ofBoxProdRight_boxProdRight
+       theorem ofBoxProdRight_boxProdRight [DecidableEq α] [DecidableRel G.Adj] {a b₁ b₂ : α} :
+  proof_plan: map the source walk/adjacency object -> apply target transport theorem -> finish by simp
+  expected_tactics: map, simpa, exact, rw
+
+CANDIDATE 012 id=simplegraph_graph_candidate_v0_012
+  mode: graph_template_only_no_llm
+  rule: WALK_PATH_CONNECTIVITY_COMPOSITION
+  motif: walk/path/connectivity composition
+  shape: derive a reusable conversion lemma between reachability, existence of walks, paths, cycles, or connectedness
+  imports: Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected
+  SRC: SimpleGraph.reachable_delete_edges_iff_exists_walk
+       theorem reachable_delete_edges_iff_exists_walk {v w v' w' : V} :
+  TGT: SimpleGraph.adj_and_reachable_delete_edges_iff_exists_cycle
+       theorem adj_and_reachable_delete_edges_iff_exists_cycle {v w : V} :
+  proof_plan: obtain walk/path witness from source theorem -> feed witness into target theorem or its converse -> finish by exact/simpa
+  expected_tactics: obtain, rcases, exact, simpa
+
+CANDIDATE 013 id=simplegraph_graph_candidate_v0_013
+  mode: graph_template_only_no_llm
+  rule: COMPLEMENT_DUALITY
+  motif: complement duality
+  shape: derive a complement-dual version or n-ary/generalized version of an existing clique/independent/neighbor lemma
+  imports: Mathlib.Combinatorics.SimpleGraph.Clique
+  SRC: isNIndepSet_compl
+       @[simp] theorem isNIndepSet_compl : Gᶜ.IsNIndepSet n s ↔ G.IsNClique n s := by
+  TGT: isIndepSet_compl
+       @[simp] theorem isIndepSet_compl : Gᶜ.IsIndepSet s ↔ G.IsClique s := by
+  proof_plan: rewrite using complement theorem -> convert clique to independent-set or adjacency to non-adjacency -> finish by simp
+  expected_tactics: rw, simp, simpa
+
+CANDIDATE 014 id=simplegraph_graph_candidate_v0_014
+  mode: graph_template_only_no_llm
+  rule: CARDINALITY_TRANSFER
+  motif: finite/cardinality transfer
+  shape: derive a cardinality comparison/equality lemma by composing the two finite graph cardinality facts
+  imports: Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected, Mathlib.Combinatorics.SimpleGraph.Connectivity.EdgeConnectivity
+  SRC: SimpleGraph.Reachable.degree_pos_right
+       lemma Reachable.degree_pos_right {G : SimpleGraph V} {u v : V} [Fintype (G.neighborSet v)]
+  TGT: SimpleGraph.IsEdgeReachable.le_degree
+       lemma IsEdgeReachable.le_degree [Fintype (G.neighborSet u)] (h : G.IsEdgeReachable k u v)
+  proof_plan: instantiate both seed theorems -> rewrite card expression -> finish by omega/nomega/ring_nf/simp if arithmetic is present
+  expected_tactics: rw, simpa, omega, nlinarith
+
+CANDIDATE 015 id=simplegraph_graph_candidate_v0_015
+  mode: graph_template_only_no_llm
+  rule: WALK_PATH_CONNECTIVITY_COMPOSITION
+  motif: walk/path/connectivity composition
+  shape: derive a reusable conversion lemma between reachability, existence of walks, paths, cycles, or connectedness
+  imports: Mathlib.Combinatorics.SimpleGraph.Prod
+  SRC: SimpleGraph.connected_boxProd
+       theorem connected_boxProd : (G □ H).Connected ↔ G.Connected ∧ H.Connected :=
+  TGT: SimpleGraph.Walk.ofBoxProdLeft_boxProdLeft
+       theorem ofBoxProdLeft_boxProdLeft [DecidableEq β] [DecidableRel G.Adj] {a₁ a₂ : α} {b : β} :
+  proof_plan: obtain walk/path witness from source theorem -> feed witness into target theorem or its converse -> finish by exact/simpa
+  expected_tactics: obtain, rcases, exact, simpa
+
+CANDIDATE 016 id=simplegraph_graph_candidate_v0_016
+  mode: graph_template_only_no_llm
+  rule: COMPLEMENT_DUALITY
+  motif: complement duality
+  shape: derive a complement-dual version or n-ary/generalized version of an existing clique/independent/neighbor lemma
+  imports: Mathlib.Combinatorics.SimpleGraph.Acyclic
+  SRC: SimpleGraph.IsAcyclic.path_concat
+       lemma IsAcyclic.path_concat (hG : G.IsAcyclic) {u v w : V} {p : G.Walk u v} {q : G.Walk u w}
+  TGT: SimpleGraph.Connected.exists_connected_induce_compl_singleton_of_finite_nontrivial
+       lemma Connected.exists_connected_induce_compl_singleton_of_finite_nontrivial
+  proof_plan: rewrite using complement theorem -> convert clique to independent-set or adjacency to non-adjacency -> finish by simp
+  expected_tactics: rw, simp, simpa
+
+CANDIDATE 017 id=simplegraph_graph_candidate_v0_017
+  mode: graph_template_only_no_llm
+  rule: COMPLEMENT_DUALITY
+  motif: complement duality
+  shape: derive a complement-dual version or n-ary/generalized version of an existing clique/independent/neighbor lemma
+  imports: Mathlib.Combinatorics.SimpleGraph.Finite
+  SRC: neighborFinset_eq_filter
+       theorem neighborFinset_eq_filter {v : V} [DecidableRel G.Adj] :
+  TGT: neighborFinset_compl
+       theorem neighborFinset_compl [DecidableEq V] [DecidableRel G.Adj] (v : V) :
+  proof_plan: rewrite using complement theorem -> convert clique to independent-set or adjacency to non-adjacency -> finish by simp
+  expected_tactics: rw, simp, simpa
+
+CANDIDATE 018 id=simplegraph_graph_candidate_v0_018
+  mode: graph_template_only_no_llm
+  rule: CARDINALITY_TRANSFER
+  motif: finite/cardinality transfer
+  shape: derive a cardinality comparison/equality lemma by composing the two finite graph cardinality facts
+  imports: Mathlib.Combinatorics.SimpleGraph.Acyclic, Mathlib.Combinatorics.SimpleGraph.Finite
+  SRC: SimpleGraph.IsTree.coe_singletonSubgraph
+       theorem IsTree.coe_singletonSubgraph (G : SimpleGraph V) (v : V) :
+  TGT: complete_graph_degree
+       theorem complete_graph_degree [DecidableEq V] (v : V) :
+  proof_plan: instantiate both seed theorems -> rewrite card expression -> finish by omega/nomega/ring_nf/simp if arithmetic is present
+  expected_tactics: rw, simpa, omega, nlinarith
+
+CANDIDATE 019 id=simplegraph_graph_candidate_v0_019
+  mode: graph_template_only_no_llm
+  rule: MAP_TRANSPORT
+  motif: map/comap/induce transport
+  shape: derive a transport lemma for walks/adjacency/subgraphs under map, comap, product, or induce maps
+  imports: Mathlib.Combinatorics.SimpleGraph.Walks.Maps
+  SRC: SimpleGraph.map_induce
+       @[simp] lemma map_induce {u v : V} :
+  TGT: SimpleGraph.map_induce_induceHomOfLE
+       lemma map_induce_induceHomOfLE (hs : s ⊆ s') {u v : V} : ∀ (w : G.Walk u v) (hw),
+  proof_plan: map the source walk/adjacency object -> apply target transport theorem -> finish by simp
+  expected_tactics: map, simpa, exact, rw

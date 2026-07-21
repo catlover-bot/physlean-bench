@@ -1,0 +1,571 @@
+{
+  "input_seeds": 30,
+  "unique_guessed_names": 60,
+  "resolved_unique_names": 59,
+  "unresolved_unique_names": [
+    "Cslib.LTS.sTr_"
+  ],
+  "resolved": {
+    "Cslib.URM.Instr.capJump_S": "Cslib.URM.Instr.capJump_S",
+    "Cslib.URM.Instr.capJump_T": "Cslib.URM.Instr.capJump_T",
+    "Cslib.CCS.bisimilarity_par_nil": "Cslib.CCS.bisimilarity_par_nil",
+    "Cslib.CCS.bisimilarity_nil_par": "Cslib.CCS.bisimilarity_nil_par",
+    "Cslib.URM.straightLine_finalState_spec": "Cslib.URM.straightLine_finalState_spec",
+    "Cslib.URM.straightLine_finalRegs_eq_of_halted": "Cslib.URM.straightLine_finalRegs_eq_of_halted",
+    "Cslib.frequently_iff_strictMono": "Cslib.ωSequence.frequently_iff_strictMono",
+    "Cslib.frequently_in_strictMono": "Cslib.ωSequence.frequently_in_strictMono",
+    "Cslib.theoryEq_isBisimulation": "Cslib.Logic.HML.theoryEq_isBisimulation",
+    "Cslib.theoryEq_eq_bisimilarity": "Cslib.Logic.HML.theoryEq_eq_bisimilarity",
+    "Cslib.URM.Steps.toStandardForm_halts": "Cslib.URM.Steps.toStandardForm_halts",
+    "Cslib.URM.Steps.from_toStandardForm_halts": "Cslib.URM.Steps.from_toStandardForm_halts",
+    "Cslib.Relation.RelatesWithinSteps.zero": "Relation.RelatesWithinSteps.zero",
+    "Cslib.Relation.RelatesWithinSteps.zero_iff": "Relation.RelatesWithinSteps.zero_iff",
+    "Cslib.Automata.NA.Buchi.reindex_run_iff": "Cslib.Automata.NA.Buchi.reindex_run_iff",
+    "Cslib.Automata.NA.Buchi.reindex_run_iff'": "Cslib.Automata.NA.Buchi.reindex_run_iff'",
+    "Cslib.take_succ_cons": "Cslib.ωSequence.take_succ_cons",
+    "Cslib.take_succ'": "Cslib.ωSequence.take_succ'",
+    "Cslib.LTS.totalize.nonsink_tr_iff": "Cslib.LTS.totalize.nonsink_tr_iff",
+    "Cslib.LTS.totalize.nonsink_mtr_iff": "Cslib.LTS.totalize.nonsink_mtr_iff",
+    "Cslib.Automata.NA.iSum_run_iff": "Cslib.Automata.NA.iSum_run_iff",
+    "Cslib.Automata.NA.Buchi.iSum_language_eq": "Cslib.Automata.NA.Buchi.iSum_language_eq",
+    "Cslib.Nat.strictMono_infinite": "Nat.strictMono_infinite",
+    "Cslib.Nat.infinite_strictMono": "Nat.infinite_strictMono",
+    "Cslib.Automata.NA.hist_run_proj": "Cslib.Automata.NA.hist_run_proj",
+    "Cslib.Automata.NA.hist_run_exists": "Cslib.Automata.NA.hist_run_exists",
+    "Cslib.LTS.MTr.single": "Cslib.LTS.MTr.single",
+    "Cslib.LTS.MTr.single_invert": "Cslib.LTS.MTr.single_invert",
+    "Cslib.Turing.StackTape.nil_toList": "Turing.StackTape.nil_toList",
+    "Cslib.Turing.StackTape.empty_eq_nil": "Turing.StackTape.empty_eq_nil",
+    "Cslib.cumLen_one_add_drop": "Cslib.ωSequence.cumLen_one_add_drop",
+    "Cslib.cumLen_segment_one_add": "Cslib.ωSequence.cumLen_segment_one_add",
+    "Cslib.LTS.toFLTS_mem_mtr": "Cslib.LTS.toFLTS_mem_mtr",
+    "Cslib.LTS.toFLTS_mtr_setImageMultistep": "Cslib.LTS.toFLTS_mtr_setImageMultistep",
+    "Cslib.Automata.NA.Buchi.inter_freq_acc_freq_acc": "Cslib.Automata.NA.Buchi.inter_freq_acc_freq_acc",
+    "Cslib.Automata.NA.Buchi.inter_freq_comp_acc_freq_acc": "Cslib.Automata.NA.Buchi.inter_freq_comp_acc_freq_acc",
+    "Cslib.Relation.Confluent.toChurchRosser": "Relation.Confluent.toChurchRosser",
+    "Cslib.Relation.Confluent_iff_ChurchRosser": "Relation.Confluent_iff_ChurchRosser",
+    "Cslib.URM.Steps.preserves_register": "Cslib.URM.Steps.preserves_register",
+    "Cslib.URM.Steps.eq_of_halts": "Cslib.URM.Steps.eq_of_halts",
+    "Cslib.Automata.NA.loop_run_left_left": "Cslib.Automata.NA.loop_run_left_left",
+    "Cslib.Automata.NA.loop_run_left_right_left": "Cslib.Automata.NA.loop_run_left_right_left",
+    "Cslib.Logic.HML.Proposition.equiv_def": "Cslib.Logic.HML.Proposition.equiv_def",
+    "Cslib.Logic.HML.Satisfies.bundled_char": "Cslib.Logic.HML.Satisfies.bundled_char",
+    "Cslib.LTS.STr.single": "Cslib.LTS.STr.single",
+    "Cslib.Logic.HML.satisfies_finiteAnd": "Cslib.Logic.HML.satisfies_finiteAnd",
+    "Cslib.Logic.HML.satisfies_finiteOr": "Cslib.Logic.HML.satisfies_finiteOr",
+    "Cslib.FLTS.mtr_concat_eq": "Cslib.FLTS.mtr_concat_eq",
+    "Cslib.FLTS.mtr_nil_eq": "Cslib.FLTS.mtr_nil_eq",
+    "Cslib.URM.Program.toStandardForm_isStandardForm": "Cslib.URM.Program.toStandardForm_isStandardForm",
+    "Cslib.URM.toStandardForm_equiv": "Cslib.URM.toStandardForm_equiv",
+    "Cslib.LTS.Execution.of_mTr": "Cslib.LTS.Execution.of_mTr",
+    "Cslib.LTS.mTr_iff_execution": "Cslib.LTS.mTr_iff_execution",
+    "Cslib.CCS.Act.Co.symm": "Cslib.CCS.Act.Co.symm",
+    "Cslib.CCS.Act.co_isVisible": "Cslib.CCS.Act.co_isVisible",
+    "Cslib.extract_eq_nil": "Cslib.ωSequence.extract_eq_nil",
+    "Cslib.extract_eq_nil_iff": "Cslib.ωSequence.extract_eq_nil_iff",
+    "Cslib.Relation.RelatesInSteps.zero": "Relation.RelatesInSteps.zero",
+    "Cslib.Relation.RelatesInSteps.zero_iff": "Relation.RelatesInSteps.zero_iff"
+  },
+  "details": {
+    "Cslib.URM.Instr.capJump_S": [
+      {
+        "candidate": "Cslib.URM.Instr.capJump_S",
+        "ok": true
+      }
+    ],
+    "Cslib.URM.Instr.capJump_T": [
+      {
+        "candidate": "Cslib.URM.Instr.capJump_T",
+        "ok": true
+      }
+    ],
+    "Cslib.CCS.bisimilarity_par_nil": [
+      {
+        "candidate": "Cslib.CCS.bisimilarity_par_nil",
+        "ok": true
+      }
+    ],
+    "Cslib.CCS.bisimilarity_nil_par": [
+      {
+        "candidate": "Cslib.CCS.bisimilarity_nil_par",
+        "ok": true
+      }
+    ],
+    "Cslib.URM.straightLine_finalState_spec": [
+      {
+        "candidate": "Cslib.URM.straightLine_finalState_spec",
+        "ok": true
+      }
+    ],
+    "Cslib.URM.straightLine_finalRegs_eq_of_halted": [
+      {
+        "candidate": "Cslib.URM.straightLine_finalRegs_eq_of_halted",
+        "ok": true
+      }
+    ],
+    "Cslib.frequently_iff_strictMono": [
+      {
+        "candidate": "Cslib.frequently_iff_strictMono",
+        "ok": false
+      },
+      {
+        "candidate": "frequently_iff_strictMono",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.ωSequence.frequently_iff_strictMono",
+        "ok": true
+      }
+    ],
+    "Cslib.frequently_in_strictMono": [
+      {
+        "candidate": "Cslib.frequently_in_strictMono",
+        "ok": false
+      },
+      {
+        "candidate": "frequently_in_strictMono",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.ωSequence.frequently_in_strictMono",
+        "ok": true
+      }
+    ],
+    "Cslib.theoryEq_isBisimulation": [
+      {
+        "candidate": "Cslib.theoryEq_isBisimulation",
+        "ok": false
+      },
+      {
+        "candidate": "theoryEq_isBisimulation",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.Logic.HML.theoryEq_isBisimulation",
+        "ok": true
+      }
+    ],
+    "Cslib.theoryEq_eq_bisimilarity": [
+      {
+        "candidate": "Cslib.theoryEq_eq_bisimilarity",
+        "ok": false
+      },
+      {
+        "candidate": "theoryEq_eq_bisimilarity",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.Logic.HML.theoryEq_eq_bisimilarity",
+        "ok": true
+      }
+    ],
+    "Cslib.URM.Steps.toStandardForm_halts": [
+      {
+        "candidate": "Cslib.URM.Steps.toStandardForm_halts",
+        "ok": true
+      }
+    ],
+    "Cslib.URM.Steps.from_toStandardForm_halts": [
+      {
+        "candidate": "Cslib.URM.Steps.from_toStandardForm_halts",
+        "ok": true
+      }
+    ],
+    "Cslib.Relation.RelatesWithinSteps.zero": [
+      {
+        "candidate": "Cslib.Relation.RelatesWithinSteps.zero",
+        "ok": false
+      },
+      {
+        "candidate": "Relation.RelatesWithinSteps.zero",
+        "ok": true
+      }
+    ],
+    "Cslib.Relation.RelatesWithinSteps.zero_iff": [
+      {
+        "candidate": "Cslib.Relation.RelatesWithinSteps.zero_iff",
+        "ok": false
+      },
+      {
+        "candidate": "Relation.RelatesWithinSteps.zero_iff",
+        "ok": true
+      }
+    ],
+    "Cslib.Automata.NA.Buchi.reindex_run_iff": [
+      {
+        "candidate": "Cslib.Automata.NA.Buchi.reindex_run_iff",
+        "ok": true
+      }
+    ],
+    "Cslib.Automata.NA.Buchi.reindex_run_iff'": [
+      {
+        "candidate": "Cslib.Automata.NA.Buchi.reindex_run_iff'",
+        "ok": true
+      }
+    ],
+    "Cslib.take_succ_cons": [
+      {
+        "candidate": "Cslib.take_succ_cons",
+        "ok": false
+      },
+      {
+        "candidate": "take_succ_cons",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.ωSequence.take_succ_cons",
+        "ok": true
+      }
+    ],
+    "Cslib.take_succ'": [
+      {
+        "candidate": "Cslib.take_succ'",
+        "ok": false
+      },
+      {
+        "candidate": "take_succ'",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.ωSequence.take_succ'",
+        "ok": true
+      }
+    ],
+    "Cslib.LTS.totalize.nonsink_tr_iff": [
+      {
+        "candidate": "Cslib.LTS.totalize.nonsink_tr_iff",
+        "ok": true
+      }
+    ],
+    "Cslib.LTS.totalize.nonsink_mtr_iff": [
+      {
+        "candidate": "Cslib.LTS.totalize.nonsink_mtr_iff",
+        "ok": true
+      }
+    ],
+    "Cslib.Automata.NA.iSum_run_iff": [
+      {
+        "candidate": "Cslib.Automata.NA.iSum_run_iff",
+        "ok": true
+      }
+    ],
+    "Cslib.Automata.NA.Buchi.iSum_language_eq": [
+      {
+        "candidate": "Cslib.Automata.NA.Buchi.iSum_language_eq",
+        "ok": true
+      }
+    ],
+    "Cslib.Nat.strictMono_infinite": [
+      {
+        "candidate": "Cslib.Nat.strictMono_infinite",
+        "ok": false
+      },
+      {
+        "candidate": "Nat.strictMono_infinite",
+        "ok": true
+      }
+    ],
+    "Cslib.Nat.infinite_strictMono": [
+      {
+        "candidate": "Cslib.Nat.infinite_strictMono",
+        "ok": false
+      },
+      {
+        "candidate": "Nat.infinite_strictMono",
+        "ok": true
+      }
+    ],
+    "Cslib.Automata.NA.hist_run_proj": [
+      {
+        "candidate": "Cslib.Automata.NA.hist_run_proj",
+        "ok": true
+      }
+    ],
+    "Cslib.Automata.NA.hist_run_exists": [
+      {
+        "candidate": "Cslib.Automata.NA.hist_run_exists",
+        "ok": true
+      }
+    ],
+    "Cslib.LTS.MTr.single": [
+      {
+        "candidate": "Cslib.LTS.MTr.single",
+        "ok": true
+      }
+    ],
+    "Cslib.LTS.MTr.single_invert": [
+      {
+        "candidate": "Cslib.LTS.MTr.single_invert",
+        "ok": true
+      }
+    ],
+    "Cslib.Turing.StackTape.nil_toList": [
+      {
+        "candidate": "Cslib.Turing.StackTape.nil_toList",
+        "ok": false
+      },
+      {
+        "candidate": "Turing.StackTape.nil_toList",
+        "ok": true
+      }
+    ],
+    "Cslib.Turing.StackTape.empty_eq_nil": [
+      {
+        "candidate": "Cslib.Turing.StackTape.empty_eq_nil",
+        "ok": false
+      },
+      {
+        "candidate": "Turing.StackTape.empty_eq_nil",
+        "ok": true
+      }
+    ],
+    "Cslib.cumLen_one_add_drop": [
+      {
+        "candidate": "Cslib.cumLen_one_add_drop",
+        "ok": false
+      },
+      {
+        "candidate": "cumLen_one_add_drop",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.ωSequence.cumLen_one_add_drop",
+        "ok": true
+      }
+    ],
+    "Cslib.cumLen_segment_one_add": [
+      {
+        "candidate": "Cslib.cumLen_segment_one_add",
+        "ok": false
+      },
+      {
+        "candidate": "cumLen_segment_one_add",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.ωSequence.cumLen_segment_one_add",
+        "ok": true
+      }
+    ],
+    "Cslib.LTS.toFLTS_mem_mtr": [
+      {
+        "candidate": "Cslib.LTS.toFLTS_mem_mtr",
+        "ok": true
+      }
+    ],
+    "Cslib.LTS.toFLTS_mtr_setImageMultistep": [
+      {
+        "candidate": "Cslib.LTS.toFLTS_mtr_setImageMultistep",
+        "ok": true
+      }
+    ],
+    "Cslib.Automata.NA.Buchi.inter_freq_acc_freq_acc": [
+      {
+        "candidate": "Cslib.Automata.NA.Buchi.inter_freq_acc_freq_acc",
+        "ok": true
+      }
+    ],
+    "Cslib.Automata.NA.Buchi.inter_freq_comp_acc_freq_acc": [
+      {
+        "candidate": "Cslib.Automata.NA.Buchi.inter_freq_comp_acc_freq_acc",
+        "ok": true
+      }
+    ],
+    "Cslib.Relation.Confluent.toChurchRosser": [
+      {
+        "candidate": "Cslib.Relation.Confluent.toChurchRosser",
+        "ok": false
+      },
+      {
+        "candidate": "Relation.Confluent.toChurchRosser",
+        "ok": true
+      }
+    ],
+    "Cslib.Relation.Confluent_iff_ChurchRosser": [
+      {
+        "candidate": "Cslib.Relation.Confluent_iff_ChurchRosser",
+        "ok": false
+      },
+      {
+        "candidate": "Relation.Confluent_iff_ChurchRosser",
+        "ok": true
+      }
+    ],
+    "Cslib.URM.Steps.preserves_register": [
+      {
+        "candidate": "Cslib.URM.Steps.preserves_register",
+        "ok": true
+      }
+    ],
+    "Cslib.URM.Steps.eq_of_halts": [
+      {
+        "candidate": "Cslib.URM.Steps.eq_of_halts",
+        "ok": true
+      }
+    ],
+    "Cslib.Automata.NA.loop_run_left_left": [
+      {
+        "candidate": "Cslib.Automata.NA.loop_run_left_left",
+        "ok": true
+      }
+    ],
+    "Cslib.Automata.NA.loop_run_left_right_left": [
+      {
+        "candidate": "Cslib.Automata.NA.loop_run_left_right_left",
+        "ok": true
+      }
+    ],
+    "Cslib.Logic.HML.Proposition.equiv_def": [
+      {
+        "candidate": "Cslib.Logic.HML.Proposition.equiv_def",
+        "ok": true
+      }
+    ],
+    "Cslib.Logic.HML.Satisfies.bundled_char": [
+      {
+        "candidate": "Cslib.Logic.HML.Satisfies.bundled_char",
+        "ok": true
+      }
+    ],
+    "Cslib.LTS.sTr_": [
+      {
+        "candidate": "Cslib.LTS.sTr_",
+        "ok": false
+      },
+      {
+        "candidate": "LTS.sTr_",
+        "ok": false
+      },
+      {
+        "candidate": "sTr_",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.LTS.MTr.sTr_",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.LTS.STr.sTr_",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.LTS.Execution.sTr_",
+        "ok": false
+      }
+    ],
+    "Cslib.LTS.STr.single": [
+      {
+        "candidate": "Cslib.LTS.STr.single",
+        "ok": true
+      }
+    ],
+    "Cslib.Logic.HML.satisfies_finiteAnd": [
+      {
+        "candidate": "Cslib.Logic.HML.satisfies_finiteAnd",
+        "ok": true
+      }
+    ],
+    "Cslib.Logic.HML.satisfies_finiteOr": [
+      {
+        "candidate": "Cslib.Logic.HML.satisfies_finiteOr",
+        "ok": true
+      }
+    ],
+    "Cslib.FLTS.mtr_concat_eq": [
+      {
+        "candidate": "Cslib.FLTS.mtr_concat_eq",
+        "ok": true
+      }
+    ],
+    "Cslib.FLTS.mtr_nil_eq": [
+      {
+        "candidate": "Cslib.FLTS.mtr_nil_eq",
+        "ok": true
+      }
+    ],
+    "Cslib.URM.Program.toStandardForm_isStandardForm": [
+      {
+        "candidate": "Cslib.URM.Program.toStandardForm_isStandardForm",
+        "ok": true
+      }
+    ],
+    "Cslib.URM.toStandardForm_equiv": [
+      {
+        "candidate": "Cslib.URM.toStandardForm_equiv",
+        "ok": true
+      }
+    ],
+    "Cslib.LTS.Execution.of_mTr": [
+      {
+        "candidate": "Cslib.LTS.Execution.of_mTr",
+        "ok": true
+      }
+    ],
+    "Cslib.LTS.mTr_iff_execution": [
+      {
+        "candidate": "Cslib.LTS.mTr_iff_execution",
+        "ok": true
+      }
+    ],
+    "Cslib.CCS.Act.Co.symm": [
+      {
+        "candidate": "Cslib.CCS.Act.Co.symm",
+        "ok": true
+      }
+    ],
+    "Cslib.CCS.Act.co_isVisible": [
+      {
+        "candidate": "Cslib.CCS.Act.co_isVisible",
+        "ok": true
+      }
+    ],
+    "Cslib.extract_eq_nil": [
+      {
+        "candidate": "Cslib.extract_eq_nil",
+        "ok": false
+      },
+      {
+        "candidate": "extract_eq_nil",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.ωSequence.extract_eq_nil",
+        "ok": true
+      }
+    ],
+    "Cslib.extract_eq_nil_iff": [
+      {
+        "candidate": "Cslib.extract_eq_nil_iff",
+        "ok": false
+      },
+      {
+        "candidate": "extract_eq_nil_iff",
+        "ok": false
+      },
+      {
+        "candidate": "Cslib.ωSequence.extract_eq_nil_iff",
+        "ok": true
+      }
+    ],
+    "Cslib.Relation.RelatesInSteps.zero": [
+      {
+        "candidate": "Cslib.Relation.RelatesInSteps.zero",
+        "ok": false
+      },
+      {
+        "candidate": "Relation.RelatesInSteps.zero",
+        "ok": true
+      }
+    ],
+    "Cslib.Relation.RelatesInSteps.zero_iff": [
+      {
+        "candidate": "Cslib.Relation.RelatesInSteps.zero_iff",
+        "ok": false
+      },
+      {
+        "candidate": "Relation.RelatesInSteps.zero_iff",
+        "ok": true
+      }
+    ]
+  }
+}

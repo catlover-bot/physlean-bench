@@ -18,3 +18,7 @@ This directory contains lightweight artifacts for the Physlib and CSLib theorem-
 ## Not included
 
 Large caches, build directories, Slurm temporary directories, model caches, and external dataset directories are intentionally excluded.
+
+## Premise selection
+
+Cross-library Physlib and CSLib premise-selection artifacts are available in [`premise_selection_v1/`](premise_selection_v1/).

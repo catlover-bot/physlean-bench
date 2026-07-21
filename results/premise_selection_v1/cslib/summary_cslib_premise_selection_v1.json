@@ -1,0 +1,64 @@
+{
+  "benchmark_name": "CSLib Premise Selection v1",
+  "source_commit": "6d112db496f8528f4991fd7be32257e89861a4d7",
+  "candidate_definition": {
+    "same_file": "eligible theorem/lemma declarations before the target, including same-file private declarations",
+    "imported_modules": "non-private eligible theorem/lemma declarations in transitive CSLib imports",
+    "target_excluded": true
+  },
+  "gold_definition": "used_premises intersect eligible CSLib theorem/lemma declarations",
+  "split_definition": {
+    "unit": "module_path",
+    "module_disjoint": true,
+    "target_ratio": "approximately 80/10/10"
+  },
+  "catalog_size": 1428,
+  "all_target_count": 1252,
+  "positive_target_count": 571,
+  "zero_gold_target_count": 681,
+  "total_gold_labels": 1206,
+  "gold_coverage": 1.0,
+  "split_counts_all": {
+    "test": 125,
+    "train": 1002,
+    "validation": 125
+  },
+  "split_counts_positive": {
+    "test": 56,
+    "train": 463,
+    "validation": 52
+  },
+  "split_gold_counts": {
+    "test": 152,
+    "train": 947,
+    "validation": 107
+  },
+  "module_counts_by_split": {
+    "test": 20,
+    "train": 49,
+    "validation": 20
+  },
+  "gold_location_counts": {
+    "imported_module": 415,
+    "same_file_earlier": 791
+  },
+  "candidate_count_statistics": {
+    "min": 0,
+    "median": 64.0,
+    "mean": 78.42012779552715,
+    "p90": 165,
+    "p95": 194,
+    "max": 372
+  },
+  "gold_count_statistics_positive_targets": {
+    "min": 1,
+    "median": 2,
+    "mean": 2.1120840630472855,
+    "p90": 4,
+    "max": 14
+  },
+  "visibility_audit": {
+    "private_import_candidate_occurrences_removed": 1502,
+    "private_gold_count": 0
+  }
+}

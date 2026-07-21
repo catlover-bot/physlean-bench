@@ -1,0 +1,6 @@
+{
+  "file": "lean_candidates/SimpleGraphGraphDerivedCandidatesV0.lean",
+  "generation_mode": "graph_template_only_no_llm",
+  "candidate_count": 8,
+  "note": "These are deterministic Lean skeletons derived from graph motifs and seed theorem pairs. Proofs are intentionally sorry placeholders for the next typecheck/proof phase."
+}

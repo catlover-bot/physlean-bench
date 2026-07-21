@@ -1,0 +1,486 @@
+==============================================================================================================
+CANDIDATE 001 simplegraph_graph_candidate_v0_001
+RULE: SUBGRAPH_WALK_LOCAL_COMPLETION
+SOURCE: SimpleGraph.Walk.IsPath.ncard_neighborSet_toSubgraph_internal_eq_two [Connectivity/Subgraph.lean]
+  403:       (by rw [Set.mem_setOf_eq]; lia) at hl <;> aesop
+  404:
+  405: lemma ncard_neighborSet_toSubgraph_internal_eq_two {u} {i : ℕ} {p : G.Walk u v} (hp : p.IsPath)
+  406:     (h : i ≠ 0) (h' : i < p.length) :
+  407:     (p.toSubgraph.neighborSet (p.getVert i)).ncard = 2 := by
+  408:   rw [hp.neighborSet_toSubgraph_internal h h']
+  409:   have : p.getVert (i - 1) ≠ p.getVert (i + 1) := by
+  410:     intro h
+  411:     have := hp.getVert_injOn (by rw [Set.mem_setOf_eq]; lia) (by rw [Set.mem_setOf_eq]; lia) h
+  412:     lia
+
+TARGET: SimpleGraph.Walk.IsPath.neighborSet_toSubgraph_internal [Connectivity/Subgraph.lean]
+  389:         Walk.not_nil_iff_lt_length.mp hnp)
+  390:
+  391: lemma neighborSet_toSubgraph_internal {u} {i : ℕ} {p : G.Walk u v} (hp : p.IsPath)
+  392:     (h : i ≠ 0) (h' : i < p.length) :
+  393:     p.toSubgraph.neighborSet (p.getVert i) = {p.getVert (i - 1), p.getVert (i + 1)} := by
+  394:   have hadj1 := ((show i - 1 + 1 = i from by lia) ▸
+  395:     p.toSubgraph_adj_getVert (by lia : (i - 1) < p.length)).symm
+  396:   ext v
+  397:   simp_all only [ne_eq, Subgraph.mem_neighborSet, Set.mem_insert_iff, Set.mem_singleton_iff,
+  398:     SimpleGraph.Walk.toSubgraph_adj_iff, Sym2.eq, Sym2.rel_iff', Prod.mk.injEq,
+
+==============================================================================================================
+CANDIDATE 002 simplegraph_graph_candidate_v0_002
+RULE: CARDINALITY_TRANSFER
+SOURCE: SimpleGraph.Walk.IsEulerian.card_filter_odd_degree [Trails.lean]
+[not found] SimpleGraph.Walk.IsEulerian.card_filter_odd_degree in Trails.lean
+
+TARGET: SimpleGraph.Walk.IsEulerian.card_odd_degree [Trails.lean]
+[not found] SimpleGraph.Walk.IsEulerian.card_odd_degree in Trails.lean
+
+==============================================================================================================
+CANDIDATE 003 simplegraph_graph_candidate_v0_003
+RULE: API_BRIDGE
+SOURCE: SimpleGraph.Walk.edgeSet_cons [Walks/Basic.lean]
+  325:
+  326: @[simp]
+  327: theorem edgeSet_cons {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+  328:     (cons h p).edgeSet = insert s(u, v) p.edgeSet := by ext; simp
+  329:
+  330: theorem coe_edges_toFinset [DecidableEq V] {u v : V} (p : G.Walk u v) :
+  331:     (p.edges.toFinset : Set (Sym2 V)) = p.edgeSet := by
+  332:   simp [edgeSet]
+  333:
+
+TARGET: SimpleGraph.edgeSet_concat [Walks/Operations.lean]
+  478:
+  479: @[simp]
+  480: theorem edgeSet_concat {u v w : V} (p : G.Walk u v) (h : G.Adj v w) :
+  481:     (p.concat h).edgeSet = insert s(v, w) p.edgeSet := by ext; simp [or_comm]
+  482:
+  483: theorem edgeSet_append {u v w : V} (p : G.Walk u v) (q : G.Walk v w) :
+  484:     (p.append q).edgeSet = p.edgeSet ∪ q.edgeSet := by ext; simp
+  485:
+  486: @[simp]
+
+==============================================================================================================
+CANDIDATE 004 simplegraph_graph_candidate_v0_004
+RULE: API_BRIDGE
+SOURCE: SimpleGraph.edgeSet_replaceVertex_of_not_adj [Operations.lean]
+   69: variable {s}
+   70:
+   71: theorem edgeSet_replaceVertex_of_not_adj (hn : ¬G.Adj s t) : (G.replaceVertex s t).edgeSet =
+   72:     G.edgeSet \ G.incidenceSet t ∪ (s(·, t)) '' (G.neighborSet s) := by
+   73:   ext e; refine e.inductionOn ?_
+   74:   simp only [replaceVertex, mem_edgeSet, Set.mem_union, Set.mem_diff, mk'_mem_incidenceSet_iff]
+   75:   intros; split_ifs; exacts [by simp_all, by aesop, by rw [adj_comm]; aesop, by grind]
+   76:
+   77: theorem edgeSet_replaceVertex_of_adj (ha : G.Adj s t) : (G.replaceVertex s t).edgeSet =
+
+TARGET: SimpleGraph.edgeSet_replaceVertex_of_adj [Operations.lean]
+   75:   intros; split_ifs; exacts [by simp_all, by aesop, by rw [adj_comm]; aesop, by grind]
+   76:
+   77: theorem edgeSet_replaceVertex_of_adj (ha : G.Adj s t) : (G.replaceVertex s t).edgeSet =
+   78:     (G.edgeSet \ G.incidenceSet t ∪ (s(·, t)) '' (G.neighborSet s)) \ {s(t, t)} := by
+   79:   ext e; refine e.inductionOn ?_
+   80:   simp only [replaceVertex, mem_edgeSet, Set.mem_union, Set.mem_diff, mk'_mem_incidenceSet_iff]
+   81:   intros; split_ifs; exacts [by simp_all, by aesop, by rw [adj_comm]; aesop, by grind]
+   82:
+   83: variable [Fintype V] [DecidableRel G.Adj]
+
+==============================================================================================================
+CANDIDATE 005 simplegraph_graph_candidate_v0_005
+RULE: CARDINALITY_TRANSFER
+SOURCE: SimpleGraph.card_edgeFinset_replaceVertex_of_not_adj [Operations.lean]
+  108:   aesop
+  109:
+  110: theorem card_edgeFinset_replaceVertex_of_not_adj (hn : ¬G.Adj s t) :
+  111:     #(G.replaceVertex s t).edgeFinset = #G.edgeFinset + G.degree s - G.degree t := by
+  112:   have inc : G.incidenceFinset t ⊆ G.edgeFinset := by simp [incidenceFinset, incidenceSet_subset]
+  113:   rw [G.edgeFinset_replaceVertex_of_not_adj hn,
+  114:     card_union_of_disjoint G.disjoint_sdiff_neighborFinset_image, card_sdiff_of_subset inc,
+  115:     ← Nat.sub_add_comm <| card_le_card inc, card_incidenceFinset_eq_degree]
+  116:   congr 2
+
+TARGET: SimpleGraph.card_edgeFinset_replaceVertex_of_adj [Operations.lean]
+  119:   aesop
+  120:
+  121: theorem card_edgeFinset_replaceVertex_of_adj (ha : G.Adj s t) :
+  122:     #(G.replaceVertex s t).edgeFinset = #G.edgeFinset + G.degree s - G.degree t - 1 := by
+  123:   have inc : G.incidenceFinset t ⊆ G.edgeFinset := by simp [incidenceFinset, incidenceSet_subset]
+  124:   rw [G.edgeFinset_replaceVertex_of_adj ha, card_sdiff_of_subset (by simp [ha]),
+  125:     card_union_of_disjoint G.disjoint_sdiff_neighborFinset_image, card_sdiff_of_subset inc,
+  126:     ← Nat.sub_add_comm <| card_le_card inc, card_incidenceFinset_eq_degree]
+  127:   congr 2
+
+==============================================================================================================
+CANDIDATE 006 simplegraph_graph_candidate_v0_006
+RULE: API_BRIDGE
+SOURCE: adj_iff_exists_edge [Basic.lean]
+  548: `∃ (e ∈ G.edgeSet), v ∈ e ∧ w ∈ e` is satisfied by every edge
+  549: incident to `v`. -/
+  550: theorem adj_iff_exists_edge {v w : V} : G.Adj v w ↔ v ≠ w ∧ ∃ e ∈ G.edgeSet, v ∈ e ∧ w ∈ e := by
+  551:   refine ⟨fun _ => ⟨G.ne_of_adj ‹_›, s(v, w), by simpa⟩, ?_⟩
+  552:   rintro ⟨hne, e, he, hv⟩
+  553:   rw [Sym2.mem_and_mem_iff hne] at hv
+  554:   subst e
+  555:   rwa [mem_edgeSet] at he
+
+TARGET: adj_iff_exists_edge_coe [Basic.lean]
+  555:   rwa [mem_edgeSet] at he
+  556:
+  557: theorem adj_iff_exists_edge_coe : G.Adj a b ↔ ∃ e : G.edgeSet, e.val = s(a, b) := by
+  558:   simp only [mem_edgeSet, exists_prop, SetCoe.exists, exists_eq_right]
+  559:
+  560: variable (G G₁ G₂)
+  561:
+  562: theorem edge_other_ne {e : Sym2 V} (he : e ∈ G.edgeSet) {v : V} (h : v ∈ e) :
+
+==============================================================================================================
+CANDIDATE 007 simplegraph_graph_candidate_v0_007
+RULE: API_BRIDGE
+SOURCE: SimpleGraph.IsAcyclic.dist_ne_of_adj [Acyclic.lean]
+[not found] SimpleGraph.IsAcyclic.dist_ne_of_adj in Acyclic.lean
+
+TARGET: SimpleGraph.IsAcyclic.anti [Acyclic.lean]
+[not found] SimpleGraph.IsAcyclic.anti in Acyclic.lean
+
+==============================================================================================================
+CANDIDATE 008 simplegraph_graph_candidate_v0_008
+RULE: WALK_PATH_CONNECTIVITY_COMPOSITION
+SOURCE: Reachable.exists_path_of_dist [Metric.lean]
+  335:   apply Walk.bypass_isPath
+  336:
+  337: lemma Reachable.exists_path_of_dist (hr : G.Reachable u v) :
+  338:     ∃ (p : G.Walk u v), p.IsPath ∧ p.length = G.dist u v := by
+  339:   obtain ⟨p, h⟩ := hr.exists_walk_length_eq_dist
+  340:   exact ⟨p, p.isPath_of_length_eq_dist h, h⟩
+  341:
+  342: lemma Connected.exists_path_of_dist (hconn : G.Connected) (u v : V) :
+  343:     ∃ (p : G.Walk u v), p.IsPath ∧ p.length = G.dist u v := by
+
+TARGET: Connected.exists_path_of_dist [Metric.lean]
+  340:   exact ⟨p, p.isPath_of_length_eq_dist h, h⟩
+  341:
+  342: lemma Connected.exists_path_of_dist (hconn : G.Connected) (u v : V) :
+  343:     ∃ (p : G.Walk u v), p.IsPath ∧ p.length = G.dist u v := by
+  344:   obtain ⟨p, h⟩ := hconn.exists_walk_length_eq_dist u v
+  345:   exact ⟨p, p.isPath_of_length_eq_dist h, h⟩
+  346:
+  347: @[simp]
+  348: lemma dist_bot : (⊥ : SimpleGraph V).dist u v = 0 := by
+
+==============================================================================================================
+CANDIDATE 009 simplegraph_graph_candidate_v0_009
+RULE: API_BRIDGE
+SOURCE: SimpleGraph.comap_adj [Maps.lean]
+  120:   loopless := ⟨fun _ ↦ G.loopless.irrefl _⟩
+  121:
+  122: @[simp] lemma comap_adj {G : SimpleGraph W} {f : V → W} :
+  123:     (G.comap f).Adj u v ↔ G.Adj (f u) (f v) := Iff.rfl
+  124:
+  125: @[simp] lemma comap_id {G : SimpleGraph V} : G.comap id = G := SimpleGraph.ext rfl
+  126:
+  127: @[simp] lemma comap_comap {G : SimpleGraph X} (f : V → W) (g : W → X) :
+  128:     (G.comap g).comap f = G.comap (g ∘ f) := rfl
+  129:
+  130: instance instDecidableComapAdj (f : V → W) (G : SimpleGraph W) [DecidableRel G.Adj] :
+  131:     DecidableRel (G.comap f).Adj := fun _ _ ↦ ‹DecidableRel G.Adj› _ _
+  132:
+  133: lemma comap_symm (G : SimpleGraph V) (e : V ≃ W) :
+  134:     G.comap e.symm.toEmbedding = G.map e.toEmbedding := by
+  135:   ext; simp only [Equiv.apply_eq_iff_eq_symm_apply, comap_adj, map_adj, Equiv.toEmbedding_apply,
+  136:     exists_eq_right_right, exists_eq_right]
+  137:
+  138: lemma map_symm (G : SimpleGraph W) (e : V ≃ W) :
+  139:     G.map e.symm.toEmbedding = G.comap e.toEmbedding := by rw [← comap_symm, e.symm_symm]
+
+TARGET: SimpleGraph.Walk.exists_isPath_forall_isPath_length_le_length [Paths.lean]
+  361:
+  362: /-- There exists a path of maximal length in a non-empty graph on finite edges. -/
+  363: lemma exists_isPath_forall_isPath_length_le_length (G : SimpleGraph V) [N : Nonempty V]
+  364:     [Finite G.edgeSet] :
+  365:     ∃ (u v : V) (p : G.Walk u v) (_ : p.IsPath),
+  366:       ∀ (u' v' : V) (p' : G.Walk u' v') (_ : p'.IsPath), p'.length ≤ p.length := by
+  367:   have := Fintype.ofFinite G.edgeSet
+  368:   let s := {n | ∃ (u v : V) (p : G.Walk u v), p.IsPath ∧ p.length = n}
+  369:   have : s.Finite := Set.Finite.subset (Set.finite_le_nat G.edgeFinset.card)
+  370:     fun n ⟨_, _, _, hp, hn⟩ ↦ hn ▸ hp.isTrail.length_le_card_edgeFinset
+  371:   obtain ⟨x⟩ := N
+
+==============================================================================================================
+CANDIDATE 010 simplegraph_graph_candidate_v0_010
+RULE: WALK_PATH_CONNECTIVITY_COMPOSITION
+SOURCE: Walk.exists_mem_edges_of_not_reachable_deleteEdges [Connectivity/Connected.lean]
+  884:
+  885: /-- A walk between two vertices separated by a set of edges must go through one of those edges. -/
+  886: lemma exists_mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {s : Set (Sym2 V)}
+  887:     (huv : ¬ (G.deleteEdges s).Reachable u v) : ∃ e ∈ s, e ∈ w.edges := by
+  888:   contrapose! huv; exact ⟨w.toDeleteEdges _ fun _ ↦ imp_not_comm.1 <| huv _⟩
+  889:
+  890: /-- A walk between two vertices separated by an edge must go through that edge. -/
+  891: lemma mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {e : Sym2 V}
+  892:     (huv : ¬ (G.deleteEdges {e}).Reachable u v) : e ∈ w.edges := by
+
+TARGET: Walk.mem_edges_of_not_reachable_deleteEdges [Connectivity/Connected.lean]
+  889:
+  890: /-- A walk between two vertices separated by an edge must go through that edge. -/
+  891: lemma mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {e : Sym2 V}
+  892:     (huv : ¬ (G.deleteEdges {e}).Reachable u v) : e ∈ w.edges := by
+  893:   simpa using w.exists_mem_edges_of_not_reachable_deleteEdges huv
+  894:
+  895: /-- A trail doesn't go through an edge that disconnects one of its endpoints from the endpoints of
+  896: the trail. -/
+  897: lemma IsTrail.not_mem_edges_of_not_reachable (hw : w.IsTrail)
+
+==============================================================================================================
+CANDIDATE 011 simplegraph_graph_candidate_v0_011
+RULE: MAP_TRANSPORT
+SOURCE: SimpleGraph.Walk.ofBoxProdLeft_boxProdLeft [Prod.lean]
+  149: set_option backward.isDefEq.respectTransparency false in
+  150: @[simp]
+  151: theorem ofBoxProdLeft_boxProdLeft [DecidableEq β] [DecidableRel G.Adj] {a₁ a₂ : α} {b : β} :
+  152:     ∀ (w : G.Walk a₁ a₂), (w.boxProdLeft H b).ofBoxProdLeft = w
+  153:   | nil => rfl
+  154:   | cons' x y z h w => by
+  155:     rw [Walk.boxProdLeft, map_cons, ofBoxProdLeft, Or.by_cases, dif_pos, ← Walk.boxProdLeft]
+  156:     · simp [ofBoxProdLeft_boxProdLeft]
+  157:     · exact ⟨h, rfl⟩
+  158:
+  159: set_option backward.isDefEq.respectTransparency false in
+  160: @[simp]
+  161: theorem ofBoxProdRight_boxProdRight [DecidableEq α] [DecidableRel G.Adj] {a b₁ b₂ : α} :
+  162:     ∀ (w : G.Walk b₁ b₂), (w.boxProdRight G a).ofBoxProdRight = w
+  163:   | nil => rfl
+  164:   | cons' x y z h w => by
+  165:     rw [Walk.boxProdRight, map_cons, ofBoxProdRight, Or.by_cases, dif_pos, ←
+  166:       Walk.boxProdRight]
+  167:     · simp [ofBoxProdRight_boxProdRight]
+  168:     · exact ⟨h, rfl⟩
+  169:
+  170: lemma length_boxProd {a₁ a₂ : α} {b₁ b₂ : β} [DecidableEq α] [DecidableEq β]
+  171:     [DecidableRel G.Adj] [DecidableRel H.Adj] (w : (G □ H).Walk (a₁, b₁) (a₂, b₂)) :
+  172:     w.length = w.ofBoxProdLeft.length + w.ofBoxProdRight.length := by
+  173:   match w with
+  174:   | .nil => simp [ofBoxProdLeft, ofBoxProdRight]
+  175:   | .cons x w' => next c =>
+  176:     unfold ofBoxProdLeft ofBoxProdRight
+  177:     rw [length_cons, length_boxProd w']
+
+TARGET: SimpleGraph.Walk.ofBoxProdRight_boxProdRight [Prod.lean]
+  159: set_option backward.isDefEq.respectTransparency false in
+  160: @[simp]
+  161: theorem ofBoxProdRight_boxProdRight [DecidableEq α] [DecidableRel G.Adj] {a b₁ b₂ : α} :
+  162:     ∀ (w : G.Walk b₁ b₂), (w.boxProdRight G a).ofBoxProdRight = w
+  163:   | nil => rfl
+  164:   | cons' x y z h w => by
+  165:     rw [Walk.boxProdRight, map_cons, ofBoxProdRight, Or.by_cases, dif_pos, ←
+  166:       Walk.boxProdRight]
+  167:     · simp [ofBoxProdRight_boxProdRight]
+  168:     · exact ⟨h, rfl⟩
+  169:
+  170: lemma length_boxProd {a₁ a₂ : α} {b₁ b₂ : β} [DecidableEq α] [DecidableEq β]
+  171:     [DecidableRel G.Adj] [DecidableRel H.Adj] (w : (G □ H).Walk (a₁, b₁) (a₂, b₂)) :
+  172:     w.length = w.ofBoxProdLeft.length + w.ofBoxProdRight.length := by
+  173:   match w with
+  174:   | .nil => simp [ofBoxProdLeft, ofBoxProdRight]
+  175:   | .cons x w' => next c =>
+  176:     unfold ofBoxProdLeft ofBoxProdRight
+  177:     rw [length_cons, length_boxProd w']
+
+==============================================================================================================
+CANDIDATE 012 simplegraph_graph_candidate_v0_012
+RULE: WALK_PATH_CONNECTIVITY_COMPOSITION
+SOURCE: SimpleGraph.reachable_delete_edges_iff_exists_walk [Connectivity/Connected.lean]
+  752:
+  753: set_option backward.isDefEq.respectTransparency false in
+  754: theorem reachable_delete_edges_iff_exists_walk {v w v' w' : V} :
+  755:     (G \ fromEdgeSet {s(v, w)}).Reachable v' w' ↔ ∃ p : G.Walk v' w', s(v, w) ∉ p.edges := by
+  756:   constructor
+  757:   · rintro ⟨p⟩
+  758:     use p.map (.ofLE (by simp))
+  759:     simp_rw [Walk.edges_map, List.mem_map, Hom.ofLE_apply, Sym2.map_id', id]
+  760:     rintro ⟨e, h, rfl⟩
+
+TARGET: SimpleGraph.adj_and_reachable_delete_edges_iff_exists_cycle [Connectivity/Connected.lean]
+  796:   exact List.disjoint_of_nodup_append hc hbq hpq'
+  797:
+  798: theorem adj_and_reachable_delete_edges_iff_exists_cycle {v w : V} :
+  799:     G.Adj v w ∧ (G \ fromEdgeSet {s(v, w)}).Reachable v w ↔
+  800:       ∃ (u : V) (p : G.Walk u u), p.IsCycle ∧ s(v, w) ∈ p.edges := by
+  801:   classical
+  802:   rw [reachable_delete_edges_iff_exists_walk]
+  803:   constructor
+  804:   · rintro ⟨h, p, hp⟩
+  805:     refine ⟨w, Walk.cons h.symm p.toPath, ?_, ?_⟩
+
+==============================================================================================================
+CANDIDATE 013 simplegraph_graph_candidate_v0_013
+RULE: COMPLEMENT_DUALITY
+SOURCE: isNIndepSet_compl [Clique.lean]
+  856:
+  857: /-- An `n`-independent set in the complement graph is an `n`-clique and vice versa. -/
+  858: @[simp] theorem isNIndepSet_compl : Gᶜ.IsNIndepSet n s ↔ G.IsNClique n s := by
+  859:   rw [isNClique_iff]
+  860:   simp [isNIndepSet_iff]
+  861:
+  862: instance [DecidableEq α] [DecidableRel G.Adj] {n : ℕ} {s : Finset α} :
+  863:     Decidable (G.IsNIndepSet n s) :=
+
+TARGET: isIndepSet_compl [Clique.lean]
+  802:
+  803: /-- An independent set in the complement graph is a clique and vice versa. -/
+  804: @[simp] theorem isIndepSet_compl : Gᶜ.IsIndepSet s ↔ G.IsClique s := by
+  805:   rw [isIndepSet_iff, isClique_iff]; repeat rw [Set.Pairwise]
+  806:   simp_all [compl_adj]
+  807:
+  808: instance [DecidableEq α] [DecidableRel G.Adj] {s : Finset α} : Decidable (G.IsIndepSet s) :=
+  809:   decidable_of_iff' _ G.isIndepSet_iff
+
+==============================================================================================================
+CANDIDATE 014 simplegraph_graph_candidate_v0_014
+RULE: CARDINALITY_TRANSFER
+SOURCE: SimpleGraph.Reachable.degree_pos_right [Connectivity/Connected.lean]
+[not found] SimpleGraph.Reachable.degree_pos_right in Connectivity/Connected.lean
+
+TARGET: SimpleGraph.IsEdgeReachable.le_degree [Connectivity/EdgeConnectivity.lean]
+[not found] SimpleGraph.IsEdgeReachable.le_degree in Connectivity/EdgeConnectivity.lean
+
+==============================================================================================================
+CANDIDATE 015 simplegraph_graph_candidate_v0_015
+RULE: WALK_PATH_CONNECTIVITY_COMPOSITION
+SOURCE: SimpleGraph.connected_boxProd [Prod.lean]
+  225:
+  226: @[simp]
+  227: theorem connected_boxProd : (G □ H).Connected ↔ G.Connected ∧ H.Connected :=
+  228:   ⟨fun h => ⟨h.ofBoxProdLeft, h.ofBoxProdRight⟩, fun h => h.1.boxProd h.2⟩
+  229:
+  230: instance boxProdFintypeNeighborSet (x : α × β)
+  231:     [Fintype (G.neighborSet x.1)] [Fintype (H.neighborSet x.2)] :
+  232:     Fintype ((G □ H).neighborSet x) :=
+
+TARGET: SimpleGraph.Walk.ofBoxProdLeft_boxProdLeft [Prod.lean]
+  149: set_option backward.isDefEq.respectTransparency false in
+  150: @[simp]
+  151: theorem ofBoxProdLeft_boxProdLeft [DecidableEq β] [DecidableRel G.Adj] {a₁ a₂ : α} {b : β} :
+  152:     ∀ (w : G.Walk a₁ a₂), (w.boxProdLeft H b).ofBoxProdLeft = w
+  153:   | nil => rfl
+  154:   | cons' x y z h w => by
+  155:     rw [Walk.boxProdLeft, map_cons, ofBoxProdLeft, Or.by_cases, dif_pos, ← Walk.boxProdLeft]
+  156:     · simp [ofBoxProdLeft_boxProdLeft]
+  157:     · exact ⟨h, rfl⟩
+  158:
+  159: set_option backward.isDefEq.respectTransparency false in
+  160: @[simp]
+  161: theorem ofBoxProdRight_boxProdRight [DecidableEq α] [DecidableRel G.Adj] {a b₁ b₂ : α} :
+  162:     ∀ (w : G.Walk b₁ b₂), (w.boxProdRight G a).ofBoxProdRight = w
+  163:   | nil => rfl
+  164:   | cons' x y z h w => by
+  165:     rw [Walk.boxProdRight, map_cons, ofBoxProdRight, Or.by_cases, dif_pos, ←
+  166:       Walk.boxProdRight]
+  167:     · simp [ofBoxProdRight_boxProdRight]
+  168:     · exact ⟨h, rfl⟩
+  169:
+  170: lemma length_boxProd {a₁ a₂ : α} {b₁ b₂ : β} [DecidableEq α] [DecidableEq β]
+  171:     [DecidableRel G.Adj] [DecidableRel H.Adj] (w : (G □ H).Walk (a₁, b₁) (a₂, b₂)) :
+  172:     w.length = w.ofBoxProdLeft.length + w.ofBoxProdRight.length := by
+  173:   match w with
+  174:   | .nil => simp [ofBoxProdLeft, ofBoxProdRight]
+  175:   | .cons x w' => next c =>
+  176:     unfold ofBoxProdLeft ofBoxProdRight
+  177:     rw [length_cons, length_boxProd w']
+
+==============================================================================================================
+CANDIDATE 016 simplegraph_graph_candidate_v0_016
+RULE: COMPLEMENT_DUALITY
+SOURCE: SimpleGraph.IsAcyclic.path_concat [Acyclic.lean]
+[not found] SimpleGraph.IsAcyclic.path_concat in Acyclic.lean
+
+TARGET: SimpleGraph.Connected.exists_connected_induce_compl_singleton_of_finite_nontrivial [Acyclic.lean]
+[not found] SimpleGraph.Connected.exists_connected_induce_compl_singleton_of_finite_nontrivial in Acyclic.lean
+
+==============================================================================================================
+CANDIDATE 017 simplegraph_graph_candidate_v0_017
+RULE: COMPLEMENT_DUALITY
+SOURCE: neighborFinset_eq_filter [Finite.lean]
+  330:     _
+  331:
+  332: theorem neighborFinset_eq_filter {v : V} [DecidableRel G.Adj] :
+  333:     G.neighborFinset v = ({w | G.Adj v w} : Finset _) := by ext; simp
+  334:
+  335: theorem neighborFinset_compl [DecidableEq V] [DecidableRel G.Adj] (v : V) :
+  336:     Gᶜ.neighborFinset v = (G.neighborFinset v)ᶜ \ {v} := by
+  337:   simp only [neighborFinset, neighborSet_compl, Set.toFinset_diff, Set.toFinset_compl,
+  338:     Set.toFinset_singleton]
+
+TARGET: neighborFinset_compl [Finite.lean]
+  333:     G.neighborFinset v = ({w | G.Adj v w} : Finset _) := by ext; simp
+  334:
+  335: theorem neighborFinset_compl [DecidableEq V] [DecidableRel G.Adj] (v : V) :
+  336:     Gᶜ.neighborFinset v = (G.neighborFinset v)ᶜ \ {v} := by
+  337:   simp only [neighborFinset, neighborSet_compl, Set.toFinset_diff, Set.toFinset_compl,
+  338:     Set.toFinset_singleton]
+  339:
+  340: @[simp]
+  341: theorem complete_graph_degree [DecidableEq V] (v : V) :
+
+==============================================================================================================
+CANDIDATE 018 simplegraph_graph_candidate_v0_018
+RULE: CARDINALITY_TRANSFER
+SOURCE: SimpleGraph.IsTree.coe_singletonSubgraph [Acyclic.lean]
+[not found] SimpleGraph.IsTree.coe_singletonSubgraph in Acyclic.lean
+
+TARGET: complete_graph_degree [Finite.lean]
+  339:
+  340: @[simp]
+  341: theorem complete_graph_degree [DecidableEq V] (v : V) :
+  342:     (completeGraph V).degree v = Fintype.card V - 1 := by
+  343:   simp_rw [degree, neighborFinset_eq_filter, top_adj, filter_ne]
+  344:   rw [card_erase_of_mem (mem_univ v), card_univ]
+  345:
+  346: @[simp]
+  347: theorem bot_degree (v : V) : (⊥ : SimpleGraph V).degree v = 0 := by
+
+==============================================================================================================
+CANDIDATE 019 simplegraph_graph_candidate_v0_019
+RULE: MAP_TRANSPORT
+SOURCE: SimpleGraph.map_induce [Walks/Maps.lean]
+  210:   | .cons (v := u') hu w, hw => by simp [support_induce]
+  211:
+  212: @[simp] lemma map_induce {u v : V} :
+  213:     ∀ (w : G.Walk u v) (hw), (w.induce s hw).map (Embedding.induce _).toHom = w
+  214:   | .nil, hw => rfl
+  215:   | .cons (v := u') huu' w, hw => by simp [map_induce]
+  216:
+  217: lemma map_induce_induceHomOfLE (hs : s ⊆ s') {u v : V} : ∀ (w : G.Walk u v) (hw),
+  218:     (w.induce s hw).map (G.induceHomOfLE hs).toHom = w.induce s' (subset_trans hw hs)
+  219:   | .nil, hw => rfl
+  220:   | .cons (v := u') huu' w, hw => by simp [map_induce_induceHomOfLE]
+  221:
+  222: /-! ## Deleting edges -/
+  223:
+  224: /-- Given a walk that avoids a set of edges, produce a walk in the graph
+  225: with those edges deleted. -/
+  226: abbrev toDeleteEdges (s : Set (Sym2 V)) {v w : V} (p : G.Walk v w)
+  227:     (hp : ∀ e, e ∈ p.edges → e ∉ s) : (G.deleteEdges s).Walk v w :=
+  228:   p.transfer _ <| by
+  229:     simp only [edgeSet_deleteEdges, Set.mem_diff]
+  230:     exact fun e ep => ⟨edges_subset_edgeSet p ep, hp e ep⟩
+  231:
+  232: @[simp]
+
+TARGET: SimpleGraph.map_induce_induceHomOfLE [Walks/Maps.lean]
+  215:   | .cons (v := u') huu' w, hw => by simp [map_induce]
+  216:
+  217: lemma map_induce_induceHomOfLE (hs : s ⊆ s') {u v : V} : ∀ (w : G.Walk u v) (hw),
+  218:     (w.induce s hw).map (G.induceHomOfLE hs).toHom = w.induce s' (subset_trans hw hs)
+  219:   | .nil, hw => rfl
+  220:   | .cons (v := u') huu' w, hw => by simp [map_induce_induceHomOfLE]
+  221:
+  222: /-! ## Deleting edges -/
+  223:
+  224: /-- Given a walk that avoids a set of edges, produce a walk in the graph
+  225: with those edges deleted. -/
+  226: abbrev toDeleteEdges (s : Set (Sym2 V)) {v w : V} (p : G.Walk v w)
+  227:     (hp : ∀ e, e ∈ p.edges → e ∉ s) : (G.deleteEdges s).Walk v w :=
+  228:   p.transfer _ <| by
+  229:     simp only [edgeSet_deleteEdges, Set.mem_diff]
+  230:     exact fun e ep => ⟨edges_subset_edgeSet p ep, hp e ep⟩
+  231:
+  232: @[simp]

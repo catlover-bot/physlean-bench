@@ -1,0 +1,35 @@
+{
+  "input_raw_nodes": 2664,
+  "theorem_nodes_scored": 1542,
+  "edges": 15420,
+  "topk": 10,
+  "family_counts": {
+    "map": 133,
+    "subgraph": 254,
+    "edgeSet": 135,
+    "walk": 541,
+    "connectivity": 200,
+    "adjacency": 485,
+    "path": 94,
+    "finite_card": 219,
+    "degree_neighbor": 139,
+    "complement": 136,
+    "complete_graph": 22,
+    "regularity": 4,
+    "empty_graph": 1
+  },
+  "motif_counts": {
+    "complement_duality": 4256,
+    "finite_cardinality": 9243,
+    "map_transport": 4308,
+    "same_family": 11535,
+    "subgraph_monotonicity": 2540,
+    "adj_edgeSet_bridge": 4386,
+    "subgraph_lift_target": 7719,
+    "walk_path_connectivity": 4371
+  },
+  "source_nodes_with_edges": 1542,
+  "target_nodes_hit": 392,
+  "max_score": 23.643333,
+  "min_score": 8.388325
+}

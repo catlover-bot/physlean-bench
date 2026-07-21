@@ -1,0 +1,10 @@
+{
+  "physlib_nodes": 5593,
+  "cslib_nodes": 1310,
+  "cross_edges": 69030,
+  "counts": {
+    "Physlib->CSLib": 55930,
+    "CSLib->Physlib": 13100
+  },
+  "out_path": "/project/nlp-work11/hirotaka-m/theorem_generation/cross_library_graph_v0/out/physlib_cslib_cross_edges_topk.jsonl"
+}

@@ -1,0 +1,17 @@
+{
+  "topk": 10,
+  "physlib_nodes": 5593,
+  "cslib_nodes": 1310,
+  "cross_edges": 59240,
+  "direction_counts": {
+    "Physlib->CSLib": 47693,
+    "CSLib->Physlib": 11547
+  },
+  "source_nodes_with_edges": 6137,
+  "target_nodes_hit": 1747,
+  "avg_out_degree_over_all_nodes": 8.581776039403158,
+  "max_score": 7.994652,
+  "min_score": 0.013043,
+  "nodes_path": "/project/nlp-work11/hirotaka-m/theorem_generation/cross_library_graph_v2/out/cross_library_nodes.jsonl",
+  "edges_path": "/project/nlp-work11/hirotaka-m/theorem_generation/cross_library_graph_v2/out/cross_library_edges_topk_complete.jsonl"
+}

@@ -1,0 +1,8 @@
+{
+  "theorem_id": "topk_gen_v0_0000",
+  "source_library": "physlib",
+  "source_theorem": "Constants.kB_pos",
+  "target_theorem": "Constants.kB_nonneg",
+  "model": "gpt-5.1",
+  "generated": "lemma Constants.inv_kB_pos : 0 < (1 / kB) :=\nby\n  have hk : 0 < kB := Constants.kB_pos\n  simpa [one_div] using inv_pos.mpr hk"
+}

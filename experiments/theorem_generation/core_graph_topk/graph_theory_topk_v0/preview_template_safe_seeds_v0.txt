@@ -1,0 +1,399 @@
+SAFE 001 template=subgraph_adjacency_lift safe_score=29.143 original_score=23.643
+  SRC SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+      theorem degree_pos_iff_exists_adj {G' : Subgraph G} {v : V} [Fintype (G'.neighborSet v)] :
+  TGT SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+      theorem degree_eq_one_iff_existsUnique_adj {G' : Subgraph G} {v : V} [Fintype (G'.neighborSet v)] :
+
+SAFE 002 template=subgraph_adjacency_lift safe_score=25.160 original_score=21.160
+  SRC SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+      @[simp] lemma map_iso_top {H : SimpleGraph W} (e : G ≃g H) : Subgraph.map e.toHom ⊤ = ⊤ := by
+  TGT SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+      lemma adj_toSubgraph_mapLe {G' : SimpleGraph V} {w x : V} {p : G.Walk u v} (h : G ≤ G') :
+
+SAFE 003 template=subgraph_walk_lift safe_score=24.537 original_score=19.537
+  SRC SimpleGraph.Walk.IsPath.ncard_neighborSet_toSubgraph_internal_eq_two
+      Connectivity/Subgraph.lean
+      lemma ncard_neighborSet_toSubgraph_internal_eq_two {u} {i : ℕ} {p : G.Walk u v} (hp : p.IsPath)
+  TGT SimpleGraph.Walk.IsPath.neighborSet_toSubgraph_internal
+      Connectivity/Subgraph.lean
+      lemma neighborSet_toSubgraph_internal {u} {i : ℕ} {p : G.Walk u v} (hp : p.IsPath)
+
+SAFE 004 template=adj_edgeSet_bridge safe_score=23.937 original_score=18.937
+  SRC card_edgeFinset_induce_compl_singleton
+      DeleteEdges.lean
+      theorem card_edgeFinset_induce_compl_singleton (G : SimpleGraph V) [DecidableRel G.Adj] (x : V) :
+  TGT SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+      @[simp] lemma map_iso_top {H : SimpleGraph W} (e : G ≃g H) : Subgraph.map e.toHom ⊤ = ⊤ := by
+
+SAFE 005 template=subgraph_adjacency_lift safe_score=23.375 original_score=17.875
+  SRC edgeSet_singletonSubgraph
+      Subgraph.lean
+      theorem edgeSet_singletonSubgraph (v : V) : (G.singletonSubgraph v).edgeSet = ∅ :=
+  TGT card_edgeFinset_induce_compl_singleton
+      DeleteEdges.lean
+      theorem card_edgeFinset_induce_compl_singleton (G : SimpleGraph V) [DecidableRel G.Adj] (x : V) :
+
+SAFE 006 template=finite_degree_edge_cardinality safe_score=22.507 original_score=18.507
+  SRC SimpleGraph.Walk.IsEulerian.card_filter_odd_degree
+      Trails.lean
+      theorem IsEulerian.card_filter_odd_degree [Fintype V] [DecidableRel G.Adj] {u v : V}
+  TGT SimpleGraph.Walk.IsEulerian.card_odd_degree
+      Trails.lean
+      theorem IsEulerian.card_odd_degree [Fintype V] [DecidableRel G.Adj] {u v : V} {p : G.Walk u v}
+
+SAFE 007 template=finite_degree_edge_cardinality safe_score=22.507 original_score=18.507
+  SRC SimpleGraph.Walk.IsEulerian.card_odd_degree
+      Trails.lean
+      theorem IsEulerian.card_odd_degree [Fintype V] [DecidableRel G.Adj] {u v : V} {p : G.Walk u v}
+  TGT SimpleGraph.Walk.IsEulerian.card_filter_odd_degree
+      Trails.lean
+      theorem IsEulerian.card_filter_odd_degree [Fintype V] [DecidableRel G.Adj] {u v : V}
+
+SAFE 008 template=subgraph_adjacency_lift safe_score=22.031 original_score=18.031
+  SRC SimpleGraph.ConnectedComponent.adj_spanningCoe_toSimpleGraph
+      Connectivity/Connected.lean
+      lemma adj_spanningCoe_toSimpleGraph {v w : V} (C : G.ConnectedComponent) :
+  TGT SimpleGraph.Walk.exists_isPath_forall_isPath_length_le_length
+      Paths.lean
+      lemma exists_isPath_forall_isPath_length_le_length (G : SimpleGraph V) [N : Nonempty V]
+
+SAFE 009 template=adj_edgeSet_bridge safe_score=21.617 original_score=16.617
+  SRC SimpleGraph.Walk.edgeSet_cons
+      Walks/Basic.lean
+      theorem edgeSet_cons {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+  TGT SimpleGraph.edgeSet_concat
+      Walks/Operations.lean
+      theorem edgeSet_concat {u v w : V} (p : G.Walk u v) (h : G.Adj v w) :
+
+SAFE 010 template=adj_edgeSet_bridge safe_score=21.617 original_score=16.617
+  SRC SimpleGraph.edgeSet_concat
+      Walks/Operations.lean
+      theorem edgeSet_concat {u v w : V} (p : G.Walk u v) (h : G.Adj v w) :
+  TGT SimpleGraph.Walk.edgeSet_cons
+      Walks/Basic.lean
+      theorem edgeSet_cons {u v w : V} (h : G.Adj u v) (p : G.Walk v w) :
+
+SAFE 011 template=subgraph_adjacency_lift safe_score=21.513 original_score=21.513
+  SRC SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+      lemma adj_toSubgraph_mapLe {G' : SimpleGraph V} {w x : V} {p : G.Walk u v} (h : G ≤ G') :
+  TGT IsCycles.reachable_sdiff_toSubgraph_spanningCoe
+      Matching.lean
+      lemma IsCycles.reachable_sdiff_toSubgraph_spanningCoe [Finite V] {v w : V} (hcyc : G.IsCycles)
+
+SAFE 012 template=adj_edgeSet_bridge safe_score=21.214 original_score=16.214
+  SRC SimpleGraph.edgeSet_replaceVertex_of_not_adj
+      Operations.lean
+      theorem edgeSet_replaceVertex_of_not_adj (hn : ¬G.Adj s t) : (G.replaceVertex s t).edgeSet =
+  TGT SimpleGraph.edgeSet_replaceVertex_of_adj
+      Operations.lean
+      theorem edgeSet_replaceVertex_of_adj (ha : G.Adj s t) : (G.replaceVertex s t).edgeSet =
+
+SAFE 013 template=subgraph_walk_lift safe_score=20.878 original_score=19.878
+  SRC IsCycles.exists_cycle_toSubgraph_verts_eq_connectedComponentSupp
+      Matching.lean
+      lemma IsCycles.exists_cycle_toSubgraph_verts_eq_connectedComponentSupp [Finite V]
+  TGT SimpleGraph.Connected.induce_compl_singleton_of_degree_eq_one
+      Acyclic.lean
+      lemma Connected.induce_compl_singleton_of_degree_eq_one (hconn : G.Connected) {v : V}
+
+SAFE 014 template=finite_degree_edge_cardinality safe_score=20.317 original_score=16.317
+  SRC SimpleGraph.card_edgeFinset_replaceVertex_of_not_adj
+      Operations.lean
+      theorem card_edgeFinset_replaceVertex_of_not_adj (hn : ¬G.Adj s t) :
+  TGT SimpleGraph.card_edgeFinset_replaceVertex_of_adj
+      Operations.lean
+      theorem card_edgeFinset_replaceVertex_of_adj (ha : G.Adj s t) :
+
+SAFE 015 template=adj_edgeSet_bridge safe_score=20.268 original_score=15.268
+  SRC adj_iff_exists_edge
+      Basic.lean
+      theorem adj_iff_exists_edge {v w : V} : G.Adj v w ↔ v ≠ w ∧ ∃ e ∈ G.edgeSet, v ∈ e ∧ w ∈ e := by
+  TGT adj_iff_exists_edge_coe
+      Basic.lean
+      theorem adj_iff_exists_edge_coe : G.Adj a b ↔ ∃ e : G.edgeSet, e.val = s(a, b) := by
+
+SAFE 016 template=finite_degree_edge_cardinality safe_score=20.197 original_score=16.197
+  SRC SimpleGraph.IsSRGWith.card_neighborFinset_union_of_not_adj
+      StronglyRegular.lean
+      theorem IsSRGWith.card_neighborFinset_union_of_not_adj {v w : V} (h : G.IsSRGWith n k ℓ μ)
+  TGT SimpleGraph.IsSRGWith.card_neighborFinset_union_of_adj
+      StronglyRegular.lean
+      theorem IsSRGWith.card_neighborFinset_union_of_adj {v w : V} (h : G.IsSRGWith n k ℓ μ)
+
+SAFE 017 template=adj_edgeSet_bridge safe_score=19.905 original_score=14.905
+  SRC SimpleGraph.IsAcyclic.dist_ne_of_adj
+      Acyclic.lean
+      lemma IsAcyclic.dist_ne_of_adj (hG : G.IsAcyclic) {u v w : V} (hadj : G.Adj v w)
+  TGT SimpleGraph.IsAcyclic.anti
+      Acyclic.lean
+      lemma IsAcyclic.anti {G' : SimpleGraph V} (hsub : G ≤ G') (h : G'.IsAcyclic) : G.IsAcyclic :=
+
+SAFE 018 template=complement_adjacency_dual safe_score=19.846 original_score=15.546
+  SRC SimpleGraph.IsCompl.adjMatrix_add_adjMatrix_eq_adjMatrix_completeGraph
+      AdjMatrix.lean
+      theorem IsCompl.adjMatrix_add_adjMatrix_eq_adjMatrix_completeGraph [DecidableEq V] [AddZeroClass α]
+  TGT SimpleGraph._root_.Matrix.compl_zero
+      AdjMatrix.lean
+      @[simp] theorem _root_.Matrix.compl_zero [Zero α] [One α] [DecidableEq α] [DecidableEq V] :
+
+SAFE 019 template=complement_adjacency_dual safe_score=19.846 original_score=15.546
+  SRC SimpleGraph._root_.Matrix.compl_zero
+      AdjMatrix.lean
+      @[simp] theorem _root_.Matrix.compl_zero [Zero α] [One α] [DecidableEq α] [DecidableEq V] :
+  TGT SimpleGraph.IsCompl.adjMatrix_add_adjMatrix_eq_adjMatrix_completeGraph
+      AdjMatrix.lean
+      theorem IsCompl.adjMatrix_add_adjMatrix_eq_adjMatrix_completeGraph [DecidableEq V] [AddZeroClass α]
+
+SAFE 020 template=subgraph_adjacency_lift safe_score=19.772 original_score=14.272
+  SRC _root_.SimpleGraph.induce_eq_coe_induce_top
+      Subgraph.lean
+      theorem _root_.SimpleGraph.induce_eq_coe_induce_top (s : Set V) :
+  TGT card_edgeFinset_induce_compl_singleton
+      DeleteEdges.lean
+      theorem card_edgeFinset_induce_compl_singleton (G : SimpleGraph V) [DecidableRel G.Adj] (x : V) :
+
+SAFE 021 template=walk_path_connectivity safe_score=19.712 original_score=15.213
+  SRC Reachable.exists_path_of_dist
+      Metric.lean
+      lemma Reachable.exists_path_of_dist (hr : G.Reachable u v) :
+  TGT Connected.exists_path_of_dist
+      Metric.lean
+      lemma Connected.exists_path_of_dist (hconn : G.Connected) (u v : V) :
+
+SAFE 022 template=subgraph_adjacency_lift safe_score=19.441 original_score=13.941
+  SRC SimpleGraph.Subgraph._root_.SimpleGraph.toSubgraph.isSpanning
+      Subgraph.lean
+      theorem _root_.SimpleGraph.toSubgraph.isSpanning (H : SimpleGraph V) (h : H ≤ G) :
+  TGT IsRegularOfDegree.compl
+      Finite.lean
+      theorem IsRegularOfDegree.compl [Fintype V] [DecidableEq V] {G : SimpleGraph V} [DecidableRel G.Adj]
+
+SAFE 023 template=subgraph_adjacency_lift safe_score=19.383 original_score=13.883
+  SRC copyCount_bot
+      Copy.lean
+      @[simp] lemma copyCount_bot (G : SimpleGraph V) : copyCount G (⊥ : SimpleGraph V) = 1 := by
+  TGT IsRegularOfDegree.compl
+      Finite.lean
+      theorem IsRegularOfDegree.compl [Fintype V] [DecidableEq V] {G : SimpleGraph V} [DecidableRel G.Adj]
+
+SAFE 024 template=adj_edgeSet_bridge safe_score=19.307 original_score=14.307
+  SRC SimpleGraph.comap_adj
+      Maps.lean
+      @[simp] lemma comap_adj {G : SimpleGraph W} {f : V → W} :
+  TGT SimpleGraph.Walk.exists_isPath_forall_isPath_length_le_length
+      Paths.lean
+      lemma exists_isPath_forall_isPath_length_le_length (G : SimpleGraph V) [N : Nonempty V]
+
+SAFE 025 template=walk_path_connectivity safe_score=19.295 original_score=14.795
+  SRC Walk.exists_mem_edges_of_not_reachable_deleteEdges
+      Connectivity/Connected.lean
+      lemma exists_mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {s : Set (Sym2 V)}
+  TGT Walk.mem_edges_of_not_reachable_deleteEdges
+      Connectivity/Connected.lean
+      lemma mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {e : Sym2 V}
+
+SAFE 026 template=walk_path_connectivity safe_score=19.295 original_score=14.795
+  SRC Walk.mem_edges_of_not_reachable_deleteEdges
+      Connectivity/Connected.lean
+      lemma mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {e : Sym2 V}
+  TGT Walk.exists_mem_edges_of_not_reachable_deleteEdges
+      Connectivity/Connected.lean
+      lemma exists_mem_edges_of_not_reachable_deleteEdges (w : G.Walk u v) {s : Set (Sym2 V)}
+
+SAFE 027 template=adj_edgeSet_bridge safe_score=19.203 original_score=14.203
+  SRC edgeFinset_map
+      Finite.lean
+      theorem edgeFinset_map (f : V ↪ W) (G : SimpleGraph V) [DecidableRel G.Adj] :
+  TGT edgeSet_top
+      Basic.lean
+      theorem edgeSet_top : (⊤ : SimpleGraph V).edgeSet = Sym2.diagSetᶜ :=
+
+SAFE 028 template=map_transport safe_score=19.189 original_score=15.689
+  SRC SimpleGraph.Walk.ofBoxProdLeft_boxProdLeft
+      Prod.lean
+      theorem ofBoxProdLeft_boxProdLeft [DecidableEq β] [DecidableRel G.Adj] {a₁ a₂ : α} {b : β} :
+  TGT SimpleGraph.Walk.ofBoxProdRight_boxProdRight
+      Prod.lean
+      theorem ofBoxProdRight_boxProdRight [DecidableEq α] [DecidableRel G.Adj] {a b₁ b₂ : α} :
+
+SAFE 029 template=map_transport safe_score=19.189 original_score=15.689
+  SRC SimpleGraph.Walk.ofBoxProdRight_boxProdRight
+      Prod.lean
+      theorem ofBoxProdRight_boxProdRight [DecidableEq α] [DecidableRel G.Adj] {a b₁ b₂ : α} :
+  TGT SimpleGraph.Walk.ofBoxProdLeft_boxProdLeft
+      Prod.lean
+      theorem ofBoxProdLeft_boxProdLeft [DecidableEq β] [DecidableRel G.Adj] {a₁ a₂ : α} {b : β} :
+
+SAFE 030 template=subgraph_walk_lift safe_score=19.132 original_score=19.632
+  SRC IsCycles.reachable_sdiff_toSubgraph_spanningCoe
+      Matching.lean
+      lemma IsCycles.reachable_sdiff_toSubgraph_spanningCoe [Finite V] {v w : V} (hcyc : G.IsCycles)
+  TGT SimpleGraph.Walk.IsPath.ncard_neighborSet_toSubgraph_internal_eq_two
+      Connectivity/Subgraph.lean
+      lemma ncard_neighborSet_toSubgraph_internal_eq_two {u} {i : ℕ} {p : G.Walk u v} (hp : p.IsPath)
+
+SAFE 031 template=adj_edgeSet_bridge safe_score=19.072 original_score=14.072
+  SRC edgeSet_deleteIncidenceSet
+      DeleteEdges.lean
+      theorem edgeSet_deleteIncidenceSet (G : SimpleGraph V) (x : V) :
+  TGT card_edgeFinset_deleteIncidenceSet
+      DeleteEdges.lean
+      theorem card_edgeFinset_deleteIncidenceSet (G : SimpleGraph V) [DecidableRel G.Adj] (x : V) :
+
+SAFE 032 template=adj_edgeSet_bridge safe_score=18.973 original_score=13.973
+  SRC SimpleGraph.isBridge_iff
+      Connectivity/Connected.lean
+      theorem isBridge_iff {u v : V} :
+  TGT SimpleGraph.Walk.toSubgraph_le_iff
+      Connectivity/Subgraph.lean
+      theorem toSubgraph_le_iff {w : G.Walk u v} (hnil : ¬w.Nil) {G' : G.Subgraph} :
+
+SAFE 033 template=adj_edgeSet_bridge safe_score=18.923 original_score=13.923
+  SRC SimpleGraph.isTree_of_minimal_connected
+      Acyclic.lean
+      lemma isTree_of_minimal_connected (h : Minimal Connected G) : IsTree G := by
+  TGT SimpleGraph.Walk.IsEulerian.even_degree_iff
+      Trails.lean
+      theorem IsEulerian.even_degree_iff {x u v : V} {p : G.Walk u v} (ht : p.IsEulerian) [Fintype V]
+
+SAFE 034 template=adj_edgeSet_bridge safe_score=18.887 original_score=13.887
+  SRC edgeSet_bot
+      Basic.lean
+      theorem edgeSet_bot : (⊥ : SimpleGraph V).edgeSet = ∅ :=
+  TGT card_edgeFinset_map
+      Finite.lean
+      theorem card_edgeFinset_map (f : V ↪ W) (G : SimpleGraph V) [DecidableRel G.Adj] :
+
+SAFE 035 template=complement_adjacency_dual safe_score=18.782 original_score=14.482
+  SRC Matrix.IsAdjMatrix.compl_inj
+      AdjMatrix.lean
+      theorem IsAdjMatrix.compl_inj [Zero α] [One α] {A B : Matrix V V α}
+  TGT Matrix.IsAdjMatrix.compl
+      AdjMatrix.lean
+      theorem compl [Zero α] [One α] (h : IsAdjMatrix A) : IsAdjMatrix A.compl :=
+
+SAFE 036 template=subgraph_adjacency_lift safe_score=18.756 original_score=13.256
+  SRC SimpleGraph.IsTree.coe_singletonSubgraph
+      Acyclic.lean
+      theorem IsTree.coe_singletonSubgraph (G : SimpleGraph V) (v : V) :
+  TGT SimpleGraph.IsSRGWith.card_commonNeighbors_eq_of_adj_compl
+      StronglyRegular.lean
+      theorem IsSRGWith.card_commonNeighbors_eq_of_adj_compl (h : G.IsSRGWith n k ℓ μ) {v w : V}
+
+SAFE 037 template=subgraph_adjacency_lift safe_score=18.690 original_score=13.190
+  SRC SimpleGraph.Subgraph.isAcyclic_coe_bot
+      Acyclic.lean
+      lemma Subgraph.isAcyclic_coe_bot (G : SimpleGraph V) : (⊥ : G.Subgraph).coe.IsAcyclic :=
+  TGT SimpleGraph.IsSRGWith.card_commonNeighbors_eq_of_not_adj_compl
+      StronglyRegular.lean
+      theorem IsSRGWith.card_commonNeighbors_eq_of_not_adj_compl (h : G.IsSRGWith n k ℓ μ) {v w : V}
+
+SAFE 038 template=subgraph_adjacency_lift safe_score=18.546 original_score=13.046
+  SRC SimpleGraph.tutte
+      Tutte.lean
+      theorem tutte : (∃ M : Subgraph G, M.IsPerfectMatching) ↔ ∀ u, ¬ G.IsTutteViolator u := by
+  TGT SimpleGraph.IsSRGWith.card_commonNeighbors_eq_of_not_adj_compl
+      StronglyRegular.lean
+      theorem IsSRGWith.card_commonNeighbors_eq_of_not_adj_compl (h : G.IsSRGWith n k ℓ μ) {v w : V}
+
+SAFE 039 template=walk_path_connectivity safe_score=18.531 original_score=14.031
+  SRC SimpleGraph.reachable_delete_edges_iff_exists_walk
+      Connectivity/Connected.lean
+      theorem reachable_delete_edges_iff_exists_walk {v w v' w' : V} :
+  TGT SimpleGraph.adj_and_reachable_delete_edges_iff_exists_cycle
+      Connectivity/Connected.lean
+      theorem adj_and_reachable_delete_edges_iff_exists_cycle {v w : V} :
+
+SAFE 040 template=complement_adjacency_dual safe_score=18.485 original_score=14.185
+  SRC isNIndepSet_compl
+      Clique.lean
+      @[simp] theorem isNIndepSet_compl : Gᶜ.IsNIndepSet n s ↔ G.IsNClique n s := by
+  TGT isIndepSet_compl
+      Clique.lean
+      @[simp] theorem isIndepSet_compl : Gᶜ.IsIndepSet s ↔ G.IsClique s := by
+
+SAFE 041 template=finite_degree_edge_cardinality safe_score=18.338 original_score=14.338
+  SRC SimpleGraph.Reachable.degree_pos_right
+      Connectivity/Connected.lean
+      lemma Reachable.degree_pos_right {G : SimpleGraph V} {u v : V} [Fintype (G.neighborSet v)]
+  TGT SimpleGraph.IsEdgeReachable.le_degree
+      Connectivity/EdgeConnectivity.lean
+      lemma IsEdgeReachable.le_degree [Fintype (G.neighborSet u)] (h : G.IsEdgeReachable k u v)
+
+SAFE 042 template=finite_degree_edge_cardinality safe_score=18.338 original_score=14.338
+  SRC SimpleGraph.IsEdgeReachable.le_degree
+      Connectivity/EdgeConnectivity.lean
+      lemma IsEdgeReachable.le_degree [Fintype (G.neighborSet u)] (h : G.IsEdgeReachable k u v)
+  TGT SimpleGraph.Reachable.degree_pos_right
+      Connectivity/Connected.lean
+      lemma Reachable.degree_pos_right {G : SimpleGraph V} {u v : V} [Fintype (G.neighborSet v)]
+
+SAFE 043 template=walk_path_connectivity safe_score=18.068 original_score=13.568
+  SRC SimpleGraph.connected_boxProd
+      Prod.lean
+      theorem connected_boxProd : (G □ H).Connected ↔ G.Connected ∧ H.Connected :=
+  TGT SimpleGraph.Walk.ofBoxProdLeft_boxProdLeft
+      Prod.lean
+      theorem ofBoxProdLeft_boxProdLeft [DecidableEq β] [DecidableRel G.Adj] {a₁ a₂ : α} {b : β} :
+
+SAFE 044 template=complement_adjacency_dual safe_score=17.835 original_score=13.535
+  SRC SimpleGraph.IsAcyclic.path_concat
+      Acyclic.lean
+      lemma IsAcyclic.path_concat (hG : G.IsAcyclic) {u v w : V} {p : G.Walk u v} {q : G.Walk u w}
+  TGT SimpleGraph.Connected.exists_connected_induce_compl_singleton_of_finite_nontrivial
+      Acyclic.lean
+      lemma Connected.exists_connected_induce_compl_singleton_of_finite_nontrivial
+
+SAFE 045 template=complement_adjacency_dual safe_score=17.398 original_score=13.098
+  SRC neighborFinset_eq_filter
+      Finite.lean
+      theorem neighborFinset_eq_filter {v : V} [DecidableRel G.Adj] :
+  TGT neighborFinset_compl
+      Finite.lean
+      theorem neighborFinset_compl [DecidableEq V] [DecidableRel G.Adj] (v : V) :
+
+SAFE 046 template=subgraph_path_connectivity_lift safe_score=17.149 original_score=13.649
+  SRC _root_.SimpleGraph.spanningCoe_induce_top
+      Subgraph.lean
+      lemma _root_.SimpleGraph.spanningCoe_induce_top (s : Set V) :
+  TGT SimpleGraph.Connected.induce_compl_singleton_of_degree_eq_one
+      Acyclic.lean
+      lemma Connected.induce_compl_singleton_of_degree_eq_one (hconn : G.Connected) {v : V}
+
+SAFE 047 template=finite_degree_edge_cardinality safe_score=17.085 original_score=13.085
+  SRC SimpleGraph.IsTree.coe_singletonSubgraph
+      Acyclic.lean
+      theorem IsTree.coe_singletonSubgraph (G : SimpleGraph V) (v : V) :
+  TGT complete_graph_degree
+      Finite.lean
+      theorem complete_graph_degree [DecidableEq V] (v : V) :
+
+SAFE 048 template=walk_path_connectivity safe_score=16.951 original_score=13.951
+  SRC Connected.exists_path_of_dist
+      Metric.lean
+      lemma Connected.exists_path_of_dist (hconn : G.Connected) (u v : V) :
+  TGT SimpleGraph.Connected.exists_isPath
+      Connectivity/Connected.lean
+      theorem Connected.exists_isPath {G : SimpleGraph V} (h : G.Connected) (u v : V) :
+
+SAFE 049 template=map_transport safe_score=16.926 original_score=13.426
+  SRC SimpleGraph.map_induce
+      Walks/Maps.lean
+      @[simp] lemma map_induce {u v : V} :
+  TGT SimpleGraph.map_induce_induceHomOfLE
+      Walks/Maps.lean
+      lemma map_induce_induceHomOfLE (hs : s ⊆ s') {u v : V} : ∀ (w : G.Walk u v) (hw),
+
+SAFE 050 template=map_transport safe_score=16.926 original_score=13.426
+  SRC SimpleGraph.map_induce_induceHomOfLE
+      Walks/Maps.lean
+      lemma map_induce_induceHomOfLE (hs : s ⊆ s') {u v : V} : ∀ (w : G.Walk u v) (hw),
+  TGT SimpleGraph.map_induce
+      Walks/Maps.lean
+      @[simp] lemma map_induce {u v : V} :
