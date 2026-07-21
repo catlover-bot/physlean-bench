@@ -1,0 +1,8 @@
+{
+  "stage": "trace_pipeline",
+  "status": "completed",
+  "timestamp_utc": "2026-05-03T05:27:58.166156+00:00",
+  "payload": {
+    "theorem_count": 121
+  }
+}

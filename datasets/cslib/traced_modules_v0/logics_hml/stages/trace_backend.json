@@ -1,0 +1,9 @@
+{
+  "stage": "trace_backend",
+  "status": "failed",
+  "timestamp_utc": "2026-04-30T13:29:29.995562+00:00",
+  "payload": {
+    "backend": "leandojo_v2",
+    "error": "The current node timed out during startup. This could happen because some of the raylet failed to startup or the GCS has become overloaded."
+  }
+}

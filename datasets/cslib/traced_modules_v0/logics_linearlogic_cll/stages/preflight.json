@@ -1,0 +1,9 @@
+{
+  "stage": "preflight",
+  "status": "completed",
+  "timestamp_utc": "2026-05-02T23:38:19.779739+00:00",
+  "payload": {
+    "can_proceed": true,
+    "report_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/logics_linearlogic_cll/trace_preflight.json"
+  }
+}

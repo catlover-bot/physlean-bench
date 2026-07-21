@@ -1,0 +1,10 @@
+{
+  "stage": "trace_backend",
+  "status": "completed",
+  "timestamp_utc": "2026-05-03T01:58:34.660950+00:00",
+  "payload": {
+    "backend": "leandojo_v2",
+    "count": 1,
+    "duration_seconds": 2407.3552240169374
+  }
+}

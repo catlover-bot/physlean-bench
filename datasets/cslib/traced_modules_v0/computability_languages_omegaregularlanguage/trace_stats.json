@@ -1,0 +1,11 @@
+{
+  "theorem_count": 17,
+  "unique_namespaces": 3,
+  "unique_files": 1,
+  "num_with_proof_text": 17,
+  "num_with_used_premises": 17,
+  "num_with_accessible_premises": 17,
+  "backend_counts": {
+    "leandojo_v2": 17
+  }
+}

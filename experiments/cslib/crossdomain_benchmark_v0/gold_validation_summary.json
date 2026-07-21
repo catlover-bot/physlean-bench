@@ -1,0 +1,17 @@
+{
+  "benchmark": "cslib_bench_v0",
+  "test_records": 415,
+  "direct_gold_passed": 411,
+  "direct_gold_failed": 4,
+  "direct_gold_timeout": 0,
+  "direct_gold_pass_rate": 0.9903614457831326,
+  "attribute_patch_records": 1,
+  "attribute_patch_passed": 1,
+  "final_gold_validated_records": 412,
+  "final_gold_validation_pass_rate": 0.9927710843373494,
+  "patched_record": {
+    "declaration_name": "Cslib.ωSequence.drop_zero",
+    "file_path": "Cslib/Foundations/Data/OmegaSequence/Init.lean",
+    "reason": "The extracted statement omitted original theorem attributes `@[simp, scoped grind =]`. Restoring these attributes without modifying the proof body makes the gold proof reinsertable."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "benchmark": "cslib_bench_v0",
+  "n": 1310,
+  "split_counts": {
+    "train": 806,
+    "valid": 89,
+    "test": 415
+  },
+  "files_by_split": {
+    "train": 80,
+    "valid": 12,
+    "test": 15
+  },
+  "subdomain_by_split": {
+    "train": {
+      "Computability": 140,
+      "Algorithms": 17,
+      "Crypto": 16,
+      "Foundations": 285,
+      "Languages": 279,
+      "Logics": 69
+    },
+    "valid": {
+      "Computability": 10,
+      "Algorithms": 14,
+      "Crypto": 2,
+      "Foundations": 41,
+      "Languages": 22
+    },
+    "test": {
+      "Computability": 88,
+      "Foundations": 127,
+      "Languages": 93,
+      "Logics": 107
+    }
+  },
+  "subdomain2_by_split": {
+    "train": {
+      "Computability/Automata": 48,
+      "Algorithms/Lean": 17,
+      "Computability/Languages": 46,
+      "Computability/Machines": 9,
+      "Computability/URM": 37,
+      "Crypto/Protocols": 16,
+      "Foundations/Combinatorics": 5,
+      "Foundations/Control": 23,
+      "Foundations/Data": 152,
+      "Foundations/Logic": 1,
+      "Foundations/Semantics": 104,
+      "Languages/CCS": 19,
+      "Languages/CombinatoryLogic": 119,
+      "Languages/LambdaCalculus": 141,
+      "Logics/HML": 17,
+      "Logics/LinearLogic": 29,
+      "Logics/Propositional": 23
+    },
+    "valid": {
+      "Computability/Automata": 3,
+      "Algorithms/Lean": 14,
+      "Computability/Languages": 7,
+      "Crypto/Protocols": 2,
+      "Foundations/Control": 39,
+      "Foundations/Data": 1,
+      "Foundations/Semantics": 1,
+      "Languages/LambdaCalculus": 22
+    },
+    "test": {
+      "Computability/Automata": 7,
+      "Computability/Languages": 62,
+      "Computability/URM": 19,
+      "Foundations/Data": 124,
+      "Foundations/Semantics": 3,
+      "Languages/CombinatoryLogic": 23,
+      "Languages/LambdaCalculus": 70,
+      "Logics/LinearLogic": 107
+    }
+  }
+}

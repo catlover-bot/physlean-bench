@@ -1,0 +1,143 @@
+{
+  "chunk_size": 25,
+  "n_records": 415,
+  "n_chunks": 17,
+  "chunks": [
+    {
+      "chunk_id": 0,
+      "start": 0,
+      "end_exclusive": 25,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_000.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_000.jsonl"
+    },
+    {
+      "chunk_id": 1,
+      "start": 25,
+      "end_exclusive": 50,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_001.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_001.jsonl"
+    },
+    {
+      "chunk_id": 2,
+      "start": 50,
+      "end_exclusive": 75,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_002.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_002.jsonl"
+    },
+    {
+      "chunk_id": 3,
+      "start": 75,
+      "end_exclusive": 100,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_003.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_003.jsonl"
+    },
+    {
+      "chunk_id": 4,
+      "start": 100,
+      "end_exclusive": 125,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_004.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_004.jsonl"
+    },
+    {
+      "chunk_id": 5,
+      "start": 125,
+      "end_exclusive": 150,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_005.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_005.jsonl"
+    },
+    {
+      "chunk_id": 6,
+      "start": 150,
+      "end_exclusive": 175,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_006.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_006.jsonl"
+    },
+    {
+      "chunk_id": 7,
+      "start": 175,
+      "end_exclusive": 200,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_007.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_007.jsonl"
+    },
+    {
+      "chunk_id": 8,
+      "start": 200,
+      "end_exclusive": 225,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_008.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_008.jsonl"
+    },
+    {
+      "chunk_id": 9,
+      "start": 225,
+      "end_exclusive": 250,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_009.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_009.jsonl"
+    },
+    {
+      "chunk_id": 10,
+      "start": 250,
+      "end_exclusive": 275,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_010.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_010.jsonl"
+    },
+    {
+      "chunk_id": 11,
+      "start": 275,
+      "end_exclusive": 300,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_011.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_011.jsonl"
+    },
+    {
+      "chunk_id": 12,
+      "start": 300,
+      "end_exclusive": 325,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_012.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_012.jsonl"
+    },
+    {
+      "chunk_id": 13,
+      "start": 325,
+      "end_exclusive": 350,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_013.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_013.jsonl"
+    },
+    {
+      "chunk_id": 14,
+      "start": 350,
+      "end_exclusive": 375,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_014.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_014.jsonl"
+    },
+    {
+      "chunk_id": 15,
+      "start": 375,
+      "end_exclusive": 400,
+      "n": 25,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_015.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_015.jsonl"
+    },
+    {
+      "chunk_id": 16,
+      "start": 400,
+      "end_exclusive": 415,
+      "n": 15,
+      "generations": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/generations_chunk_016.jsonl",
+      "metadata": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/eval_chunks_deepseek_statement_only_bytelevel_normalized/metadata_chunk_016.jsonl"
+    }
+  ]
+}

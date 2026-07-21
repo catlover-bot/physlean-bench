@@ -1,0 +1,71 @@
+{
+  "source": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/deepseek_prompts_test_statement_only.jsonl",
+  "chunk_size": 50,
+  "n_records": 415,
+  "n_chunks": 9,
+  "chunks": [
+    {
+      "chunk_id": 0,
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/deepseek_chunks_statement_only/chunk_000.jsonl",
+      "start": 0,
+      "end_exclusive": 50,
+      "n": 50
+    },
+    {
+      "chunk_id": 1,
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/deepseek_chunks_statement_only/chunk_001.jsonl",
+      "start": 50,
+      "end_exclusive": 100,
+      "n": 50
+    },
+    {
+      "chunk_id": 2,
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/deepseek_chunks_statement_only/chunk_002.jsonl",
+      "start": 100,
+      "end_exclusive": 150,
+      "n": 50
+    },
+    {
+      "chunk_id": 3,
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/deepseek_chunks_statement_only/chunk_003.jsonl",
+      "start": 150,
+      "end_exclusive": 200,
+      "n": 50
+    },
+    {
+      "chunk_id": 4,
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/deepseek_chunks_statement_only/chunk_004.jsonl",
+      "start": 200,
+      "end_exclusive": 250,
+      "n": 50
+    },
+    {
+      "chunk_id": 5,
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/deepseek_chunks_statement_only/chunk_005.jsonl",
+      "start": 250,
+      "end_exclusive": 300,
+      "n": 50
+    },
+    {
+      "chunk_id": 6,
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/deepseek_chunks_statement_only/chunk_006.jsonl",
+      "start": 300,
+      "end_exclusive": 350,
+      "n": 50
+    },
+    {
+      "chunk_id": 7,
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/deepseek_chunks_statement_only/chunk_007.jsonl",
+      "start": 350,
+      "end_exclusive": 400,
+      "n": 50
+    },
+    {
+      "chunk_id": 8,
+      "path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/deepseek_chunks_statement_only/chunk_008.jsonl",
+      "start": 400,
+      "end_exclusive": 415,
+      "n": 15
+    }
+  ]
+}
