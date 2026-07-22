@@ -1,0 +1,47 @@
+{
+  "source_file": "verified_graph_derived_theorems_v1.jsonl",
+  "total": 13,
+  "by_library": {
+    "CSLib": 7,
+    "Physlib": 4,
+    "mathlib": 2
+  },
+  "by_area": {
+    "automata_hist": 1,
+    "flts": 2,
+    "lts": 4,
+    "simple_graph": 2,
+    "space_distribution": 4
+  },
+  "by_graph_rule": {
+    "AUTOMATA_HISTORY_PROJECTION_LIFTING_BRIDGE": 1,
+    "CROSS_LIBRARY_BOUNDED_COMPOSITION_PATTERN_TRANSFER": 2,
+    "CROSS_LIBRARY_BOUNDED_CONSTRUCTION_PATTERN_TRANSFER": 1,
+    "CROSS_LIBRARY_BOUNDED_MONO_PATTERN_TRANSFER": 1,
+    "FLTS_LTS_TRANSFER_API": 1,
+    "FLTS_TRACE_COMPOSITION_API": 1,
+    "LOCAL_API_COMPOSITION": 2,
+    "LTS_TRACE_COMPOSITION_API": 2,
+    "REPLACE_VERTEX_CARDINALITY_NORMALIZATION_API": 1,
+    "WALK_EDGESET_TWO_SIDED_EXTENSION_API": 1
+  },
+  "by_job_id": {
+    "501898": 1,
+    "501902": 1,
+    "501908": 1,
+    "501928": 1,
+    "501931": 2,
+    "504413": 2,
+    "504419": 2,
+    "504420": 1,
+    "504442": 1,
+    "504446": 1
+  },
+  "duplicate_ids": [],
+  "missing_fields": {},
+  "invalid_rows": [],
+  "all_verified": true,
+  "all_sorry_free": true,
+  "all_unique": true,
+  "schema_complete": true
+}

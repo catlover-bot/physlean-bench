@@ -1,0 +1,368 @@
+{
+  "analysis": "Training gold-frequency comparison between false safe promotions and recoverable missed gold premises",
+  "train_positive_target_count": 463,
+  "false_promotion_frequency_statistics": {
+    "count": 16,
+    "min": 1,
+    "median": 2.0,
+    "mean": 4.25,
+    "max": 19
+  },
+  "recoverable_gold_frequency_statistics": {
+    "count": 25,
+    "min": 1,
+    "median": 2,
+    "mean": 4.76,
+    "max": 19
+  },
+  "false_promotions": [
+    {
+      "target": "Cslib.Automata.NA.Buchi.buchiCongruence_transfer",
+      "premise": "Cslib.Language.IsRegular.iff_dfa",
+      "train_gold_frequency": 7,
+      "inverse_frequency_weight": 5.060443010546419
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.Cfg.space_used_initCfg",
+      "premise": "Relation.RelatesInSteps.single",
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.Cfg.space_used_haltCfg",
+      "premise": "Relation.RelatesInSteps.single",
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.Cfg.space_used_step",
+      "premise": "Relation.RelatesInSteps.single",
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.output_length_le_input_length_add_time",
+      "premise": "Relation.RelatesWithinSteps.of_relatesInSteps",
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.comp_left_relatesWithinSteps",
+      "premise": "Relation.RelatesWithinSteps.of_relatesInSteps",
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.comp_right_relatesWithinSteps",
+      "premise": "Relation.RelatesWithinSteps.of_relatesInSteps",
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145
+    },
+    {
+      "target": "Cslib.URM.straight_line_halts_from_regs",
+      "premise": "Cslib.URM.Instr.jumpsBoundedBy_of_nonJump",
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631
+    },
+    {
+      "target": "Cslib.URM.straight_line_halts",
+      "premise": "Cslib.URM.Instr.jumpsBoundedBy_of_nonJump",
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631
+    },
+    {
+      "target": "Cslib.URM.straightLine_finalState_spec",
+      "premise": "Cslib.URM.Instr.jumpsBoundedBy_of_nonJump",
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631
+    },
+    {
+      "target": "Cslib.URM.straightLine_finalRegs_eq_of_halted",
+      "premise": "Cslib.URM.Instr.jumpsBoundedBy_of_nonJump",
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631
+    },
+    {
+      "target": "Cslib.URM.straight_line_state_at_pc",
+      "premise": "Cslib.URM.Instr.jumpsBoundedBy_of_nonJump",
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631
+    },
+    {
+      "target": "Cslib.LTS.Total.extend_omegaExecution",
+      "premise": "Cslib.ωSequence.get_append_right'",
+      "train_gold_frequency": 4,
+      "inverse_frequency_weight": 5.530446639792155
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.weaken_head",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.open_subst_intro",
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.tabs_inv",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "train_gold_frequency": 19,
+      "inverse_frequency_weight": 4.144152278672264
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_neutral",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "train_gold_frequency": 19,
+      "inverse_frequency_weight": 4.144152278672264
+    }
+  ],
+  "recoverable_gold": [
+    {
+      "target": "Cslib.Automata.NA.Buchi.buchiCongruence_transfer",
+      "premise": "Cslib.LTS.Execution.of_mTr",
+      "bm25_rank": 29,
+      "transfer_rank": 11,
+      "transfer_score": 0.09570046587982042,
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145,
+      "specificity_adjusted_transfer": 0.5781525701293517
+    },
+    {
+      "target": "Cslib.Automata.NA.Buchi.buchiFamily_cover",
+      "premise": "Cslib.ωLanguage.mem_ext",
+      "bm25_rank": 307,
+      "transfer_rank": 16,
+      "transfer_score": 0.06315271719108746,
+      "train_gold_frequency": 5,
+      "inverse_frequency_weight": 5.3481250829982,
+      "specificity_adjusted_transfer": 0.33774863086914647
+    },
+    {
+      "target": "Cslib.Automata.NA.Buchi.buchiFamily_cover",
+      "premise": "Cslib.ωLanguage.mem_iSup",
+      "bm25_rank": 304,
+      "transfer_rank": 15,
+      "transfer_score": 0.06315271719108746,
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145,
+      "specificity_adjusted_transfer": 0.38152275873484837
+    },
+    {
+      "target": "Cslib.Automata.NA.Buchi.frequently_via_accept",
+      "premise": "Cslib.LTS.OmegaExecution.extract_execution",
+      "bm25_rank": 46,
+      "transfer_rank": 22,
+      "transfer_score": 0.15932476295003128,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 1.0271249035418426
+    },
+    {
+      "target": "Cslib.Automata.NA.Buchi.frequently_via_accept",
+      "premise": "Cslib.ωSequence.cumLen_strictMono",
+      "bm25_rank": 39,
+      "transfer_rank": 5,
+      "transfer_score": 0.4953198929174326,
+      "train_gold_frequency": 4,
+      "inverse_frequency_weight": 5.530446639792155,
+      "specificity_adjusted_transfer": 2.739340237407425
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.open_tm_body",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "bm25_rank": 132,
+      "transfer_rank": 1,
+      "transfer_score": 1.0,
+      "train_gold_frequency": 19,
+      "inverse_frequency_weight": 4.144152278672264,
+      "specificity_adjusted_transfer": 4.144152278672264
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Red.lc",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "bm25_rank": 134,
+      "transfer_rank": 1,
+      "transfer_score": 1.0,
+      "train_gold_frequency": 19,
+      "inverse_frequency_weight": 4.144152278672264,
+      "specificity_adjusted_transfer": 4.144152278672264
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.wf",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "bm25_rank": 167,
+      "transfer_rank": 1,
+      "transfer_score": 1.0,
+      "train_gold_frequency": 19,
+      "inverse_frequency_weight": 4.144152278672264,
+      "specificity_adjusted_transfer": 4.144152278672264
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.wf",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Wf.strengthen",
+      "bm25_rank": 35,
+      "transfer_rank": 5,
+      "transfer_score": 0.3475748490536509,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 2.2407237688454478
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_tm",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.open_tm_subst_tm_var",
+      "bm25_rank": 48,
+      "transfer_rank": 19,
+      "transfer_score": 0.07214375626965053,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 0.4650918496759417
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Context.map_val_mem",
+      "bm25_rank": 24,
+      "transfer_rank": 12,
+      "transfer_score": 0.2318048569861375,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 1.494385034466297
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.open_tm_subst_ty_var",
+      "bm25_rank": 70,
+      "transfer_rank": 28,
+      "transfer_score": 0.06121533596592892,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 0.3946391940906627
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.open_subst",
+      "bm25_rank": 27,
+      "transfer_rank": 21,
+      "transfer_score": 0.08365352704338753,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 0.5392923190623047
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.open_subst_var",
+      "bm25_rank": 44,
+      "transfer_rank": 13,
+      "transfer_score": 0.2318048569861375,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 1.494385034466297
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.subst_fresh",
+      "bm25_rank": 30,
+      "transfer_rank": 10,
+      "transfer_score": 0.2947856527204845,
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145,
+      "specificity_adjusted_transfer": 1.7808803874751469
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "bm25_rank": 138,
+      "transfer_rank": 1,
+      "transfer_score": 1.0,
+      "train_gold_frequency": 19,
+      "inverse_frequency_weight": 4.144152278672264,
+      "specificity_adjusted_transfer": 4.144152278672264
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_abs_close",
+      "bm25_rank": 35,
+      "transfer_rank": 30,
+      "transfer_score": 0.08648832106583199,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 0.5575674916277736
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_app_l_cong",
+      "bm25_rank": 34,
+      "transfer_rank": 24,
+      "transfer_score": 0.1466039979081774,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 0.9451174721503368
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_app_r_cong",
+      "bm25_rank": 33,
+      "transfer_rank": 23,
+      "transfer_score": 0.1466039979081774,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 0.9451174721503368
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_lc_r",
+      "bm25_rank": 24,
+      "transfer_rank": 6,
+      "transfer_score": 0.5006572693078762,
+      "train_gold_frequency": 4,
+      "inverse_frequency_weight": 5.530446639792155,
+      "specificity_adjusted_transfer": 2.7688583127312603
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_close",
+      "bm25_rank": 44,
+      "transfer_rank": 5,
+      "transfer_score": 0.5520406113441947,
+      "train_gold_frequency": 8,
+      "inverse_frequency_weight": 4.942659974890036,
+      "specificity_adjusted_transfer": 2.7285490342047773
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_injective",
+      "bm25_rank": 70,
+      "transfer_rank": 38,
+      "transfer_score": 0.07298677139217115,
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145,
+      "specificity_adjusted_transfer": 0.4409329576181827
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.confluent_beta_eta",
+      "premise": "Relation.Commute.symmetric",
+      "bm25_rank": 135,
+      "transfer_rank": 6,
+      "transfer_score": 0.383590989439177,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 2.472910367051999
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_abs",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_open_cong_l",
+      "bm25_rank": 51,
+      "transfer_rank": 4,
+      "transfer_score": 0.43579090933166015,
+      "train_gold_frequency": 1,
+      "inverse_frequency_weight": 6.44673737166631,
+      "specificity_adjusted_transfer": 2.809429541420858
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_abs_app_multiApp",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_lc_r",
+      "bm25_rank": 68,
+      "transfer_rank": 3,
+      "transfer_score": 0.6297614710344711,
+      "train_gold_frequency": 2,
+      "inverse_frequency_weight": 6.041272263558145,
+      "specificity_adjusted_transfer": 3.8045605076181266
+    }
+  ]
+}

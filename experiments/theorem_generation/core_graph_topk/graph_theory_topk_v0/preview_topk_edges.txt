@@ -1,0 +1,479 @@
+[23.643] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+  TGT SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+
+[23.643] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+  TGT SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+
+[23.242] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality
+  SRC Walk.IsCycle.adj_toSubgraph_iff_of_isCycles
+      Matching.lean
+  TGT IsCycles.exists_cycle_toSubgraph_verts_eq_connectedComponentSupp
+      Matching.lean
+
+[23.242] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality
+  SRC IsCycles.exists_cycle_toSubgraph_verts_eq_connectedComponentSupp
+      Matching.lean
+  TGT Walk.IsCycle.adj_toSubgraph_iff_of_isCycles
+      Matching.lean
+
+[22.815] rank=2 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality
+  SRC Walk.IsCycle.adj_toSubgraph_iff_of_isCycles
+      Matching.lean
+  TGT IsCycles.reachable_sdiff_toSubgraph_spanningCoe
+      Matching.lean
+
+[22.815] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality
+  SRC IsCycles.reachable_sdiff_toSubgraph_spanningCoe
+      Matching.lean
+  TGT Walk.IsCycle.adj_toSubgraph_iff_of_isCycles
+      Matching.lean
+
+[22.706] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.finite_neighborSet_toSubgraph
+      Connectivity/Subgraph.lean
+
+[22.706] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Walk.finite_neighborSet_toSubgraph
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+
+[22.621] rank=1 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.Walk.edgeSet_toSubgraph
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.finite_neighborSet_toSubgraph
+      Connectivity/Subgraph.lean
+
+[22.621] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.Walk.finite_neighborSet_toSubgraph
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.edgeSet_toSubgraph
+      Connectivity/Subgraph.lean
+
+[22.484] rank=3 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.Walk.finite_neighborSet_toSubgraph
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.toSubgraph_le_iff
+      Connectivity/Subgraph.lean
+
+[22.484] rank=1 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.Walk.toSubgraph_le_iff
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.finite_neighborSet_toSubgraph
+      Connectivity/Subgraph.lean
+
+[22.341] rank=1 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.Walk.mem_edges_toSubgraph
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.finite_neighborSet_toSubgraph
+      Connectivity/Subgraph.lean
+
+[22.341] rank=4 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.Walk.finite_neighborSet_toSubgraph
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.mem_edges_toSubgraph
+      Connectivity/Subgraph.lean
+
+[22.229] rank=2 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,map_transport
+  SRC SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Subgraph._root_.SimpleGraph.Walk.toSubgraph_connected
+      Connectivity/Subgraph.lean
+
+[22.229] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,map_transport
+  SRC SimpleGraph.Subgraph._root_.SimpleGraph.Walk.toSubgraph_connected
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+
+[22.170] rank=1 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_coe
+      Subgraph.lean
+
+[22.170] rank=1 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_coe
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+
+[22.117] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_map
+      Subgraph.lean
+
+[22.117] rank=1 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_map
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+
+[22.045] rank=3 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.image_coe_edgeSet_coe
+      Subgraph.lean
+
+[22.045] rank=1 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Subgraph.image_coe_edgeSet_coe
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+
+[22.002] rank=3 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.toSubgraph_le_iff
+      Connectivity/Subgraph.lean
+
+[22.002] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Walk.toSubgraph_le_iff
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+
+[21.951] rank=1 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+  TGT SimpleGraph.map_hom_top
+      Subgraph.lean
+
+[21.951] rank=1 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.map_hom_top
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+
+[21.947] rank=4 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+  TGT SimpleGraph.adj_iff_of_neighborSet_equiv
+      Subgraph.lean
+
+[21.947] rank=1 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.adj_iff_of_neighborSet_equiv
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+
+[21.934] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+  TGT SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+
+[21.934] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+
+[21.909] rank=3 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+  TGT SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+
+[21.909] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+
+[21.893] rank=4 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+  TGT SimpleGraph.adj_iff_of_neighborSet_equiv
+      Subgraph.lean
+
+[21.893] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.adj_iff_of_neighborSet_equiv
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+
+[21.831] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Walk.mem_edges_toSubgraph
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+
+[21.831] rank=4 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.mem_edges_toSubgraph
+      Connectivity/Subgraph.lean
+
+[21.829] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Walk.edgeSet_toSubgraph
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+
+[21.829] rank=5 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.edgeSet_toSubgraph
+      Connectivity/Subgraph.lean
+
+[21.662] rank=5 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+  TGT SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+
+[21.662] rank=3 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+
+[21.639] rank=6 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+
+[21.639] rank=5 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,map_transport
+  SRC SimpleGraph.Subgraph.map_iso_top
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+
+[21.631] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.image_coe_edgeSet_coe
+      Subgraph.lean
+  TGT SimpleGraph.adj_iff_of_neighborSet_equiv
+      Subgraph.lean
+
+[21.631] rank=3 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.adj_iff_of_neighborSet_equiv
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.image_coe_edgeSet_coe
+      Subgraph.lean
+
+[21.630] rank=7 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+  TGT SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+
+[21.630] rank=3 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_subset
+      Subgraph.lean
+
+[21.591] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_map
+      Subgraph.lean
+  TGT SimpleGraph.adj_iff_of_neighborSet_equiv
+      Subgraph.lean
+
+[21.591] rank=4 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.adj_iff_of_neighborSet_equiv
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_map
+      Subgraph.lean
+
+[21.586] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.degree_le'
+      Subgraph.lean
+  TGT SimpleGraph.coe_degree
+      Subgraph.lean
+
+[21.586] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.coe_degree
+      Subgraph.lean
+  TGT SimpleGraph.degree_le'
+      Subgraph.lean
+
+[21.568] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.degree_le
+      Subgraph.lean
+  TGT SimpleGraph.coe_degree
+      Subgraph.lean
+
+[21.568] rank=2 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.coe_degree
+      Subgraph.lean
+  TGT SimpleGraph.degree_le
+      Subgraph.lean
+
+[21.562] rank=2 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_coe
+      Subgraph.lean
+  TGT SimpleGraph.adj_iff_of_neighborSet_equiv
+      Subgraph.lean
+
+[21.562] rank=5 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.adj_iff_of_neighborSet_equiv
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_coe
+      Subgraph.lean
+
+[21.513] rank=6 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality,map_transport
+  SRC SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+  TGT IsCycles.reachable_sdiff_toSubgraph_spanningCoe
+      Matching.lean
+
+[21.513] rank=2 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality,map_transport
+  SRC IsCycles.reachable_sdiff_toSubgraph_spanningCoe
+      Matching.lean
+  TGT SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+
+[21.499] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC card_neighborSet_toSubgraph
+      Subgraph.lean
+  TGT degree_toSubgraph
+      Subgraph.lean
+
+[21.499] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC degree_toSubgraph
+      Subgraph.lean
+  TGT card_neighborSet_toSubgraph
+      Subgraph.lean
+
+[21.445] rank=3 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.image_coe_edgeSet_coe
+      Subgraph.lean
+  TGT SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+
+[21.445] rank=4 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.image_coe_edgeSet_coe
+      Subgraph.lean
+
+[21.435] rank=5 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality
+  SRC SimpleGraph.Walk.finite_neighborSet_toSubgraph
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Subgraph._root_.SimpleGraph.Walk.toSubgraph_connected
+      Connectivity/Subgraph.lean
+
+[21.435] rank=2 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality
+  SRC SimpleGraph.Subgraph._root_.SimpleGraph.Walk.toSubgraph_connected
+      Connectivity/Subgraph.lean
+  TGT SimpleGraph.Walk.finite_neighborSet_toSubgraph
+      Connectivity/Subgraph.lean
+
+[21.425] rank=4 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.image_coe_edgeSet_coe
+      Subgraph.lean
+  TGT SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+
+[21.425] rank=4 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.image_coe_edgeSet_coe
+      Subgraph.lean
+
+[21.417] rank=7 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality,map_transport
+  SRC SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+  TGT IsCycles.exists_cycle_toSubgraph_verts_eq_connectedComponentSupp
+      Matching.lean
+
+[21.417] rank=2 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality,map_transport
+  SRC IsCycles.exists_cycle_toSubgraph_verts_eq_connectedComponentSupp
+      Matching.lean
+  TGT SimpleGraph.Walk.adj_toSubgraph_mapLe
+      Connectivity/Subgraph.lean
+
+[21.339] rank=3 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_map
+      Subgraph.lean
+  TGT SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+
+[21.339] rank=5 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_map
+      Subgraph.lean
+
+[21.324] rank=3 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_coe
+      Subgraph.lean
+  TGT SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+
+[21.324] rank=6 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.degree_pos_iff_exists_adj
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_coe
+      Subgraph.lean
+
+[21.312] rank=4 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_map
+      Subgraph.lean
+  TGT SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+
+[21.312] rank=5 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_map
+      Subgraph.lean
+
+[21.299] rank=4 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.Subgraph.edgeSet_coe
+      Subgraph.lean
+  TGT SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+
+[21.299] rank=6 motifs=same_family,adj_edgeSet_bridge,subgraph_monotonicity,subgraph_lift_target,finite_cardinality,map_transport
+  SRC SimpleGraph.degree_eq_one_iff_existsUnique_adj
+      Subgraph.lean
+  TGT SimpleGraph.Subgraph.edgeSet_coe
+      Subgraph.lean
+
+[21.294] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.degree_eq_zero_of_subsingleton
+      Subgraph.lean
+  TGT SimpleGraph.nontrivial_verts_of_degree_ne_zero
+      Subgraph.lean
+
+[21.294] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.nontrivial_verts_of_degree_ne_zero
+      Subgraph.lean
+  TGT SimpleGraph.degree_eq_zero_of_subsingleton
+      Subgraph.lean
+
+[21.251] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality
+  SRC SimpleGraph.Walk.IsPath.snd_of_toSubgraph_adj
+      Connectivity/Subgraph.lean
+  TGT IsCycles.reachable_sdiff_toSubgraph_spanningCoe
+      Matching.lean
+
+[21.251] rank=3 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,walk_path_connectivity,finite_cardinality
+  SRC IsCycles.reachable_sdiff_toSubgraph_spanningCoe
+      Matching.lean
+  TGT SimpleGraph.Walk.IsPath.snd_of_toSubgraph_adj
+      Connectivity/Subgraph.lean
+
+[21.239] rank=3 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.coe_degree
+      Subgraph.lean
+  TGT SimpleGraph.degree_spanningCoe
+      Subgraph.lean
+
+[21.239] rank=1 motifs=same_family,subgraph_monotonicity,subgraph_lift_target,finite_cardinality
+  SRC SimpleGraph.degree_spanningCoe
+      Subgraph.lean
+  TGT SimpleGraph.coe_degree
+      Subgraph.lean

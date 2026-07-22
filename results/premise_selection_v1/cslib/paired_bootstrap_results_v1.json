@@ -1,0 +1,85 @@
+{
+  "analysis": "CSLib paired target bootstrap: validation-selected import quota versus BM25",
+  "selection_policy": "quota hyperparameters selected on validation only",
+  "test_target_count": 56,
+  "bootstrap_samples": 10000,
+  "random_seed": 20260721,
+  "configuration": {
+    "protected_prefix": 5,
+    "imported_quota": 5,
+    "transfer_weight": 0.4
+  },
+  "per_target_recall_at_20": {
+    "improved": 4,
+    "degraded": 4,
+    "tied": 48
+  },
+  "statistics": {
+    "MRR": {
+      "bm25": 0.4825085663942918,
+      "quota": 0.47860943849224336,
+      "delta": -0.003899127902048438,
+      "ci95": [
+        -0.010896118684586915,
+        0.003476628320913773
+      ],
+      "bootstrap_probability_delta_gt_0": 0.1409,
+      "bootstrap_probability_delta_ge_0": 0.1409
+    },
+    "micro_recall@10": {
+      "bm25": 0.4276315789473684,
+      "quota": 0.3618421052631579,
+      "delta": -0.06578947368421051,
+      "ci95": [
+        -0.12408759124087593,
+        -0.014598540145985384
+      ],
+      "bootstrap_probability_delta_gt_0": 0.0038,
+      "bootstrap_probability_delta_ge_0": 0.0083
+    },
+    "micro_recall@20": {
+      "bm25": 0.5855263157894737,
+      "quota": 0.5855263157894737,
+      "delta": 0.0,
+      "ci95": [
+        -0.053765508684863586,
+        0.0434782608695653
+      ],
+      "bootstrap_probability_delta_gt_0": 0.4391,
+      "bootstrap_probability_delta_ge_0": 0.5501
+    },
+    "micro_recall@50": {
+      "bm25": 0.7368421052631579,
+      "quota": 0.7631578947368421,
+      "delta": 0.026315789473684292,
+      "ci95": [
+        0.0064102564102563875,
+        0.05035971223021585
+      ],
+      "bootstrap_probability_delta_gt_0": 0.9835,
+      "bootstrap_probability_delta_ge_0": 1.0
+    },
+    "imported_recall@20": {
+      "bm25": 0.42990654205607476,
+      "quota": 0.42990654205607476,
+      "delta": 0.0,
+      "ci95": [
+        -0.08046440489432709,
+        0.06194690265486725
+      ],
+      "bootstrap_probability_delta_gt_0": 0.4391,
+      "bootstrap_probability_delta_ge_0": 0.5501
+    },
+    "imported_recall@50": {
+      "bm25": 0.6261682242990654,
+      "quota": 0.6635514018691588,
+      "delta": 0.03738317757009346,
+      "ci95": [
+        0.008771929824561429,
+        0.07499999999999996
+      ],
+      "bootstrap_probability_delta_gt_0": 0.9835,
+      "bootstrap_probability_delta_ge_0": 1.0
+    }
+  }
+}

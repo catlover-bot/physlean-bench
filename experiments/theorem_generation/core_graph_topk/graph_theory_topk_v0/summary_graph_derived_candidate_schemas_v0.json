@@ -1,0 +1,22 @@
+{
+  "input_local_api_seeds": 19,
+  "candidate_schemas": 19,
+  "generation_mode": "graph_template_only_no_llm",
+  "graph_rule_counts": {
+    "SUBGRAPH_WALK_LOCAL_COMPLETION": 1,
+    "CARDINALITY_TRANSFER": 4,
+    "API_BRIDGE": 5,
+    "WALK_PATH_CONNECTIVITY_COMPOSITION": 4,
+    "MAP_TRANSPORT": 2,
+    "COMPLEMENT_DUALITY": 3
+  },
+  "template_counts": {
+    "subgraph_walk_lift": 1,
+    "finite_degree_edge_cardinality": 4,
+    "adj_edgeSet_bridge": 5,
+    "walk_path_connectivity": 4,
+    "map_transport": 2,
+    "complement_adjacency_dual": 3
+  },
+  "imports_count": 16
+}

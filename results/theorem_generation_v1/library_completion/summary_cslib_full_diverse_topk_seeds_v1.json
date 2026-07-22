@@ -1,0 +1,51 @@
+{
+  "input": "cslib_full_candidate_edges_topk_v2.jsonl",
+  "eligible_edges": 5108,
+  "target_k": 60,
+  "selected": 60,
+  "selection_constraints": {
+    "same_area_only": true,
+    "minimum_per_area": 2,
+    "maximum_per_area": 5,
+    "maximum_per_file_pair": 2,
+    "maximum_per_declaration": 2,
+    "motif_or_minimum_shared_tokens": 5
+  },
+  "area_counts": {
+    "algorithms": 2,
+    "automata": 5,
+    "ccs": 1,
+    "combinatory_logic": 5,
+    "control": 5,
+    "crypto": 4,
+    "flts": 3,
+    "formal_languages": 5,
+    "foundations_data": 5,
+    "hml": 2,
+    "lambda_calculus": 5,
+    "linear_logic": 4,
+    "lts": 5,
+    "propositional_logic": 3,
+    "turing_machine": 2,
+    "urm": 4
+  },
+  "selection_phase_counts": {
+    "area_coverage_round_1": 16,
+    "area_coverage_round_2": 15,
+    "global_score_fill": 29
+  },
+  "motif_counts": {
+    "acceptance_language_bridge": 5,
+    "base_case_bridge": 1,
+    "composition_bridge": 3,
+    "iff_characterization": 1,
+    "map_functor_bridge": 1,
+    "proof_equivalence_bridge": 2
+  },
+  "score_range": [
+    10.55,
+    14.392857
+  ],
+  "unique_declarations_used": 113,
+  "unique_file_pairs": 38
+}

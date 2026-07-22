@@ -1,0 +1,34 @@
+{
+  "input_declarations": 758,
+  "theorem_lemma_nodes": 529,
+  "candidate_edges": 6336,
+  "source_nodes_with_edges": 528,
+  "target_nodes_hit": 336,
+  "family_counts": {
+    "transition_lts": 219,
+    "reachability_steps": 34,
+    "relation_equiv": 201,
+    "automata_language": 219,
+    "ccs_process": 27,
+    "other": 42,
+    "urm_computability": 56,
+    "modal_logic_hml": 17
+  },
+  "motif_counts": {
+    "acceptance_language_bridge": 3477,
+    "automata_language": 2616,
+    "ccs_hml_semantics": 2828,
+    "lts_transition_api": 2628,
+    "order_relation_law": 5841,
+    "relation_equiv": 2380,
+    "simulation_bisimulation": 5443,
+    "halt_bound_computation": 1753,
+    "trace_composition": 2524,
+    "urm_computability": 672,
+    "reachability_steps": 910
+  },
+  "score_range": [
+    6.1,
+    24.38
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "version": "physlib_cslib_sft_v0",
+  "seed": 42,
+  "inputs": {
+    "phys_trace": "/project/nlp-work11/hirotaka-m/physlean_trace_rc13_week_8cpu/traced_theorems.jsonl",
+    "phys_test": "/project/nlp-work11/hirotaka-m/physlean_trace_rc13_week_8cpu/test.jsonl",
+    "cslib_pool": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_bench_v0/test.model_eval.jsonl"
+  },
+  "counts": {
+    "physlib_train.sft.jsonl": 4425,
+    "physlib_valid.sft.jsonl": 491,
+    "physlib_test.sft.jsonl": 680,
+    "cslib_train.sft.jsonl": 291,
+    "cslib_valid.sft.jsonl": 41,
+    "cslib_test.sft.jsonl": 83,
+    "mixed_train.sft.jsonl": 4716,
+    "mixed_valid.sft.jsonl": 532,
+    "mixed_test.sft.jsonl": 763
+  },
+  "note": "Physlib uses existing test split. CSLib 415-pool is split into train/valid/test with seed 42."
+}

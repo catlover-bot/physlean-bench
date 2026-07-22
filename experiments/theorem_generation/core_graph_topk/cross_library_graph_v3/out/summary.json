@@ -1,0 +1,14 @@
+{
+  "input_edges": 59240,
+  "high_value_seeds": 94,
+  "out_path": "cross_library_graph_v3/out/high_value_cross_topk_seeds.jsonl",
+  "concept_distribution": {
+    "state": 50,
+    "bounded": 34,
+    "perm": 10
+  },
+  "direction_distribution": {
+    "Physlib->CSLib": 47,
+    "CSLib->Physlib": 47
+  }
+}

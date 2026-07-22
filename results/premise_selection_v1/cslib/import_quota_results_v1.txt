@@ -1,0 +1,19 @@
+Import-aware dual-channel premise ranking v1
+======================================================================================
+
+Validation BM25
+MRR=0.5615 R@20=0.7850 local@20=0.9623 imported@20=0.6111
+
+feasible configurations: 39
+
+Balanced configuration
+--------------------------------------------------------------------------------------
+protected_prefix=5 imported_quota=5 transfer_weight=0.4
+validation: MRR=0.5605 R@20=0.8131 R@50=0.9252 local@20=0.9623 imported@20=0.6667
+test:       MRR=0.4786 R@5=0.2895 R@10=0.3618 R@20=0.5855 R@50=0.7632 local@20=0.9556 imported@20=0.4299
+
+Recall-oriented configuration
+--------------------------------------------------------------------------------------
+protected_prefix=5 imported_quota=5 transfer_weight=0.4
+validation: MRR=0.5605 R@20=0.8131 R@50=0.9252 local@20=0.9623 imported@20=0.6667
+test:       MRR=0.4786 R@5=0.2895 R@10=0.3618 R@20=0.5855 R@50=0.7632 local@20=0.9556 imported@20=0.4299

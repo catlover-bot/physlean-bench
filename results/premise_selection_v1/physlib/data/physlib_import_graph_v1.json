@@ -1,0 +1,1579 @@
+{
+  "repo_root": "/project/nlp-work11/hirotaka-m/physlean_repos/physlib",
+  "lean_files": 413,
+  "modules": 413,
+  "modules_with_imports": 395,
+  "all_direct_import_edges": 770,
+  "local_physlib_direct_import_edges": 554,
+  "unparsed_import_lines": [],
+  "gold_counts": {
+    "same_file_earlier": 3755,
+    "cross_file_total": 3550,
+    "cross_file_import_reachable": 3550
+  },
+  "total_gold_labels": 7305,
+  "available_gold_labels": 7305,
+  "availability_coverage": 1.0,
+  "direct_imports": {
+    "Physlib.ClassicalFieldTheory.Local.Variation": [
+      "Physlib.Mathematics.VariationalCalculus.IsTestFunction"
+    ],
+    "Physlib.ClassicalMechanics.DampedHarmonicOscillator.Basic": [
+      "Physlib.SpaceAndTime.Time.Derivatives"
+    ],
+    "Physlib.ClassicalMechanics.EulerLagrange": [
+      "Physlib.Mathematics.VariationalCalculus.HasVarGradient",
+      "Physlib.SpaceAndTime.Time.Derivatives"
+    ],
+    "Physlib.ClassicalMechanics.HamiltonsEquations": [
+      "Physlib.Mathematics.VariationalCalculus.HasVarGradient",
+      "Physlib.SpaceAndTime.Time.Derivatives"
+    ],
+    "Physlib.ClassicalMechanics.HarmonicOscillator.Basic": [
+      "Mathlib.Data.Real.Hom",
+      "Physlib.ClassicalMechanics.EulerLagrange",
+      "Physlib.ClassicalMechanics.HamiltonsEquations"
+    ],
+    "Physlib.ClassicalMechanics.HarmonicOscillator.ConfigurationSpace": [
+      "Mathlib.Analysis.InnerProductSpace.Calculus",
+      "Physlib.SpaceAndTime.Space.Basic"
+    ],
+    "Physlib.ClassicalMechanics.HarmonicOscillator.Solution": [
+      "Physlib.ClassicalMechanics.HarmonicOscillator.Basic"
+    ],
+    "Physlib.ClassicalMechanics.Lagrangian.TotalDerivativeEquivalence": [
+      "Mathlib.Analysis.InnerProductSpace.Dual",
+      "Physlib.Mathematics.InnerProductSpace.Basic"
+    ],
+    "Physlib.ClassicalMechanics.Mass.MassUnit": [
+      "Mathlib.Analysis.RCLike.Basic"
+    ],
+    "Physlib.ClassicalMechanics.Pendulum.CoplanarDoublePendulum": [
+      "Physlib.Meta.Linters.Sorry"
+    ],
+    "Physlib.ClassicalMechanics.Pendulum.SlidingPendulum": [
+      "Physlib.Meta.Linters.Sorry"
+    ],
+    "Physlib.ClassicalMechanics.RigidBody.Basic": [
+      "Mathlib.Geometry.Manifold.Algebra.SmoothFunctions",
+      "Physlib.Meta.Informal.Basic",
+      "Physlib.SpaceAndTime.Space.Module"
+    ],
+    "Physlib.ClassicalMechanics.RigidBody.SolidSphere": [
+      "Physlib.ClassicalMechanics.RigidBody.Basic",
+      "Physlib.Meta.Linters.Sorry",
+      "Physlib.SpaceAndTime.Space.Integrals.Basic"
+    ],
+    "Physlib.ClassicalMechanics.Scattering.RigidSphere": [
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.ClassicalMechanics.Vibrations.LinearTriatomic": [
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.ClassicalMechanics.WaveEquation.Basic": [
+      "Physlib.SpaceAndTime.Space.CrossProduct",
+      "Physlib.SpaceAndTime.Space.Derivatives.Laplacian"
+    ],
+    "Physlib.ClassicalMechanics.WaveEquation.HarmonicWave": [
+      "Physlib.ClassicalMechanics.WaveEquation.Basic"
+    ],
+    "Physlib.CondensedMatter.TightBindingChain.Basic": [
+      "Physlib.QuantumMechanics.FiniteTarget.HilbertSpace"
+    ],
+    "Physlib.Cosmology.FLRW.Basic": [
+      "Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv",
+      "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp",
+      "Physlib.Meta.Informal.Basic",
+      "Physlib.Meta.Linters.Sorry",
+      "Physlib.SpaceAndTime.Time.Derivatives"
+    ],
+    "Physlib.Electromagnetism.Basic": [
+      "Physlib.SpaceAndTime.SpaceTime.Basic"
+    ],
+    "Physlib.Electromagnetism.Charge.ChargeUnit": [
+      "Mathlib.Analysis.RCLike.Basic"
+    ],
+    "Physlib.Electromagnetism.Current.CircularCoil": [
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.Electromagnetism.Current.InfiniteWire": [
+      "Physlib.Electromagnetism.Dynamics.IsExtrema",
+      "Physlib.SpaceAndTime.Space.ConstantSliceDist",
+      "Physlib.SpaceAndTime.Space.Norm",
+      "Physlib.SpaceAndTime.TimeAndSpace.ConstantTimeDist"
+    ],
+    "Physlib.Electromagnetism.Dynamics.Basic": [
+      "Mathlib.Data.Real.Sqrt",
+      "Physlib.Relativity.SpeedOfLight"
+    ],
+    "Physlib.Electromagnetism.Dynamics.CurrentDensity": [
+      "Physlib.SpaceAndTime.SpaceTime.TimeSlice"
+    ],
+    "Physlib.Electromagnetism.Dynamics.Hamiltonian": [
+      "Physlib.Electromagnetism.Dynamics.Lagrangian"
+    ],
+    "Physlib.Electromagnetism.Dynamics.IsExtrema": [
+      "Physlib.Electromagnetism.Dynamics.Lagrangian"
+    ],
+    "Physlib.Electromagnetism.Dynamics.KineticTerm": [
+      "Physlib.Electromagnetism.Dynamics.Basic",
+      "Physlib.Electromagnetism.Kinematics.MagneticField",
+      "Physlib.Mathematics.VariationalCalculus.HasVarGradient"
+    ],
+    "Physlib.Electromagnetism.Dynamics.Lagrangian": [
+      "Physlib.Electromagnetism.Dynamics.CurrentDensity",
+      "Physlib.Electromagnetism.Dynamics.KineticTerm",
+      "Physlib.Relativity.Tensors.RealTensor.Vector.MinkowskiProduct"
+    ],
+    "Physlib.Electromagnetism.Kinematics.Boosts": [
+      "Physlib.Electromagnetism.Kinematics.MagneticField",
+      "Physlib.SpaceAndTime.SpaceTime.Boosts"
+    ],
+    "Physlib.Electromagnetism.Kinematics.EMPotential": [
+      "Physlib.Mathematics.VariationalCalculus.HasVarAdjDeriv",
+      "Physlib.SpaceAndTime.SpaceTime.Derivatives"
+    ],
+    "Physlib.Electromagnetism.Kinematics.ElectricField": [
+      "Physlib.Electromagnetism.Basic",
+      "Physlib.Electromagnetism.Kinematics.FieldStrength",
+      "Physlib.Electromagnetism.Kinematics.ScalarPotential",
+      "Physlib.Electromagnetism.Kinematics.VectorPotential"
+    ],
+    "Physlib.Electromagnetism.Kinematics.FieldStrength": [
+      "Mathlib.Data.Real.Hom",
+      "Physlib.Electromagnetism.Kinematics.EMPotential",
+      "Physlib.Relativity.Tensors.Elab",
+      "Physlib.Relativity.Tensors.RealTensor.Metrics.Basic"
+    ],
+    "Physlib.Electromagnetism.Kinematics.MagneticField": [
+      "Physlib.Electromagnetism.Kinematics.ElectricField"
+    ],
+    "Physlib.Electromagnetism.Kinematics.ScalarPotential": [
+      "Mathlib.Data.Real.Hom",
+      "Physlib.Electromagnetism.Kinematics.EMPotential",
+      "Physlib.SpaceAndTime.SpaceTime.TimeSlice"
+    ],
+    "Physlib.Electromagnetism.Kinematics.VectorPotential": [
+      "Mathlib.Data.Real.Hom",
+      "Physlib.Electromagnetism.Kinematics.EMPotential",
+      "Physlib.SpaceAndTime.SpaceTime.TimeSlice"
+    ],
+    "Physlib.Electromagnetism.PointParticle.OneDimension": [
+      "Physlib.Electromagnetism.Dynamics.IsExtrema",
+      "Physlib.SpaceAndTime.Space.Norm",
+      "Physlib.SpaceAndTime.Space.Translations",
+      "Physlib.SpaceAndTime.TimeAndSpace.ConstantTimeDist"
+    ],
+    "Physlib.Electromagnetism.PointParticle.ThreeDimension": [
+      "Physlib.Electromagnetism.Dynamics.IsExtrema",
+      "Physlib.SpaceAndTime.Space.Norm",
+      "Physlib.SpaceAndTime.Space.Translations",
+      "Physlib.SpaceAndTime.TimeAndSpace.ConstantTimeDist"
+    ],
+    "Physlib.Electromagnetism.ThreeDimension.Basic": [
+      "Physlib.Electromagnetism.Kinematics.MagneticField"
+    ],
+    "Physlib.Electromagnetism.ThreeDimension.MaxwellEquations": [
+      "Physlib.Electromagnetism.Dynamics.IsExtrema",
+      "Physlib.Electromagnetism.ThreeDimension.Basic"
+    ],
+    "Physlib.Electromagnetism.Vacuum.Constant": [
+      "Physlib.Electromagnetism.Dynamics.IsExtrema"
+    ],
+    "Physlib.Electromagnetism.Vacuum.HarmonicWave": [
+      "Physlib.Electromagnetism.Vacuum.IsPlaneWave"
+    ],
+    "Physlib.Electromagnetism.Vacuum.IsPlaneWave": [
+      "Physlib.ClassicalMechanics.WaveEquation.Basic",
+      "Physlib.Electromagnetism.Dynamics.IsExtrema"
+    ],
+    "Physlib.Mathematics.Calculus.AdjFDeriv": [
+      "Mathlib.Analysis.Calculus.Gradient.Basic",
+      "Physlib.Mathematics.FDerivCurry",
+      "Physlib.Mathematics.InnerProductSpace.Adjoint",
+      "Physlib.Mathematics.InnerProductSpace.Calculus"
+    ],
+    "Physlib.Mathematics.Calculus.Divergence": [
+      "Mathlib.LinearAlgebra.Trace",
+      "Physlib.Mathematics.Calculus.AdjFDeriv",
+      "Physlib.SpaceAndTime.Space.Derivatives.Div"
+    ],
+    "Physlib.Mathematics.DataStructures.FourTree.Basic": [
+      "Mathlib.Data.Multiset.Bind",
+      "Mathlib.Data.Multiset.Sort"
+    ],
+    "Physlib.Mathematics.DataStructures.FourTree.UniqueMap": [
+      "Physlib.Mathematics.DataStructures.FourTree.Basic"
+    ],
+    "Physlib.Mathematics.DataStructures.Matrix.LieTrace": [
+      "Mathlib.Analysis.Complex.Polynomial.Basic",
+      "Mathlib.Analysis.Normed.Algebra.MatrixExponential",
+      "Physlib.Mathematics.SchurTriangulation"
+    ],
+    "Physlib.Mathematics.Distribution.Basic": [
+      "Mathlib.Analysis.Distribution.SchwartzSpace.Fourier",
+      "Mathlib.Topology.Algebra.Module.PointwiseConvergence",
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.Mathematics.Distribution.PowMul": [
+      "Mathlib.Analysis.Distribution.SchwartzSpace.Basic"
+    ],
+    "Physlib.Mathematics.FDerivCurry": [
+      "Mathlib.Analysis.Calculus.FDeriv.Symmetric"
+    ],
+    "Physlib.Mathematics.Fin": [
+      "Mathlib.Algebra.Order.Group.Nat",
+      "Mathlib.Algebra.Order.Monoid.NatCast",
+      "Mathlib.Logic.Equiv.Fin.Basic"
+    ],
+    "Physlib.Mathematics.Fin.Involutions": [
+      "Mathlib.Data.Finset.Sort",
+      "Mathlib.Data.Fintype.Pi",
+      "Mathlib.Data.Fintype.Prod",
+      "Mathlib.Data.Nat.Factorial.DoubleFactorial"
+    ],
+    "Physlib.Mathematics.Geometry.Metric.PseudoRiemannian.Defs": [
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Mathlib.Geometry.Manifold.MFDeriv.Defs",
+      "Mathlib.LinearAlgebra.BilinearForm.Properties",
+      "Mathlib.LinearAlgebra.QuadraticForm.Real",
+      "Mathlib.Topology.LocallyConstant.Basic"
+    ],
+    "Physlib.Mathematics.Geometry.Metric.Riemannian.Defs": [
+      "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+      "Physlib.Mathematics.Geometry.Metric.PseudoRiemannian.Defs"
+    ],
+    "Physlib.Mathematics.InnerProductSpace.Adjoint": [
+      "Mathlib.Analysis.InnerProductSpace.Adjoint",
+      "Physlib.Mathematics.InnerProductSpace.Basic"
+    ],
+    "Physlib.Mathematics.InnerProductSpace.Basic": [
+      "Mathlib.Analysis.InnerProductSpace.Calculus",
+      "Mathlib.Analysis.InnerProductSpace.ProdL2"
+    ],
+    "Physlib.Mathematics.InnerProductSpace.Calculus": [
+      "Physlib.Mathematics.InnerProductSpace.Basic"
+    ],
+    "Physlib.Mathematics.InnerProductSpace.Submodule": [
+      "Mathlib.Analysis.InnerProductSpace.LinearPMap"
+    ],
+    "Physlib.Mathematics.KroneckerDelta": [
+      "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "Mathlib.Algebra.CharZero.Defs",
+      "Mathlib.Algebra.Field.Defs",
+      "Mathlib.Algebra.Module.Defs"
+    ],
+    "Physlib.Mathematics.LinearMaps": [
+      "Mathlib.Algebra.Module.LinearMap.Defs",
+      "Mathlib.Algebra.Ring.Rat",
+      "Mathlib.Data.Fintype.BigOperators",
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.Mathematics.List": [
+      "Mathlib.Data.List.Sort",
+      "Mathlib.Data.List.TakeWhile",
+      "Mathlib.Data.Nat.Lattice",
+      "Physlib.Mathematics.Fin"
+    ],
+    "Physlib.Mathematics.List.InsertIdx": [
+      "Mathlib.Algebra.GroupWithZero.Nat",
+      "Mathlib.Algebra.Order.Group.Nat",
+      "Mathlib.Algebra.Order.ZeroLEOne",
+      "Mathlib.Data.Fin.SuccPred"
+    ],
+    "Physlib.Mathematics.List.InsertionSort": [
+      "Physlib.Mathematics.List"
+    ],
+    "Physlib.Mathematics.PiTensorProduct": [
+      "Mathlib.LinearAlgebra.PiTensorProduct"
+    ],
+    "Physlib.Mathematics.RatComplexNum": [
+      "Mathlib.Analysis.Complex.Basic"
+    ],
+    "Physlib.Mathematics.SO3.Basic": [
+      "Mathlib.Analysis.InnerProductSpace.PiL2",
+      "Mathlib.LinearAlgebra.Eigenspace.Basic"
+    ],
+    "Physlib.Mathematics.SchurTriangulation": [
+      "Mathlib.Analysis.InnerProductSpace.Adjoint",
+      "Mathlib.LinearAlgebra.Eigenspace.Triangularizable"
+    ],
+    "Physlib.Mathematics.SpecialFunctions.PhysHermite": [
+      "Mathlib.Analysis.Calculus.Deriv.Polynomial",
+      "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral",
+      "Mathlib.Analysis.SpecialFunctions.Trigonometric.Series",
+      "Mathlib.Tactic.Cases"
+    ],
+    "Physlib.Mathematics.Trigonometry.Tanh": [
+      "Mathlib.Analysis.Calculus.Deriv.Polynomial",
+      "Mathlib.Analysis.Distribution.TemperateGrowth",
+      "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp",
+      "Mathlib.Topology.Algebra.Polynomial"
+    ],
+    "Physlib.Mathematics.VariationalCalculus.Basic": [
+      "Mathlib.Analysis.Calculus.BumpFunction.InnerProduct",
+      "Physlib.Mathematics.VariationalCalculus.IsTestFunction"
+    ],
+    "Physlib.Mathematics.VariationalCalculus.HasVarAdjDeriv": [
+      "Physlib.Mathematics.VariationalCalculus.HasVarAdjoint"
+    ],
+    "Physlib.Mathematics.VariationalCalculus.HasVarAdjoint": [
+      "Physlib.Mathematics.VariationalCalculus.Basic",
+      "Physlib.Mathematics.VariationalCalculus.IsLocalizedfunctionTransform"
+    ],
+    "Physlib.Mathematics.VariationalCalculus.HasVarGradient": [
+      "Physlib.Mathematics.VariationalCalculus.HasVarAdjDeriv"
+    ],
+    "Physlib.Mathematics.VariationalCalculus.IsLocalizedfunctionTransform": [
+      "Physlib.Mathematics.Calculus.AdjFDeriv",
+      "Physlib.SpaceAndTime.Space.Derivatives.Div"
+    ],
+    "Physlib.Mathematics.VariationalCalculus.IsTestFunction": [
+      "Mathlib.Topology.ContinuousMap.CompactlySupported",
+      "Physlib.Mathematics.Calculus.Divergence"
+    ],
+    "Physlib.Meta.AllFilePaths": [
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.Meta.Basic": [
+      "Mathlib.Lean.Expr.Basic"
+    ],
+    "Physlib.Meta.Informal.Post": [
+      "Physlib.Meta.Basic",
+      "Physlib.Meta.Informal.Basic",
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.Meta.Notes.HTMLNote": [
+      "Physlib.Meta.Basic",
+      "Physlib.Meta.Informal.Basic",
+      "Physlib.Meta.Notes.Basic"
+    ],
+    "Physlib.Meta.Notes.NoteFile": [
+      "Lean.Setup"
+    ],
+    "Physlib.Meta.Notes.ToHTML": [
+      "Physlib.Meta.Notes.NoteFile"
+    ],
+    "Physlib.Meta.Remark.Properties": [
+      "Physlib.Meta.Remark.Basic"
+    ],
+    "Physlib.Meta.Sorry": [
+      "Physlib.Meta.Linters.Sorry"
+    ],
+    "Physlib.Meta.TransverseTactics": [
+      "Lean",
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.GeorgiGlashow.Basic": [
+      "Physlib.Particles.StandardModel.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.PatiSalam.Basic": [
+      "Physlib.Particles.StandardModel.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Basic": [
+      "Physlib.QFT.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.FamilyMaps": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.NoGrav.Basic": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Permutations",
+      "Physlib.QFT.AnomalyCancellation.GroupActions"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Ordinary.Basic": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Permutations",
+      "Physlib.QFT.AnomalyCancellation.GroupActions"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Ordinary.DimSevenPlane": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Ordinary.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Ordinary.FamilyMaps": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.FamilyMaps",
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Ordinary.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Permutations": [
+      "Mathlib.RepresentationTheory.Basic",
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.BMinusL": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.FamilyMaps"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.Basic": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Permutations",
+      "Physlib.QFT.AnomalyCancellation.GroupActions"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.BoundPlaneDim": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.PlaneNonSols"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.FamilyMaps": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.FamilyMaps",
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.HyperCharge": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.FamilyMaps"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.PlaneNonSols": [
+      "Mathlib.Tactic.LinearCombination",
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.QuadSol": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.QuadSolToSol": [
+      "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.BMinusL"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.Spin10.Basic": [
+      "Physlib.Particles.BeyondTheStandardModel.GeorgiGlashow.Basic",
+      "Physlib.Particles.BeyondTheStandardModel.PatiSalam.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.TwoHDM.Basic": [
+      "Physlib.Particles.StandardModel.HiggsBoson.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.TwoHDM.GramMatrix": [
+      "Physlib.Particles.BeyondTheStandardModel.TwoHDM.Basic"
+    ],
+    "Physlib.Particles.BeyondTheStandardModel.TwoHDM.Potential": [
+      "Physlib.Particles.BeyondTheStandardModel.TwoHDM.GramMatrix"
+    ],
+    "Physlib.Particles.FlavorPhysics.CKMMatrix.Basic": [
+      "Mathlib.Analysis.Complex.Trigonometric",
+      "Mathlib.LinearAlgebra.UnitaryGroup"
+    ],
+    "Physlib.Particles.FlavorPhysics.CKMMatrix.Invariants": [
+      "Mathlib.Analysis.Complex.Basic",
+      "Physlib.Particles.FlavorPhysics.CKMMatrix.Basic"
+    ],
+    "Physlib.Particles.FlavorPhysics.CKMMatrix.PhaseFreedom": [
+      "Physlib.Particles.FlavorPhysics.CKMMatrix.Relations"
+    ],
+    "Physlib.Particles.FlavorPhysics.CKMMatrix.Relations": [
+      "Physlib.Particles.FlavorPhysics.CKMMatrix.Rows"
+    ],
+    "Physlib.Particles.FlavorPhysics.CKMMatrix.Rows": [
+      "Mathlib.Analysis.SpecialFunctions.Complex.Arg",
+      "Mathlib.LinearAlgebra.CrossProduct",
+      "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+      "Mathlib.Tactic.Cases",
+      "Physlib.Particles.FlavorPhysics.CKMMatrix.Basic"
+    ],
+    "Physlib.Particles.FlavorPhysics.CKMMatrix.StandardParameterization.Basic": [
+      "Physlib.Particles.FlavorPhysics.CKMMatrix.Invariants",
+      "Physlib.Particles.FlavorPhysics.CKMMatrix.Rows"
+    ],
+    "Physlib.Particles.FlavorPhysics.CKMMatrix.StandardParameterization.StandardParameters": [
+      "Physlib.Particles.FlavorPhysics.CKMMatrix.PhaseFreedom",
+      "Physlib.Particles.FlavorPhysics.CKMMatrix.StandardParameterization.Basic"
+    ],
+    "Physlib.Particles.NeutrinoPhysics.Basic": [
+      "Mathlib.Analysis.Complex.Exponential",
+      "Mathlib.LinearAlgebra.UnitaryGroup"
+    ],
+    "Physlib.Particles.StandardModel.AnomalyCancellation.Basic": [
+      "Mathlib.Tactic.LinearCombination",
+      "Physlib.QFT.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.StandardModel.AnomalyCancellation.FamilyMaps": [
+      "Physlib.Particles.StandardModel.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.Basic": [
+      "Physlib.Particles.StandardModel.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.One.Lemmas": [
+      "Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.One.LinearParameterization"
+    ],
+    "Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.One.LinearParameterization": [
+      "Mathlib.NumberTheory.FLT.Three",
+      "Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.Basic"
+    ],
+    "Physlib.Particles.StandardModel.AnomalyCancellation.Permutations": [
+      "Mathlib.RepresentationTheory.Basic",
+      "Physlib.Particles.StandardModel.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.StandardModel.Basic": [
+      "Physlib.Meta.Linters.Sorry",
+      "Physlib.SpaceAndTime.SpaceTime.Basic"
+    ],
+    "Physlib.Particles.StandardModel.HiggsBoson.Basic": [
+      "Mathlib.Geometry.Manifold.VectorBundle.SmoothSection",
+      "Physlib.Particles.StandardModel.Basic"
+    ],
+    "Physlib.Particles.StandardModel.HiggsBoson.Potential": [
+      "Mathlib.Tactic.Cases",
+      "Physlib.Particles.StandardModel.HiggsBoson.Basic"
+    ],
+    "Physlib.Particles.StandardModel.Representations": [
+      "Mathlib.Analysis.Complex.Basic",
+      "Mathlib.LinearAlgebra.UnitaryGroup"
+    ],
+    "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.B3": [
+      "Mathlib.Tactic.LinearCombination",
+      "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Basic": [
+      "Physlib.QFT.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.HyperCharge": [
+      "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.LineY3B3": [
+      "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.B3",
+      "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Y3"
+    ],
+    "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B3.Basic": [
+      "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.LineY3B3"
+    ],
+    "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B3.PlaneWithY3B3": [
+      "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B3.Basic"
+    ],
+    "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B3.ToSols": [
+      "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B3.PlaneWithY3B3"
+    ],
+    "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Permutations": [
+      "Mathlib.RepresentationTheory.Basic",
+      "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Y3": [
+      "Mathlib.Tactic.LinearCombination",
+      "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Basic"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.AllowsTerm": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.OfPotentialTerm"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Basic": [
+      "Mathlib.Data.Finset.Option",
+      "Mathlib.Data.Finset.Powerset",
+      "Mathlib.Data.Finset.Prod",
+      "Mathlib.Data.Finset.Sort"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Completions": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.OfFinset"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Map": [
+      "Mathlib.Tactic.FinCases",
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Completions",
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Yukawa"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimalSuperSet": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Completions"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.Basic": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.AllowsTerm"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.FinsetTerms": [
+      "Mathlib.Tactic.FinCases",
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.Basic"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.OfFinset": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.Basic",
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoConstrained"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.OfFieldLabel": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Basic",
+      "Physlib.Particles.SuperSymmetry.SU5.FieldLabels"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.OfPotentialTerm": [
+      "Mathlib.Tactic.Abel",
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.OfFieldLabel",
+      "Physlib.Particles.SuperSymmetry.SU5.Potential"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoClosed": [
+      "Physlib.Meta.TODO.Basic",
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimalSuperSet",
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Yukawa"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoConstrained": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.AllowsTerm"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Yukawa": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoConstrained"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.ZMod": [
+      "Mathlib.Data.Fintype.Prod",
+      "Mathlib.Data.ZMod.Defs",
+      "Physlib.Meta.Linters.Sorry",
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Completions",
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Yukawa"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.FieldLabels": [
+      "Mathlib.Tactic.DeriveFintype"
+    ],
+    "Physlib.Particles.SuperSymmetry.SU5.Potential": [
+      "Physlib.Particles.SuperSymmetry.SU5.FieldLabels"
+    ],
+    "Physlib.QFT.AnomalyCancellation.Basic": [
+      "Mathlib.LinearAlgebra.FiniteDimensional.Defs",
+      "Mathlib.Tactic.Cases",
+      "Physlib.Mathematics.LinearMaps"
+    ],
+    "Physlib.QFT.AnomalyCancellation.GroupActions": [
+      "Mathlib.RepresentationTheory.Basic",
+      "Physlib.QFT.AnomalyCancellation.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.CreateAnnihilate": [
+      "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "Mathlib.Data.Fintype.Card"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.Basic": [
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnSection"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.Grading": [
+      "Mathlib.RingTheory.GradedAlgebra.Basic",
+      "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormTimeOrder": [
+      "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.Basic",
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.TimeOrder"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormalOrder": [
+      "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.SuperCommute",
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.NormalOrder"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.SuperCommute": [
+      "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.Grading",
+      "Physlib.QFT.PerturbationTheory.FieldStatistics.ExchangeSign"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.TimeOrder": [
+      "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.SuperCommute",
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.TimeOrder"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldSpecification.Basic": [
+      "Physlib.QFT.PerturbationTheory.FieldStatistics.OfFinset",
+      "Physlib.SpaceAndTime.SpaceTime.Basic",
+      "Physlib.Units.WithDim.Momentum"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnFieldOp": [
+      "Physlib.QFT.PerturbationTheory.CreateAnnihilate",
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnSection": [
+      "Physlib.Mathematics.List",
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnFieldOp"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldSpecification.Filters": [
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnFieldOp"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldSpecification.NormalOrder": [
+      "Mathlib.Data.List.Sort",
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.Filters",
+      "Physlib.QFT.PerturbationTheory.Koszul.KoszulSign"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldSpecification.TimeOrder": [
+      "Mathlib.Data.List.Sort",
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnSection",
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.NormalOrder"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldStatistics.Basic": [
+      "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "Mathlib.Algebra.FreeMonoid.Basic",
+      "Mathlib.Data.Fintype.Card",
+      "Mathlib.Data.List.Sort",
+      "Mathlib.Tactic.FinCases",
+      "Physlib.Mathematics.List.InsertIdx"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldStatistics.ExchangeSign": [
+      "Mathlib.Analysis.Complex.Basic",
+      "Physlib.QFT.PerturbationTheory.FieldStatistics.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.FieldStatistics.OfFinset": [
+      "Mathlib.Data.Finset.Sort",
+      "Physlib.QFT.PerturbationTheory.FieldStatistics.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.Koszul.KoszulSign": [
+      "Physlib.Mathematics.List",
+      "Physlib.Mathematics.List.InsertionSort",
+      "Physlib.QFT.PerturbationTheory.Koszul.KoszulSignInsert"
+    ],
+    "Physlib.QFT.PerturbationTheory.Koszul.KoszulSignInsert": [
+      "Mathlib.Data.List.Sort",
+      "Physlib.Mathematics.List",
+      "Physlib.QFT.PerturbationTheory.FieldStatistics.ExchangeSign"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.Basic": [
+      "Mathlib.Algebra.RingQuot",
+      "Mathlib.RingTheory.TwoSidedIdeal.Operations",
+      "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.SuperCommute"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.Grading": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Basic": [
+      "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormalOrder",
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Lemmas": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Basic",
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.SuperCommute"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.WickContractions": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Lemmas",
+      "Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContract"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTerm": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.WickContractions",
+      "Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertNone",
+      "Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertSome",
+      "Physlib.QFT.PerturbationTheory.WickContraction.StaticContract"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTheorem": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTerm"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.SuperCommute": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.TimeContraction": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Lemmas",
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.TimeOrder"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.TimeOrder": [
+      "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.TimeOrder",
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.SuperCommute"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.Universality": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.WickTerm": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.WickContractions",
+      "Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertNone",
+      "Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertSome",
+      "Physlib.QFT.PerturbationTheory.WickContraction.TimeContract"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.WicksTheorem": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.WickTerm"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickAlgebra.WicksTheoremNormal": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTheorem",
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.WicksTheorem",
+      "Physlib.QFT.PerturbationTheory.WickContraction.Sign.Join",
+      "Physlib.QFT.PerturbationTheory.WickContraction.TimeCond"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Basic": [
+      "Physlib.QFT.PerturbationTheory.FieldSpecification.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Card": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.ExtractEquiv"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Erase": [
+      "Physlib.Mathematics.Fin",
+      "Physlib.QFT.PerturbationTheory.WickContraction.Uncontracted"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.ExtractEquiv": [
+      "Init.Data.Fin.Fold",
+      "Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContractNat"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContract": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.UncontractedList"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContractNat": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.Erase"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Involutions": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.IsFull": [
+      "Physlib.Mathematics.Fin.Involutions",
+      "Physlib.QFT.PerturbationTheory.WickContraction.ExtractEquiv",
+      "Physlib.QFT.PerturbationTheory.WickContraction.Involutions"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Join": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.Singleton"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Perm": [
+      "Physlib.Meta.Linters.Sorry",
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.WickTerm",
+      "Physlib.QFT.PerturbationTheory.WickContraction.IsFull"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Sign.Basic": [
+      "Physlib.QFT.PerturbationTheory.FieldStatistics.ExchangeSign",
+      "Physlib.QFT.PerturbationTheory.WickContraction.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertNone": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContract",
+      "Physlib.QFT.PerturbationTheory.WickContraction.Sign.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertSome": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContract",
+      "Physlib.QFT.PerturbationTheory.WickContraction.Sign.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Sign.Join": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.Join"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Singleton": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.Sign.Basic",
+      "Physlib.QFT.PerturbationTheory.WickContraction.StaticContract",
+      "Physlib.QFT.PerturbationTheory.WickContraction.SubContraction",
+      "Physlib.QFT.PerturbationTheory.WickContraction.TimeContract"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.StaticContract": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Lemmas",
+      "Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContract"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.SubContraction": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.UncontractedList"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.TimeCond": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.Join"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.TimeContract": [
+      "Physlib.QFT.PerturbationTheory.WickAlgebra.TimeContraction",
+      "Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContract"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.Uncontracted": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.Basic"
+    ],
+    "Physlib.QFT.PerturbationTheory.WickContraction.UncontractedList": [
+      "Physlib.QFT.PerturbationTheory.WickContraction.ExtractEquiv"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.Basic": [
+      "Mathlib.Tactic.LinearCombination",
+      "Physlib.QFT.AnomalyCancellation.Basic"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.BasisLinear": [
+      "Mathlib.LinearAlgebra.FreeModule.StrongRankCondition",
+      "Physlib.QFT.QED.AnomalyCancellation.Basic"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.ConstAbs": [
+      "Physlib.QFT.QED.AnomalyCancellation.VectorLike"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.Even.BasisLinear": [
+      "Physlib.QFT.QED.AnomalyCancellation.BasisLinear",
+      "Physlib.QFT.QED.AnomalyCancellation.VectorLike"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.Even.LineInCubic": [
+      "Physlib.QFT.QED.AnomalyCancellation.Even.BasisLinear",
+      "Physlib.QFT.QED.AnomalyCancellation.LineInPlaneCond"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.Even.Parameterization": [
+      "Physlib.QFT.QED.AnomalyCancellation.Even.LineInCubic"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.LineInPlaneCond": [
+      "Physlib.QFT.QED.AnomalyCancellation.ConstAbs"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.LowDim.One": [
+      "Physlib.QFT.QED.AnomalyCancellation.Basic"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.LowDim.Three": [
+      "Physlib.QFT.QED.AnomalyCancellation.Basic"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.LowDim.Two": [
+      "Physlib.QFT.QED.AnomalyCancellation.Basic"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.Odd.BasisLinear": [
+      "Physlib.QFT.QED.AnomalyCancellation.BasisLinear",
+      "Physlib.QFT.QED.AnomalyCancellation.VectorLike"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.Odd.LineInCubic": [
+      "Physlib.QFT.QED.AnomalyCancellation.LineInPlaneCond",
+      "Physlib.QFT.QED.AnomalyCancellation.Odd.BasisLinear"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.Odd.Parameterization": [
+      "Physlib.QFT.QED.AnomalyCancellation.Odd.LineInCubic"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.Permutations": [
+      "Physlib.QFT.AnomalyCancellation.GroupActions",
+      "Physlib.QFT.QED.AnomalyCancellation.Basic"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.Sorts": [
+      "Mathlib.Data.Fin.Tuple.Sort",
+      "Physlib.QFT.QED.AnomalyCancellation.Permutations"
+    ],
+    "Physlib.QFT.QED.AnomalyCancellation.VectorLike": [
+      "Physlib.QFT.QED.AnomalyCancellation.Sorts"
+    ],
+    "Physlib.QuantumMechanics.DDimensions.Hydrogen.Basic": [
+      "Physlib.QuantumMechanics.DDimensions.Operators.Momentum",
+      "Physlib.QuantumMechanics.DDimensions.Operators.Position"
+    ],
+    "Physlib.QuantumMechanics.DDimensions.Hydrogen.LaplaceRungeLenzVector": [
+      "Physlib.Meta.Linters.Sorry",
+      "Physlib.QuantumMechanics.DDimensions.Hydrogen.Basic",
+      "Physlib.QuantumMechanics.DDimensions.Operators.Commutation"
+    ],
+    "Physlib.QuantumMechanics.DDimensions.Operators.AngularMomentum": [
+      "Physlib.QuantumMechanics.DDimensions.Operators.Momentum",
+      "Physlib.QuantumMechanics.DDimensions.Operators.Position"
+    ],
+    "Physlib.QuantumMechanics.DDimensions.Operators.Commutation": [
+      "Physlib.Mathematics.KroneckerDelta",
+      "Physlib.QuantumMechanics.DDimensions.Operators.AngularMomentum"
+    ],
+    "Physlib.QuantumMechanics.DDimensions.Operators.Momentum": [
+      "Mathlib.Analysis.Calculus.FDeriv.Star",
+      "Physlib.QuantumMechanics.DDimensions.Operators.Unbounded",
+      "Physlib.QuantumMechanics.DDimensions.SpaceDHilbertSpace.SchwartzSubmodule",
+      "Physlib.QuantumMechanics.PlanckConstant",
+      "Physlib.SpaceAndTime.Space.Derivatives.Basic"
+    ],
+    "Physlib.QuantumMechanics.DDimensions.Operators.Position": [
+      "Physlib.QuantumMechanics.DDimensions.Operators.Unbounded",
+      "Physlib.QuantumMechanics.DDimensions.SpaceDHilbertSpace.SchwartzSubmodule",
+      "Physlib.SpaceAndTime.Space.Derivatives.Basic",
+      "Physlib.SpaceAndTime.Space.Integrals.NormPow"
+    ],
+    "Physlib.QuantumMechanics.DDimensions.Operators.Unbounded": [
+      "Physlib.Mathematics.InnerProductSpace.Submodule"
+    ],
+    "Physlib.QuantumMechanics.DDimensions.SpaceDHilbertSpace.Basic": [
+      "Mathlib.Analysis.InnerProductSpace.Dual",
+      "Mathlib.MeasureTheory.Function.L2Space",
+      "Physlib.SpaceAndTime.Space.Module"
+    ],
+    "Physlib.QuantumMechanics.DDimensions.SpaceDHilbertSpace.PolyBddSchwartzSubmodule": [
+      "Physlib.Meta.Linters.Sorry",
+      "Physlib.QuantumMechanics.DDimensions.SpaceDHilbertSpace.SchwartzSubmodule"
+    ],
+    "Physlib.QuantumMechanics.DDimensions.SpaceDHilbertSpace.SchwartzSubmodule": [
+      "Mathlib.Analysis.Distribution.SchwartzSpace.Basic",
+      "Physlib.QuantumMechanics.DDimensions.SpaceDHilbertSpace.Basic"
+    ],
+    "Physlib.QuantumMechanics.FiniteTarget.Basic": [
+      "Mathlib.Analysis.InnerProductSpace.Adjoint",
+      "Mathlib.Analysis.Normed.Algebra.Exponential",
+      "Physlib.Meta.TODO.Basic",
+      "Physlib.QuantumMechanics.PlanckConstant"
+    ],
+    "Physlib.QuantumMechanics.FiniteTarget.HilbertSpace": [
+      "Mathlib.Analysis.InnerProductSpace.PiL2"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.GeneralPotential.Basic": [
+      "Physlib.QuantumMechanics.OneDimension.Operators.Momentum"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.HarmonicOscillator.Basic": [
+      "Physlib.QuantumMechanics.OneDimension.Operators.Momentum",
+      "Physlib.QuantumMechanics.OneDimension.Operators.Parity",
+      "Physlib.QuantumMechanics.OneDimension.Operators.Position"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.HarmonicOscillator.Completeness": [
+      "Physlib.QuantumMechanics.OneDimension.HarmonicOscillator.Eigenfunction",
+      "Physlib.QuantumMechanics.OneDimension.HilbertSpace.Gaussians"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.HarmonicOscillator.Eigenfunction": [
+      "Physlib.Mathematics.SpecialFunctions.PhysHermite",
+      "Physlib.QuantumMechanics.OneDimension.HarmonicOscillator.Basic"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.HarmonicOscillator.Examples": [
+      "Physlib.QuantumMechanics.OneDimension.HarmonicOscillator.TISE"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.HarmonicOscillator.TISE": [
+      "Physlib.QuantumMechanics.OneDimension.HarmonicOscillator.Eigenfunction"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.HilbertSpace.Basic": [
+      "Mathlib.Analysis.InnerProductSpace.Dual",
+      "Mathlib.MeasureTheory.Function.L2Space",
+      "Mathlib.MeasureTheory.Measure.Haar.OfBasis"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.HilbertSpace.Gaussians": [
+      "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral",
+      "Physlib.QuantumMechanics.OneDimension.HilbertSpace.Basic"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.HilbertSpace.PlaneWaves": [
+      "Mathlib.Analysis.Distribution.TemperedDistribution"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.HilbertSpace.PositionStates": [
+      "Mathlib.Analysis.Distribution.TemperedDistribution"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.HilbertSpace.SchwartzSubmodule": [
+      "Mathlib.Analysis.Distribution.SchwartzSpace.Basic",
+      "Physlib.QuantumMechanics.OneDimension.HilbertSpace.Basic"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.Operators.Commutation": [
+      "Physlib.QuantumMechanics.OneDimension.Operators.Momentum",
+      "Physlib.QuantumMechanics.OneDimension.Operators.Position"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.Operators.Momentum": [
+      "Mathlib.Analysis.Calculus.FDeriv.Star",
+      "Physlib.QuantumMechanics.OneDimension.HilbertSpace.PlaneWaves",
+      "Physlib.QuantumMechanics.OneDimension.HilbertSpace.SchwartzSubmodule",
+      "Physlib.QuantumMechanics.OneDimension.Operators.Unbounded",
+      "Physlib.QuantumMechanics.PlanckConstant"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.Operators.Parity": [
+      "Mathlib.MeasureTheory.Measure.Haar.Unique",
+      "Physlib.QuantumMechanics.OneDimension.HilbertSpace.SchwartzSubmodule",
+      "Physlib.QuantumMechanics.OneDimension.Operators.Unbounded"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.Operators.Position": [
+      "Physlib.Mathematics.Distribution.PowMul",
+      "Physlib.QuantumMechanics.OneDimension.HilbertSpace.PositionStates",
+      "Physlib.QuantumMechanics.OneDimension.HilbertSpace.SchwartzSubmodule",
+      "Physlib.QuantumMechanics.OneDimension.Operators.Unbounded"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.Operators.Unbounded": [
+      "Physlib.QuantumMechanics.OneDimension.HilbertSpace.Basic"
+    ],
+    "Physlib.QuantumMechanics.OneDimension.ReflectionlessPotential.Basic": [
+      "Physlib.Mathematics.Trigonometry.Tanh",
+      "Physlib.QuantumMechanics.OneDimension.Operators.Momentum"
+    ],
+    "Physlib.QuantumMechanics.PlanckConstant": [
+      "Mathlib.Data.NNReal.Defs"
+    ],
+    "Physlib.Relativity.Bispinors.Basic": [
+      "Physlib.Relativity.PauliMatrices.ToTensor"
+    ],
+    "Physlib.Relativity.CliffordAlgebra": [
+      "Mathlib.Analysis.Complex.Basic",
+      "Mathlib.Data.Matrix.Reflection",
+      "Mathlib.LinearAlgebra.CliffordAlgebra.Basic",
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.Relativity.LorentzAlgebra.Basic": [
+      "Physlib.Relativity.MinkowskiMatrix"
+    ],
+    "Physlib.Relativity.LorentzAlgebra.Basis": [
+      "Physlib.Meta.TODO.Basic",
+      "Physlib.Relativity.LorentzAlgebra.Basic"
+    ],
+    "Physlib.Relativity.LorentzAlgebra.ExponentialMap": [
+      "Physlib.Mathematics.DataStructures.Matrix.LieTrace",
+      "Physlib.Relativity.LorentzAlgebra.Basic",
+      "Physlib.Relativity.LorentzGroup.Restricted.Basic"
+    ],
+    "Physlib.Relativity.LorentzGroup.Basic": [
+      "Mathlib.Analysis.Complex.Basic",
+      "Mathlib.Topology.Instances.Matrix",
+      "Physlib.Meta.TODO.Basic",
+      "Physlib.Relativity.MinkowskiMatrix"
+    ],
+    "Physlib.Relativity.LorentzGroup.Boosts.Apply": [
+      "Physlib.Relativity.LorentzGroup.Boosts.Basic",
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Basic"
+    ],
+    "Physlib.Relativity.LorentzGroup.Boosts.Basic": [
+      "Physlib.Relativity.LorentzGroup.Basic"
+    ],
+    "Physlib.Relativity.LorentzGroup.Boosts.Generalized": [
+      "Physlib.Relativity.LorentzGroup.Restricted.Basic"
+    ],
+    "Physlib.Relativity.LorentzGroup.Orthochronous.Basic": [
+      "Physlib.Relativity.LorentzGroup.Proper",
+      "Physlib.Relativity.LorentzGroup.ToVector",
+      "Physlib.Relativity.Tensors.RealTensor.Velocity.Basic"
+    ],
+    "Physlib.Relativity.LorentzGroup.Proper": [
+      "Mathlib.Tactic.Cases",
+      "Mathlib.Topology.Connected.PathConnected",
+      "Physlib.Relativity.LorentzGroup.Basic"
+    ],
+    "Physlib.Relativity.LorentzGroup.Restricted.Basic": [
+      "Physlib.Meta.Informal.SemiFormal",
+      "Physlib.Relativity.LorentzGroup.Orthochronous.Basic"
+    ],
+    "Physlib.Relativity.LorentzGroup.Restricted.FromBoostRotation": [
+      "Physlib.Relativity.LorentzGroup.Boosts.Generalized",
+      "Physlib.Relativity.LorentzGroup.Rotations"
+    ],
+    "Physlib.Relativity.LorentzGroup.Rotations": [
+      "Physlib.Relativity.LorentzGroup.Restricted.Basic"
+    ],
+    "Physlib.Relativity.LorentzGroup.ToVector": [
+      "Physlib.Relativity.Tensors.RealTensor.Vector.MinkowskiProduct"
+    ],
+    "Physlib.Relativity.MinkowskiMatrix": [
+      "Mathlib.Algebra.Lie.Classical",
+      "Mathlib.Analysis.Normed.Ring.Lemmas"
+    ],
+    "Physlib.Relativity.PauliMatrices.AsTensor": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Vector.Pre.Basic",
+      "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Two"
+    ],
+    "Physlib.Relativity.PauliMatrices.Basic": [
+      "Mathlib.Analysis.Complex.Basic",
+      "Mathlib.LinearAlgebra.Matrix.Trace"
+    ],
+    "Physlib.Relativity.PauliMatrices.CliffordAlgebra": [
+      "Mathlib.LinearAlgebra.CliffordAlgebra.Basic",
+      "Physlib.Relativity.PauliMatrices.Basic"
+    ],
+    "Physlib.Relativity.PauliMatrices.Relations": [
+      "Physlib.Relativity.PauliMatrices.ToTensor",
+      "Physlib.Relativity.Tensors.ComplexTensor.Units.Basic"
+    ],
+    "Physlib.Relativity.PauliMatrices.SelfAdjoint": [
+      "Physlib.Relativity.MinkowskiMatrix",
+      "Physlib.Relativity.PauliMatrices.Basic"
+    ],
+    "Physlib.Relativity.PauliMatrices.ToTensor": [
+      "Physlib.Relativity.PauliMatrices.AsTensor",
+      "Physlib.Relativity.Tensors.ComplexTensor.Metrics.Basic"
+    ],
+    "Physlib.Relativity.SL2C.Basic": [
+      "Mathlib.Analysis.Complex.Polynomial.Basic",
+      "Physlib.Relativity.LorentzGroup.Restricted.Basic",
+      "Physlib.Relativity.SL2C.SelfAdjoint"
+    ],
+    "Physlib.Relativity.SL2C.SelfAdjoint": [
+      "Mathlib.LinearAlgebra.Matrix.Hermitian",
+      "Physlib.Mathematics.SchurTriangulation"
+    ],
+    "Physlib.Relativity.Special.ProperTime": [
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Causality.LightLike",
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Causality.TimeLike",
+      "Physlib.SpaceAndTime.SpaceTime.Basic"
+    ],
+    "Physlib.Relativity.Special.TwinParadox.Basic": [
+      "Physlib.Relativity.Special.ProperTime"
+    ],
+    "Physlib.Relativity.SpeedOfLight": [
+      "Mathlib.Data.Real.Basic"
+    ],
+    "Physlib.Relativity.Tensors.Basic": [
+      "Mathlib.Analysis.RCLike.Basic",
+      "Mathlib.Topology.Algebra.Module.ModuleTopology",
+      "Physlib.Meta.TODO.Basic",
+      "Physlib.Relativity.Tensors.TensorSpecies.Basic"
+    ],
+    "Physlib.Relativity.Tensors.Color.Basic": [
+      "Mathlib.CategoryTheory.Comma.Over.Basic",
+      "Mathlib.CategoryTheory.Core",
+      "Mathlib.CategoryTheory.Monoidal.Braided.Basic"
+    ],
+    "Physlib.Relativity.Tensors.Color.Discrete": [
+      "Mathlib.RepresentationTheory.Rep.Basic"
+    ],
+    "Physlib.Relativity.Tensors.Color.Lift": [
+      "Mathlib.Algebra.Lie.OfAssociative",
+      "Mathlib.RepresentationTheory.Rep.Basic",
+      "Physlib.Mathematics.PiTensorProduct",
+      "Physlib.Meta.Informal.Basic",
+      "Physlib.Relativity.Tensors.Color.Basic"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Basic": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Metrics.Pre",
+      "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Metric"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Lemmas": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Basic"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Matrix.Pre": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Vector.Pre.Basic"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Metrics.Basic": [
+      "Physlib.Relativity.Tensors.ComplexTensor.OfRat"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Metrics.Lemmas": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Metrics.Basic",
+      "Physlib.Relativity.Tensors.ComplexTensor.Units.Basic"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Metrics.Pre": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Units.Pre"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.OfRat": [
+      "Physlib.Mathematics.RatComplexNum",
+      "Physlib.Relativity.Tensors.ComplexTensor.Basic",
+      "Physlib.Relativity.Tensors.Dual"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Units.Basic": [
+      "Physlib.Relativity.Tensors.ComplexTensor.OfRat"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Units.Pre": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Matrix.Pre",
+      "Physlib.Relativity.Tensors.ComplexTensor.Vector.Pre.Contraction"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Units.Symm": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Units.Basic"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Vector.Pre.Basic": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Vector.Pre.Modules"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Vector.Pre.Contraction": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Vector.Pre.Basic"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Vector.Pre.Modules": [
+      "Physlib.Relativity.SL2C.Basic"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Basic": [
+      "Physlib.Relativity.SL2C.Basic",
+      "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Modules"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Contraction": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Basic"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Metric": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Unit"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Modules": [
+      "Mathlib.Analysis.Complex.Basic"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Two": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Basic"
+    ],
+    "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Unit": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Contraction",
+      "Physlib.Relativity.Tensors.ComplexTensor.Weyl.Two"
+    ],
+    "Physlib.Relativity.Tensors.Constructors": [
+      "Physlib.Relativity.Tensors.Contraction.Products"
+    ],
+    "Physlib.Relativity.Tensors.Contraction.Basic": [
+      "Physlib.Relativity.Tensors.Contraction.Pure"
+    ],
+    "Physlib.Relativity.Tensors.Contraction.Basis": [
+      "Physlib.Relativity.Tensors.Contraction.Basic"
+    ],
+    "Physlib.Relativity.Tensors.Contraction.Products": [
+      "Physlib.Relativity.Tensors.Contraction.Basic",
+      "Physlib.Relativity.Tensors.Product"
+    ],
+    "Physlib.Relativity.Tensors.Contraction.Pure": [
+      "Physlib.Relativity.Tensors.Basic"
+    ],
+    "Physlib.Relativity.Tensors.Dual": [
+      "Physlib.Relativity.Tensors.MetricTensor"
+    ],
+    "Physlib.Relativity.Tensors.Elab": [
+      "Physlib.Relativity.Tensors.Contraction.Basic",
+      "Physlib.Relativity.Tensors.Evaluation",
+      "Physlib.Relativity.Tensors.Tensorial"
+    ],
+    "Physlib.Relativity.Tensors.Evaluation": [
+      "Physlib.Relativity.Tensors.Basic"
+    ],
+    "Physlib.Relativity.Tensors.MetricTensor": [
+      "Physlib.Relativity.Tensors.UnitTensor"
+    ],
+    "Physlib.Relativity.Tensors.OfInt": [
+      "Physlib.Relativity.Tensors.Basic"
+    ],
+    "Physlib.Relativity.Tensors.Product": [
+      "Physlib.Relativity.Tensors.Basic"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Basic": [
+      "Physlib.Relativity.Tensors.Contraction.Basis",
+      "Physlib.Relativity.Tensors.RealTensor.Metrics.Pre"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.CoVector.Basic": [
+      "Mathlib.Geometry.Manifold.ChartedSpace",
+      "Physlib.Relativity.Tensors.RealTensor.Basic",
+      "Physlib.Relativity.Tensors.Tensorial"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Derivative": [
+      "Mathlib.Analysis.Calculus.FDeriv.Prod",
+      "Physlib.Relativity.Tensors.Product",
+      "Physlib.Relativity.Tensors.RealTensor.Basic"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Matrix.Pre": [
+      "Mathlib.LinearAlgebra.TensorProduct.Matrix",
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Pre.Basic"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Metrics.Basic": [
+      "Physlib.Relativity.Tensors.MetricTensor",
+      "Physlib.Relativity.Tensors.RealTensor.Basic"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Metrics.Pre": [
+      "Physlib.Relativity.Tensors.RealTensor.Units.Pre"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.ToComplex": [
+      "Physlib.Relativity.Tensors.ComplexTensor.Basic"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Units.Pre": [
+      "Physlib.Relativity.Tensors.RealTensor.Matrix.Pre",
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Pre.Contraction"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Vector.Basic": [
+      "Mathlib.Geometry.Manifold.IsManifold.Basic",
+      "Physlib.Relativity.Tensors.RealTensor.Basic",
+      "Physlib.Relativity.Tensors.Tensorial"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Vector.Causality.Basic": [
+      "Physlib.Relativity.Tensors.RealTensor.Vector.MinkowskiProduct"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Vector.Causality.LightLike": [
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Causality.Basic"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Vector.Causality.TimeLike": [
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Causality.Basic"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Vector.MinkowskiProduct": [
+      "Physlib.Relativity.Tensors.Elab",
+      "Physlib.Relativity.Tensors.RealTensor.Metrics.Basic",
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Basic"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Vector.Pre.Basic": [
+      "Mathlib.RepresentationTheory.Rep.Basic",
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Pre.Modules"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Vector.Pre.Contraction": [
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Pre.Basic"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Vector.Pre.Modules": [
+      "Mathlib.Analysis.InnerProductSpace.PiL2",
+      "Mathlib.RepresentationTheory.Basic",
+      "Physlib.Relativity.LorentzGroup.Basic",
+      "Physlib.Relativity.PauliMatrices.SelfAdjoint"
+    ],
+    "Physlib.Relativity.Tensors.RealTensor.Velocity.Basic": [
+      "Physlib.Relativity.Tensors.RealTensor.Vector.MinkowskiProduct"
+    ],
+    "Physlib.Relativity.Tensors.TensorSpecies.Basic": [
+      "Physlib.Relativity.Tensors.Color.Discrete",
+      "Physlib.Relativity.Tensors.Color.Lift"
+    ],
+    "Physlib.Relativity.Tensors.Tensorial": [
+      "Mathlib.Topology.Algebra.Module.FiniteDimension",
+      "Physlib.Relativity.Tensors.Product"
+    ],
+    "Physlib.Relativity.Tensors.UnitTensor": [
+      "Physlib.Relativity.Tensors.Constructors"
+    ],
+    "Physlib.SpaceAndTime.Space.Basic": [
+      "Mathlib.Analysis.InnerProductSpace.PiL2",
+      "Mathlib.Geometry.Manifold.ContMDiff.Defs",
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.SpaceAndTime.Space.ConstantSliceDist": [
+      "Mathlib.Analysis.Calculus.ContDiff.FiniteDimension",
+      "Physlib.SpaceAndTime.Space.Derivatives.Basic",
+      "Physlib.SpaceAndTime.Space.Slice"
+    ],
+    "Physlib.SpaceAndTime.Space.CrossProduct": [
+      "Mathlib.LinearAlgebra.CrossProduct",
+      "Physlib.SpaceAndTime.Time.Derivatives"
+    ],
+    "Physlib.SpaceAndTime.Space.Derivatives.Basic": [
+      "Mathlib.Analysis.Calculus.FDeriv.Symmetric",
+      "Physlib.Mathematics.Distribution.Basic",
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Basic",
+      "Physlib.SpaceAndTime.Space.Module"
+    ],
+    "Physlib.SpaceAndTime.Space.Derivatives.Curl": [
+      "Physlib.SpaceAndTime.Space.Derivatives.Laplacian"
+    ],
+    "Physlib.SpaceAndTime.Space.Derivatives.Div": [
+      "Physlib.SpaceAndTime.Space.Derivatives.Grad",
+      "Physlib.SpaceAndTime.Space.DistOfFunction"
+    ],
+    "Physlib.SpaceAndTime.Space.Derivatives.Grad": [
+      "Mathlib.Analysis.Calculus.Gradient.Basic",
+      "Physlib.SpaceAndTime.Space.Derivatives.Basic",
+      "Physlib.SpaceAndTime.Space.IsDistBounded"
+    ],
+    "Physlib.SpaceAndTime.Space.Derivatives.Iterated": [
+      "Physlib.SpaceAndTime.Space.Derivatives.Basic",
+      "Physlib.SpaceAndTime.Space.Derivatives.MultiIndex"
+    ],
+    "Physlib.SpaceAndTime.Space.Derivatives.Laplacian": [
+      "Physlib.SpaceAndTime.Space.Derivatives.Div"
+    ],
+    "Physlib.SpaceAndTime.Space.Derivatives.MultiIndex": [
+      "Mathlib.Algebra.BigOperators.Fin"
+    ],
+    "Physlib.SpaceAndTime.Space.DistConst": [
+      "Physlib.SpaceAndTime.Space.Derivatives.Curl"
+    ],
+    "Physlib.SpaceAndTime.Space.DistOfFunction": [
+      "Mathlib.MeasureTheory.SpecificCodomains.WithLp",
+      "Physlib.Mathematics.Distribution.Basic",
+      "Physlib.SpaceAndTime.Space.IsDistBounded"
+    ],
+    "Physlib.SpaceAndTime.Space.Integrals.Basic": [
+      "Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls",
+      "Physlib.SpaceAndTime.Space.Module"
+    ],
+    "Physlib.SpaceAndTime.Space.Integrals.NormPow": [
+      "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+      "Mathlib.MeasureTheory.Constructions.HaarToSphere",
+      "Physlib.SpaceAndTime.Space.Module"
+    ],
+    "Physlib.SpaceAndTime.Space.Integrals.RadialAngularMeasure": [
+      "Physlib.SpaceAndTime.Space.Integrals.Basic"
+    ],
+    "Physlib.SpaceAndTime.Space.IsDistBounded": [
+      "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+      "Mathlib.Tactic.Cases",
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Basic",
+      "Physlib.SpaceAndTime.Space.Integrals.RadialAngularMeasure",
+      "Physlib.SpaceAndTime.Time.Basic"
+    ],
+    "Physlib.SpaceAndTime.Space.LengthUnit": [
+      "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.SpaceAndTime.Space.Module": [
+      "Mathlib.Analysis.Distribution.TemperateGrowth",
+      "Mathlib.Geometry.Manifold.Diffeomorph",
+      "Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace",
+      "Physlib.SpaceAndTime.Space.Basic"
+    ],
+    "Physlib.SpaceAndTime.Space.Norm": [
+      "Physlib.SpaceAndTime.Space.Derivatives.Div"
+    ],
+    "Physlib.SpaceAndTime.Space.Slice": [
+      "Mathlib.MeasureTheory.Constructions.Polish.Basic",
+      "Physlib.SpaceAndTime.Space.Module"
+    ],
+    "Physlib.SpaceAndTime.Space.Translations": [
+      "Physlib.SpaceAndTime.Space.Derivatives.Div"
+    ],
+    "Physlib.SpaceAndTime.SpaceTime.Basic": [
+      "Physlib.Relativity.SpeedOfLight",
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Basic",
+      "Physlib.SpaceAndTime.Space.Integrals.Basic",
+      "Physlib.SpaceAndTime.Time.Basic"
+    ],
+    "Physlib.SpaceAndTime.SpaceTime.Boosts": [
+      "Physlib.Relativity.LorentzGroup.Boosts.Basic",
+      "Physlib.SpaceAndTime.SpaceTime.Basic"
+    ],
+    "Physlib.SpaceAndTime.SpaceTime.Derivatives": [
+      "Mathlib.Analysis.InnerProductSpace.TensorProduct",
+      "Physlib.Relativity.Tensors.RealTensor.CoVector.Basic",
+      "Physlib.SpaceAndTime.Space.Derivatives.Basic",
+      "Physlib.SpaceAndTime.SpaceTime.LorentzAction",
+      "Physlib.SpaceAndTime.Time.Derivatives"
+    ],
+    "Physlib.SpaceAndTime.SpaceTime.LorentzAction": [
+      "Physlib.Mathematics.Distribution.Basic",
+      "Physlib.SpaceAndTime.SpaceTime.Basic"
+    ],
+    "Physlib.SpaceAndTime.SpaceTime.TimeSlice": [
+      "Physlib.SpaceAndTime.SpaceTime.Derivatives",
+      "Physlib.SpaceAndTime.TimeAndSpace.Basic"
+    ],
+    "Physlib.SpaceAndTime.Time.Basic": [
+      "Mathlib.Analysis.Calculus.FDeriv.Linear",
+      "Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace"
+    ],
+    "Physlib.SpaceAndTime.Time.Derivatives": [
+      "Physlib.Relativity.Tensors.RealTensor.Vector.Basic",
+      "Physlib.SpaceAndTime.Space.Module",
+      "Physlib.SpaceAndTime.Time.Basic"
+    ],
+    "Physlib.SpaceAndTime.Time.TimeMan": [
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Mathlib.Geometry.Manifold.Diffeomorph"
+    ],
+    "Physlib.SpaceAndTime.Time.TimeTransMan": [
+      "Mathlib.Geometry.Manifold.Diffeomorph",
+      "Physlib.SpaceAndTime.Time.Basic",
+      "Physlib.SpaceAndTime.Time.TimeUnit"
+    ],
+    "Physlib.SpaceAndTime.Time.TimeUnit": [
+      "Mathlib.Analysis.RCLike.Basic"
+    ],
+    "Physlib.SpaceAndTime.TimeAndSpace.Basic": [
+      "Physlib.SpaceAndTime.Space.Derivatives.Curl",
+      "Physlib.SpaceAndTime.Time.Derivatives"
+    ],
+    "Physlib.SpaceAndTime.TimeAndSpace.ConstantTimeDist": [
+      "Mathlib.Analysis.Calculus.ContDiff.FiniteDimension",
+      "Physlib.SpaceAndTime.TimeAndSpace.Basic"
+    ],
+    "Physlib.StatisticalMechanics.BoltzmannConstant": [
+      "Mathlib.Data.NNReal.Defs"
+    ],
+    "Physlib.StatisticalMechanics.CanonicalEnsemble.Basic": [
+      "Mathlib.MeasureTheory.Integral.Prod",
+      "Mathlib.Topology.MetricSpace.Polish",
+      "Physlib.Thermodynamics.Temperature.Basic"
+    ],
+    "Physlib.StatisticalMechanics.CanonicalEnsemble.Finite": [
+      "Physlib.StatisticalMechanics.CanonicalEnsemble.Lemmas"
+    ],
+    "Physlib.StatisticalMechanics.CanonicalEnsemble.Lemmas": [
+      "Mathlib.Analysis.SpecialFunctions.Log.Deriv",
+      "Physlib.StatisticalMechanics.CanonicalEnsemble.Basic"
+    ],
+    "Physlib.StatisticalMechanics.CanonicalEnsemble.TwoState": [
+      "Physlib.Meta.Informal.Basic",
+      "Physlib.StatisticalMechanics.CanonicalEnsemble.Finite"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Charges.AnomalyFree": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Map",
+      "Physlib.StringTheory.FTheory.SU5.Charges.Viable",
+      "Physlib.StringTheory.FTheory.SU5.Quanta.Basic"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Charges.OfRationalSection": [
+      "Mathlib.Data.Fintype.Sets",
+      "Physlib.Meta.TODO.Basic"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Charges.Viable": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoClosed",
+      "Physlib.StringTheory.FTheory.SU5.Charges.OfRationalSection"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Fluxes.Basic": [
+      "Mathlib.Analysis.Normed.Ring.Lemmas"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.ChiralIndices": [
+      "Physlib.StringTheory.FTheory.SU5.Fluxes.Basic"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Completeness": [
+      "Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.ChiralIndices",
+      "Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Elems"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Elems": [
+      "Physlib.StringTheory.FTheory.SU5.Fluxes.Basic"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Quanta.Basic": [
+      "Physlib.StringTheory.FTheory.SU5.Quanta.FiveQuanta",
+      "Physlib.StringTheory.FTheory.SU5.Quanta.TenQuanta"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Quanta.FiveQuanta": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.OfFinset",
+      "Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Completeness"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Quanta.IsViable": [
+      "Mathlib.Data.ZMod.Defs",
+      "Physlib.StringTheory.FTheory.SU5.Charges.AnomalyFree"
+    ],
+    "Physlib.StringTheory.FTheory.SU5.Quanta.TenQuanta": [
+      "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.OfFinset",
+      "Physlib.StringTheory.FTheory.SU5.Fluxes.NoExotics.Completeness"
+    ],
+    "Physlib.Thermodynamics.IdealGas.Basic": [
+      "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+    ],
+    "Physlib.Thermodynamics.Temperature.Basic": [
+      "Mathlib.Analysis.Calculus.Deriv.Inv",
+      "Mathlib.Analysis.InnerProductSpace.Basic",
+      "Physlib.StatisticalMechanics.BoltzmannConstant"
+    ],
+    "Physlib.Thermodynamics.Temperature.TemperatureUnits": [
+      "Mathlib.Analysis.RCLike.Basic"
+    ],
+    "Physlib.Units.Basic": [
+      "Mathlib.Analysis.SpecialFunctions.Pow.NNReal",
+      "Physlib.ClassicalMechanics.Mass.MassUnit",
+      "Physlib.Electromagnetism.Charge.ChargeUnit",
+      "Physlib.SpaceAndTime.Space.LengthUnit",
+      "Physlib.SpaceAndTime.Time.TimeUnit",
+      "Physlib.Thermodynamics.Temperature.TemperatureUnits",
+      "Physlib.Units.Dimension"
+    ],
+    "Physlib.Units.Dimension": [
+      "Mathlib.Analysis.Normed.Field.Lemmas"
+    ],
+    "Physlib.Units.Examples": [
+      "Physlib.Units.WithDim.Speed"
+    ],
+    "Physlib.Units.FDeriv": [
+      "Mathlib.Analysis.Calculus.FDeriv.Equiv",
+      "Physlib.Units.WithDim.Basic"
+    ],
+    "Physlib.Units.Integral": [
+      "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+      "Physlib.Units.UnitDependent"
+    ],
+    "Physlib.Units.UnitDependent": [
+      "Mathlib.Topology.Algebra.Module.StrongTopology",
+      "Physlib.Units.Basic"
+    ],
+    "Physlib.Units.WithDim.Area": [
+      "Physlib.Units.WithDim.Basic"
+    ],
+    "Physlib.Units.WithDim.Basic": [
+      "Physlib.Units.UnitDependent"
+    ],
+    "Physlib.Units.WithDim.Energy": [
+      "Physlib.Units.WithDim.Basic"
+    ],
+    "Physlib.Units.WithDim.Momentum": [
+      "Physlib.Units.WithDim.Basic"
+    ],
+    "Physlib.Units.WithDim.Pressure": [
+      "Physlib.Units.WithDim.Basic"
+    ],
+    "Physlib.Units.WithDim.Speed": [
+      "Physlib.Units.WithDim.Basic"
+    ]
+  }
+}

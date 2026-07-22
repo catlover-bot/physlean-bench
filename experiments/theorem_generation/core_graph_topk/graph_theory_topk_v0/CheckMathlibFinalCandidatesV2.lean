@@ -1,0 +1,11 @@
+import Mathlib.Combinatorics.SimpleGraph.Walks.Operations
+import Mathlib.Combinatorics.SimpleGraph.Operations
+import Mathlib.Combinatorics.SimpleGraph.Finite
+
+#check SimpleGraph.Walk.edgeSet_cons
+#check SimpleGraph.edgeSet_concat
+
+#check SimpleGraph.card_edgeFinset_replaceVertex_of_not_adj
+#check SimpleGraph.card_edgeFinset_replaceVertex_of_adj
+#check SimpleGraph.edgeSet_replaceVertex_of_adj
+#check SimpleGraph.edgeSet_replaceVertex_of_not_adj

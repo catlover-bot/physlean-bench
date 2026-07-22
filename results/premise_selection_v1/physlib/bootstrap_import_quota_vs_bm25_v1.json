@@ -1,0 +1,357 @@
+{
+  "comparison": "BM25 vs import-aware dual-channel rankings",
+  "bootstrap_iterations": 10000,
+  "random_seed": 20260712,
+  "balanced_configuration": {
+    "protected_prefix": 5,
+    "imported_quota": 4,
+    "transfer_weight": 0.5
+  },
+  "recall_oriented_configuration": {
+    "protected_prefix": 10,
+    "imported_quota": 6,
+    "transfer_weight": 0.6
+  },
+  "balanced": {
+    "method_name": "balanced",
+    "target_count": 308,
+    "metrics": {
+      "MRR": {
+        "bm25": 0.5562281274748251,
+        "balanced": 0.5564069612786046,
+        "difference": 0.00017883380377947677,
+        "ci95": [
+          -0.004554711827743474,
+          0.0042616987203607515
+        ],
+        "probability_method_better": 0.56,
+        "significant_at_0.05": false
+      },
+      "Recall@5": {
+        "bm25": 0.40633608815426997,
+        "balanced": 0.40771349862258954,
+        "difference": 0.0013774104683195731,
+        "ci95": [
+          0.0,
+          0.004457652303120341
+        ],
+        "probability_method_better": 0.6326,
+        "significant_at_0.05": false
+      },
+      "LocalRecall@5": {
+        "bm25": 0.7651515151515151,
+        "balanced": 0.7651515151515151,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "probability_method_better": 0.0,
+        "significant_at_0.05": false
+      },
+      "ImportedRecall@5": {
+        "bm25": 0.2012987012987013,
+        "balanced": 0.20346320346320346,
+        "difference": 0.0021645021645021467,
+        "ci95": [
+          0.0,
+          0.0072289156626506035
+        ],
+        "probability_method_better": 0.6326,
+        "significant_at_0.05": false
+      },
+      "Recall@10": {
+        "bm25": 0.5110192837465565,
+        "balanced": 0.5358126721763086,
+        "difference": 0.024793388429752095,
+        "ci95": [
+          0.0,
+          0.0496894409937888
+        ],
+        "probability_method_better": 0.9719,
+        "significant_at_0.05": false
+      },
+      "LocalRecall@10": {
+        "bm25": 0.8674242424242424,
+        "balanced": 0.8181818181818182,
+        "difference": -0.0492424242424242,
+        "ci95": [
+          -0.07569721115537853,
+          -0.02602230483271384
+        ],
+        "probability_method_better": 0.0,
+        "significant_at_0.05": true
+      },
+      "ImportedRecall@10": {
+        "bm25": 0.30735930735930733,
+        "balanced": 0.37445887445887444,
+        "difference": 0.0670995670995671,
+        "ci95": [
+          0.03218390804597704,
+          0.10457516339869277
+        ],
+        "probability_method_better": 0.9999,
+        "significant_at_0.05": true
+      },
+      "Recall@20": {
+        "bm25": 0.6019283746556474,
+        "balanced": 0.6349862258953168,
+        "difference": 0.03305785123966942,
+        "ci95": [
+          0.015277777777777724,
+          0.05084745762711862
+        ],
+        "probability_method_better": 0.9997,
+        "significant_at_0.05": true
+      },
+      "LocalRecall@20": {
+        "bm25": 0.9393939393939394,
+        "balanced": 0.9318181818181818,
+        "difference": -0.00757575757575768,
+        "ci95": [
+          -0.023346303501945553,
+          0.0
+        ],
+        "probability_method_better": 0.0,
+        "significant_at_0.05": false
+      },
+      "ImportedRecall@20": {
+        "bm25": 0.4090909090909091,
+        "balanced": 0.4653679653679654,
+        "difference": 0.05627705627705626,
+        "ci95": [
+          0.03082851637764933,
+          0.08315098468271331
+        ],
+        "probability_method_better": 0.9999,
+        "significant_at_0.05": true
+      },
+      "Recall@50": {
+        "bm25": 0.7493112947658402,
+        "balanced": 0.7741046831955923,
+        "difference": 0.024793388429752095,
+        "ci95": [
+          0.006605019815059454,
+          0.043243243243243246
+        ],
+        "probability_method_better": 0.9949,
+        "significant_at_0.05": true
+      },
+      "LocalRecall@50": {
+        "bm25": 0.9621212121212122,
+        "balanced": 0.9545454545454546,
+        "difference": -0.007575757575757569,
+        "ci95": [
+          -0.019011406844106404,
+          0.0
+        ],
+        "probability_method_better": 0.0,
+        "significant_at_0.05": false
+      },
+      "ImportedRecall@50": {
+        "bm25": 0.6277056277056277,
+        "balanced": 0.670995670995671,
+        "difference": 0.04329004329004338,
+        "ci95": [
+          0.01538461538461533,
+          0.07236842105263164
+        ],
+        "probability_method_better": 0.9977,
+        "significant_at_0.05": true
+      }
+    },
+    "per_target_win_loss": {
+      "Recall@5": {
+        "method_wins": 1,
+        "ties": 307,
+        "method_losses": 0
+      },
+      "Recall@10": {
+        "method_wins": 36,
+        "ties": 249,
+        "method_losses": 23
+      },
+      "Recall@20": {
+        "method_wins": 29,
+        "ties": 274,
+        "method_losses": 5
+      },
+      "Recall@50": {
+        "method_wins": 25,
+        "ties": 275,
+        "method_losses": 8
+      }
+    }
+  },
+  "recall_oriented": {
+    "method_name": "recall_oriented",
+    "target_count": 308,
+    "metrics": {
+      "MRR": {
+        "bm25": 0.5562281274748251,
+        "recall_oriented": 0.5567186971295809,
+        "difference": 0.0004905696547558014,
+        "ci95": [
+          -0.0035483134493197177,
+          0.0031843762850262136
+        ],
+        "probability_method_better": 0.6591,
+        "significant_at_0.05": false
+      },
+      "Recall@5": {
+        "bm25": 0.40633608815426997,
+        "recall_oriented": 0.40771349862258954,
+        "difference": 0.0013774104683195731,
+        "ci95": [
+          0.0,
+          0.004457652303120341
+        ],
+        "probability_method_better": 0.6326,
+        "significant_at_0.05": false
+      },
+      "LocalRecall@5": {
+        "bm25": 0.7651515151515151,
+        "recall_oriented": 0.7651515151515151,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "probability_method_better": 0.0,
+        "significant_at_0.05": false
+      },
+      "ImportedRecall@5": {
+        "bm25": 0.2012987012987013,
+        "recall_oriented": 0.20346320346320346,
+        "difference": 0.0021645021645021467,
+        "ci95": [
+          0.0,
+          0.0072289156626506035
+        ],
+        "probability_method_better": 0.6326,
+        "significant_at_0.05": false
+      },
+      "Recall@10": {
+        "bm25": 0.5110192837465565,
+        "recall_oriented": 0.5110192837465565,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "probability_method_better": 0.0,
+        "significant_at_0.05": false
+      },
+      "LocalRecall@10": {
+        "bm25": 0.8674242424242424,
+        "recall_oriented": 0.8674242424242424,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "probability_method_better": 0.0,
+        "significant_at_0.05": false
+      },
+      "ImportedRecall@10": {
+        "bm25": 0.30735930735930733,
+        "recall_oriented": 0.30735930735930733,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "probability_method_better": 0.0,
+        "significant_at_0.05": false
+      },
+      "Recall@20": {
+        "bm25": 0.6019283746556474,
+        "recall_oriented": 0.6515151515151515,
+        "difference": 0.04958677685950408,
+        "ci95": [
+          0.02767295597484276,
+          0.07262569832402233
+        ],
+        "probability_method_better": 1.0,
+        "significant_at_0.05": true
+      },
+      "LocalRecall@20": {
+        "bm25": 0.9393939393939394,
+        "recall_oriented": 0.9242424242424242,
+        "difference": -0.015151515151515249,
+        "ci95": [
+          -0.03472222222222221,
+          0.0
+        ],
+        "probability_method_better": 0.0,
+        "significant_at_0.05": false
+      },
+      "ImportedRecall@20": {
+        "bm25": 0.4090909090909091,
+        "recall_oriented": 0.49567099567099565,
+        "difference": 0.08658008658008653,
+        "ci95": [
+          0.05482041587901698,
+          0.12169312169312174
+        ],
+        "probability_method_better": 1.0,
+        "significant_at_0.05": true
+      },
+      "Recall@50": {
+        "bm25": 0.7493112947658402,
+        "recall_oriented": 0.7727272727272727,
+        "difference": 0.023415977961432466,
+        "ci95": [
+          0.003007518796992459,
+          0.044797687861271696
+        ],
+        "probability_method_better": 0.9863,
+        "significant_at_0.05": true
+      },
+      "LocalRecall@50": {
+        "bm25": 0.9621212121212122,
+        "recall_oriented": 0.9545454545454546,
+        "difference": -0.007575757575757569,
+        "ci95": [
+          -0.019011406844106404,
+          0.0
+        ],
+        "probability_method_better": 0.0,
+        "significant_at_0.05": false
+      },
+      "ImportedRecall@50": {
+        "bm25": 0.6277056277056277,
+        "recall_oriented": 0.6688311688311688,
+        "difference": 0.04112554112554112,
+        "ci95": [
+          0.010162601626016343,
+          0.07476635514018692
+        ],
+        "probability_method_better": 0.9941,
+        "significant_at_0.05": true
+      }
+    },
+    "per_target_win_loss": {
+      "Recall@5": {
+        "method_wins": 1,
+        "ties": 307,
+        "method_losses": 0
+      },
+      "Recall@10": {
+        "method_wins": 0,
+        "ties": 308,
+        "method_losses": 0
+      },
+      "Recall@20": {
+        "method_wins": 38,
+        "ties": 261,
+        "method_losses": 9
+      },
+      "Recall@50": {
+        "method_wins": 27,
+        "ties": 269,
+        "method_losses": 12
+      }
+    }
+  }
+}

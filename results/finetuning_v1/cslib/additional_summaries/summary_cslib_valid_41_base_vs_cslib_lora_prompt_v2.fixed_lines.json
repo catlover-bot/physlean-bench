@@ -1,0 +1,25 @@
+{
+  "benchmark": "cslib_valid_41",
+  "base_file": "/project/nlp-work11/hirotaka-m/finetune_runs/cslib_lora_full_v0/eval_cslib_valid_41_base_prompt_v2.fixed_lines.jsonl",
+  "fine_tuned_file": "/project/nlp-work11/hirotaka-m/finetune_runs/cslib_lora_full_v0/eval_cslib_valid_41_cslib_only_lora_prompt_v2.fixed_lines.jsonl",
+  "n": 41,
+  "base_rows": 41,
+  "fine_tuned_rows": 41,
+  "base_passed": 0,
+  "base_pass_at_1": 0.0,
+  "fine_tuned_passed": 3,
+  "fine_tuned_pass_at_1": 0.07317073170731707,
+  "delta_passed": 3,
+  "delta_pass_at_1": 0.07317073170731707,
+  "both_pass_count": 0,
+  "base_only_count": 0,
+  "fine_tuned_only_count": 3,
+  "both_fail_count": 38,
+  "both_pass": [],
+  "base_only": [],
+  "fine_tuned_only": [
+    "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.Binding.subst_sub",
+    "Cslib.Logic.CLL.PhaseSpace.coe_min",
+    "Cslib.ωLanguage.compl_def"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "input_safe_seeds": 50,
+  "filtered_local_api": 28,
+  "selected": 19,
+  "template_counts": {
+    "subgraph_walk_lift": 1,
+    "finite_degree_edge_cardinality": 4,
+    "adj_edgeSet_bridge": 5,
+    "walk_path_connectivity": 4,
+    "map_transport": 2,
+    "complement_adjacency_dual": 3
+  },
+  "source_files": {
+    "Connectivity/Subgraph.lean": 1,
+    "Trails.lean": 1,
+    "Walks/Basic.lean": 1,
+    "Operations.lean": 2,
+    "Basic.lean": 1,
+    "Acyclic.lean": 3,
+    "Metric.lean": 1,
+    "Maps.lean": 1,
+    "Connectivity/Connected.lean": 3,
+    "Prod.lean": 2,
+    "Clique.lean": 1,
+    "Finite.lean": 1,
+    "Walks/Maps.lean": 1
+  },
+  "target_files": {
+    "Connectivity/Subgraph.lean": 1,
+    "Trails.lean": 1,
+    "Walks/Operations.lean": 1,
+    "Operations.lean": 2,
+    "Basic.lean": 1,
+    "Acyclic.lean": 2,
+    "Metric.lean": 1,
+    "Paths.lean": 1,
+    "Connectivity/Connected.lean": 2,
+    "Prod.lean": 2,
+    "Clique.lean": 1,
+    "Connectivity/EdgeConnectivity.lean": 1,
+    "Finite.lean": 2,
+    "Walks/Maps.lean": 1
+  },
+  "safe_score_range": [
+    16.926346,
+    24.536675
+  ]
+}

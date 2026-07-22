@@ -1,0 +1,1333 @@
+{
+  "analysis": "Support-pattern comparison between false imported promotions and BM25-missed recoverable gold premises",
+  "summary": {
+    "transfer_score": {
+      "false_promotions": {
+        "count": 16,
+        "min": 0.8365827829851136,
+        "median": 1.0,
+        "mean": 0.9814428702608061,
+        "max": 1.0
+      },
+      "recoverable_gold": {
+        "count": 25,
+        "min": 0.06121533596592892,
+        "median": 0.2318048569861375,
+        "mean": 0.36616630919546295,
+        "max": 1.0
+      }
+    },
+    "support_count": {
+      "false_promotions": {
+        "count": 16,
+        "min": 1,
+        "median": 1.0,
+        "mean": 2.3125,
+        "max": 10
+      },
+      "recoverable_gold": {
+        "count": 25,
+        "min": 1,
+        "median": 1,
+        "mean": 2.64,
+        "max": 10
+      }
+    },
+    "max_support_similarity": {
+      "false_promotions": {
+        "count": 16,
+        "min": 0.10926694824573639,
+        "median": 0.4118619746795989,
+        "mean": 0.41071677163571946,
+        "max": 0.7962300552876633
+      },
+      "recoverable_gold": {
+        "count": 25,
+        "min": 0.0235909441813524,
+        "median": 0.220529150484045,
+        "mean": 0.28507818408619334,
+        "max": 0.670177559034141
+      }
+    },
+    "mean_support_similarity": {
+      "false_promotions": {
+        "count": 16,
+        "min": 0.07377462798551297,
+        "median": 0.38817773731418403,
+        "mean": 0.3592346342031584,
+        "max": 0.6800369645916071
+      },
+      "recoverable_gold": {
+        "count": 25,
+        "min": 0.022689800634237305,
+        "median": 0.2040982987915863,
+        "mean": 0.2526438080711821,
+        "max": 0.6479852462045688
+      }
+    },
+    "nearest_support_rank": {
+      "false_promotions": {
+        "count": 16,
+        "min": 1,
+        "median": 1.0,
+        "mean": 3.3125,
+        "max": 11
+      },
+      "recoverable_gold": {
+        "count": 25,
+        "min": 1,
+        "median": 10,
+        "mean": 10.2,
+        "max": 30
+      }
+    },
+    "name_jaccard": {
+      "false_promotions": {
+        "count": 16,
+        "min": 0.0,
+        "median": 0.08333333333333333,
+        "mean": 0.10724796037296037,
+        "max": 0.45454545454545453
+      },
+      "recoverable_gold": {
+        "count": 25,
+        "min": 0.0,
+        "median": 0.5,
+        "mean": 0.35299444999445,
+        "max": 0.875
+      }
+    },
+    "namespace_prefix_length": {
+      "false_promotions": {
+        "count": 16,
+        "min": 0,
+        "median": 1.0,
+        "mean": 1.125,
+        "max": 4
+      },
+      "recoverable_gold": {
+        "count": 25,
+        "min": 0,
+        "median": 4,
+        "mean": 3.04,
+        "max": 5
+      }
+    },
+    "module_prefix_length": {
+      "false_promotions": {
+        "count": 16,
+        "min": 1,
+        "median": 1.5,
+        "mean": 2.0625,
+        "max": 5
+      },
+      "recoverable_gold": {
+        "count": 25,
+        "min": 1,
+        "median": 5,
+        "mean": 3.52,
+        "max": 5
+      }
+    }
+  },
+  "false_promotions": [
+    {
+      "target": "Cslib.Automata.NA.Buchi.buchiCongruence_transfer",
+      "premise": "Cslib.Language.IsRegular.iff_dfa",
+      "transfer_score": 1.0,
+      "support_count": 2,
+      "max_support_similarity": 0.17353578154139204,
+      "mean_support_similarity": 0.14904612772288342,
+      "nearest_support_rank": 6,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 3,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 6,
+          "train_target": "Cslib.Language.IsRegular.congr_fin_index",
+          "similarity": 0.17353578154139204
+        },
+        {
+          "rank": 9,
+          "train_target": "Cslib.Language.IsRegular.iff_nfa",
+          "similarity": 0.12455647390437481
+        }
+      ]
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.Cfg.space_used_initCfg",
+      "premise": "Relation.RelatesInSteps.single",
+      "transfer_score": 1.0,
+      "support_count": 1,
+      "max_support_similarity": 0.14809868525121433,
+      "mean_support_similarity": 0.14809868525121433,
+      "nearest_support_rank": 8,
+      "name_jaccard": 0.08333333333333333,
+      "namespace_prefix_length": 0,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": false,
+      "supporting_targets": [
+        {
+          "rank": 8,
+          "train_target": "Relation.RelatesWithinSteps.single",
+          "similarity": 0.14809868525121433
+        }
+      ]
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.Cfg.space_used_haltCfg",
+      "premise": "Relation.RelatesInSteps.single",
+      "transfer_score": 1.0,
+      "support_count": 1,
+      "max_support_similarity": 0.14648489454919347,
+      "mean_support_similarity": 0.14648489454919347,
+      "nearest_support_rank": 7,
+      "name_jaccard": 0.08333333333333333,
+      "namespace_prefix_length": 0,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": false,
+      "supporting_targets": [
+        {
+          "rank": 7,
+          "train_target": "Relation.RelatesWithinSteps.single",
+          "similarity": 0.14648489454919347
+        }
+      ]
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.Cfg.space_used_step",
+      "premise": "Relation.RelatesInSteps.single",
+      "transfer_score": 1.0,
+      "support_count": 1,
+      "max_support_similarity": 0.10926694824573639,
+      "mean_support_similarity": 0.10926694824573639,
+      "nearest_support_rank": 10,
+      "name_jaccard": 0.08333333333333333,
+      "namespace_prefix_length": 0,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": false,
+      "supporting_targets": [
+        {
+          "rank": 10,
+          "train_target": "Relation.RelatesWithinSteps.single",
+          "similarity": 0.10926694824573639
+        }
+      ]
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.output_length_le_input_length_add_time",
+      "premise": "Relation.RelatesWithinSteps.of_relatesInSteps",
+      "transfer_score": 1.0,
+      "support_count": 1,
+      "max_support_similarity": 0.22037936397193306,
+      "mean_support_similarity": 0.22037936397193306,
+      "nearest_support_rank": 11,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 0,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": false,
+      "supporting_targets": [
+        {
+          "rank": 11,
+          "train_target": "Relation.RelatesWithinSteps.single",
+          "similarity": 0.22037936397193306
+        }
+      ]
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.comp_left_relatesWithinSteps",
+      "premise": "Relation.RelatesWithinSteps.of_relatesInSteps",
+      "transfer_score": 1.0,
+      "support_count": 2,
+      "max_support_similarity": 0.419485493937835,
+      "mean_support_similarity": 0.38792251806730627,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.25,
+      "namespace_prefix_length": 0,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": false,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Relation.RelatesWithinSteps.single",
+          "similarity": 0.419485493937835
+        },
+        {
+          "rank": 6,
+          "train_target": "Relation.RelatesWithinSteps.refl",
+          "similarity": 0.3563595421967775
+        }
+      ]
+    },
+    {
+      "target": "Turing.SingleTapeTM.SingleTapeTM.comp_right_relatesWithinSteps",
+      "premise": "Relation.RelatesWithinSteps.of_relatesInSteps",
+      "transfer_score": 1.0,
+      "support_count": 2,
+      "max_support_similarity": 0.4200374638125015,
+      "mean_support_similarity": 0.3884329565610618,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.25,
+      "namespace_prefix_length": 0,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": false,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Relation.RelatesWithinSteps.single",
+          "similarity": 0.4200374638125015
+        },
+        {
+          "rank": 6,
+          "train_target": "Relation.RelatesWithinSteps.refl",
+          "similarity": 0.35682844930962204
+        }
+      ]
+    },
+    {
+      "target": "Cslib.URM.straight_line_halts_from_regs",
+      "premise": "Cslib.URM.Instr.jumpsBoundedBy_of_nonJump",
+      "transfer_score": 1.0,
+      "support_count": 1,
+      "max_support_similarity": 0.6676071981021006,
+      "mean_support_similarity": 0.6676071981021006,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.09090909090909091,
+      "namespace_prefix_length": 2,
+      "module_prefix_length": 3,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.URM.Program.straight_line_IsStandardForm",
+          "similarity": 0.6676071981021006
+        }
+      ]
+    },
+    {
+      "target": "Cslib.URM.straight_line_halts",
+      "premise": "Cslib.URM.Instr.jumpsBoundedBy_of_nonJump",
+      "transfer_score": 1.0,
+      "support_count": 1,
+      "max_support_similarity": 0.6800369645916071,
+      "mean_support_similarity": 0.6800369645916071,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.1,
+      "namespace_prefix_length": 2,
+      "module_prefix_length": 3,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.URM.Program.straight_line_IsStandardForm",
+          "similarity": 0.6800369645916071
+        }
+      ]
+    },
+    {
+      "target": "Cslib.URM.straightLine_finalState_spec",
+      "premise": "Cslib.URM.Instr.jumpsBoundedBy_of_nonJump",
+      "transfer_score": 1.0,
+      "support_count": 1,
+      "max_support_similarity": 0.6552957317014945,
+      "mean_support_similarity": 0.6552957317014945,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.08333333333333333,
+      "namespace_prefix_length": 2,
+      "module_prefix_length": 3,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.URM.Program.straight_line_IsStandardForm",
+          "similarity": 0.6552957317014945
+        }
+      ]
+    },
+    {
+      "target": "Cslib.URM.straightLine_finalRegs_eq_of_halted",
+      "premise": "Cslib.URM.Instr.jumpsBoundedBy_of_nonJump",
+      "transfer_score": 1.0,
+      "support_count": 1,
+      "max_support_similarity": 0.5686871997637131,
+      "mean_support_similarity": 0.5686871997637131,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.15384615384615385,
+      "namespace_prefix_length": 2,
+      "module_prefix_length": 3,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.URM.Program.straight_line_IsStandardForm",
+          "similarity": 0.5686871997637131
+        }
+      ]
+    },
+    {
+      "target": "Cslib.URM.straight_line_state_at_pc",
+      "premise": "Cslib.URM.Instr.jumpsBoundedBy_of_nonJump",
+      "transfer_score": 1.0,
+      "support_count": 1,
+      "max_support_similarity": 0.4042384554213628,
+      "mean_support_similarity": 0.4042384554213628,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.08333333333333333,
+      "namespace_prefix_length": 2,
+      "module_prefix_length": 3,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.URM.Program.straight_line_IsStandardForm",
+          "similarity": 0.4042384554213628
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LTS.Total.extend_omegaExecution",
+      "premise": "Cslib.ωSequence.get_append_right'",
+      "transfer_score": 0.8365827829851136,
+      "support_count": 2,
+      "max_support_similarity": 0.7962300552876633,
+      "mean_support_similarity": 0.4723105786055075,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 2,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.LTS.OmegaExecution.append",
+          "similarity": 0.7962300552876633
+        },
+        {
+          "rank": 29,
+          "train_target": "Cslib.ωLanguage.Example.extend_by_zero",
+          "similarity": 0.1483911019233517
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.weaken_head",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.open_subst_intro",
+      "transfer_score": 0.866503141187784,
+      "support_count": 2,
+      "max_support_similarity": 0.6685350708164848,
+      "mean_support_similarity": 0.49873829131168657,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.45454545454545453,
+      "namespace_prefix_length": 4,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.preservation",
+          "similarity": 0.6685350708164848
+        },
+        {
+          "rank": 4,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Wf.open_lc",
+          "similarity": 0.32894151180688835
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.tabs_inv",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "transfer_score": 1.0,
+      "support_count": 8,
+      "max_support_similarity": 0.38165648327127005,
+      "mean_support_similarity": 0.17743360539821978,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.preservation",
+          "similarity": 0.38165648327127005
+        },
+        {
+          "rank": 12,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_open_cong_l",
+          "similarity": 0.17368091606859862
+        },
+        {
+          "rank": 14,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_close_to_subst",
+          "similarity": 0.16482507678616423
+        },
+        {
+          "rank": 16,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.para_open_out",
+          "similarity": 0.16022006596527483
+        },
+        {
+          "rank": 19,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_abs_cong",
+          "similarity": 0.1392592772545102
+        },
+        {
+          "rank": 21,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.close_open",
+          "similarity": 0.13809224480617913
+        },
+        {
+          "rank": 22,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.redex_abs_cong",
+          "similarity": 0.1380190056188694
+        },
+        {
+          "rank": 26,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_abs_cong",
+          "similarity": 0.12371577341489175
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_neutral",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "transfer_score": 1.0,
+      "support_count": 10,
+      "max_support_similarity": 0.11189255590600977,
+      "mean_support_similarity": 0.07377462798551297,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.close_open",
+          "similarity": 0.11189255590600977
+        },
+        {
+          "rank": 9,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_close_to_subst",
+          "similarity": 0.08536344231237855
+        },
+        {
+          "rank": 19,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_open_cong_r",
+          "similarity": 0.07421615205090079
+        },
+        {
+          "rank": 24,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_open_cong_l",
+          "similarity": 0.06973629833862868
+        },
+        {
+          "rank": 25,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.para_diamond",
+          "similarity": 0.06765499862176545
+        },
+        {
+          "rank": 26,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.beta_lc",
+          "similarity": 0.06764102394457801
+        },
+        {
+          "rank": 27,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_not_fv",
+          "similarity": 0.06617420049575855
+        },
+        {
+          "rank": 28,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_not_fv",
+          "similarity": 0.06579358504344951
+        },
+        {
+          "rank": 29,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.openRec_ty_lc",
+          "similarity": 0.06494252044751225
+        },
+        {
+          "rank": 30,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.para_open_out",
+          "similarity": 0.06433150269414815
+        }
+      ]
+    }
+  ],
+  "recoverable_gold": [
+    {
+      "target": "Cslib.Automata.NA.Buchi.buchiCongruence_transfer",
+      "premise": "Cslib.LTS.Execution.of_mTr",
+      "bm25_rank": 29,
+      "transfer_score": 0.09570046587982042,
+      "support_count": 2,
+      "max_support_similarity": 0.0235909441813524,
+      "mean_support_similarity": 0.022689800634237305,
+      "nearest_support_rank": 25,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 25,
+          "train_target": "Cslib.LTS.OmegaExecution.flatten_mTr",
+          "similarity": 0.0235909441813524
+        },
+        {
+          "rank": 28,
+          "train_target": "Cslib.LTS.OmegaExecution.append",
+          "similarity": 0.02178865708712221
+        }
+      ]
+    },
+    {
+      "target": "Cslib.Automata.NA.Buchi.buchiFamily_cover",
+      "premise": "Cslib.ωLanguage.mem_ext",
+      "bm25_rank": 307,
+      "transfer_score": 0.06315271719108746,
+      "support_count": 1,
+      "max_support_similarity": 0.04272996299613786,
+      "mean_support_similarity": 0.04272996299613786,
+      "nearest_support_rank": 10,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 3,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 10,
+          "train_target": "Cslib.ωLanguage.IsRegular.eq_fin_iSup_hmul_omegaPow",
+          "similarity": 0.04272996299613786
+        }
+      ]
+    },
+    {
+      "target": "Cslib.Automata.NA.Buchi.buchiFamily_cover",
+      "premise": "Cslib.ωLanguage.mem_iSup",
+      "bm25_rank": 304,
+      "transfer_score": 0.06315271719108746,
+      "support_count": 1,
+      "max_support_similarity": 0.04272996299613786,
+      "mean_support_similarity": 0.04272996299613786,
+      "nearest_support_rank": 10,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 3,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 10,
+          "train_target": "Cslib.ωLanguage.IsRegular.eq_fin_iSup_hmul_omegaPow",
+          "similarity": 0.04272996299613786
+        }
+      ]
+    },
+    {
+      "target": "Cslib.Automata.NA.Buchi.frequently_via_accept",
+      "premise": "Cslib.LTS.OmegaExecution.extract_execution",
+      "bm25_rank": 46,
+      "transfer_score": 0.15932476295003128,
+      "support_count": 1,
+      "max_support_similarity": 0.17007300757767654,
+      "mean_support_similarity": 0.17007300757767654,
+      "nearest_support_rank": 10,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 10,
+          "train_target": "Cslib.LTS.OmegaExecution.extract_mTr",
+          "similarity": 0.17007300757767654
+        }
+      ]
+    },
+    {
+      "target": "Cslib.Automata.NA.Buchi.frequently_via_accept",
+      "premise": "Cslib.ωSequence.cumLen_strictMono",
+      "bm25_rank": 39,
+      "transfer_score": 0.4953198929174326,
+      "support_count": 2,
+      "max_support_similarity": 0.26409033074160126,
+      "mean_support_similarity": 0.17620972658672415,
+      "nearest_support_rank": 3,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 3,
+          "train_target": "Cslib.LTS.OmegaExecution.flatten_execution",
+          "similarity": 0.26409033074160126
+        },
+        {
+          "rank": 18,
+          "train_target": "Cslib.ωSequence.cumLen_segment_zero",
+          "similarity": 0.08832912243184703
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.open_tm_body",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "bm25_rank": 132,
+      "transfer_score": 1.0,
+      "support_count": 8,
+      "max_support_similarity": 0.4678846261032396,
+      "mean_support_similarity": 0.27253170079651273,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.openRec_tm_lc",
+          "similarity": 0.4678846261032396
+        },
+        {
+          "rank": 7,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.beta_lc",
+          "similarity": 0.31595210325393447
+        },
+        {
+          "rank": 9,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.openRec_ty_lc",
+          "similarity": 0.30751574680057914
+        },
+        {
+          "rank": 12,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.openRec_lc",
+          "similarity": 0.27874205637250904
+        },
+        {
+          "rank": 18,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_open_cong_r",
+          "similarity": 0.22252664083087634
+        },
+        {
+          "rank": 23,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_close_to_subst",
+          "similarity": 0.2154463908703871
+        },
+        {
+          "rank": 25,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.close_open",
+          "similarity": 0.2107222964963007
+        },
+        {
+          "rank": 31,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.steps_open_cong_abs",
+          "similarity": 0.1614637456442755
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Red.lc",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "bm25_rank": 134,
+      "transfer_score": 1.0,
+      "support_count": 8,
+      "max_support_similarity": 0.661705752063703,
+      "mean_support_similarity": 0.4906741712776505,
+      "nearest_support_rank": 2,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 2,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.beta_lc",
+          "similarity": 0.661705752063703
+        },
+        {
+          "rank": 6,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.openRec_lc",
+          "similarity": 0.5561794926927746
+        },
+        {
+          "rank": 7,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.openRec_ty_lc",
+          "similarity": 0.535504480129426
+        },
+        {
+          "rank": 8,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.openRec_tm_lc",
+          "similarity": 0.499701956434171
+        },
+        {
+          "rank": 10,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.close_open",
+          "similarity": 0.4852298175340719
+        },
+        {
+          "rank": 13,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_open_cong_r",
+          "similarity": 0.473395203924045
+        },
+        {
+          "rank": 24,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_close_to_subst",
+          "similarity": 0.3701844792258516
+        },
+        {
+          "rank": 31,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.steps_open_cong_abs",
+          "similarity": 0.34349218821716093
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.wf",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Wf.strengthen",
+      "bm25_rank": 35,
+      "transfer_score": 0.3475748490536509,
+      "support_count": 1,
+      "max_support_similarity": 0.6479852462045688,
+      "mean_support_similarity": 0.6479852462045688,
+      "nearest_support_rank": 2,
+      "name_jaccard": 0.6666666666666666,
+      "namespace_prefix_length": 4,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 2,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Wf.Env.Wf.strengthen",
+          "similarity": 0.6479852462045688
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.wf",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "bm25_rank": 167,
+      "transfer_score": 1.0,
+      "support_count": 7,
+      "max_support_similarity": 0.670177559034141,
+      "mean_support_similarity": 0.38932101132467745,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Wf.open_lc",
+          "similarity": 0.670177559034141
+        },
+        {
+          "rank": 10,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Wf.nmem_fv",
+          "similarity": 0.4872726802474744
+        },
+        {
+          "rank": 11,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.preservation",
+          "similarity": 0.4803322952944282
+        },
+        {
+          "rank": 20,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.openRec_ty_lc",
+          "similarity": 0.29978353196381374
+        },
+        {
+          "rank": 26,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.close_open",
+          "similarity": 0.2779637617611621
+        },
+        {
+          "rank": 27,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.openRec_lc",
+          "similarity": 0.26476883523204287
+        },
+        {
+          "rank": 30,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_close_to_subst",
+          "similarity": 0.24494841573967996
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_tm",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.open_tm_subst_tm_var",
+      "bm25_rank": 48,
+      "transfer_score": 0.07214375626965053,
+      "support_count": 1,
+      "max_support_similarity": 0.220529150484045,
+      "mean_support_similarity": 0.220529150484045,
+      "nearest_support_rank": 10,
+      "name_jaccard": 0.7,
+      "namespace_prefix_length": 4,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 10,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.subst_tm_lc",
+          "similarity": 0.220529150484045
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Context.map_val_mem",
+      "bm25_rank": 24,
+      "transfer_score": 0.2318048569861375,
+      "support_count": 1,
+      "max_support_similarity": 0.32884647220191776,
+      "mean_support_similarity": 0.32884647220191776,
+      "nearest_support_rank": 3,
+      "name_jaccard": 0.3333333333333333,
+      "namespace_prefix_length": 3,
+      "module_prefix_length": 4,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 3,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Wf.map_subst",
+          "similarity": 0.32884647220191776
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.open_tm_subst_ty_var",
+      "bm25_rank": 70,
+      "transfer_score": 0.06121533596592892,
+      "support_count": 1,
+      "max_support_similarity": 0.2040982987915863,
+      "mean_support_similarity": 0.2040982987915863,
+      "nearest_support_rank": 25,
+      "name_jaccard": 0.6363636363636364,
+      "namespace_prefix_length": 4,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 25,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.subst_ty_lc",
+          "similarity": 0.2040982987915863
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.open_subst",
+      "bm25_rank": 27,
+      "transfer_score": 0.08365352704338753,
+      "support_count": 1,
+      "max_support_similarity": 0.25644985263501796,
+      "mean_support_similarity": 0.25644985263501796,
+      "nearest_support_rank": 19,
+      "name_jaccard": 0.875,
+      "namespace_prefix_length": 4,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 19,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.open_subst_var",
+          "similarity": 0.25644985263501796
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.open_subst_var",
+      "bm25_rank": 44,
+      "transfer_score": 0.2318048569861375,
+      "support_count": 1,
+      "max_support_similarity": 0.32884647220191776,
+      "mean_support_similarity": 0.32884647220191776,
+      "nearest_support_rank": 3,
+      "name_jaccard": 0.7777777777777778,
+      "namespace_prefix_length": 4,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 3,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Wf.map_subst",
+          "similarity": 0.32884647220191776
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.subst_ty",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.subst_fresh",
+      "bm25_rank": 30,
+      "transfer_score": 0.2947856527204845,
+      "support_count": 2,
+      "max_support_similarity": 0.3044810280900169,
+      "mean_support_similarity": 0.30319794098877706,
+      "nearest_support_rank": 6,
+      "name_jaccard": 0.7777777777777778,
+      "namespace_prefix_length": 4,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 6,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.Binding.subst_fresh",
+          "similarity": 0.3044810280900169
+        },
+        {
+          "rank": 7,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Fsub.Ty.Term.subst_ty_fresh",
+          "similarity": 0.30191485388753714
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_abs_close",
+      "bm25_rank": 35,
+      "transfer_score": 0.08648832106583199,
+      "support_count": 1,
+      "max_support_similarity": 0.14834146541079815,
+      "mean_support_similarity": 0.14834146541079815,
+      "nearest_support_rank": 24,
+      "name_jaccard": 0.5,
+      "namespace_prefix_length": 5,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 24,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_abs_cong",
+          "similarity": 0.14834146541079815
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_app_l_cong",
+      "bm25_rank": 34,
+      "transfer_score": 0.1466039979081774,
+      "support_count": 1,
+      "max_support_similarity": 0.1941139590077569,
+      "mean_support_similarity": 0.1941139590077569,
+      "nearest_support_rank": 11,
+      "name_jaccard": 0.5,
+      "namespace_prefix_length": 5,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 11,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_subst_cong_r",
+          "similarity": 0.1941139590077569
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_app_r_cong",
+      "bm25_rank": 33,
+      "transfer_score": 0.1466039979081774,
+      "support_count": 1,
+      "max_support_similarity": 0.1941139590077569,
+      "mean_support_similarity": 0.1941139590077569,
+      "nearest_support_rank": 11,
+      "name_jaccard": 0.5,
+      "namespace_prefix_length": 5,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 11,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_subst_cong_r",
+          "similarity": 0.1941139590077569
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_injective",
+      "bm25_rank": 70,
+      "transfer_score": 0.07298677139217115,
+      "support_count": 1,
+      "max_support_similarity": 0.13354994104682444,
+      "mean_support_similarity": 0.13354994104682444,
+      "nearest_support_rank": 30,
+      "name_jaccard": 0.5454545454545454,
+      "namespace_prefix_length": 5,
+      "module_prefix_length": 5,
+      "same_namespace": true,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 30,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.close_open",
+          "similarity": 0.13354994104682444
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_lc_r",
+      "bm25_rank": 24,
+      "transfer_score": 0.5006572693078762,
+      "support_count": 4,
+      "max_support_similarity": 0.1941139590077569,
+      "mean_support_similarity": 0.18171526310802683,
+      "nearest_support_rank": 11,
+      "name_jaccard": 0.5384615384615384,
+      "namespace_prefix_length": 5,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 11,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_subst_cong_r",
+          "similarity": 0.1941139590077569
+        },
+        {
+          "rank": 12,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.steps_subst_cong_r",
+          "similarity": 0.1935863969303105
+        },
+        {
+          "rank": 17,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.steps_open_cong_r",
+          "similarity": 0.18536287408722024
+        },
+        {
+          "rank": 22,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_abs_close",
+          "similarity": 0.15379782240681963
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.HasFresh.fresh_exists",
+      "bm25_rank": 138,
+      "transfer_score": 1.0,
+      "support_count": 10,
+      "max_support_similarity": 0.19006906920604066,
+      "mean_support_similarity": 0.16071128883715258,
+      "nearest_support_rank": 13,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 1,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 13,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.beta_lc",
+          "similarity": 0.19006906920604066
+        },
+        {
+          "rank": 15,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_open_cong_r",
+          "similarity": 0.18653276588489742
+        },
+        {
+          "rank": 16,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_open_cong_l",
+          "similarity": 0.1854851188948378
+        },
+        {
+          "rank": 18,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_not_fv",
+          "similarity": 0.17322307215344096
+        },
+        {
+          "rank": 19,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_not_fv",
+          "similarity": 0.1648861744404115
+        },
+        {
+          "rank": 23,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_abs_cong",
+          "similarity": 0.14872401748825265
+        },
+        {
+          "rank": 24,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_abs_cong",
+          "similarity": 0.14834146541079815
+        },
+        {
+          "rank": 25,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.redex_abs_cong",
+          "similarity": 0.14739945093824744
+        },
+        {
+          "rank": 30,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.close_open",
+          "similarity": 0.13354994104682444
+        },
+        {
+          "rank": 31,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.steps_open_cong_abs",
+          "similarity": 0.1289018129077749
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.stronglyCommute_eta_beta",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_close",
+      "bm25_rank": 44,
+      "transfer_score": 0.5520406113441947,
+      "support_count": 6,
+      "max_support_similarity": 0.17322307215344096,
+      "mean_support_similarity": 0.1538422569957039,
+      "nearest_support_rank": 18,
+      "name_jaccard": 0.5454545454545454,
+      "namespace_prefix_length": 5,
+      "module_prefix_length": 5,
+      "same_namespace": true,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 18,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.step_not_fv",
+          "similarity": 0.17322307215344096
+        },
+        {
+          "rank": 19,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_not_fv",
+          "similarity": 0.1648861744404115
+        },
+        {
+          "rank": 23,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_abs_cong",
+          "similarity": 0.14872401748825265
+        },
+        {
+          "rank": 24,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullEta.redex_abs_cong",
+          "similarity": 0.14834146541079815
+        },
+        {
+          "rank": 25,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.redex_abs_cong",
+          "similarity": 0.14739945093824744
+        },
+        {
+          "rank": 27,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.open_close_var",
+          "similarity": 0.14047936154307267
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.confluent_beta_eta",
+      "premise": "Relation.Commute.symmetric",
+      "bm25_rank": 135,
+      "transfer_score": 0.383590989439177,
+      "support_count": 1,
+      "max_support_similarity": 0.45881755185770146,
+      "mean_support_similarity": 0.45881755185770146,
+      "nearest_support_rank": 3,
+      "name_jaccard": 0.0,
+      "namespace_prefix_length": 0,
+      "module_prefix_length": 1,
+      "same_namespace": false,
+      "same_top_level_domain": false,
+      "supporting_targets": [
+        {
+          "rank": 3,
+          "train_target": "Relation.Commute.join_confluent",
+          "similarity": 0.45881755185770146
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_abs",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_open_cong_l",
+      "bm25_rank": 51,
+      "transfer_score": 0.43579090933166015,
+      "support_count": 1,
+      "max_support_similarity": 0.35186885124530876,
+      "mean_support_similarity": 0.35186885124530876,
+      "nearest_support_rank": 1,
+      "name_jaccard": 0.5,
+      "namespace_prefix_length": 5,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 1,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.steps_open_cong_l_abs",
+          "similarity": 0.35186885124530876
+        }
+      ]
+    },
+    {
+      "target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.sn_abs_app_multiApp",
+      "premise": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBeta.step_lc_r",
+      "bm25_rank": 68,
+      "transfer_score": 0.6297614710344711,
+      "support_count": 2,
+      "max_support_similarity": 0.4545241079083891,
+      "mean_support_similarity": 0.4421078875649366,
+      "nearest_support_rank": 3,
+      "name_jaccard": 0.42857142857142855,
+      "namespace_prefix_length": 5,
+      "module_prefix_length": 5,
+      "same_namespace": false,
+      "same_top_level_domain": true,
+      "supporting_targets": [
+        {
+          "rank": 3,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_step_lc_r",
+          "similarity": 0.4545241079083891
+        },
+        {
+          "rank": 4,
+          "train_target": "Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.multiApp_steps_lc",
+          "similarity": 0.4296916672214841
+        }
+      ]
+    }
+  ]
+}

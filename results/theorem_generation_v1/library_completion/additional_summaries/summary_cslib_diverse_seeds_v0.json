@@ -1,0 +1,137 @@
+{
+  "input_edges": 6336,
+  "selected": 100,
+  "unique_sources": 92,
+  "unique_targets": 87,
+  "unique_source_files": 40,
+  "unique_target_files": 35,
+  "motif_counts": {
+    "halt_bound_computation": 18,
+    "lts_transition_api": 35,
+    "order_relation_law": 52,
+    "relation_equiv": 24,
+    "simulation_bisimulation": 35,
+    "trace_composition": 21,
+    "urm_computability": 12,
+    "acceptance_language_bridge": 36,
+    "automata_language": 36,
+    "ccs_hml_semantics": 19,
+    "reachability_steps": 19
+  },
+  "family_pair_counts": {
+    "relation_equiv|transition_lts|urm_computability": 1,
+    "automata_language|ccs_process|relation_equiv|transition_lts": 1,
+    "reachability_steps|transition_lts|urm_computability": 3,
+    "automata_language|relation_equiv|transition_lts": 1,
+    "reachability_steps|relation_equiv": 7,
+    "ccs_process|reachability_steps|transition_lts|urm_computability": 1,
+    "automata_language|relation_equiv": 5,
+    "modal_logic_hml|relation_equiv|transition_lts": 2,
+    "automata_language|ccs_process": 6,
+    "automata_language": 22,
+    "ccs_process|transition_lts": 4,
+    "reachability_steps|transition_lts": 2,
+    "relation_equiv": 7,
+    "other|relation_equiv": 1,
+    "relation_equiv|urm_computability": 1,
+    "transition_lts": 10,
+    "relation_equiv|transition_lts": 5,
+    "other|relation_equiv|transition_lts": 3,
+    "other|reachability_steps|transition_lts|urm_computability": 6,
+    "modal_logic_hml|transition_lts": 4,
+    "transition_lts|urm_computability": 5,
+    "other|relation_equiv|transition_lts|urm_computability": 1,
+    "automata_language|transition_lts": 1,
+    "ccs_process|transition_lts|urm_computability": 1
+  },
+  "top_files": [
+    [
+      "Cslib/Foundations/Data/RelatesInSteps.lean",
+      14
+    ],
+    [
+      "Cslib/Foundations/Data/Relation.lean",
+      14
+    ],
+    [
+      "Cslib/Computability/URM/StandardForm.lean",
+      10
+    ],
+    [
+      "Cslib/Logics/HML/Basic.lean",
+      10
+    ],
+    [
+      "Cslib/Foundations/Data/OmegaSequence/Init.lean",
+      8
+    ],
+    [
+      "Cslib/Foundations/Semantics/LTS/Total.lean",
+      8
+    ],
+    [
+      "Cslib/Computability/Automata/NA/Loop.lean",
+      8
+    ],
+    [
+      "Cslib/Computability/Automata/NA/Concat.lean",
+      8
+    ],
+    [
+      "Cslib/Computability/URM/Basic.lean",
+      7
+    ],
+    [
+      "Cslib/Foundations/Data/OmegaSequence/Flatten.lean",
+      7
+    ],
+    [
+      "Cslib/Computability/URM/StraightLine.lean",
+      7
+    ],
+    [
+      "Cslib/Computability/URM/Execution.lean",
+      7
+    ],
+    [
+      "Cslib/Foundations/Semantics/LTS/Execution.lean",
+      7
+    ],
+    [
+      "Cslib/Foundations/Semantics/LTS/HasTau.lean",
+      6
+    ],
+    [
+      "Cslib/Computability/Automata/DA/Basic.lean",
+      6
+    ],
+    [
+      "Cslib/Foundations/Semantics/FLTS/LTSToFLTS.lean",
+      6
+    ],
+    [
+      "Cslib/Foundations/Data/Nat/Segment.lean",
+      6
+    ],
+    [
+      "Cslib/Foundations/Semantics/LTS/Basic.lean",
+      5
+    ],
+    [
+      "Cslib/Computability/Automata/NA/Hist.lean",
+      5
+    ],
+    [
+      "Cslib/Computability/Automata/NA/Sum.lean",
+      4
+    ]
+  ],
+  "score_range": [
+    6.18,
+    22.934286
+  ],
+  "mmr_score_range": [
+    -89.24,
+    31.334286
+  ]
+}

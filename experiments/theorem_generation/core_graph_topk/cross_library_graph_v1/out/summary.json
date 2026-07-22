@@ -1,0 +1,7 @@
+{
+  "physlib_semantic_nodes": 4357,
+  "cslib_semantic_nodes": 926,
+  "semantic_cross_pairs_total": 730,
+  "saved_top": 730,
+  "out_path": "cross_library_graph_v1/out/semantic_cross_seeds.jsonl"
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "trace_pipeline",
+  "status": "failed",
+  "timestamp_utc": "2026-04-30T13:29:30.281238+00:00",
+  "payload": {
+    "reason": "trace_backend_failed"
+  }
+}

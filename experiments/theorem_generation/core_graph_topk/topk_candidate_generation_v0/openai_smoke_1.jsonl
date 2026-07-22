@@ -1,0 +1,8 @@
+{
+  "theorem_id": "topk_gen_v0_0000",
+  "source_library": "physlib",
+  "source_theorem": "Constants.kB_pos",
+  "target_theorem": "Constants.kB_nonneg",
+  "model": "gpt-5.1",
+  "generated": "lemma kB_ne_zero : (kB : ℝ) ≠ 0 :=\nne_of_gt kB_pos"
+}

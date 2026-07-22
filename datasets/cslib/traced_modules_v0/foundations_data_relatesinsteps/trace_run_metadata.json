@@ -1,0 +1,26 @@
+{
+  "repo_dir": "/home/is/hirotaka-m/workspace/cslib",
+  "source_url": "https://github.com/leanprover-community/physlib.git",
+  "source_commit": "6d112db496f8528f4991fd7be32257e89861a4d7",
+  "expected_source_commit": null,
+  "lean_toolchain": "leanprover/lean4:v4.30.0-rc2",
+  "trace_backend": "leandojo_v2",
+  "tracing_tool": "leandojo-v2",
+  "tracing_tool_version": "4.20.0",
+  "build_deps": false,
+  "include_prefixes": [
+    "Cslib/Foundations/Data/RelatesInSteps.lean"
+  ],
+  "exclude_prefixes": [
+    "QuantumInfo/"
+  ],
+  "cache_dir": "/project/nlp-work11/hirotaka-m/cslib_cache_parts/foundations_data_relatesinsteps",
+  "tmp_dir": "/tmp/t433595",
+  "traced_repo_root": "/project/nlp-work11/hirotaka-m/cslib_cache_parts/foundations_data_relatesinsteps/gitpython-cslib-6d112db496f8528f4991fd7be32257e89861a4d7/cslib",
+  "lake_binary": "/home/is/hirotaka-m/.elan/bin/lake",
+  "traced_jsonl_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_relatesinsteps/traced_theorems.jsonl",
+  "theorem_count": 23,
+  "trace_duration_seconds": 2200.465637488989,
+  "generated_at_utc": "2026-05-02T10:41:20.075046+00:00",
+  "preflight_json_path": "/project/nlp-work11/hirotaka-m/crossdomain_trace/cslib_parts/foundations_data_relatesinsteps/trace_preflight.json"
+}

@@ -1,0 +1,32 @@
+{
+  "input_seeds": 30,
+  "unique_guessed_names": 60,
+  "resolved_unique_names": 36,
+  "unresolved_unique_names": [
+    "Cslib.Automata.NA.loop_run_left_left",
+    "Cslib.Automata.NA.loop_run_left_right_left",
+    "Cslib.CCS.Act.Co.symm",
+    "Cslib.CCS.Act.co_isVisible",
+    "Cslib.FLTS.mtr_concat_eq",
+    "Cslib.FLTS.mtr_nil_eq",
+    "Cslib.LTS.Execution.of_mTr",
+    "Cslib.LTS.STr.single",
+    "Cslib.LTS.mTr_iff_execution",
+    "Cslib.LTS.sTr_",
+    "Cslib.Logic.HML.Proposition.equiv_def",
+    "Cslib.Logic.HML.Satisfies.bundled_char",
+    "Cslib.Logic.HML.satisfies_finiteAnd",
+    "Cslib.Logic.HML.satisfies_finiteOr",
+    "Cslib.Relation.Confluent.toChurchRosser",
+    "Cslib.Relation.Confluent_iff_ChurchRosser",
+    "Cslib.Relation.RelatesInSteps.zero",
+    "Cslib.Relation.RelatesInSteps.zero_iff",
+    "Cslib.URM.Program.toStandardForm_isStandardForm",
+    "Cslib.URM.Steps.eq_of_halts",
+    "Cslib.URM.Steps.preserves_register",
+    "Cslib.URM.toStandardForm_equiv",
+    "Cslib.extract_eq_nil",
+    "Cslib.extract_eq_nil_iff"
+  ],
+  "lean_returncode": 1
+}

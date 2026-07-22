@@ -1,0 +1,173 @@
+{
+  "comparison": "BM25 vs BM25 + dependency transfer",
+  "test_targets": 308,
+  "bootstrap_iterations": 10000,
+  "random_seed": 20260712,
+  "metrics": {
+    "MRR": {
+      "bm25": 0.5554564538268562,
+      "graph_transfer": 0.5284324453326166,
+      "difference": -0.027024008494239582,
+      "ci95": [
+        -0.05299192802210295,
+        -0.0014113066246331796
+      ],
+      "probability_graph_better": 0.0201,
+      "significant_at_0.05": true
+    },
+    "Recall@5": {
+      "bm25": 0.40633608815426997,
+      "graph_transfer": 0.4049586776859504,
+      "difference": -0.0013774104683195731,
+      "ci95": [
+        -0.018284106891701846,
+        0.016414141414141437
+      ],
+      "probability_graph_better": 0.4113,
+      "significant_at_0.05": false
+    },
+    "LocalRecall@5": {
+      "bm25": 0.7651515151515151,
+      "graph_transfer": 0.7272727272727273,
+      "difference": -0.037878787878787845,
+      "ci95": [
+        -0.06274509803921569,
+        -0.01520912547528519
+      ],
+      "probability_graph_better": 0.0001,
+      "significant_at_0.05": true
+    },
+    "ImportedRecall@5": {
+      "bm25": 0.2012987012987013,
+      "graph_transfer": 0.22077922077922077,
+      "difference": 0.01948051948051946,
+      "ci95": [
+        -0.0039920159680638945,
+        0.04545454545454547
+      ],
+      "probability_graph_better": 0.9385,
+      "significant_at_0.05": false
+    },
+    "Recall@10": {
+      "bm25": 0.5110192837465565,
+      "graph_transfer": 0.5179063360881543,
+      "difference": 0.00688705234159781,
+      "ci95": [
+        -0.01388888888888884,
+        0.02766251728907332
+      ],
+      "probability_graph_better": 0.7264,
+      "significant_at_0.05": false
+    },
+    "LocalRecall@10": {
+      "bm25": 0.8674242424242424,
+      "graph_transfer": 0.8295454545454546,
+      "difference": -0.037878787878787845,
+      "ci95": [
+        -0.061403508771929904,
+        -0.01673640167364021
+      ],
+      "probability_graph_better": 0.0,
+      "significant_at_0.05": true
+    },
+    "ImportedRecall@10": {
+      "bm25": 0.30735930735930733,
+      "graph_transfer": 0.3398268398268398,
+      "difference": 0.03246753246753248,
+      "ci95": [
+        0.003992015968063867,
+        0.06161137440758291
+      ],
+      "probability_graph_better": 0.9834,
+      "significant_at_0.05": true
+    },
+    "Recall@20": {
+      "bm25": 0.6019283746556474,
+      "graph_transfer": 0.6308539944903582,
+      "difference": 0.02892561983471076,
+      "ci95": [
+        0.008510638297872353,
+        0.050824175824175866
+      ],
+      "probability_graph_better": 0.9964,
+      "significant_at_0.05": true
+    },
+    "LocalRecall@20": {
+      "bm25": 0.9393939393939394,
+      "graph_transfer": 0.928030303030303,
+      "difference": -0.011363636363636465,
+      "ci95": [
+        -0.02583025830258301,
+        0.0
+      ],
+      "probability_graph_better": 0.0,
+      "significant_at_0.05": false
+    },
+    "ImportedRecall@20": {
+      "bm25": 0.4090909090909091,
+      "graph_transfer": 0.461038961038961,
+      "difference": 0.05194805194805191,
+      "ci95": [
+        0.020869565217391306,
+        0.086734693877551
+      ],
+      "probability_graph_better": 0.9991,
+      "significant_at_0.05": true
+    },
+    "Recall@50": {
+      "bm25": 0.7493112947658402,
+      "graph_transfer": 0.7699724517906336,
+      "difference": 0.02066115702479332,
+      "ci95": [
+        0.009485094850948506,
+        0.03342618384401108
+      ],
+      "probability_graph_better": 0.9999,
+      "significant_at_0.05": true
+    },
+    "LocalRecall@50": {
+      "bm25": 0.9621212121212122,
+      "graph_transfer": 0.9583333333333334,
+      "difference": -0.0037878787878787845,
+      "ci95": [
+        -0.01176470588235301,
+        0.0
+      ],
+      "probability_graph_better": 0.0,
+      "significant_at_0.05": false
+    },
+    "ImportedRecall@50": {
+      "bm25": 0.6277056277056277,
+      "graph_transfer": 0.6623376623376623,
+      "difference": 0.03463203463203468,
+      "ci95": [
+        0.0174825174825175,
+        0.05429864253393657
+      ],
+      "probability_graph_better": 1.0,
+      "significant_at_0.05": true
+    }
+  },
+  "per_target_win_loss": {
+    "Recall@5": {
+      "graph_wins": 17,
+      "ties": 271,
+      "graph_losses": 20
+    },
+    "Recall@10": {
+      "graph_wins": 28,
+      "ties": 260,
+      "graph_losses": 20
+    },
+    "Recall@20": {
+      "graph_wins": 29,
+      "ties": 268,
+      "graph_losses": 11
+    },
+    "Recall@50": {
+      "graph_wins": 16,
+      "ties": 290,
+      "graph_losses": 2
+    }
+  }
+}

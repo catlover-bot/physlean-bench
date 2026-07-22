@@ -1,0 +1,17 @@
+Candidate-level safe import replacement v1
+================================================================================================
+
+Selected validation configuration
+------------------------------------------------------------------------------------------------
+transfer_weight=0.5 protected_prefix=5 max_promotions=1 min_transfer_score=0.4 replacement_margin=0.05 victim_max_bm25=0.5
+validation: MRR=0.5611 R@10=0.6542 R@20=0.8037 R@50=0.9065 local@20=0.9623 imported@20=0.6481 promotions=15
+
+Test comparison
+------------------------------------------------------------------------------------------------
+BM25: MRR=0.4825 R@5=0.2895 R@10=0.4276 R@20=0.5855 R@50=0.7368 local@20=0.9556 imported@20=0.4299
+Safe: MRR=0.4816 R@5=0.2895 R@10=0.4276 R@20=0.5855 R@50=0.7368 local@20=0.9556 imported@20=0.4299 promoted_targets=16/56 promotions=16
+Fixed: MRR=0.4786 R@5=0.2895 R@10=0.3618 R@20=0.5855 R@50=0.7632 local@20=0.9556 imported@20=0.4299
+
+Per-target Recall@20: Safe vs BM25
+------------------------------------------------------------------------------------------------
+wins=0 ties=56 losses=0

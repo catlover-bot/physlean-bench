@@ -1,0 +1,8 @@
+{
+  "stage": "extract_traced_theorems",
+  "status": "completed",
+  "timestamp_utc": "2026-05-03T01:10:27.605643+00:00",
+  "payload": {
+    "count": 10
+  }
+}

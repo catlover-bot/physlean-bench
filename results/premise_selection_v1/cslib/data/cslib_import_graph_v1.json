@@ -1,0 +1,1987 @@
+{
+  "source_repo": "/project/nlp-work11/hirotaka-m/cslib_eval_work/cslib_eval_built",
+  "source_commit": "6d112db496f8528f4991fd7be32257e89861a4d7",
+  "module_count": 131,
+  "direct_edge_count": 216,
+  "direct_imports": {
+    "Cslib.Algorithms.Lean.MergeSort.MergeSort": [
+      "Cslib.Algorithms.Lean.TimeM"
+    ],
+    "Cslib.Algorithms.Lean.TimeM": [
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.Acceptors.Acceptor": [
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.Acceptors.OmegaAcceptor": [
+      "Cslib.Computability.Languages.OmegaLanguage"
+    ],
+    "Cslib.Computability.Automata.DA.Basic": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Semantics.FLTS.Basic"
+    ],
+    "Cslib.Computability.Automata.DA.Buchi": [
+      "Cslib.Computability.Automata.DA.Basic"
+    ],
+    "Cslib.Computability.Automata.DA.Congr": [
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Languages.Congruences.RightCongruence"
+    ],
+    "Cslib.Computability.Automata.DA.Prod": [
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Prod"
+    ],
+    "Cslib.Computability.Automata.DA.ToNA": [
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Foundations.Semantics.FLTS.FLTSToLTS"
+    ],
+    "Cslib.Computability.Automata.EpsilonNA.Basic": [
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Foundations.Semantics.LTS.HasTau"
+    ],
+    "Cslib.Computability.Automata.EpsilonNA.ToNA": [
+      "Cslib.Computability.Automata.EpsilonNA.Basic"
+    ],
+    "Cslib.Computability.Automata.NA.Basic": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution"
+    ],
+    "Cslib.Computability.Automata.NA.BuchiEquiv": [
+      "Cslib.Computability.Automata.NA.Basic"
+    ],
+    "Cslib.Computability.Automata.NA.BuchiInter": [
+      "Cslib.Computability.Automata.NA.Hist",
+      "Cslib.Computability.Automata.NA.Prod",
+      "Cslib.Foundations.Data.OmegaSequence.Temporal"
+    ],
+    "Cslib.Computability.Automata.NA.Concat": [
+      "Cslib.Computability.Automata.NA.Total",
+      "Cslib.Foundations.Data.OmegaSequence.Temporal"
+    ],
+    "Cslib.Computability.Automata.NA.Hist": [
+      "Cslib.Computability.Automata.NA.Basic"
+    ],
+    "Cslib.Computability.Automata.NA.Loop": [
+      "Cslib.Computability.Automata.NA.Total",
+      "Cslib.Foundations.Data.OmegaSequence.Temporal"
+    ],
+    "Cslib.Computability.Automata.NA.Pair": [
+      "Cslib.Computability.Languages.RegularLanguage"
+    ],
+    "Cslib.Computability.Automata.NA.Prod": [
+      "Cslib.Computability.Automata.NA.Basic"
+    ],
+    "Cslib.Computability.Automata.NA.Sum": [
+      "Cslib.Computability.Automata.NA.Basic"
+    ],
+    "Cslib.Computability.Automata.NA.ToDA": [
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Foundations.Semantics.FLTS.LTSToFLTS"
+    ],
+    "Cslib.Computability.Automata.NA.Total": [
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Foundations.Semantics.LTS.Total"
+    ],
+    "Cslib.Computability.Languages.Congruences.BuchiCongruence": [
+      "Cslib.Computability.Automata.NA.Pair",
+      "Cslib.Foundations.Combinatorics.InfiniteGraphRamsey",
+      "Cslib.Foundations.Data.Set.Saturation"
+    ],
+    "Cslib.Computability.Languages.Congruences.RightCongruence": [
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Languages.ExampleEventuallyZero": [
+      "Cslib.Computability.Automata.NA.Basic"
+    ],
+    "Cslib.Computability.Languages.Language": [
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Languages.OmegaLanguage": [
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten"
+    ],
+    "Cslib.Computability.Languages.OmegaRegularLanguage": [
+      "Cslib.Computability.Automata.DA.Buchi",
+      "Cslib.Computability.Automata.NA.BuchiEquiv",
+      "Cslib.Computability.Automata.NA.BuchiInter",
+      "Cslib.Computability.Automata.NA.Sum",
+      "Cslib.Computability.Languages.Congruences.BuchiCongruence",
+      "Cslib.Computability.Languages.ExampleEventuallyZero"
+    ],
+    "Cslib.Computability.Languages.RegularLanguage": [
+      "Cslib.Computability.Automata.DA.Congr",
+      "Cslib.Computability.Automata.DA.Prod",
+      "Cslib.Computability.Automata.DA.ToNA",
+      "Cslib.Computability.Automata.NA.Concat",
+      "Cslib.Computability.Automata.NA.Loop",
+      "Cslib.Computability.Automata.NA.ToDA"
+    ],
+    "Cslib.Computability.Machines.SingleTapeTuring.Basic": [
+      "Cslib.Foundations.Data.BiTape",
+      "Cslib.Foundations.Data.RelatesInSteps"
+    ],
+    "Cslib.Computability.URM.Basic": [
+      "Cslib.Computability.URM.Defs"
+    ],
+    "Cslib.Computability.URM.Computable": [
+      "Cslib.Computability.URM.Execution"
+    ],
+    "Cslib.Computability.URM.Defs": [
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.URM.Execution": [
+      "Cslib.Computability.URM.Defs",
+      "Cslib.Foundations.Data.Relation"
+    ],
+    "Cslib.Computability.URM.StandardForm": [
+      "Cslib.Computability.URM.StraightLine"
+    ],
+    "Cslib.Computability.URM.StraightLine": [
+      "Cslib.Computability.URM.Basic",
+      "Cslib.Computability.URM.Execution"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Basic": [
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Defs",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.PerfectSecrecy"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Defs": [
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Encryption",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.PMFUtilities"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Encryption": [
+      "Cslib.Init"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.OneTimePad": [
+      "Cslib.Init"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.PerfectSecrecy": [
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Defs"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.OneTimePad": [
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Basic",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.OneTimePad"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.PMFUtilities": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Combinatorics.InfiniteGraphRamsey": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Control.Monad.Free": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Control.Monad.Free.Effects": [
+      "Cslib.Foundations.Control.Monad.Free"
+    ],
+    "Cslib.Foundations.Control.Monad.Free.Fold": [
+      "Cslib.Foundations.Control.Monad.Free"
+    ],
+    "Cslib.Foundations.Data.BiTape": [
+      "Cslib.Foundations.Data.StackTape"
+    ],
+    "Cslib.Foundations.Data.DecidableEqZero": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.FinFun.Basic": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.FinFun.Update": [
+      "Cslib.Foundations.Data.DecidableEqZero",
+      "Cslib.Foundations.Data.FinFun.Basic"
+    ],
+    "Cslib.Foundations.Data.HasFresh": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.Nat.Segment": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Defs": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Flatten": [
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Init"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.InfOcc": [
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Init": [
+      "Cslib.Foundations.Data.OmegaSequence.Defs"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Temporal": [
+      "Cslib.Foundations.Data.OmegaSequence.Init"
+    ],
+    "Cslib.Foundations.Data.RelatesInSteps": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.Relation": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.Set.Saturation": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.StackTape": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Lint.Basic": [],
+    "Cslib.Foundations.Logic.InferenceSystem": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Logic.LogicalEquivalence": [
+      "Cslib.Foundations.Syntax.Congruence",
+      "Cslib.Foundations.Syntax.Context"
+    ],
+    "Cslib.Foundations.Semantics.FLTS.Basic": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.FLTS.FLTSToLTS": [
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic"
+    ],
+    "Cslib.Foundations.Semantics.FLTS.LTSToFLTS": [
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic"
+    ],
+    "Cslib.Foundations.Semantics.FLTS.Prod": [
+      "Cslib.Foundations.Semantics.FLTS.Basic"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Basic": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Bisimulation": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Foundations.Semantics.LTS.Simulation",
+      "Cslib.Foundations.Semantics.LTS.TraceEq"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Divergence": [
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Execution": [
+      "Cslib.Foundations.Semantics.LTS.Basic"
+    ],
+    "Cslib.Foundations.Semantics.LTS.HasTau": [
+      "Cslib.Foundations.Semantics.LTS.Relation"
+    ],
+    "Cslib.Foundations.Semantics.LTS.LTSCat.Basic": [
+      "Cslib.Foundations.Semantics.LTS.Basic"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Notation": [
+      "Cslib.Foundations.Semantics.LTS.Relation"
+    ],
+    "Cslib.Foundations.Semantics.LTS.OmegaExecution": [
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Semantics.LTS.Execution"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Relation": [
+      "Cslib.Foundations.Semantics.LTS.Basic"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Simulation": [
+      "Cslib.Foundations.Semantics.LTS.Basic"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Termination": [
+      "Cslib.Foundations.Semantics.LTS.Basic"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Total": [
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution"
+    ],
+    "Cslib.Foundations.Semantics.LTS.TraceEq": [
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Simulation"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Union": [
+      "Cslib.Foundations.Semantics.LTS.Basic"
+    ],
+    "Cslib.Foundations.Syntax.Congruence": [
+      "Cslib.Foundations.Syntax.Context"
+    ],
+    "Cslib.Foundations.Syntax.Context": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Syntax.HasAlphaEquiv": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Syntax.HasSubstitution": [
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Syntax.HasWellFormed": [
+      "Cslib.Init"
+    ],
+    "Cslib.Init": [
+      "Cslib.Foundations.Lint.Basic"
+    ],
+    "Cslib.Languages.CCS.Basic": [
+      "Cslib.Foundations.Syntax.Context"
+    ],
+    "Cslib.Languages.CCS.BehaviouralTheory": [
+      "Cslib.Foundations.Semantics.LTS.Bisimulation",
+      "Cslib.Foundations.Syntax.Congruence",
+      "Cslib.Languages.CCS.Semantics"
+    ],
+    "Cslib.Languages.CCS.Semantics": [
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Languages.CCS.Basic"
+    ],
+    "Cslib.Languages.CombinatoryLogic.Basic": [
+      "Cslib.Languages.CombinatoryLogic.Defs"
+    ],
+    "Cslib.Languages.CombinatoryLogic.Confluence": [
+      "Cslib.Languages.CombinatoryLogic.Defs"
+    ],
+    "Cslib.Languages.CombinatoryLogic.Defs": [
+      "Cslib.Foundations.Data.Relation"
+    ],
+    "Cslib.Languages.CombinatoryLogic.Evaluation": [
+      "Cslib.Languages.CombinatoryLogic.Confluence",
+      "Cslib.Languages.CombinatoryLogic.Recursion"
+    ],
+    "Cslib.Languages.CombinatoryLogic.List": [
+      "Cslib.Languages.CombinatoryLogic.Recursion"
+    ],
+    "Cslib.Languages.CombinatoryLogic.Recursion": [
+      "Cslib.Languages.CombinatoryLogic.Basic"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Context": [
+      "Cslib.Foundations.Syntax.HasWellFormed"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Opening": [
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Opening"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Safety": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Typing"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Subtype": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.WellFormed"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Typing": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Subtype"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.WellFormed": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Opening"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Safety": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.StrongNorm": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.LcAt",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiSubst",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.StrongNorm"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Syntax.HasSubstitution"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaConfluence": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaEtaConfluence": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaConfluence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEtaConfluence"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEta": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEtaConfluence": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEta"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.LcAt": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiApp": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiSubst": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.StrongNorm": [
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.LcAt",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiApp"
+    ],
+    "Cslib.Languages.LambdaCalculus.Named.Untyped.Basic": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Syntax.HasAlphaEquiv",
+      "Cslib.Foundations.Syntax.HasSubstitution"
+    ],
+    "Cslib.Logics.HML.Basic": [
+      "Cslib.Foundations.Semantics.LTS.Bisimulation"
+    ],
+    "Cslib.Logics.HML.LogicalEquivalence": [
+      "Cslib.Foundations.Logic.LogicalEquivalence",
+      "Cslib.Logics.HML.Basic"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.Basic": [
+      "Cslib.Foundations.Logic.InferenceSystem",
+      "Cslib.Foundations.Logic.LogicalEquivalence",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.CutElimination": [
+      "Cslib.Logics.LinearLogic.CLL.Basic"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.EtaExpansion": [
+      "Cslib.Logics.LinearLogic.CLL.Basic"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.MLL": [
+      "Cslib.Foundations.Logic.InferenceSystem",
+      "Cslib.Logics.LinearLogic.CLL.Basic"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.PhaseSemantics.Basic": [
+      "Cslib.Logics.LinearLogic.CLL.Basic"
+    ],
+    "Cslib.Logics.Propositional.Defs": [
+      "Cslib.Init"
+    ],
+    "Cslib.Logics.Propositional.NaturalDeduction.Basic": [
+      "Cslib.Foundations.Logic.InferenceSystem",
+      "Cslib.Logics.Propositional.Defs"
+    ]
+  },
+  "transitive_imports": {
+    "Cslib.Algorithms.Lean.MergeSort.MergeSort": [
+      "Cslib.Algorithms.Lean.TimeM",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Algorithms.Lean.TimeM": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.Acceptors.Acceptor": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.Acceptors.OmegaAcceptor": [
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.DA.Basic": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.DA.Buchi": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.DA.Congr": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Languages.Congruences.RightCongruence",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.DA.Prod": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Prod",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.DA.ToNA": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.FLTS.FLTSToLTS",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.EpsilonNA.Basic": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Foundations.Semantics.LTS.Relation",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.EpsilonNA.ToNA": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.EpsilonNA.Basic",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Foundations.Semantics.LTS.Relation",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.Basic": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.BuchiEquiv": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.BuchiInter": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Automata.NA.Hist",
+      "Cslib.Computability.Automata.NA.Prod",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Data.OmegaSequence.Temporal",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.Concat": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Automata.NA.Total",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Data.OmegaSequence.Temporal",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Foundations.Semantics.LTS.Total",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.Hist": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.Loop": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Automata.NA.Total",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Data.OmegaSequence.Temporal",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Foundations.Semantics.LTS.Total",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.Pair": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Automata.DA.Congr",
+      "Cslib.Computability.Automata.DA.Prod",
+      "Cslib.Computability.Automata.DA.ToNA",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Automata.NA.Concat",
+      "Cslib.Computability.Automata.NA.Loop",
+      "Cslib.Computability.Automata.NA.ToDA",
+      "Cslib.Computability.Automata.NA.Total",
+      "Cslib.Computability.Languages.Congruences.RightCongruence",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Computability.Languages.RegularLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Data.OmegaSequence.Temporal",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.FLTS.FLTSToLTS",
+      "Cslib.Foundations.Semantics.FLTS.LTSToFLTS",
+      "Cslib.Foundations.Semantics.FLTS.Prod",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Foundations.Semantics.LTS.Total",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.Prod": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.Sum": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.ToDA": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.FLTS.LTSToFLTS",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Automata.NA.Total": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Foundations.Semantics.LTS.Total",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Languages.Congruences.BuchiCongruence": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Automata.DA.Congr",
+      "Cslib.Computability.Automata.DA.Prod",
+      "Cslib.Computability.Automata.DA.ToNA",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Automata.NA.Concat",
+      "Cslib.Computability.Automata.NA.Loop",
+      "Cslib.Computability.Automata.NA.Pair",
+      "Cslib.Computability.Automata.NA.ToDA",
+      "Cslib.Computability.Automata.NA.Total",
+      "Cslib.Computability.Languages.Congruences.RightCongruence",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Computability.Languages.RegularLanguage",
+      "Cslib.Foundations.Combinatorics.InfiniteGraphRamsey",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Data.OmegaSequence.Temporal",
+      "Cslib.Foundations.Data.Set.Saturation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.FLTS.FLTSToLTS",
+      "Cslib.Foundations.Semantics.FLTS.LTSToFLTS",
+      "Cslib.Foundations.Semantics.FLTS.Prod",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Foundations.Semantics.LTS.Total",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Languages.Congruences.RightCongruence": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Languages.ExampleEventuallyZero": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Languages.Language": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Languages.OmegaLanguage": [
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Languages.OmegaRegularLanguage": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Automata.DA.Buchi",
+      "Cslib.Computability.Automata.DA.Congr",
+      "Cslib.Computability.Automata.DA.Prod",
+      "Cslib.Computability.Automata.DA.ToNA",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Automata.NA.BuchiEquiv",
+      "Cslib.Computability.Automata.NA.BuchiInter",
+      "Cslib.Computability.Automata.NA.Concat",
+      "Cslib.Computability.Automata.NA.Hist",
+      "Cslib.Computability.Automata.NA.Loop",
+      "Cslib.Computability.Automata.NA.Pair",
+      "Cslib.Computability.Automata.NA.Prod",
+      "Cslib.Computability.Automata.NA.Sum",
+      "Cslib.Computability.Automata.NA.ToDA",
+      "Cslib.Computability.Automata.NA.Total",
+      "Cslib.Computability.Languages.Congruences.BuchiCongruence",
+      "Cslib.Computability.Languages.Congruences.RightCongruence",
+      "Cslib.Computability.Languages.ExampleEventuallyZero",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Computability.Languages.RegularLanguage",
+      "Cslib.Foundations.Combinatorics.InfiniteGraphRamsey",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Data.OmegaSequence.Temporal",
+      "Cslib.Foundations.Data.Set.Saturation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.FLTS.FLTSToLTS",
+      "Cslib.Foundations.Semantics.FLTS.LTSToFLTS",
+      "Cslib.Foundations.Semantics.FLTS.Prod",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Foundations.Semantics.LTS.Total",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Languages.RegularLanguage": [
+      "Cslib.Computability.Automata.Acceptors.Acceptor",
+      "Cslib.Computability.Automata.Acceptors.OmegaAcceptor",
+      "Cslib.Computability.Automata.DA.Basic",
+      "Cslib.Computability.Automata.DA.Congr",
+      "Cslib.Computability.Automata.DA.Prod",
+      "Cslib.Computability.Automata.DA.ToNA",
+      "Cslib.Computability.Automata.NA.Basic",
+      "Cslib.Computability.Automata.NA.Concat",
+      "Cslib.Computability.Automata.NA.Loop",
+      "Cslib.Computability.Automata.NA.ToDA",
+      "Cslib.Computability.Automata.NA.Total",
+      "Cslib.Computability.Languages.Congruences.RightCongruence",
+      "Cslib.Computability.Languages.Language",
+      "Cslib.Computability.Languages.OmegaLanguage",
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.InfOcc",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Data.OmegaSequence.Temporal",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.FLTS.FLTSToLTS",
+      "Cslib.Foundations.Semantics.FLTS.LTSToFLTS",
+      "Cslib.Foundations.Semantics.FLTS.Prod",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Foundations.Semantics.LTS.Total",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.Machines.SingleTapeTuring.Basic": [
+      "Cslib.Foundations.Data.BiTape",
+      "Cslib.Foundations.Data.RelatesInSteps",
+      "Cslib.Foundations.Data.StackTape",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.URM.Basic": [
+      "Cslib.Computability.URM.Defs",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.URM.Computable": [
+      "Cslib.Computability.URM.Defs",
+      "Cslib.Computability.URM.Execution",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.URM.Defs": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.URM.Execution": [
+      "Cslib.Computability.URM.Defs",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.URM.StandardForm": [
+      "Cslib.Computability.URM.Basic",
+      "Cslib.Computability.URM.Defs",
+      "Cslib.Computability.URM.Execution",
+      "Cslib.Computability.URM.StraightLine",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Computability.URM.StraightLine": [
+      "Cslib.Computability.URM.Basic",
+      "Cslib.Computability.URM.Defs",
+      "Cslib.Computability.URM.Execution",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Basic": [
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Defs",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Encryption",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.PerfectSecrecy",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.PMFUtilities",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Defs": [
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Encryption",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.PMFUtilities",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Encryption": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.OneTimePad": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.PerfectSecrecy": [
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Defs",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Encryption",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.PMFUtilities",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.OneTimePad": [
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Basic",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Defs",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Encryption",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.OneTimePad",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.PerfectSecrecy",
+      "Cslib.Crypto.Protocols.PerfectSecrecy.PMFUtilities",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.PMFUtilities": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Combinatorics.InfiniteGraphRamsey": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Control.Monad.Free": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Control.Monad.Free.Effects": [
+      "Cslib.Foundations.Control.Monad.Free",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Control.Monad.Free.Fold": [
+      "Cslib.Foundations.Control.Monad.Free",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.BiTape": [
+      "Cslib.Foundations.Data.StackTape",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.DecidableEqZero": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.FinFun.Basic": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.FinFun.Update": [
+      "Cslib.Foundations.Data.DecidableEqZero",
+      "Cslib.Foundations.Data.FinFun.Basic",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.HasFresh": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.Nat.Segment": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Defs": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Flatten": [
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.InfOcc": [
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Init": [
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Temporal": [
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.RelatesInSteps": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.Relation": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.Set.Saturation": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Data.StackTape": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Lint.Basic": [],
+    "Cslib.Foundations.Logic.InferenceSystem": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Logic.LogicalEquivalence": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.Congruence",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.FLTS.Basic": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.FLTS.FLTSToLTS": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.FLTS.LTSToFLTS": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.FLTS.Prod": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Basic": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Bisimulation": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Foundations.Semantics.LTS.Relation",
+      "Cslib.Foundations.Semantics.LTS.Simulation",
+      "Cslib.Foundations.Semantics.LTS.TraceEq",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Divergence": [
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Foundations.Semantics.LTS.Relation",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Execution": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.HasTau": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Relation",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.LTSCat.Basic": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Notation": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Relation",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.OmegaExecution": [
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Relation": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Simulation": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Termination": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Total": [
+      "Cslib.Foundations.Data.Nat.Segment",
+      "Cslib.Foundations.Data.OmegaSequence.Defs",
+      "Cslib.Foundations.Data.OmegaSequence.Flatten",
+      "Cslib.Foundations.Data.OmegaSequence.Init",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.FLTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Execution",
+      "Cslib.Foundations.Semantics.LTS.OmegaExecution",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.TraceEq": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Simulation",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Union": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Syntax.Congruence": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Syntax.Context": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Syntax.HasAlphaEquiv": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Syntax.HasSubstitution": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Foundations.Syntax.HasWellFormed": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Init": [
+      "Cslib.Foundations.Lint.Basic"
+    ],
+    "Cslib.Languages.CCS.Basic": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init"
+    ],
+    "Cslib.Languages.CCS.BehaviouralTheory": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Bisimulation",
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Foundations.Semantics.LTS.Relation",
+      "Cslib.Foundations.Semantics.LTS.Simulation",
+      "Cslib.Foundations.Semantics.LTS.TraceEq",
+      "Cslib.Foundations.Syntax.Congruence",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init",
+      "Cslib.Languages.CCS.Basic",
+      "Cslib.Languages.CCS.Semantics"
+    ],
+    "Cslib.Languages.CCS.Semantics": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Foundations.Semantics.LTS.Relation",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init",
+      "Cslib.Languages.CCS.Basic"
+    ],
+    "Cslib.Languages.CombinatoryLogic.Basic": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init",
+      "Cslib.Languages.CombinatoryLogic.Defs"
+    ],
+    "Cslib.Languages.CombinatoryLogic.Confluence": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init",
+      "Cslib.Languages.CombinatoryLogic.Defs"
+    ],
+    "Cslib.Languages.CombinatoryLogic.Defs": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Languages.CombinatoryLogic.Evaluation": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init",
+      "Cslib.Languages.CombinatoryLogic.Basic",
+      "Cslib.Languages.CombinatoryLogic.Confluence",
+      "Cslib.Languages.CombinatoryLogic.Defs",
+      "Cslib.Languages.CombinatoryLogic.Recursion"
+    ],
+    "Cslib.Languages.CombinatoryLogic.List": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init",
+      "Cslib.Languages.CombinatoryLogic.Basic",
+      "Cslib.Languages.CombinatoryLogic.Defs",
+      "Cslib.Languages.CombinatoryLogic.Recursion"
+    ],
+    "Cslib.Languages.CombinatoryLogic.Recursion": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init",
+      "Cslib.Languages.CombinatoryLogic.Basic",
+      "Cslib.Languages.CombinatoryLogic.Defs"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Context": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Opening": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Opening"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Safety": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Opening",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Subtype",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Typing",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.WellFormed"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Subtype": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Opening",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.WellFormed"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Typing": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Opening",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Subtype",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.WellFormed"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.WellFormed": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Opening"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Safety": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.StrongNorm": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.LcAt",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiApp",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiSubst",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.StrongNorm"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaConfluence": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaEtaConfluence": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaConfluence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEtaConfluence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEta": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEtaConfluence": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.LcAt": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiApp": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiSubst": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Foundations.Syntax.HasWellFormed",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Context",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.StrongNorm": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.LcAt",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiApp",
+      "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties"
+    ],
+    "Cslib.Languages.LambdaCalculus.Named.Untyped.Basic": [
+      "Cslib.Foundations.Data.HasFresh",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Syntax.HasAlphaEquiv",
+      "Cslib.Foundations.Syntax.HasSubstitution",
+      "Cslib.Init"
+    ],
+    "Cslib.Logics.HML.Basic": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Bisimulation",
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Foundations.Semantics.LTS.Relation",
+      "Cslib.Foundations.Semantics.LTS.Simulation",
+      "Cslib.Foundations.Semantics.LTS.TraceEq",
+      "Cslib.Init"
+    ],
+    "Cslib.Logics.HML.LogicalEquivalence": [
+      "Cslib.Foundations.Data.Relation",
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Logic.LogicalEquivalence",
+      "Cslib.Foundations.Semantics.LTS.Basic",
+      "Cslib.Foundations.Semantics.LTS.Bisimulation",
+      "Cslib.Foundations.Semantics.LTS.HasTau",
+      "Cslib.Foundations.Semantics.LTS.Relation",
+      "Cslib.Foundations.Semantics.LTS.Simulation",
+      "Cslib.Foundations.Semantics.LTS.TraceEq",
+      "Cslib.Foundations.Syntax.Congruence",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init",
+      "Cslib.Logics.HML.Basic"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.Basic": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Logic.InferenceSystem",
+      "Cslib.Foundations.Logic.LogicalEquivalence",
+      "Cslib.Foundations.Syntax.Congruence",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.CutElimination": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Logic.InferenceSystem",
+      "Cslib.Foundations.Logic.LogicalEquivalence",
+      "Cslib.Foundations.Syntax.Congruence",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init",
+      "Cslib.Logics.LinearLogic.CLL.Basic"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.EtaExpansion": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Logic.InferenceSystem",
+      "Cslib.Foundations.Logic.LogicalEquivalence",
+      "Cslib.Foundations.Syntax.Congruence",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init",
+      "Cslib.Logics.LinearLogic.CLL.Basic"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.MLL": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Logic.InferenceSystem",
+      "Cslib.Foundations.Logic.LogicalEquivalence",
+      "Cslib.Foundations.Syntax.Congruence",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init",
+      "Cslib.Logics.LinearLogic.CLL.Basic"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.PhaseSemantics.Basic": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Logic.InferenceSystem",
+      "Cslib.Foundations.Logic.LogicalEquivalence",
+      "Cslib.Foundations.Syntax.Congruence",
+      "Cslib.Foundations.Syntax.Context",
+      "Cslib.Init",
+      "Cslib.Logics.LinearLogic.CLL.Basic"
+    ],
+    "Cslib.Logics.Propositional.Defs": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Init"
+    ],
+    "Cslib.Logics.Propositional.NaturalDeduction.Basic": [
+      "Cslib.Foundations.Lint.Basic",
+      "Cslib.Foundations.Logic.InferenceSystem",
+      "Cslib.Init",
+      "Cslib.Logics.Propositional.Defs"
+    ]
+  },
+  "external_imports": {
+    "Cslib.Algorithms.Lean.MergeSort.MergeSort": [
+      "Mathlib.Data.Nat.Cast.Order.Ring",
+      "Mathlib.Data.Nat.Lattice",
+      "Mathlib.Data.Nat.Log"
+    ],
+    "Cslib.Algorithms.Lean.TimeM": [
+      "Mathlib.Algebra.Group.Defs"
+    ],
+    "Cslib.Computability.Automata.Acceptors.Acceptor": [
+      "Mathlib.Computability.Language"
+    ],
+    "Cslib.Computability.Automata.Acceptors.OmegaAcceptor": [],
+    "Cslib.Computability.Automata.DA.Basic": [],
+    "Cslib.Computability.Automata.DA.Buchi": [],
+    "Cslib.Computability.Automata.DA.Congr": [],
+    "Cslib.Computability.Automata.DA.Prod": [],
+    "Cslib.Computability.Automata.DA.ToNA": [],
+    "Cslib.Computability.Automata.EpsilonNA.Basic": [],
+    "Cslib.Computability.Automata.EpsilonNA.ToNA": [],
+    "Cslib.Computability.Automata.NA.Basic": [],
+    "Cslib.Computability.Automata.NA.BuchiEquiv": [],
+    "Cslib.Computability.Automata.NA.BuchiInter": [],
+    "Cslib.Computability.Automata.NA.Concat": [],
+    "Cslib.Computability.Automata.NA.Hist": [],
+    "Cslib.Computability.Automata.NA.Loop": [],
+    "Cslib.Computability.Automata.NA.Pair": [],
+    "Cslib.Computability.Automata.NA.Prod": [],
+    "Cslib.Computability.Automata.NA.Sum": [],
+    "Cslib.Computability.Automata.NA.ToDA": [],
+    "Cslib.Computability.Automata.NA.Total": [],
+    "Cslib.Computability.Languages.Congruences.BuchiCongruence": [],
+    "Cslib.Computability.Languages.Congruences.RightCongruence": [
+      "Mathlib.Computability.Language"
+    ],
+    "Cslib.Computability.Languages.ExampleEventuallyZero": [],
+    "Cslib.Computability.Languages.Language": [
+      "Mathlib.Computability.Language"
+    ],
+    "Cslib.Computability.Languages.OmegaLanguage": [
+      "Mathlib.Computability.Language",
+      "Mathlib.Order.CompleteBooleanAlgebra",
+      "Mathlib.Order.Filter.AtTopBot.Defs"
+    ],
+    "Cslib.Computability.Languages.OmegaRegularLanguage": [
+      "Mathlib.Data.Finite.Card",
+      "Mathlib.Data.Finite.Sigma",
+      "Mathlib.Logic.Equiv.Fin.Basic"
+    ],
+    "Cslib.Computability.Languages.RegularLanguage": [
+      "Mathlib.Computability.DFA",
+      "Mathlib.Data.Finite.Sum",
+      "Mathlib.Data.Set.Card"
+    ],
+    "Cslib.Computability.Machines.SingleTapeTuring.Basic": [
+      "Mathlib.Algebra.Polynomial.Eval.Defs"
+    ],
+    "Cslib.Computability.URM.Basic": [
+      "Mathlib.Data.List.MinMax"
+    ],
+    "Cslib.Computability.URM.Computable": [],
+    "Cslib.Computability.URM.Defs": [
+      "Mathlib.Data.Finset.Insert"
+    ],
+    "Cslib.Computability.URM.Execution": [
+      "Mathlib.Data.Part"
+    ],
+    "Cslib.Computability.URM.StandardForm": [],
+    "Cslib.Computability.URM.StraightLine": [],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Basic": [],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Defs": [
+      "Mathlib.Probability.ProbabilityMassFunction.Constructions"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Encryption": [
+      "Mathlib.Probability.ProbabilityMassFunction.Monad"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.OneTimePad": [
+      "Mathlib.Probability.Distributions.Uniform"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.Internal.PerfectSecrecy": [
+      "Mathlib.Probability.Distributions.Uniform"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.OneTimePad": [
+      "Mathlib.Probability.Distributions.Uniform"
+    ],
+    "Cslib.Crypto.Protocols.PerfectSecrecy.PMFUtilities": [
+      "Mathlib.Probability.ProbabilityMassFunction.Monad"
+    ],
+    "Cslib.Foundations.Combinatorics.InfiniteGraphRamsey": [
+      "Mathlib.Algebra.Order.Group.Nat",
+      "Mathlib.Data.Fintype.Pigeonhole",
+      "Mathlib.Data.Set.Finite.Basic",
+      "Mathlib.Data.Set.Lattice"
+    ],
+    "Cslib.Foundations.Control.Monad.Free": [],
+    "Cslib.Foundations.Control.Monad.Free.Effects": [
+      "Mathlib.Control.Monad.Cont"
+    ],
+    "Cslib.Foundations.Control.Monad.Free.Fold": [],
+    "Cslib.Foundations.Data.BiTape": [
+      "Mathlib.Algebra.Order.Group.Nat",
+      "Mathlib.Computability.TuringMachine.Tape",
+      "Mathlib.Data.Finset.Attr",
+      "Mathlib.Tactic.SetLike"
+    ],
+    "Cslib.Foundations.Data.DecidableEqZero": [],
+    "Cslib.Foundations.Data.FinFun.Basic": [
+      "Mathlib.Data.Finset.Filter",
+      "Mathlib.Data.Finset.Lattice.Basic"
+    ],
+    "Cslib.Foundations.Data.FinFun.Update": [
+      "Mathlib.Data.Finset.SDiff"
+    ],
+    "Cslib.Foundations.Data.HasFresh": [
+      "Mathlib.Analysis.Normed.Field.Lemmas",
+      "Qq"
+    ],
+    "Cslib.Foundations.Data.Nat.Segment": [
+      "Mathlib.Algebra.Order.Sub.Basic",
+      "Mathlib.Data.Nat.Nth"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Defs": [
+      "Mathlib.Data.FunLike.Basic",
+      "Mathlib.Logic.Function.Iterate"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Flatten": [],
+    "Cslib.Foundations.Data.OmegaSequence.InfOcc": [
+      "Mathlib.Data.Fintype.Pigeonhole",
+      "Mathlib.Order.Filter.Cofinite"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Init": [
+      "Mathlib.Algebra.Order.Group.Nat",
+      "Mathlib.Algebra.Order.Sub.Basic",
+      "Mathlib.Data.Nat.Lattice"
+    ],
+    "Cslib.Foundations.Data.OmegaSequence.Temporal": [
+      "Mathlib.Order.Filter.AtTopBot.Basic"
+    ],
+    "Cslib.Foundations.Data.RelatesInSteps": [
+      "Mathlib.Logic.Relation"
+    ],
+    "Cslib.Foundations.Data.Relation": [
+      "Mathlib.Data.List.TFAE",
+      "Mathlib.Order.BooleanAlgebra.Basic",
+      "Mathlib.Order.Comparable",
+      "Mathlib.Order.WellFounded"
+    ],
+    "Cslib.Foundations.Data.Set.Saturation": [
+      "Mathlib.Data.Set.Basic",
+      "Mathlib.Order.SetNotation"
+    ],
+    "Cslib.Foundations.Data.StackTape": [],
+    "Cslib.Foundations.Lint.Basic": [
+      "Batteries.Tactic.Lint.Basic",
+      "Lean.Message"
+    ],
+    "Cslib.Foundations.Logic.InferenceSystem": [],
+    "Cslib.Foundations.Logic.LogicalEquivalence": [],
+    "Cslib.Foundations.Semantics.FLTS.Basic": [],
+    "Cslib.Foundations.Semantics.FLTS.FLTSToLTS": [],
+    "Cslib.Foundations.Semantics.FLTS.LTSToFLTS": [],
+    "Cslib.Foundations.Semantics.FLTS.Prod": [],
+    "Cslib.Foundations.Semantics.LTS.Basic": [
+      "Mathlib.Data.Set.Finite.Basic",
+      "Mathlib.Order.SetNotation"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Bisimulation": [],
+    "Cslib.Foundations.Semantics.LTS.Divergence": [],
+    "Cslib.Foundations.Semantics.LTS.Execution": [],
+    "Cslib.Foundations.Semantics.LTS.HasTau": [],
+    "Cslib.Foundations.Semantics.LTS.LTSCat.Basic": [
+      "Mathlib.CategoryTheory.Category.Basic",
+      "Mathlib.Control.Basic"
+    ],
+    "Cslib.Foundations.Semantics.LTS.Notation": [],
+    "Cslib.Foundations.Semantics.LTS.OmegaExecution": [],
+    "Cslib.Foundations.Semantics.LTS.Relation": [],
+    "Cslib.Foundations.Semantics.LTS.Simulation": [],
+    "Cslib.Foundations.Semantics.LTS.Termination": [],
+    "Cslib.Foundations.Semantics.LTS.Total": [],
+    "Cslib.Foundations.Semantics.LTS.TraceEq": [],
+    "Cslib.Foundations.Semantics.LTS.Union": [],
+    "Cslib.Foundations.Syntax.Congruence": [
+      "Mathlib.Algebra.Order.Monoid.Unbundled.Defs"
+    ],
+    "Cslib.Foundations.Syntax.Context": [],
+    "Cslib.Foundations.Syntax.HasAlphaEquiv": [],
+    "Cslib.Foundations.Syntax.HasSubstitution": [],
+    "Cslib.Foundations.Syntax.HasWellFormed": [],
+    "Cslib.Init": [
+      "Mathlib.Init",
+      "Mathlib.Tactic.Common"
+    ],
+    "Cslib.Languages.CCS.Basic": [
+      "Mathlib.Tactic.ToAdditive",
+      "Mathlib.Tactic.ToDual"
+    ],
+    "Cslib.Languages.CCS.BehaviouralTheory": [],
+    "Cslib.Languages.CCS.Semantics": [],
+    "Cslib.Languages.CombinatoryLogic.Basic": [],
+    "Cslib.Languages.CombinatoryLogic.Confluence": [],
+    "Cslib.Languages.CombinatoryLogic.Defs": [],
+    "Cslib.Languages.CombinatoryLogic.Evaluation": [],
+    "Cslib.Languages.CombinatoryLogic.List": [],
+    "Cslib.Languages.CombinatoryLogic.Recursion": [
+      "Mathlib.Data.Nat.Pairing"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Context": [
+      "Mathlib.Data.Finset.Dedup",
+      "Mathlib.Data.List.Sigma"
+    ],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Basic": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Opening": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Safety": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Subtype": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Typing": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.WellFormed": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Basic": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Safety": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.StrongNorm": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Congruence": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBeta": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaConfluence": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaEtaConfluence": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEta": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullEtaConfluence": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.LcAt": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiApp": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.MultiSubst": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Properties": [],
+    "Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.StrongNorm": [],
+    "Cslib.Languages.LambdaCalculus.Named.Untyped.Basic": [],
+    "Cslib.Logics.HML.Basic": [],
+    "Cslib.Logics.HML.LogicalEquivalence": [],
+    "Cslib.Logics.LinearLogic.CLL.Basic": [
+      "Mathlib.Data.Multiset.Fold"
+    ],
+    "Cslib.Logics.LinearLogic.CLL.CutElimination": [],
+    "Cslib.Logics.LinearLogic.CLL.EtaExpansion": [],
+    "Cslib.Logics.LinearLogic.CLL.MLL": [],
+    "Cslib.Logics.LinearLogic.CLL.PhaseSemantics.Basic": [
+      "Mathlib.Algebra.Group.Idempotent",
+      "Mathlib.Algebra.Group.Pointwise.Set.Basic",
+      "Mathlib.Order.Closure"
+    ],
+    "Cslib.Logics.Propositional.Defs": [
+      "Mathlib.Data.FunLike.Basic",
+      "Mathlib.Data.Set.Image",
+      "Mathlib.Order.TypeTags"
+    ],
+    "Cslib.Logics.Propositional.NaturalDeduction.Basic": [
+      "Mathlib.Data.Finset.Image",
+      "Mathlib.Data.Finset.Insert",
+      "Mathlib.Data.Finset.SDiff"
+    ]
+  },
+  "unresolved_internal_imports": []
+}

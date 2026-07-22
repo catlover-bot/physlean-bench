@@ -1,0 +1,53 @@
+{
+  "input_edges": 15420,
+  "selected": 100,
+  "motif_counts": {
+    "same_family": 57,
+    "subgraph_monotonicity": 20,
+    "subgraph_lift_target": 21,
+    "walk_path_connectivity": 28,
+    "finite_cardinality": 37,
+    "map_transport": 23,
+    "complement_duality": 31,
+    "adj_edgeSet_bridge": 36
+  },
+  "source_family_counts": {
+    "adjacency": 51,
+    "map": 13,
+    "subgraph": 20,
+    "walk": 38,
+    "connectivity": 26,
+    "finite_card": 13,
+    "edgeSet": 17,
+    "complement": 12,
+    "degree_neighbor": 8,
+    "path": 18,
+    "complete_graph": 8
+  },
+  "target_family_counts": {
+    "connectivity": 23,
+    "finite_card": 36,
+    "path": 19,
+    "subgraph": 22,
+    "walk": 47,
+    "complement": 29,
+    "degree_neighbor": 16,
+    "adjacency": 54,
+    "map": 22,
+    "edgeSet": 23,
+    "complete_graph": 9,
+    "regularity": 3
+  },
+  "unique_sources": 95,
+  "unique_targets": 76,
+  "unique_source_files": 29,
+  "unique_target_files": 24,
+  "score_range": [
+    13.045997,
+    23.643333
+  ],
+  "mmr_score_range": [
+    -58.251556,
+    29.712643
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "input_strict_seeds": 50,
+  "selected": 30,
+  "area_counts": {
+    "urm": 5,
+    "ccs": 2,
+    "omega_sequence": 4,
+    "hml": 3,
+    "relation_steps": 3,
+    "automata": 5,
+    "lts": 4,
+    "other": 2,
+    "flts": 2
+  },
+  "rule_counts": {
+    "URM_HALTING_BOUND_API": 4,
+    "CCS_BISIMILARITY_ALGEBRA_API": 2,
+    "OMEGA_SEQUENCE_TEMPORAL_API": 4,
+    "HML_BISIMULATION_THEORY_EQ_BRIDGE": 3,
+    "RELATES_STEPS_ZERO_IFF_COMPLETION": 2,
+    "AUTOMATA_LANGUAGE_EQUIV_API": 5,
+    "LOCAL_API_COMPLETION": 5,
+    "LTS_TRACE_COMPOSITION_API": 2,
+    "FLTS_LTS_TRANSFER_API": 2,
+    "URM_EXECUTION_API": 1
+  },
+  "unique_sources": 30,
+  "unique_targets": 30,
+  "unique_files": 26,
+  "score_range": [
+    6.848571,
+    24.38
+  ],
+  "mmr_score_range": [
+    -7.76,
+    34.934286
+  ]
+}

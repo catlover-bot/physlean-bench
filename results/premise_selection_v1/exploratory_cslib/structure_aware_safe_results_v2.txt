@@ -1,0 +1,20 @@
+Structure-aware safe import replacement v2
+========================================================================================================
+
+EXPLORATORY: feature design followed inspection of CSLib test failures.
+
+Selected configuration
+--------------------------------------------------------------------------------------------------------
+{"transfer_weight": 0.4, "structure_weight": 0.25, "protected_prefix": 5, "max_promotions": 1, "min_transfer_score": 0.4, "min_structure_score": 0.2, "replacement_margin": 0.0, "victim_max_bm25": 0.7}
+
+Validation
+--------------------------------------------------------------------------------------------------------
+BM25: MRR=0.5615 R@10=0.6355 R@20=0.7850 local@20=0.9623 imported@20=0.6111
+V2:   MRR=0.5610 R@10=0.6636 R@20=0.8131 local@20=0.9623 imported@20=0.6667 promotions=17
+
+Test
+--------------------------------------------------------------------------------------------------------
+BM25: MRR=0.4825 R@5=0.2895 R@10=0.4276 R@20=0.5855 R@50=0.7368 local@20=0.9556 imported@20=0.4299
+V2:   MRR=0.4809 R@5=0.2895 R@10=0.4145 R@20=0.5789 R@50=0.7368 local@20=0.9556 imported@20=0.4206 promoted_targets=28/56 promotions=28
+
+Per-target R@20: wins=0 ties=55 losses=1

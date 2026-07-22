@@ -1,0 +1,18 @@
+{
+  "nodes": 6903,
+  "edges": 69030,
+  "topk": 10,
+  "inputs": [
+    "/home/is/hirotaka-m/workspace/physlean-bench/data/physlibbench/train.jsonl",
+    "/home/is/hirotaka-m/workspace/physlean-bench/data/physlibbench/valid.jsonl",
+    "/home/is/hirotaka-m/workspace/physlean-bench/data/physlibbench/test.jsonl",
+    "/home/is/hirotaka-m/workspace/physlean-bench/results/cslib_bench_v0/train.jsonl",
+    "/home/is/hirotaka-m/workspace/physlean-bench/results/cslib_bench_v0/valid.jsonl",
+    "/home/is/hirotaka-m/workspace/physlean-bench/results/cslib_bench_v0/test.jsonl"
+  ],
+  "out": "/project/nlp-work11/hirotaka-m/theorem_generation/theorem_graph_topk_v0",
+  "libraries": {
+    "cslib": 1310,
+    "physlib": 5593
+  }
+}
